@@ -1,0 +1,122 @@
+:root {
+  --sand: #f6f4ef;
+  --ocean: #6f9fa8;
+  --driftwood: #b8a89a;
+  --ink: #2f3e42;
+  --paper: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--sand);
+  color: var(--ink);
+  line-height: 1.6;
+}
+
+/* 🌿 Header */
+.site-header {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+}
+
+.site-header h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.6rem;
+}
+
+.tagline {
+  color: var(--ocean);
+  margin-top: 0.5rem;
+}
+
+/* 🌊 Hero */
+.hero {
+  background: linear-gradient(
+    rgba(255,255,255,0.7),
+    rgba(255,255,255,0.9)
+  ),
+  url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 1.5rem;
+  text-align: center;
+}
+
+.hero h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  max-width: 520px;
+  margin: 0 auto 2rem;
+}
+
+.hero button {
+  background: var(--ocean);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.hero button:hover {
+  opacity: 0.85;
+}
+
+/* 🐚 Sections */
+section {
+  padding: 4rem 1.5rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.about,
+.services {
+  background: var(--paper);
+  border-radius: 20px;
+  margin-bottom: 3rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+}
+
+.about h3,
+.services h3 {
+  font-family: "Playfair Display", serif;
+  margin-bottom: 1rem;
+}
+
+/* 🌾 Services Grid */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.service-card {
+  background: var(--sand);
+  padding: 1.5rem;
+  border-radius: 16px;
+}
+
+.service-card h4 {
+  font-family: "Playfair Display", serif;
+  margin-bottom: 0.5rem;
+}
+
+/* 🌊 Footer */
+.site-footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.85rem;
+  color: #666;
+}

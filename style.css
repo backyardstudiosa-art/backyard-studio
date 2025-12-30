@@ -247,11 +247,31 @@ body {
   opacity: 0.85;
 }
 @media (max-width: 768px) {
-  .site-logo {
-    max-width: 140px;
+  .hero-logo {
+    max-width: 120px;
+    bottom: -50px;
   }
+}
+
 
   .hero {
     margin-bottom: 3rem;
   }
 }
+.hero {
+  position: relative;
+  padding-bottom: 5rem; /* space for overlap */
+}
+
+.hero-logo {
+  position: absolute;
+  left: 50%;
+  bottom: -60px; /* controls overlap depth */
+  transform: translateX(-50%);
+  max-width: 150px;
+  opacity: 0.85;
+}
+.hero + section {
+  margin-top: 4rem;
+}
+bottom: -60px;

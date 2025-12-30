@@ -221,7 +221,7 @@
     <p>© 2025 Backyard Studio • Created with intention</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js">
   <script>
   const fadeElements = document.querySelectorAll('.fade-in');
 
@@ -240,6 +240,19 @@
   );
 
   fadeElements.forEach(el => observer.observe(el));
+
+  const lines = [
+    "Let this be enough for today.",
+    "Move gently. You are not behind.",
+    "Rest is not quitting.",
+    "Even quiet seasons grow roots.",
+    "Grace holds what you release."
+  ];
+
+  const today = new Date().getDate();
+  const line = lines[today % lines.length];
+
+  document.getElementById("daily-line").textContent = line;
 </script>
 
 </body>

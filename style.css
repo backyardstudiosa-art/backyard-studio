@@ -155,3 +155,22 @@ section {
   border-radius: 18px;
   padding: 2rem;
 }
+
+/* Soft fade-in motion */
+.fade-in {
+  opacity: 0;
+  transform: translateY(12px);
+  animation: fadeInSoft 1.4s ease-out forwards;
+}
+
+@keyframes fadeInSoft {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Staggered timing */
+.fade-delay-1 { animation-delay: 0.2s; }
+.fade-delay-2 { animation-delay: 0.5s; }
+.fade-delay-3 { animation-delay: 0.8s; }

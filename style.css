@@ -390,3 +390,71 @@ box-shadow:
     padding: 1.6rem;
   }
 }
+/* ---------- Coastal Accents ---------- */
+
+.service-hero {
+  position: relative;
+  text-align: center;
+  padding: 6rem 1.5rem 5rem;
+}
+
+.service-hero::before {
+  content: "✦";
+  position: absolute;
+  top: 20%;
+  left: 8%;
+  font-size: 1.6rem;
+  opacity: 0.12;
+}
+
+.service-hero::after {
+  content: "❋";
+  position: absolute;
+  bottom: 18%;
+  right: 10%;
+  font-size: 1.4rem;
+  opacity: 0.12;
+}
+
+/* Quote styling */
+.coastal-quote {
+  font-family: 'Caveat', cursive;
+  font-size: 1.6rem;
+  margin: 3rem auto;
+  text-align: center;
+  opacity: 0.8;
+}
+
+/* Lists */
+.service-list {
+  padding-left: 1.2rem;
+  line-height: 1.8;
+}
+
+.service-list li {
+  margin-bottom: 0.6rem;
+}
+
+/* Footer */
+.return-footer {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  opacity: 0.6;
+  font-size: 0.95rem;
+}
+
+/* ---------- Mobile Breathing ---------- */
+
+@media (max-width: 600px) {
+  .service-hero {
+    padding: 5rem 1.2rem 4rem;
+  }
+
+  .coastal-quote {
+    font-size: 1.4rem;
+  }
+
+  .content-section {
+    padding: 3rem 1.2rem;
+  }
+}

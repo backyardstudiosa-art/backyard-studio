@@ -201,7 +201,14 @@ section {
   }
 }
 .site-logo {
-  max-width: 220px;
-  margin: 0 auto 2.5rem;
+  max-width: 160px; /* was likely 220px */
+  margin: 0 auto 2rem;
   display: block;
+  opacity: 0.88;
+}
+header {
+  margin-bottom: 1.5rem;
+}
+.site-logo {
+  filter: saturate(0.92) contrast(0.95);
 }

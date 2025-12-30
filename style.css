@@ -446,18 +446,16 @@ box-shadow:
 /* ---------- Mobile Breathing ---------- */
 
 @media (max-width: 600px) {
-  .service-hero {
-    padding: 5rem 1.2rem 4rem;
+  .pillow-button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
   }
 
-  .coastal-quote {
-    font-size: 1.4rem;
-  }
-
-  .content-section {
-    padding: 3rem 1.2rem;
+  .back-button {
+    margin-top: 1rem;
   }
 }
+
 /* ---------- Back Button ---------- */
 
 .back-button {

@@ -174,3 +174,29 @@ section {
 .fade-delay-1 { animation-delay: 0.2s; }
 .fade-delay-2 { animation-delay: 0.5s; }
 .fade-delay-3 { animation-delay: 0.8s; }
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    padding: 2rem 1.25rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  section {
+    margin-bottom: 3rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+}

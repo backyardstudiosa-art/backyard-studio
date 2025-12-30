@@ -287,3 +287,106 @@ box-shadow:
   0 6px 18px rgba(0, 0, 0, 0.05),
   0 0 0 4px rgba(255, 255, 255, 0.35);
 
+/* ---------- Handwritten Accent ---------- */
+
+.handwritten,
+.content-section h2,
+.section-intro,
+.invitation,
+.closing-line {
+  font-family: 'Caveat', cursive;
+  letter-spacing: 0.5px;
+}
+
+/* Keep headings calm, not loud */
+.content-section h2 {
+  font-size: clamp(2rem, 4vw, 2.6rem);
+  margin-bottom: 0.6em;
+  color: inherit;
+}
+
+/* Subheadings */
+.content-section h3 {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+  font-weight: 500;
+}
+
+/* ---------- Section Rhythm ---------- */
+
+.content-section {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+  line-height: 1.75;
+}
+
+/* Soft paper-grain feeling */
+.soft-background {
+  background-color: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(2px);
+  border-radius: 18px;
+}
+
+/* ---------- Service Grid ---------- */
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.service-card {
+  padding: 2rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.75);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+}
+
+.service-tagline {
+  font-style: italic;
+  opacity: 0.85;
+  margin-bottom: 0.8rem;
+}
+
+/* Service links */
+.service-link {
+  display: inline-block;
+  margin-top: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.service-link:hover {
+  opacity: 1;
+}
+
+/* ---------- Closing Ecosystem ---------- */
+
+.ecosystem-list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.ecosystem-list li {
+  margin-bottom: 0.6rem;
+}
+
+/* ---------- Mobile Breathing Room ---------- */
+
+@media (max-width: 600px) {
+  .content-section {
+    padding: 3rem 1.2rem;
+  }
+
+  .service-card {
+    padding: 1.6rem;
+  }
+}

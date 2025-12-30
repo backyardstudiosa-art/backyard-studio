@@ -565,3 +565,30 @@ box-shadow:
     rgba(234, 226, 218, 0.95)
   );
 }
+/* ---------- Coastal Marks ---------- */
+
+.coastal-mark {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 48px;
+  height: 48px;
+  opacity: 0.06;
+  pointer-events: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* SVG data (lightweight, no files needed) */
+
+.coastal-mark.shell {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 10 C20 30 20 70 50 90 C80 70 80 30 50 10 Z' fill='%23000'/%3E%3C/svg%3E");
+}
+
+.coastal-mark.starfish {
+  background-image: url(\"data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='50,10 60,40 90,50 60,60 50,90 40,60 10,50 40,40' fill='%23000'/%3E%3C/svg%3E\");
+}
+
+.coastal-mark.wave {
+  background-image: url(\"data:image/svg+xml,%3Csvg viewBox='0 0 100 50' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 25 Q25 0 50 25 T100 25' stroke='%23000' stroke-width='6' fill='none'/%3E%3C/svg%3E\");
+}

@@ -458,3 +458,19 @@ box-shadow:
     padding: 3rem 1.2rem;
   }
 }
+/* ---------- Back Button ---------- */
+
+.back-button {
+  background: transparent;
+  border: none;
+  font-size: 0.95rem;
+  opacity: 0.65;
+  margin: 1.5rem auto 0;
+  display: block;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.back-button:hover {
+  opacity: 1;
+}

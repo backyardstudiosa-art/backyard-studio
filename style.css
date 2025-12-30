@@ -120,3 +120,38 @@ section {
   font-size: 0.85rem;
   color: #666;
 }
+:root {
+  --sand: #F5F1EC;
+  --linen: #FAF8F5;
+  --driftwood: #8A8075;
+  --sea-mist: #DDE6E3;
+  --ink-soft: #3E3A36;
+  --accent-shell: #C9B8A5;
+}
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--linen);
+  color: var(--ink-soft);
+  line-height: 1.7;
+  letter-spacing: 0.2px;
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  color: var(--driftwood);
+}
+.container {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+.card {
+  background: var(--sand);
+  border-radius: 18px;
+  padding: 2rem;
+}

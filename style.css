@@ -212,3 +212,17 @@ header {
 .site-logo {
   filter: saturate(0.92) contrast(0.95);
 }
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400&family=Caveat:wght@400&display=swap');
+.handwritten {
+  font-family: 'Caveat', cursive;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+  color: var(--driftwood);
+}
+body {
+  background-color: var(--linen);
+  background-image: 
+    linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)),
+    url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+  background-repeat: repeat;
+}

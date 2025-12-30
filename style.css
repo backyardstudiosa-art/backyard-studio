@@ -200,3 +200,8 @@ section {
     padding: 1.5rem;
   }
 }
+.site-logo {
+  max-width: 220px;
+  margin: 0 auto 2.5rem;
+  display: block;
+}

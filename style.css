@@ -509,3 +509,17 @@ box-shadow:
     inset 0 3px 6px rgba(0,0,0,0.12),
     0 3px 8px rgba(0,0,0,0.06);
 }
+/* ---------- Scroll Fade-In ---------- */
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 1.2s ease,
+    transform 1.2s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

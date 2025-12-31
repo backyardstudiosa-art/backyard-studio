@@ -1,4 +1,13 @@
 :root {
+  --sand-light: #f6efe7;
+  --sand-warm: #e9dccb;
+  --peach-glow: #f2c9a8;
+  --sea-mist: #cfdad6;
+  --stone-soft: #b7b0a6;
+  --ink-soft: #5a4a42;
+  --halo-gold: rgba(255, 220, 170, 0.35);
+}
+:root {
   --sand: #f6f4ef;
   --ocean: #6f9fa8;
   --driftwood: #b8a89a;
@@ -13,10 +22,24 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
-  background: var(--sand);
-  color: var(--ink);
-  line-height: 1.6;
+  background: linear-gradient(
+    180deg,
+    var(--sand-light),
+    var(--sand-warm)
+  );
+  color: var(--ink-soft);
+}
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image:
+    radial-gradient(rgba(255,255,255,0.4) 1px, transparent 1px),
+    radial-gradient(rgba(0,0,0,0.02) 1px, transparent 1px);
+  background-size: 3px 3px, 4px 4px;
+  opacity: 0.25;
+  pointer-events: none;
+  z-index: 0;
 }
 
 /* 🌿 Header */
@@ -793,4 +816,62 @@ box-shadow:
 
 .grace {
   color: #5a4a42;
+}
+/* ---------- Coastal Grounding ---------- */
+
+.shell-edge::after {
+  content: "";
+  position: absolute;
+  bottom: -24px;
+  left: 8%;
+  width: 160px;
+  height: 80px;
+  background-image: url("images/shells-stones.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.35;
+  pointer-events: none;
+}
+.halo {
+  position: relative;
+}
+
+.halo::before {
+  content: "";
+  position: absolute;
+  inset: -30px;
+  background: radial-gradient(
+    circle,
+    var(--halo-gold),
+    transparent 70%
+  );
+  z-index: -1;
+}
+.service-image {
+  border-radius: 22px;
+  box-shadow:
+    inset 0 1px 2px rgba(255,255,255,0.6),
+    0 10px 22px rgba(0,0,0,0.08);
+  background-blend-mode: soft-light;
+}
+.quote,
+.invitation,
+#daily-line {
+  font-family: 'Caveat', cursive;
+  font-size: 1.4rem;
+  opacity: 0.9;
+}
+@media (max-width: 600px) {
+  .content-section {
+    padding: 3.2rem 1.4rem;
+  }
+
+  .shell-edge::after {
+    width: 110px;
+    opacity: 0.25;
+  }
+
+  .service-image {
+    height: 150px;
+  }
 }

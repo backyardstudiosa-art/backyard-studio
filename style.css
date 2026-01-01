@@ -91,20 +91,11 @@ section {
   color: var(--driftwood);
 }
 
-/* Logo overlap */
 .hero-logo {
   position: absolute;
   left: 50%;
   bottom: -60px;
   transform: translateX(-50%);
-  max-width: 150px;
-  background: rgba(250, 248, 245, 0.85);
-  border-radius: 50%;
-  padding: 18px;
-  opacity: 0.85;
-  box-shadow:
-    0 10px 25px rgba(0,0,0,0.06),
-    0 0 0 6px rgba(255,255,255,0.4);
 }
 
 .hero + section {

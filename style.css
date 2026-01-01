@@ -96,7 +96,7 @@ section {
   left: 50%;
   bottom: -60px;
   transform: translateX(-50%);
-}
+} 
 
 .hero + section {
   margin-top: 4rem;

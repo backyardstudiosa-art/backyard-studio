@@ -260,3 +260,19 @@ section {
     font-size: 1rem;
   }
 }
+.site-header {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem 1rem;
+}
+
+.site-logo {
+  max-width: 130px;
+  height: auto;
+  opacity: 0.9;
+  filter: drop-shadow(0 8px 20px rgba(180, 150, 110, 0.22));
+}
+
+.site-header.halo::before {
+  inset: -20px;
+}

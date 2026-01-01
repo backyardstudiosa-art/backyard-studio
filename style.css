@@ -155,15 +155,22 @@ section {
     0 10px 22px rgba(0,0,0,0.08);
 }
 
-/* Placeholder moods */
 .service-image.backyard {
-  background: linear-gradient(135deg, #ebf4f0, #d7e4de);
+  background-image:
+    linear-gradient(135deg, rgba(235,244,240,0.6), rgba(215,228,222,0.6)),
+    url("images/services/creative-studio.jpg");
 }
+
 .service-image.horizons {
-  background: linear-gradient(135deg, #e2ecf4, #d0e0ea);
+  background-image:
+    linear-gradient(135deg, rgba(226,236,244,0.6), rgba(208,224,234,0.6)),
+    url("images/services/new-horizons.jpg");
 }
+
 .service-image.grace {
-  background: linear-gradient(135deg, #f6f2ee, #eae2da);
+  background-image:
+    linear-gradient(135deg, rgba(246,242,238,0.6), rgba(234,226,218,0.6)),
+    url("images/services/anchored-in-grace.jpg");
 }
 
 /* ===============================

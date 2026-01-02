@@ -77,7 +77,13 @@ section {
 .hero {
   position: relative;
   text-align: center;
-  padding: 6rem 1.5rem 6rem;
+
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 7rem 1.5rem;
 
   background-image:
     linear-gradient(

@@ -484,3 +484,17 @@ section {
   font-size: 1.1rem;
   color: var(--ocean);
 }
+.journal-preview {
+  text-align: center;
+}
+
+.journal-intro {
+  max-width: 480px;
+  margin: 0.8rem auto 2.2rem;
+  opacity: 0.85;
+}
+
+.journal-preview-list {
+  display: grid;
+  gap: 2rem;
+}

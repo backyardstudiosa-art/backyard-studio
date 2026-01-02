@@ -564,3 +564,32 @@ section {
 .back-button:hover {
   opacity: 0.75;
 }
+.grace-reflection {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 4rem 1.5rem;
+}
+
+.scripture-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  line-height: 1.8;
+}
+
+.scripture-reference {
+  margin-top: 0.8rem;
+  opacity: 0.6;
+  font-style: italic;
+}
+
+.reflection-divider {
+  width: 60px;
+  height: 1px;
+  background: var(--accent-shell);
+  margin: 2.5rem auto;
+}
+
+.reflection-line {
+  font-size: 1.2rem;
+}

@@ -90,7 +90,9 @@ section {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
 
+/* Soft bottom fade */
 .hero::after {
   content: "";
   position: absolute;
@@ -107,6 +109,8 @@ section {
 
   pointer-events: none;
 }
+
+/* Mobile tuning */
 @media (max-width: 768px) {
   .hero {
     padding: 4.5rem 1.2rem 5rem;
@@ -124,13 +128,6 @@ section {
   margin: 0 auto;
   color: var(--driftwood);
 }
-
-.hero-logo {
-  position: absolute;
-  left: 50%;
-  bottom: -60px;
-  transform: translateX(-50%);
-} 
 
 .hero + section {
   margin-top: 4rem;

@@ -118,7 +118,8 @@ section {
 /* Mobile tuning */
 @media (max-width: 768px) {
   .hero {
-    padding: 4.5rem 1.2rem 5rem;
+    min-height: 60vh;
+    padding: 5rem 1.2rem;
     background-position: center top;
   }
 }

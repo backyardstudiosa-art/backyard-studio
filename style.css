@@ -498,3 +498,22 @@ section {
   display: grid;
   gap: 2rem;
 }
+.morning-note-list {
+  display: grid;
+  gap: 1.8rem;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.morning-note {
+  padding: 1.6rem 2rem;
+
+  font-family: 'Caveat', cursive;
+  font-size: 1.2rem;
+  text-align: center;
+
+  background: rgba(221,230,227,0.45);
+  border-radius: 22px;
+
+  color: var(--ink-soft);
+}

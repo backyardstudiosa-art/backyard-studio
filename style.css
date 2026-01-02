@@ -504,6 +504,23 @@ section {
   margin-bottom: 1.6rem;
   font-style: italic;
 }
+.journal-index {
+  display: grid;
+  gap: 3rem;
+}
+
+.journal-entry {
+  background: rgba(255,255,255,0.65);
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.journal-link {
+  display: inline-block;
+  margin-top: 1rem;
+  text-decoration: none;
+  font-style: italic;
+}
 
 .morning-note-list {
   display: grid;

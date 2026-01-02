@@ -327,3 +327,7 @@ section {
 .site-header.halo::before {
   inset: -20px;
 }
+.no-js .fade-in {
+  opacity: 1;
+  transform: none;
+}

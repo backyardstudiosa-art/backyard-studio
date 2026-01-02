@@ -244,6 +244,11 @@ section {
   opacity: 0.65;
   cursor: pointer;
   margin-top: 2rem;
+  display: block;
+  margin: 1.5rem auto 0;
+  text-align: center;
+  font-family: 'Caveat', cursive;
+  font-size: 1.1rem;  
 }
 
 /* ===============================
@@ -330,4 +335,14 @@ section {
 .no-js .fade-in {
   opacity: 1;
   transform: none;
+}
+.service-hero {
+  text-align: center;
+  padding: 4.5rem 1.5rem 3rem;
+}
+.service-hero h1 {
+  margin-bottom: 0.6rem;
+}
+.service-hero p {
+  opacity: 0.85;
 }

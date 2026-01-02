@@ -593,3 +593,19 @@ section {
 .reflection-line {
   font-size: 1.2rem;
 }
+.soft-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.6rem;
+  padding: 1.2rem;
+  font-size: 0.95rem;
+}
+
+.soft-nav a {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.soft-nav a:hover {
+  opacity: 1;
+}

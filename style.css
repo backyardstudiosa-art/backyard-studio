@@ -498,6 +498,13 @@ section {
   display: grid;
   gap: 2rem;
 }
+.journal-meta {
+  font-size: 0.95rem;
+  opacity: 0.6;
+  margin-bottom: 1.6rem;
+  font-style: italic;
+}
+
 .morning-note-list {
   display: grid;
   gap: 1.8rem;

@@ -450,3 +450,37 @@ section {
   font-size: 0.9rem;
   opacity: 0.7;
 }
+.journal-hero {
+  text-align: center;
+  padding: 4.5rem 1.5rem 3rem;
+}
+.journal-list {
+  display: grid;
+  gap: 2.5rem;
+}
+.journal-card {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 2.2rem;
+
+  background: rgba(255,255,255,0.75);
+  border-radius: 22px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+}
+
+.journal-card h3 {
+  margin-bottom: 0.6rem;
+}
+
+.journal-excerpt {
+  opacity: 0.85;
+  margin-bottom: 1rem;
+}
+
+.journal-link {
+  text-decoration: none;
+  font-family: 'Caveat', cursive;
+  font-size: 1.1rem;
+  color: var(--ocean);
+}

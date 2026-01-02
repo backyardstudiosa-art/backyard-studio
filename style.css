@@ -517,3 +517,26 @@ section {
 
   color: var(--ink-soft);
 }
+
+.back-wrapper {
+  text-align: center;
+  margin: 1.8rem 0 2.8rem;
+}
+
+.back-button {
+  font-family: 'Caveat', cursive;
+  font-size: 1.05rem;
+  text-decoration: none;
+
+  padding: 0.6rem 1.4rem;
+  border-radius: 18px;
+
+  background: rgba(221,230,227,0.55);
+  color: var(--ink-soft);
+
+  transition: opacity 0.3s ease;
+}
+
+.back-button:hover {
+  opacity: 0.75;
+}

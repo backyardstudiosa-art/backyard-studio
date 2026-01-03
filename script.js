@@ -34,3 +34,4 @@ if (noteElement) {
   noteElement.textContent =
     morningNotes[weekNumber % morningNotes.length];
 }
+document.documentElement.classList.remove("no-js");

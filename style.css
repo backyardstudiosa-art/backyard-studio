@@ -684,3 +684,8 @@ body[data-page="journal"] .soft-nav a[data-link="journal"] {
   font-size: 0.85rem;
   opacity: 0.6;
 }
+/* If JS fails or is disabled, show content */
+.no-js .fade-in {
+  opacity: 1;
+  transform: none;
+}

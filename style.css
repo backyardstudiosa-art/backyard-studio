@@ -498,12 +498,14 @@ section {
   display: grid;
   gap: 2rem;
 }
+
 .journal-meta {
-  font-size: 0.95rem;
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
   opacity: 0.6;
-  margin-bottom: 1.6rem;
-  font-style: italic;
+  letter-spacing: 0.3px;
 }
+
 .journal-index {
   display: grid;
   gap: 3rem;
@@ -657,4 +659,28 @@ body[data-page="journal"] .soft-nav a[data-link="journal"] {
     padding: 0.35rem 0.7rem;
     opacity: 0.7;
   }
+}
+.service-hero.journal {
+  padding: 7rem 1.5rem 6rem;
+  text-align: center;
+}
+
+.reflection-callout {
+  text-align: center;
+  background: rgba(250,248,245,0.7);
+  border-radius: 22px;
+}
+
+.scripture {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--driftwood);
+}
+
+.scripture-ref {
+  display: block;
+  margin-top: 0.8rem;
+  font-size: 0.85rem;
+  opacity: 0.6;
 }

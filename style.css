@@ -85,7 +85,9 @@ section {
   justify-content: center;
 
   padding: 7rem 1.5rem;
-
+  max-width: 820px;
+  margin: 0 auto;
+   
   background-image:
     linear-gradient(
       rgba(250,248,245,0.45),

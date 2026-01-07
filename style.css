@@ -483,12 +483,6 @@ section {
   margin-bottom: 1rem;
 }
 
-.journal-link {
-  text-decoration: none;
-  font-family: 'Caveat', cursive;
-  font-size: 1.1rem;
-  color: var(--ocean);
-}
 .journal-preview {
   text-align: center;
 }
@@ -517,16 +511,31 @@ section {
 }
 
 .journal-entry {
-  background: rgba(255,255,255,0.65);
-  padding: 2rem;
-  border-radius: 20px;
+  background: rgba(255,255,255,0.7);
+  padding: 2.4rem 2.2rem;
+  border-radius: 22px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+  text-align: center;
 }
 
 .journal-link {
   display: inline-block;
-  margin-top: 1rem;
+  margin-top: 1.2rem;
+
+  font-family: 'Caveat', cursive;
+  font-size: 1.1rem;
   text-decoration: none;
   font-style: italic;
+
+  color: var(--ocean);
+}
+
+.journal-list {
+  max-width: 640px;
+  margin: 0 auto;
+  display: grid;
+  gap: 3rem;
 }
 
 .morning-note-list {

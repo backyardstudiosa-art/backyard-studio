@@ -1,6 +1,6 @@
-// 🌊 Smooth scroll from hero button (only if button exists)
+// 🌊 Smooth scroll (only if elements exist)
 const exploreBtn = document.getElementById("exploreBtn");
-const aboutSection = document.querySelector(".about");
+const aboutSection = document.getElementById("who-i-am");
 
 if (exploreBtn && aboutSection) {
   exploreBtn.addEventListener("click", () => {
@@ -23,20 +23,22 @@ const morningNotes = [
 ];
 
 const noteElement = document.getElementById("morning-note");
-
 if (noteElement) {
   const now = new Date();
   const startOfYear = new Date(now.getFullYear(), 0, 1);
   const weekNumber = Math.floor(
     (now - startOfYear) / (7 * 24 * 60 * 60 * 1000)
   );
-
   noteElement.textContent =
     morningNotes[weekNumber % morningNotes.length];
 }
-document.documentElement.classList.remove("no-js");
+
+// 🌿 Daily line (home page)
 const dailyLine = document.getElementById("daily-line");
 if (dailyLine) {
   dailyLine.textContent =
-    lines[new Date().getDate() % lines.length];
+    morningNotes[new Date().getDate() % morningNotes.length];
 }
+
+// 🌿 Enable JS styling
+document.documentElement.classList.remove("no-js");

@@ -35,3 +35,8 @@ if (noteElement) {
     morningNotes[weekNumber % morningNotes.length];
 }
 document.documentElement.classList.remove("no-js");
+const dailyLine = document.getElementById("daily-line");
+if (dailyLine) {
+  dailyLine.textContent =
+    lines[new Date().getDate() % lines.length];
+}

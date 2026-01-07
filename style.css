@@ -431,9 +431,10 @@ section {
 }
 
 .scripture-callout {
-  margin: 3.5rem 0;
-  padding: 2.2rem 2rem;
+  max-width: 520px;
+  margin: 3.5rem auto;
 
+  padding: 2.2rem 2rem;
   text-align: center;
 
   background: rgba(246,241,236,0.8);

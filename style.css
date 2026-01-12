@@ -702,3 +702,7 @@ body[data-page="journal"] .soft-nav a[data-link="journal"] {
   opacity: 1;
   transform: none;
 }
+
+img {
+  border-radius: 16px;
+}

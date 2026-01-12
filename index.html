@@ -180,29 +180,7 @@
 
 <!-- 🌿 SCRIPT -->
 <script>
-  const fadeElements = document.querySelectorAll('.fade-in');
-
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.15 });
-
-  fadeElements.forEach(el => observer.observe(el));
-
-  const lines = [
-    "Let this be enough for today.",
-    "Move gently. You are not behind.",
-    "Rest is not quitting.",
-    "Even quiet seasons grow roots.",
-    "Grace holds what you release."
-  ];
-
-  document.getElementById("daily-line").textContent =
-    lines[new Date().getDate() % lines.length];
+  
 </script>
 
 </body>

@@ -255,11 +255,11 @@ section {
 .back-button {
   background: none;
   border: none;
-  opacity: 0.65;
+  opacity: 0.75;
   cursor: pointer;
   margin-top: 2rem;
   display: block;
-  margin: 1.5rem auto 0;
+  margin: 2rem auto;
   text-align: center;
   font-family: 'Caveat', cursive;
   font-size: 1.1rem;  

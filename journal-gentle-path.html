@@ -8,6 +8,21 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
+<script>
+  const password = "gentlepath";
+
+  const entered = prompt("This space is held gently. Please enter the password:");
+
+  if (entered !== password) {
+    document.body.innerHTML = `
+      <main class="container content-section">
+        <h2 class="handwritten">This path is not open yet</h2>
+        <p>Please return when you have been invited.</p>
+      </main>
+    `;
+  }
+</script>
+  
 <body data-page="journal-private">
 
 <header class="site-header halo">

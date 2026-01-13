@@ -706,3 +706,15 @@ body[data-page="journal"] .soft-nav a[data-link="journal"] {
 img {
   border-radius: 16px;
 }
+.journal-invite {
+  text-align: center;
+  max-width: 520px;
+  margin: 4rem auto;
+  opacity: 0.95;
+}
+
+.journal-private .journal-entry {
+  background: rgba(255,255,255,0.7);
+  border-radius: 22px;
+  padding: 2.4rem;
+}

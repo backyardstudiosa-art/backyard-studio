@@ -751,12 +751,20 @@ img {
 .logo-seal {
   display: flex;
   justify-content: center;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 
 .logo-seal img {
-  width: 96px;
+  width: 88px;
   height: auto;
-  opacity: 0.85;
+
+  /* softening */
+  opacity: 0.75;
+  filter:
+    saturate(0.75)
+    brightness(0.95)
+    contrast(0.95);
+
+  transition: opacity 0.3s ease;
 }
 

@@ -767,4 +767,7 @@ img {
 
   transition: opacity 0.3s ease;
 }
+.logo-seal img:hover {
+  opacity: 0.85;
+}
 

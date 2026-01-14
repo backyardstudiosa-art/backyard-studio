@@ -796,10 +796,9 @@ img {
   margin: 0 auto;
   padding-left: 0;
   text-align: left;
-  list-style: none; 
 }
 
 .soft-list li {
-  padding: 6px 0; 
+  padding: 3px 0; 
   text-align: left; 
 }

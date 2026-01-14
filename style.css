@@ -792,15 +792,6 @@ img {
   padding-bottom: 32px; /* was larger */
 }
 
-.soft-list {
-  margin-top: 8px;
-  margin-bottom: 16px;
-}
-
-.soft-list li {
-  padding: 8px 0; /* was likely 10–12px */
-}
-
 .content-section .micro {
   margin-top: 16px;
 }

@@ -718,3 +718,18 @@ img {
   border-radius: 22px;
   padding: 2.4rem;
 }
+.coming-banner {
+  max-width: 980px;
+  margin: 0 auto 20px;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.10);
+  background: rgba(255,255,255,0.55);
+  backdrop-filter: blur(6px);
+}
+
+.coming-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}

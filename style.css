@@ -733,3 +733,19 @@ img {
   height: auto;
   display: block;
 }
+.button-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.button-note {
+  margin: 0;
+  max-width: 360px;
+  text-align: center;
+  font-size: 0.9rem;
+  opacity: 0.75;
+  line-height: 1.5;
+}
+

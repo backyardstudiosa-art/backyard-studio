@@ -775,4 +775,7 @@ img {
   margin: 0 auto;
   line-height: 1.7;
 }
+.pill {
+  font-weight: 500;
+}
 

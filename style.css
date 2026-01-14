@@ -748,4 +748,15 @@ img {
   opacity: 0.75;
   line-height: 1.5;
 }
+.logo-seal {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.logo-seal img {
+  width: 96px;
+  height: auto;
+  opacity: 0.85;
+}
 

@@ -770,4 +770,9 @@ img {
 .logo-seal img:hover {
   opacity: 0.85;
 }
+.wrap-text {
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
 

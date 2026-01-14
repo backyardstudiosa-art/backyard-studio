@@ -792,10 +792,14 @@ img {
 }
 
 .soft-list {
-  margin-top: 8px;
-  margin-bottom: 16px;
+  max-width: 520px;
+  margin: 0 auto;
+  padding-left: 0;
+  text-align: left;
+  list-style: none; 
 }
 
 .soft-list li {
-  padding: 8px 0; /* was likely 10–12px */
+  padding: 6px 0; 
+  text-align: left; 
 }

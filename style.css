@@ -791,14 +791,49 @@ img {
   margin-top: 16px;
 }
 
-.soft-list {
-  max-width: 520px;
-  margin: 0 auto;
-  padding-left: 0;
-  text-align: left;
+/* ===============================
+   COMING SOON — "WHAT'S OPENING FIRST" LIST
+   Place near the bottom of style.css
+================================ */
+
+/* If your section or card is centered, keep it. */
+.content-section {
+  text-align: center;
 }
 
-.soft-list li {
-  padding: 3px 0; 
-  text-align: left; 
+/* The list itself should look centered as a block,
+   but the text inside should be left-aligned. */
+.soft-list {
+  /* layout */
+  display: inline-block;      /* key: stops full-width list */
+  max-width: 520px;
+  margin: 12px auto 16px;
+
+  /* text + spacing */
+  text-align: left;           /* key: left-align list text */
+  padding-left: 0;
+
+  /* bullets (choose one) */
+  list-style: none;           /* clean, no bullets */
+  /* list-style: disc;        */ /* use this if you want bullets */
+  /* list-style-position: inside; */ /* helpful if you use bullets */
 }
+
+/* list item rhythm */
+.soft-list li {
+  padding: 6px 0;
+  text-align: left;           /* reinforces left alignment */
+}
+
+/* Optional: slightly tighter on mobile */
+@media (max-width: 600px) {
+  .soft-list {
+    max-width: 92%;
+    margin: 10px auto 14px;
+  }
+
+  .soft-list li {
+    padding: 5px 0;
+  }
+}
+section { margin-bottom: 4rem; }

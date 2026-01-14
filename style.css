@@ -856,3 +856,30 @@ section { margin-bottom: 4rem; }
   /* alignment */
   text-align: center;                          /* or left if you prefer */
 }
+
+/* ===============================
+   SOFT PLACEHOLDER
+================================ */
+
+.soft-placeholder {
+  max-width: 520px;
+  margin: 3rem auto;
+  padding: 2.2rem 2rem;
+
+  text-align: center;
+
+  background: rgba(246,241,236,0.75);
+  border-radius: 22px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+}
+
+.soft-placeholder .handwritten {
+  font-size: 1.3rem;
+  margin-bottom: 0.6rem;
+  opacity: 0.9;
+}
+
+.soft-placeholder .micro {
+  opacity: 0.75;
+}

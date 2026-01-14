@@ -837,3 +837,22 @@ img {
   }
 }
 section { margin-bottom: 4rem; }
+
+/* ===============================
+   COMING SOON — OPENING LIST (h3 as soft lines)
+================================ */
+
+.opening-list h3 {
+  /* typography */
+  font-family: 'Inter', system-ui, sans-serif; /* same as body */
+  font-size: 1rem;                             /* calm, readable */
+  font-weight: 400;                            /* regular, not bold */
+  color: var(--ink-soft);
+
+  /* spacing */
+  margin: 6px 0;
+  line-height: 1.6;
+
+  /* alignment */
+  text-align: center;                          /* or left if you prefer */
+}

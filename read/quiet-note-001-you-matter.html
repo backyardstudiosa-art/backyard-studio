@@ -69,13 +69,12 @@
       display: none !important;
     }
 
-    .view-count {
+.view-count {
   margin: 10px 0 22px;
   font-size: 0.95rem;
   opacity: 0.65;
   font-style: italic;
 }
-
     /* Optional: prevent accidental selection vibe */
     a { text-decoration: none; }
   </style>
@@ -184,13 +183,28 @@ has meaning.</p>
 
   <script>
   (function () {
-    const key = "backyardstudio-quiet-note-001"; // change per note
+    // Change this per note
+    const noteKey = "backyardstudio-quiet-note-001";
 
-    fetch(`https://api.countapi.xyz/hit/${encodeURIComponent(key)}/views`)
+    // Once per day per device
+    const today = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
+    const localKey = `${noteKey}-lastCounted`;
+
+    const shouldCount = localStorage.getItem(localKey) !== today;
+
+    const endpoint = shouldCount
+      ? `https://api.countapi.xyz/hit/${encodeURIComponent(noteKey)}/views`
+      : `https://api.countapi.xyz/get/${encodeURIComponent(noteKey)}/views`;
+
+    fetch(endpoint)
       .then(r => r.json())
       .then(data => {
         const el = document.getElementById("views");
         if (el) el.textContent = data.value;
+
+        if (shouldCount) {
+          localStorage.setItem(localKey, today);
+        }
       })
       .catch(() => {
         const el = document.getElementById("views");

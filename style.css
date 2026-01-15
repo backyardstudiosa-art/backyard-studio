@@ -719,25 +719,42 @@ body[data-page="coming"] .sig {
   opacity: 0.7;
 }
 
-/* Coming: reduce gap after hero */
-body[data-page="coming"] .coming-hero { padding-bottom: 32px; }
+/* ===============================
+   LOGO SEAL (GLOBAL)
+   =============================== */
 
-/* Coming: logo seal */
-body[data-page="coming"] .logo-seal {
+.logo-seal {
   display: flex;
   justify-content: center;
-  margin-bottom: 14px;
+  align-items: center;
+  margin-bottom: 16px;
 }
 
-body[data-page="coming"] .logo-seal img {
-  width: 88px;
+.logo-seal img {
+  width: 72px;        /* main control */
+  max-width: 72px;    /* prevents stretching */
   height: auto;
-  opacity: 0.75;
-  filter: saturate(0.75) brightness(0.95) contrast(0.95);
-  transition: opacity 0.3s ease;
+
+  opacity: 0.78;
+  filter:
+    saturate(0.75)
+    brightness(0.96)
+    contrast(0.96);
+
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-body[data-page="coming"] .logo-seal img:hover { opacity: 0.85; }
+.logo-seal img:hover {
+  opacity: 0.9;
+  transform: scale(1.03); /* very subtle */
+}
+
+@media (max-width: 600px) {
+  .logo-seal img {
+    width: 64px;
+    max-width: 64px;
+  }
+}
 
 /* Coming: button stack */
 body[data-page="coming"] .button-stack {

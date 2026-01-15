@@ -69,16 +69,27 @@
       display: none !important;
     }
 
+    .view-count {
+  margin: 10px 0 22px;
+  font-size: 0.95rem;
+  opacity: 0.65;
+  font-style: italic;
+}
+
     /* Optional: prevent accidental selection vibe */
     a { text-decoration: none; }
   </style>
 </head>
-
+  
 <body>
   <main class="read-shell">
     <article class="read-card">
         <h1 class="read-title" align="center">You Matter</h1>
       <p class="read-sub" align="center">A gentle reminder for the days that feel heavy.</p>
+
+<p class="view-count">
+  <span id="views">—</span> quiet readings
+</p>
 
       <div class="read-content" align="center">
         <!-- Paste your full post here as paragraphs -->
@@ -170,5 +181,23 @@ has meaning.</p>
       </div>
     </article>
   </main>
+
+  <script>
+  (function () {
+    const key = "backyardstudio-quiet-note-001"; // change per note
+
+    fetch(`https://api.countapi.xyz/hit/${encodeURIComponent(key)}/views`)
+      .then(r => r.json())
+      .then(data => {
+        const el = document.getElementById("views");
+        if (el) el.textContent = data.value;
+      })
+      .catch(() => {
+        const el = document.getElementById("views");
+        if (el) el.textContent = "—";
+      });
+  })();
+</script>
+  
 </body>
 </html>

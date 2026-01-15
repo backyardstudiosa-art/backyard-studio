@@ -808,14 +808,43 @@ body[data-page="coming"] .soft-list li {
 }
 
 /* If you used <div class="opening-list"><h3>Line</h3></div> */
+/* ===============================
+   COMING: OPENING LIST (REFINED)
+================================ */
+
+body[data-page="coming"] .opening-list {
+  max-width: 520px;
+  margin: 1.8rem auto 0;
+  text-align: center;
+}
+
+/* Main list lines */
 body[data-page="coming"] .opening-list h3 {
   font-family: 'Inter', system-ui, sans-serif;
-  font-size: 1rem;
+  font-size: 0.98rem;
   font-weight: 400;
+  line-height: 1.65;
+
   color: var(--ink-soft);
+  opacity: 0.85;
+
   margin: 6px 0;
-  line-height: 1.6;
-  text-align: center;
+}
+
+/* Breathing space where <br> is used */
+body[data-page="coming"] .opening-list br {
+  display: block;
+  margin: 12px 0;
+  content: "";
+}
+
+/* Closing lines – softer, handwritten tone */
+body[data-page="coming"] .opening-list h3:last-child,
+body[data-page="coming"] .opening-list h3:nth-last-child(2) {
+  font-family: 'Caveat', cursive;
+  font-size: 1.05rem;
+  letter-spacing: 0.4px;
+  opacity: 0.9;
 }
 
 @media (max-width: 600px) {

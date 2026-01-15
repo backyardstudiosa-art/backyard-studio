@@ -821,7 +821,7 @@ body[data-page="coming"] .opening-list {
 /* Main list lines */
 body[data-page="coming"] .opening-list h3 {
   font-family: 'Inter', system-ui, sans-serif;
-  font-size: 0.98rem;
+  font-size: 0.95rem;
   font-weight: 400;
   line-height: 1.65;
 

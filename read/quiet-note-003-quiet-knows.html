@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>When the Quiet Knows | Quiet Notes - Backyard Studio </title>
+
+  <!-- Main site styling (matches your site) -->
+  <link rel="stylesheet" href="../style.css" />
+
+<!-- WhatsApp / Social preview -->
+<meta property="og:title" content="When the Quiet Knows" />
+<meta property="og:description" content="A gentle nudge. A quiet knowing. Discernment speaks softly." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://backyardstudio.co.za/read/quiet-note-003-place-to-return-to.html" />
+<meta property="og:image" content="https://backyardstudio.co.za/assets/series-003.jpg"/>
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+ <meta property="og:url" content="https://yourdomain.com/page" />
+<meta property="og:type" content="website" />
+ 
+
+  <style>
+    /* Standalone reading experience */
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f6f2ed;
+    }
+
+    .read-shell {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 22px;
+    }
+
+    .read-card {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 22px;
+      padding: 32px 26px;
+      box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+    }
+
+    .read-title {
+      margin: 0 0 10px;
+      font-size: 2rem;
+      line-height: 1.25;
+    }
+
+    .read-sub {
+      margin: 0 0 26px;
+      opacity: 0.75;
+      font-style: italic;
+    }
+
+    .read-content p {
+      margin: 0 0 16px;
+      line-height: 1.8;
+      font-size: 1.05rem;
+    }
+
+    /* Signature line */
+    .read-signature {
+      margin-top: 26px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(0,0,0,0.08);
+      font-size: 0.95rem;
+      opacity: 0.75;
+    }
+
+    /* Keep it “single doorway” */
+    nav, header, footer {
+      display: none !important;
+    }
+
+.view-count {
+  margin: 10px 0 22px;
+  font-size: 0.95rem;
+  opacity: 0.65;
+  font-style: italic;
+}
+    /* Optional: prevent accidental selection vibe */
+    a { text-decoration: none; }
+  </style>
+</head>
+  
+<body>
+  <main class="read-shell">
+    <article class="read-card">
+        <h1 class="read-title" align="center">A place to return to</h1>
+      <p class="read-sub" align="center">Come as you are.</p>
+
+      <div class="read-content" align="center">
+        <!-- Paste your full post here as paragraphs -->
+        <h2>It’s Not Just Consistency</h2>
+<br>
+<p>It’s not only about doing something every day,
+or never missing a beat.</p>
+
+<p>Sometimes it’s about arriving again.</p>
+
+<p>About returning to the page, the practice, the prayer, the work
+without shame for the space in between.</p>
+
+<p>Consistency says, keep going.
+But grace says, you’re allowed to come back.</p>
+
+<p>Life doesn’t always move in straight lines.
+There are pauses, detours, quiet seasons where nothing looks productive
+but everything is becoming.</p>
+
+<p>Picking up where you left off doesn’t mean you failed at consistency.
+It means you trusted yourself enough to return.</p>
+
+<p>To begin again, not from the beginning,
+but from experience.</p>
+
+<p>From what you already learned.
+From who you already became.</p>
+
+<p>Showing up is not always loud or perfect or daily.
+Sometimes it’s simply choosing not to abandon yourself.</p>
+
+<p>And that, too, counts.</p>
+      </div>
+
+      <div class="read-signature" align="center">
+        <a class="button ghost" 
+  href="https://wa.me/27649607349?text=Hello%20Kar%C3%A9%2C%20I%20found%20this%20note%20and%20would%20love%20to%20receive%20gentle%20updates%20when%20the%20space%20opens.%20Thank%20you%20%F0%9F%A4%8D"
+  target="_blank"
+  rel="noopener">
+  Receive gentle updates on the website launch 
+</a>
+ <br>
+<p class="view-count align="right">
+  <span id="views">—</span> quiet readings
+</p>
+       
+<br>        
+        Quiet Notes by Backyard Studio • A soft place to breathe.
+      </div>
+    </article>
+  </main>
+
+  <script>
+  (function () {
+    // Change this per note
+    const noteKey = "backyardstudio-quiet-note-002";
+
+    // Once per day per device
+    const today = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
+    const localKey = `${noteKey}-lastCounted`;
+
+    const shouldCount = localStorage.getItem(localKey) !== today;
+
+    const endpoint = shouldCount
+      ? `https://api.countapi.xyz/hit/${encodeURIComponent(noteKey)}/views`
+      : `https://api.countapi.xyz/get/${encodeURIComponent(noteKey)}/views`;
+
+    fetch(endpoint)
+      .then(r => r.json())
+      .then(data => {
+        const el = document.getElementById("views");
+        if (el) el.textContent = data.value;
+
+        if (shouldCount) {
+          localStorage.setItem(localKey, today);
+        }
+      })
+      .catch(() => {
+        const el = document.getElementById("views");
+        if (el) el.textContent = "—";
+      });
+  })();
+</script>
+  
+</body>
+</html>

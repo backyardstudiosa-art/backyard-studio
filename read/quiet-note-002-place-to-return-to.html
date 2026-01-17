@@ -3,174 +3,148 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>A place to Return To | Backyard Studio</title>
+  <title>A Place to Return To | Quiet Notes - Backyard Studio</title>
 
-  <!-- Main site styling (matches your site) -->
   <link rel="stylesheet" href="../style.css" />
 
-<!-- WhatsApp / Social preview -->
-<meta property="og:title" content="A Place to Return To" />
-<meta property="og:description" content="Come as you are." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://backyardstudio.co.za/read/quiet-note-002-place-to-return-to.html" />
-<meta property="og:image" content="https://backyardstudio.co.za/assets/preview-v2.jpg"/>
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta name="twitter:card" content="summary_large_image" />
+  <meta name="description" content="Come as you are." />
+
+  <meta property="og:title" content="A Place to Return To" />
+  <meta property="og:description" content="Come as you are." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://backyardstudio.co.za/read/quiet-note-002-place-to-return-to.html" />
+  <meta property="og:image" content="https://backyardstudio.co.za/assets/preview-v2.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
 
   <style>
-    /* Standalone reading experience */
-    body {
-      margin: 0;
-      padding: 0;
-      background: #f6f2ed;
-    }
+    body { margin: 0; padding: 0; background: #f6f2ed; }
+    .read-shell { max-width: 760px; margin: 0 auto; padding: 48px 22px; }
+    .read-card { background: rgba(255,255,255,0.9); border-radius: 22px; padding: 32px 26px; box-shadow: 0 18px 40px rgba(0,0,0,0.08); }
+    .read-content p { margin: 0 0 16px; line-height: 1.8; font-size: 1.05rem; }
+    .read-signature { margin-top: 26px; padding-top: 16px; border-top: 1px solid rgba(0,0,0,0.08); font-size: 0.95rem; opacity: 0.75; }
+    nav, header, footer { display: none !important; }
+    .view-count { margin: 10px 0 22px; font-size: 0.95rem; opacity: 0.65; font-style: italic; }
+    .logo-seal { margin-top: 24px; max-width: 120px; opacity: 0.75; transition: opacity 0.4s ease; }
+    .logo-seal:hover { opacity: 1; }
 
-    .read-shell {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 48px 22px;
-    }
+    .qn-banner{ width: 100%; height: 320px; border-radius: 18px; margin: 0 0 28px; background: linear-gradient(180deg, rgba(245,241,236,0.95), rgba(233,220,203,0.9)); position: relative; overflow: hidden; }
+    .qn-banner::after{ content: ""; position: absolute; inset: 0; background: url("/assets/grain.png"); opacity: 0.08; pointer-events: none; }
+    .qn-banner.has-image{ background-size: cover; background-position: center; background-repeat: no-repeat; }
+    @media (max-width: 768px){ .qn-banner{ height: 220px; border-radius: 14px; } }
 
-    .read-card {
-      background: rgba(255, 255, 255, 0.9);
-      border-radius: 22px;
-      padding: 32px 26px;
-      box-shadow: 0 18px 40px rgba(0,0,0,0.08);
-    }
+    .qn-header { margin: 10px 0 22px; }
+    .qn-series-subtitle{ font-family: 'Inter', system-ui, sans-serif; font-size: 0.95rem; letter-spacing: 0.02em; color: var(--ink-soft); opacity: 0.9; margin: 0 0 10px; text-align: center; }
+    .qn-title{ font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4vw, 2.6rem); line-height: 1.15; margin: 0 0 10px; color: var(--ink); text-align: center; }
+    .qn-read-sub{ font-family: 'Inter', system-ui, sans-serif; font-size: 1rem; line-height: 1.6; color: var(--ink-soft); margin: 0; text-align: center; font-style: italic; opacity: 0.9; }
 
-    .read-title {
-      margin: 0 0 10px;
-      font-size: 2rem;
-      line-height: 1.25;
-    }
-
-    .read-sub {
-      margin: 0 0 26px;
-      opacity: 0.75;
-      font-style: italic;
-    }
-
-    .read-content p {
-      margin: 0 0 16px;
-      line-height: 1.8;
-      font-size: 1.05rem;
-    }
-
-    /* Signature line */
-    .read-signature {
-      margin-top: 26px;
-      padding-top: 16px;
-      border-top: 1px solid rgba(0,0,0,0.08);
-      font-size: 0.95rem;
-      opacity: 0.75;
-    }
-
-    /* Keep it “single doorway” */
-    nav, header, footer {
-      display: none !important;
-    }
-
-.view-count {
-  margin: 10px 0 22px;
-  font-size: 0.95rem;
-  opacity: 0.65;
-  font-style: italic;
-}
-    /* Optional: prevent accidental selection vibe */
+    .qn-series-nav{ margin-top: 40px; text-align: center; }
+    .qn-series-button{ display: inline-block; padding: 12px 26px; border-radius: 999px; font-family: 'Inter', system-ui, sans-serif; font-size: 0.95rem; color: var(--ink); text-decoration: none; border: 1px solid rgba(0,0,0,0.15); background-color: transparent; transition: all 0.25s ease; }
+    .qn-series-button:hover{ background-color: var(--sand-light); border-color: rgba(0,0,0,0.25); transform: translateY(-1px); }
     a { text-decoration: none; }
   </style>
 </head>
-  
+
 <body>
   <main class="read-shell">
     <article class="read-card">
-        <h1 class="read-title" align="center">A place to return to</h1>
-      <p class="read-sub" align="center">Come as you are.</p>
 
-      <div class="read-content" align="center">
-        <!-- Paste your full post here as paragraphs -->
-        <h2>It’s Not Just Consistency</h2>
-<br>
-<p>It’s not only about doing something every day,
-or never missing a beat.</p>
+      <div class="qn-banner has-image" style="background-image: url('/assets/002-banner.png');"></div>
 
-<p>Sometimes it’s about arriving again.</p>
+      <header class="qn-header">
+        <p class="qn-series-subtitle">A gentle place for truth, release, and return.</p>
+        <h1 class="qn-title">A Place to Return To</h1>
+        <p class="qn-read-sub">Come as you are.</p>
+      </header>
 
-<p>About returning to the page, the practice, the prayer, the work
-without shame for the space in between.</p>
+      <p class="view-count" align="right">
+        <span id="views">—</span> quiet readings
+      </p>
 
-<p>Consistency says, keep going.
-But grace says, you’re allowed to come back.</p>
+      <div class="read-content">
+        <p><strong>It’s Not Just Consistency</strong></p>
 
-<p>Life doesn’t always move in straight lines.
-There are pauses, detours, quiet seasons where nothing looks productive
-but everything is becoming.</p>
+        <p>It’s not only about doing something every day,<br>
+        or never missing a beat.</p>
 
-<p>Picking up where you left off doesn’t mean you failed at consistency.
-It means you trusted yourself enough to return.</p>
+        <p>Sometimes it’s about arriving again.</p>
 
-<p>To begin again, not from the beginning,
-but from experience.</p>
+        <p>About returning to the page, the practice, the prayer, the work<br>
+        without shame for the space in between.</p>
 
-<p>From what you already learned.
-From who you already became.</p>
+        <p>Consistency says, keep going.<br>
+        But grace says, you’re allowed to come back.</p>
 
-<p>Showing up is not always loud or perfect or daily.
-Sometimes it’s simply choosing not to abandon yourself.</p>
+        <p>Life doesn’t always move in straight lines.<br>
+        There are pauses, detours, quiet seasons where nothing looks productive<br>
+        but everything is becoming.</p>
 
-<p>And that, too, counts.</p>
+        <p>Picking up where you left off doesn’t mean you failed at consistency.<br>
+        It means you trusted yourself enough to return.</p>
+
+        <p>To begin again, not from the beginning,<br>
+        but from experience.</p>
+
+        <p>From what you already learned.<br>
+        From who you already became.</p>
+
+        <p>Showing up is not always loud or perfect or daily.<br>
+        Sometimes it’s simply choosing not to abandon yourself.</p>
+
+        <p>And that, too, counts.</p>
+      </div>
+
+      <div class="qn-series-nav">
+        <a href="/read/index.html" class="qn-series-button">Read other Quiet Notes</a>
       </div>
 
       <div class="read-signature" align="center">
-        <a class="button ghost" 
-  href="https://wa.me/27649607349?text=Hello%20Kar%C3%A9%2C%20I%20found%20this%20note%20and%20would%20love%20to%20receive%20gentle%20updates%20when%20the%20space%20opens.%20Thank%20you%20%F0%9F%A4%8D"
-  target="_blank"
-  rel="noopener">
-  Receive gentle updates on the website launch 
-</a>
- <br>
-<p class="view-count align="right">
-  <span id="views">—</span> quiet readings
-</p>
-       
-<br>        
-        Quiet Notes by Backyard Studio • A soft place to breathe.
+        <a class="button ghost"
+          href="https://wa.me/27649607349?text=Hello%20Kar%C3%A9%2C%20I%20found%20this%20note%20and%20would%20love%20to%20receive%20gentle%20updates%20when%20the%20space%20opens.%20Thank%20you%20%F0%9F%A4%8D"
+          target="_blank"
+          rel="noopener">
+          Receive gentle updates on the website launch
+        </a>
+
+        <br>
+
+        <img
+          src="/assets/stlogo1.png"
+          alt="Backyard Studio logo"
+          loading="lazy"
+          class="logo-seal"
+        />
+
+        <p>Quiet Notes by Backyard Studio • A gentle place for truth, release, and return.</p>
       </div>
+
     </article>
   </main>
 
   <script>
-  (function () {
-    // Change this per note
-    const noteKey = "backyardstudio-quiet-note-002";
+    (function () {
+      const noteKey = "backyardstudio-quiet-note-002";
+      const today = new Date().toISOString().slice(0, 10);
+      const localKey = `${noteKey}-lastCounted`;
+      const shouldCount = localStorage.getItem(localKey) !== today;
 
-    // Once per day per device
-    const today = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
-    const localKey = `${noteKey}-lastCounted`;
+      const endpoint = shouldCount
+        ? `https://api.countapi.xyz/hit/${encodeURIComponent(noteKey)}/views`
+        : `https://api.countapi.xyz/get/${encodeURIComponent(noteKey)}/views`;
 
-    const shouldCount = localStorage.getItem(localKey) !== today;
-
-    const endpoint = shouldCount
-      ? `https://api.countapi.xyz/hit/${encodeURIComponent(noteKey)}/views`
-      : `https://api.countapi.xyz/get/${encodeURIComponent(noteKey)}/views`;
-
-    fetch(endpoint)
-      .then(r => r.json())
-      .then(data => {
-        const el = document.getElementById("views");
-        if (el) el.textContent = data.value;
-
-        if (shouldCount) {
-          localStorage.setItem(localKey, today);
-        }
-      })
-      .catch(() => {
-        const el = document.getElementById("views");
-        if (el) el.textContent = "—";
-      });
-  })();
-</script>
-  
+      fetch(endpoint)
+        .then(r => r.json())
+        .then(data => {
+          const el = document.getElementById("views");
+          if (el) el.textContent = data.value;
+          if (shouldCount) localStorage.setItem(localKey, today);
+        })
+        .catch(() => {
+          const el = document.getElementById("views");
+          if (el) el.textContent = "—";
+        });
+    })();
+  </script>
 </body>
 </html>

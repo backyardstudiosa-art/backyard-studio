@@ -147,6 +147,13 @@ section { margin-bottom: 4rem; }
   padding: 2rem 1rem 1rem;
 }
 
+.site-header img {
+  width: min(100%, 720px);
+  height: auto;
+  opacity: 0.88;
+  filter: drop-shadow(0 8px 18px rgba(180, 150, 110, 0.18));
+}
+
 .site-logo {
   max-width: 130px;
   height: auto;
@@ -199,7 +206,7 @@ section { margin-bottom: 4rem; }
   margin-bottom: 1.2rem;
 
   background-color: rgba(245, 241, 236, 0.4);
-  filter: contrast(1.05) saturate(1.08);
+  filter: contrast(1.12) saturate(1.16);
 
   box-shadow:
     inset 0 0 0 1px rgba(255,255,255,0.5),

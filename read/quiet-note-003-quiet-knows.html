@@ -3,184 +3,133 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>When the Quiet Knows | Quiet Notes - Backyard Studio </title>
+  <title>When the Quiet Knows | Quiet Notes - Backyard Studio</title>
 
-  <!-- Main site styling (matches your site) -->
   <link rel="stylesheet" href="../style.css" />
 
-<!-- WhatsApp / Social preview -->
-<meta property="og:title" content="When the Quiet Knows" />
-<meta property="og:description" content="A gentle nudge. A quiet knowing. Discernment speaks softly." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://backyardstudio.co.za/read/quiet-note-003-quiet-knows.html" />
-<meta property="og:image" content="https://backyardstudio.co.za/assets/003.png" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
+  <meta name="description" content="A gentle nudge. A quiet knowing. Discernment speaks softly." />
+
+  <meta property="og:title" content="When the Quiet Knows" />
+  <meta property="og:description" content="A gentle nudge. A quiet knowing. Discernment speaks softly." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://backyardstudio.co.za/read/quiet-note-003-quiet-knows.html" />
+  <meta property="og:image" content="https://backyardstudio.co.za/assets/003.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
 
   <style>
-    /* Standalone reading experience */
-    body {
-      margin: 0;
-      padding: 0;
-      background: #f6f2ed;
-    }
+    body { margin: 0; padding: 0; background: #f6f2ed; }
+    .read-shell { max-width: 760px; margin: 0 auto; padding: 48px 22px; }
+    .read-card { background: rgba(255,255,255,0.9); border-radius: 22px; padding: 32px 26px; box-shadow: 0 18px 40px rgba(0,0,0,0.08); }
+    .read-content p { margin: 0 0 16px; line-height: 1.8; font-size: 1.05rem; }
+    .read-signature { margin-top: 26px; padding-top: 16px; border-top: 1px solid rgba(0,0,0,0.08); font-size: 0.95rem; opacity: 0.75; }
+    nav, header, footer { display: none !important; }
+    .view-count { margin: 10px 0 22px; font-size: 0.95rem; opacity: 0.65; font-style: italic; }
+    .logo-seal { margin-top: 24px; max-width: 120px; opacity: 0.75; transition: opacity 0.4s ease; }
+    .logo-seal:hover { opacity: 1; }
 
-    .read-shell {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 48px 22px;
-    }
+    .qn-banner{ width: 100%; height: 320px; border-radius: 18px; margin: 0 0 28px; background: linear-gradient(180deg, rgba(245,241,236,0.95), rgba(233,220,203,0.9)); position: relative; overflow: hidden; }
+    .qn-banner::after{ content: ""; position: absolute; inset: 0; background: url("/assets/grain.png"); opacity: 0.08; pointer-events: none; }
+    .qn-banner.has-image{ background-size: cover; background-position: center; background-repeat: no-repeat; }
+    @media (max-width: 768px){ .qn-banner{ height: 220px; border-radius: 14px; } }
 
-    .read-card {
-      background: rgba(255, 255, 255, 0.9);
-      border-radius: 22px;
-      padding: 32px 26px;
-      box-shadow: 0 18px 40px rgba(0,0,0,0.08);
-    }
+    .qn-header { margin: 10px 0 22px; }
+    .qn-series-subtitle{ font-family: 'Inter', system-ui, sans-serif; font-size: 0.95rem; letter-spacing: 0.02em; color: var(--ink-soft); opacity: 0.9; margin: 0 0 10px; text-align: center; }
+    .qn-title{ font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4vw, 2.6rem); line-height: 1.15; margin: 0 0 10px; color: var(--ink); text-align: center; }
+    .qn-read-sub{ font-family: 'Inter', system-ui, sans-serif; font-size: 1rem; line-height: 1.6; color: var(--ink-soft); margin: 0; text-align: center; font-style: italic; opacity: 0.9; }
 
-    .read-title {
-      margin: 0 0 10px;
-      font-size: 2rem;
-      line-height: 1.25;
-    }
-
-    .read-sub {
-      margin: 0 0 26px;
-      opacity: 0.75;
-      font-style: italic;
-    }
-
-    .read-content p {
-      margin: 0 0 16px;
-      line-height: 1.8;
-      font-size: 1.05rem;
-    }
-
-    /* Signature line */
-    .read-signature {
-      margin-top: 26px;
-      padding-top: 16px;
-      border-top: 1px solid rgba(0,0,0,0.08);
-      font-size: 0.95rem;
-      opacity: 0.75;
-    }
-
-    /* Keep it “single doorway” */
-    nav, header, footer {
-      display: none !important;
-    }
-
-.view-count {
-  margin: 10px 0 22px;
-  font-size: 0.95rem;
-  opacity: 0.65;
-  font-style: italic;
-}
-
-.logo-seal {
-  margin-top: 24px;
-  max-width: 120px;
-  opacity: 0.75;
-  transition: opacity 0.4s ease;
-}
-
-.logo-seal:hover {
-  opacity: 1;
-}
-
-    /* Optional: prevent accidental selection vibe */
+    .qn-series-nav{ margin-top: 40px; text-align: center; }
+    .qn-series-button{ display: inline-block; padding: 12px 26px; border-radius: 999px; font-family: 'Inter', system-ui, sans-serif; font-size: 0.95rem; color: var(--ink); text-decoration: none; border: 1px solid rgba(0,0,0,0.15); background-color: transparent; transition: all 0.25s ease; }
+    .qn-series-button:hover{ background-color: var(--sand-light); border-color: rgba(0,0,0,0.25); transform: translateY(-1px); }
     a { text-decoration: none; }
   </style>
 </head>
-  
+
 <body>
   <main class="read-shell">
     <article class="read-card">
-        <h1 class="read-title" align="center">When the Quiet Knows</h1><br>
-      <p class="read-sub" align="center">Sometimes clarity doesn’t arrive as answers, but as a soft knowing.
-A gentle pause.
-A quiet nudge that says look closer, be careful, this isn’t for you.
-Discernment speaks in whispers, and when we listen, truth feels calm rather than forced.</p>
 
-      <div class="read-content" align="center">
-        <!-- Paste your full post here as paragraphs -->
-        <p>There is a quiet intelligence that visits us in the morning.
-Not loud. Not urgent. Just present. 🌫️🌤️</p>
+      <div class="qn-banner has-image" style="background-image: url('/assets/003-banner.png');"></div>
 
-<p>Before the day gathers its noise, discernment wakes first. It arrives as clarity rather than conclusion. A soft internal knowing that does not argue or persuade, it simply reveals. A gentle whisper that says: look here, pause, this does not belong to you, this path is not yours to carry.</p>
+      <header class="qn-header">
+        <p class="qn-series-subtitle">A gentle place for truth, release, and return.</p>
+        <h1 class="qn-title">When the Quiet Knows</h1>
+        <p class="qn-read-sub">A gentle nudge. A quiet knowing. Discernment speaks softly.</p>
+      </header>
 
-        <p>
-Intuition often speaks when the mind has stopped rehearsing its fears. In that stillness, truth feels lighter. It doesn’t demand proof. It settles into the body like breath finding its rhythm again. You may not have all the reasons, but you have the signal. And the signal is enough.</p>
+      <p class="view-count" align="right">
+        <span id="views">—</span> quiet readings
+      </p>
 
-        <p>
-Discernment is not suspicion, nor is it doubt. It is wisdom refined by awareness. It helps you sense when something is misaligned even if it looks good on the surface. It teaches you to trust the unease, the subtle tightening, the quiet resistance that says this direction will cost you more than it gives.</p>
+      <div class="read-content">
+        <p>There is a quiet intelligence that visits us in the morning.<br>
+        Not loud. Not urgent. Just present. 🌫️🌤️</p>
 
-        <p>
-Sometimes the clearest guidance comes not as a command, but as a release. A knowing that you don’t need to push forward. That you are allowed to step back. That not every open door is meant to be entered.</p>
+        <p>Before the day gathers its noise, discernment wakes first. It arrives as clarity rather than conclusion. A soft internal knowing that does not argue or persuade, it simply reveals. A gentle whisper that says: look here, pause, this does not belong to you, this path is not yours to carry.</p>
 
-        <p>
-When you learn to listen to that morning voice, life becomes less about forcing certainty and more about honoring clarity. You begin to move with discernment instead of urgency, with intuition instead of fear. And slowly, gently, you find yourself walking away from what drains you and toward what feels true, even if it cannot yet be explained.</p>
+        <p>Intuition often speaks when the mind has stopped rehearsing its fears. In that stillness, truth feels lighter. It doesn’t demand proof. It settles into the body like breath finding its rhythm again. You may not have all the reasons, but you have the signal. And the signal is enough.</p>
 
-        <p>
-Trust that whisper.
-It speaks in peace, not pressure.
-</p>
+        <p>Discernment is not suspicion, nor is it doubt. It is wisdom refined by awareness. It helps you sense when something is misaligned even if it looks good on the surface. It teaches you to trust the unease, the subtle tightening, the quiet resistance that says this direction will cost you more than it gives.</p>
+
+        <p>Sometimes the clearest guidance comes not as a command, but as a release. A knowing that you don’t need to push forward. That you are allowed to step back. That not every open door is meant to be entered.</p>
+
+        <p>When you learn to listen to that morning voice, life becomes less about forcing certainty and more about honoring clarity. You begin to move with discernment instead of urgency, with intuition instead of fear. And slowly, gently, you find yourself walking away from what drains you and toward what feels true, even if it cannot yet be explained.</p>
+
+        <p>Trust that whisper.<br>
+        It speaks in peace, not pressure.</p>
+      </div>
+
+      <div class="qn-series-nav">
+        <a href="/read/index.html" class="qn-series-button">Read other Quiet Notes</a>
       </div>
 
       <div class="read-signature" align="center">
-        <a class="button ghost" 
-  href="https://wa.me/27649607349?text=Hello%20Kar%C3%A9%2C%20I%20found%20this%20note%20and%20would%20love%20to%20receive%20gentle%20updates%20when%20the%20space%20opens.%20Thank%20you%20%F0%9F%A4%8D"
-  target="_blank"
-  rel="noopener">
-  Receive gentle updates on the website launch 
-</a>
- <br>
-<p class="view-count align="right">
-  <span id="views">—</span> quiet readings
-</p>
-       <img 
-  src="/assets/stlogo1.png"
-  alt="Backyard Studio logo"
-  loading="lazy"
-  class="logo-seal"
-/>
-        
-        Quiet Notes by Backyard Studio • A soft place to breathe.
+        <a class="button ghost"
+          href="https://wa.me/27649607349?text=Hello%20Kar%C3%A9%2C%20I%20found%20this%20note%20and%20would%20love%20to%20receive%20gentle%20updates%20when%20the%20space%20opens.%20Thank%20you%20%F0%9F%A4%8D"
+          target="_blank"
+          rel="noopener">
+          Receive gentle updates on the website launch
+        </a>
+
+        <br>
+
+        <img
+          src="/assets/stlogo1.png"
+          alt="Backyard Studio logo"
+          loading="lazy"
+          class="logo-seal"
+        />
+
+        <p>Quiet Notes by Backyard Studio • A gentle place for truth, release, and return.</p>
       </div>
+
     </article>
   </main>
 
   <script>
-  (function () {
-    // Change this per note
-    const noteKey = "backyardstudio-quiet-note-003";
+    (function () {
+      const noteKey = "backyardstudio-quiet-note-003";
+      const today = new Date().toISOString().slice(0, 10);
+      const localKey = `${noteKey}-lastCounted`;
+      const shouldCount = localStorage.getItem(localKey) !== today;
 
-    // Once per day per device
-    const today = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
-    const localKey = `${noteKey}-lastCounted`;
+      const endpoint = shouldCount
+        ? `https://api.countapi.xyz/hit/${encodeURIComponent(noteKey)}/views`
+        : `https://api.countapi.xyz/get/${encodeURIComponent(noteKey)}/views`;
 
-    const shouldCount = localStorage.getItem(localKey) !== today;
-
-    const endpoint = shouldCount
-      ? `https://api.countapi.xyz/hit/${encodeURIComponent(noteKey)}/views`
-      : `https://api.countapi.xyz/get/${encodeURIComponent(noteKey)}/views`;
-
-    fetch(endpoint)
-      .then(r => r.json())
-      .then(data => {
-        const el = document.getElementById("views");
-        if (el) el.textContent = data.value;
-
-        if (shouldCount) {
-          localStorage.setItem(localKey, today);
-        }
-      })
-      .catch(() => {
-        const el = document.getElementById("views");
-        if (el) el.textContent = "—";
-      });
-  })();
-</script>
-  
+      fetch(endpoint)
+        .then(r => r.json())
+        .then(data => {
+          const el = document.getElementById("views");
+          if (el) el.textContent = data.value;
+          if (shouldCount) localStorage.setItem(localKey, today);
+        })
+        .catch(() => {
+          const el = document.getElementById("views");
+          if (el) el.textContent = "—";
+        });
+    })();
+  </script>
 </body>
 </html>

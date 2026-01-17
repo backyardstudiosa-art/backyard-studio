@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>You Matter | Backyard Studio</title>
+  <title>You Matter | Quiet Notes - Backyard Studio</title>
 
-  <!-- Main site styling (matches your site) -->
+  <!-- Main site styling -->
   <link rel="stylesheet" href="../style.css" />
 
-  <!-- WhatsApp / Social preview -->
+  <!-- SEO + Social preview -->
+  <meta name="description" content="A gentle reminder for imperfect days. Showing up matters. You matter." />
+
   <meta property="og:title" content="You Matter" />
   <meta property="og:description" content="A gentle reminder for imperfect days. Showing up matters. You matter." />
   <meta property="og:type" content="article" />
@@ -17,45 +19,19 @@
   <meta name="twitter:card" content="summary_large_image" />
 
   <style>
-    /* Standalone reading experience */
-    body {
-      margin: 0;
-      padding: 0;
-      background: #f6f2ed;
-    }
+    body { margin: 0; padding: 0; background: #f6f2ed; }
 
-    .read-shell {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 48px 22px;
-    }
+    .read-shell { max-width: 760px; margin: 0 auto; padding: 48px 22px; }
 
     .read-card {
-      background: rgba(255, 255, 255, 0.9);
+      background: rgba(255,255,255,0.9);
       border-radius: 22px;
       padding: 32px 26px;
       box-shadow: 0 18px 40px rgba(0,0,0,0.08);
     }
 
-    .read-title {
-      margin: 0 0 10px;
-      font-size: 2rem;
-      line-height: 1.25;
-    }
+    .read-content p { margin: 0 0 16px; line-height: 1.8; font-size: 1.05rem; }
 
-    .read-sub {
-      margin: 0 0 26px;
-      opacity: 0.75;
-      font-style: italic;
-    }
-
-    .read-content p {
-      margin: 0 0 16px;
-      line-height: 1.8;
-      font-size: 1.05rem;
-    }
-
-    /* Signature line */
     .read-signature {
       margin-top: 26px;
       padding-top: 16px;
@@ -64,154 +40,239 @@
       opacity: 0.75;
     }
 
-    /* Keep it “single doorway” */
-    nav, header, footer {
-      display: none !important;
+    nav, header, footer { display: none !important; }
+
+    .view-count { margin: 10px 0 22px; font-size: 0.95rem; opacity: 0.65; font-style: italic; }
+
+    .logo-seal { margin-top: 24px; max-width: 120px; opacity: 0.75; transition: opacity 0.4s ease; }
+    .logo-seal:hover { opacity: 1; }
+
+    /* QUIET NOTE IMAGE BANNER */
+    .qn-banner{
+      width: 100%;
+      height: 320px;
+      border-radius: 18px;
+      margin: 0 0 28px;
+      background: linear-gradient(180deg, rgba(245,241,236,0.95), rgba(233,220,203,0.9));
+      position: relative;
+      overflow: hidden;
     }
 
-.view-count {
-  margin: 10px 0 22px;
-  font-size: 0.95rem;
-  opacity: 0.65;
-  font-style: italic;
-}
-    /* Optional: prevent accidental selection vibe */
+    /* Optional subtle texture (remove if the file doesn't exist) */
+    .qn-banner::after{
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: url("/assets/grain.png");
+      opacity: 0.08;
+      pointer-events: none;
+    }
+
+    .qn-banner.has-image{
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    @media (max-width: 768px){
+      .qn-banner{ height: 220px; border-radius: 14px; }
+    }
+
+    /* Quiet Notes header system */
+    .qn-header { margin: 10px 0 22px; }
+    .qn-series-subtitle{
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 0.95rem;
+      letter-spacing: 0.02em;
+      color: var(--ink-soft);
+      opacity: 0.9;
+      margin: 0 0 10px;
+      text-align: center;
+    }
+    .qn-title{
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 4vw, 2.6rem);
+      line-height: 1.15;
+      margin: 0 0 10px;
+      color: var(--ink);
+      text-align: center;
+    }
+    .qn-read-sub{
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--ink-soft);
+      margin: 0;
+      text-align: center;
+      font-style: italic;
+      opacity: 0.9;
+    }
+
+    /* Series button */
+    .qn-series-nav{ margin-top: 40px; text-align: center; }
+    .qn-series-button{
+      display: inline-block;
+      padding: 12px 26px;
+      border-radius: 999px;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 0.95rem;
+      color: var(--ink);
+      text-decoration: none;
+      border: 1px solid rgba(0,0,0,0.15);
+      background-color: transparent;
+      transition: all 0.25s ease;
+    }
+    .qn-series-button:hover{
+      background-color: var(--sand-light);
+      border-color: rgba(0,0,0,0.25);
+      transform: translateY(-1px);
+    }
+
     a { text-decoration: none; }
   </style>
 </head>
-  
+
 <body>
   <main class="read-shell">
     <article class="read-card">
-        <h1 class="read-title" align="center">You Matter</h1>
-      <p class="read-sub" align="center">A gentle reminder for the days that feel heavy.</p>
 
-<p class="view-count">
-  <span id="views">—</span> quiet readings
-</p>
+      <!-- Quiet Note banner -->
+      <div class="qn-banner has-image" style="background-image: url('/assets/001-banner.png');"></div>
 
-      <div class="read-content" align="center">
-        <!-- Paste your full post here as paragraphs -->
-        <p>You don’t have to be perfect.
-Not today. Not ever.</p>
+      <header class="qn-header">
+        <p class="qn-series-subtitle">A gentle place for truth, release, and return.</p>
+        <h1 class="qn-title">You Matter</h1>
+        <p class="qn-read-sub">A gentle reminder for the days that feel heavy.</p>
+      </header>
 
-<p>Some days your hair won’t fall into place,
-your face won’t feel polished,
-your energy won’t meet the plans you made.
-Some days will feel heavy, uneven, unfinished.</p>
+      <p class="view-count" align="right">
+        <span id="views">—</span> quiet readings
+      </p>
 
-<p>And that’s not failure.
-That’s being human.</p>
+      <div class="read-content">
+        <p>You don’t have to be perfect.<br>Not today. Not ever.</p>
 
-<p>Life was never meant to be a flawless performance.
-It’s meant to be lived honestly.
-With your heart open.
-With your feet still moving, even when they’re tired.</p>
+        <p>Some days your hair won’t fall into place,<br>
+        your face won’t feel polished,<br>
+        your energy won’t meet the plans you made.<br>
+        Some days will feel heavy, uneven, unfinished.</p>
 
-<p>The things we’re quick to dismiss as small or ordinary
-are often the ones that carry the most weight.</p>
+        <p>And that’s not failure.<br>That’s being human.</p>
 
-<p>Showing up matters.
-Trying, even quietly, matters.
-Caring matters.
-Loving with your whole heart matters.
-And sometimes, simply being present
-is more than enough.</p>
+        <p>Life was never meant to be a flawless performance.<br>
+        It’s meant to be lived honestly.<br>
+        With your heart open.<br>
+        With your feet still moving, even when they’re tired.</p>
 
-<p>You don’t need to prove your worth by doing more
-or becoming someone else.
-You don’t need to punish yourself for what didn’t work out
-or overlook the things you did right.</p>
+        <p>The things we’re quick to dismiss as small or ordinary<br>
+        are often the ones that carry the most weight.</p>
 
-<p>Pause long enough to see yourself clearly.
-Take pride in what you’ve carried.
-Acknowledge every step you’ve taken,
-no matter how small it seemed at the time.</p>
+        <p>Showing up matters.<br>
+        Trying, even quietly, matters.<br>
+        Caring matters.<br>
+        Loving with your whole heart matters.<br>
+        And sometimes, simply being present<br>
+        is more than enough.</p>
 
-<p>You may not be where you hoped you’d be by now,
-and that’s okay.
-There’s no rush that’s worth losing yourself along the way.</p>
+        <p>You don’t need to prove your worth by doing more<br>
+        or becoming someone else.<br>
+        You don’t need to punish yourself for what didn’t work out<br>
+        or overlook the things you did right.</p>
 
-<p>Beauty still finds you every day
-in laughter you didn’t expect,
-in a familiar smile,
-in the hush of a sunset that asks nothing from you
-except that you notice it.</p>
+        <p>Pause long enough to see yourself clearly.<br>
+        Take pride in what you’ve carried.<br>
+        Acknowledge every step you’ve taken,<br>
+        no matter how small it seemed at the time.</p>
 
-<p>Maybe you haven’t stopped believing in beauty.
-Maybe you’ve just been too hard on yourself to see it.</p>
+        <p>You may not be where you hoped you’d be by now,<br>
+        and that’s okay.<br>
+        There’s no rush that’s worth losing yourself along the way.</p>
 
-<p>So soften.
-Lift your eyes.
-Let yourself remember this truth:</p>
+        <p>Beauty still finds you every day<br>
+        in laughter you didn’t expect,<br>
+        in a familiar smile,<br>
+        in the hush of a sunset that asks nothing from you<br>
+        except that you notice it.</p>
 
-<p>You matter.
-Deeply.
-Intentionally.
-Just as you are.</p>
+        <p>Maybe you haven’t stopped believing in beauty.<br>
+        Maybe you’ve just been too hard on yourself to see it.</p>
 
-<p>The things you thought were insignificant
-were never small at all.</p>
+        <p>So soften.<br>
+        Lift your eyes.<br>
+        Let yourself remember this truth:</p>
 
-<p>They matter.
-You matter.</p>
+        <p>You matter.<br>
+        Deeply.<br>
+        Intentionally.<br>
+        Just as you are.</p>
 
-<p>Turn the page gently.
-Begin again, without shame.</p>
+        <p>The things you thought were insignificant<br>
+        were never small at all.</p>
 
-<p>Everything you are,
-everything you offer,
-everything you are becoming
-has meaning.</p>
+        <p>They matter.<br>
+        You matter.</p>
 
-<p>And it all begins with you. 🌿
-</p>
+        <p>Turn the page gently.<br>
+        Begin again, without shame.</p>
+
+        <p>Everything you are,<br>
+        everything you offer,<br>
+        everything you are becoming<br>
+        has meaning.</p>
+
+        <p>And it all begins with you. 🌿</p>
+      </div>
+
+      <div class="qn-series-nav">
+        <a href="/read/index.html" class="qn-series-button">Read other Quiet Notes</a>
       </div>
 
       <div class="read-signature" align="center">
-        <a class="button ghost" 
-  href="https://wa.me/27649607349?text=Hello%20Kar%C3%A9%2C%20I%20found%20this%20note%20and%20would%20love%20to%20receive%20gentle%20updates%20when%20the%20space%20opens.%20Thank%20you%20%F0%9F%A4%8D"
-  target="_blank"
-  rel="noopener">
-  Receive gentle updates on the website launch 
-</a>
-<br>        
-        Quiet Notes by Backyard Studio • A soft place to breathe.
+        <a class="button ghost"
+          href="https://wa.me/27649607349?text=Hello%20Kar%C3%A9%2C%20I%20found%20this%20note%20and%20would%20love%20to%20receive%20gentle%20updates%20when%20the%20space%20opens.%20Thank%20you%20%F0%9F%A4%8D"
+          target="_blank"
+          rel="noopener">
+          Receive gentle updates on the website launch
+        </a>
+
+        <br>
+
+        <img
+          src="/assets/stlogo1.png"
+          alt="Backyard Studio logo"
+          loading="lazy"
+          class="logo-seal"
+        />
+
+        <p>Quiet Notes by Backyard Studio • A gentle place for truth, release, and return.</p>
       </div>
+
     </article>
   </main>
 
   <script>
-  (function () {
-    // Change this per note
-    const noteKey = "backyardstudio-quiet-note-001";
+    (function () {
+      const noteKey = "backyardstudio-quiet-note-001";
+      const today = new Date().toISOString().slice(0, 10);
+      const localKey = `${noteKey}-lastCounted`;
+      const shouldCount = localStorage.getItem(localKey) !== today;
 
-    // Once per day per device
-    const today = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
-    const localKey = `${noteKey}-lastCounted`;
+      const endpoint = shouldCount
+        ? `https://api.countapi.xyz/hit/${encodeURIComponent(noteKey)}/views`
+        : `https://api.countapi.xyz/get/${encodeURIComponent(noteKey)}/views`;
 
-    const shouldCount = localStorage.getItem(localKey) !== today;
-
-    const endpoint = shouldCount
-      ? `https://api.countapi.xyz/hit/${encodeURIComponent(noteKey)}/views`
-      : `https://api.countapi.xyz/get/${encodeURIComponent(noteKey)}/views`;
-
-    fetch(endpoint)
-      .then(r => r.json())
-      .then(data => {
-        const el = document.getElementById("views");
-        if (el) el.textContent = data.value;
-
-        if (shouldCount) {
-          localStorage.setItem(localKey, today);
-        }
-      })
-      .catch(() => {
-        const el = document.getElementById("views");
-        if (el) el.textContent = "—";
-      });
-  })();
-</script>
-  
+      fetch(endpoint)
+        .then(r => r.json())
+        .then(data => {
+          const el = document.getElementById("views");
+          if (el) el.textContent = data.value;
+          if (shouldCount) localStorage.setItem(localKey, today);
+        })
+        .catch(() => {
+          const el = document.getElementById("views");
+          if (el) el.textContent = "—";
+        });
+    })();
+  </script>
 </body>
 </html>

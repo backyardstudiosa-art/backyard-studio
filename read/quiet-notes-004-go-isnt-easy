@@ -188,7 +188,7 @@
     <article class="read-card">
 
 <!-- Quiet Note banner -->
-<div class="004-banner">
+<div class="004-banner.png">
   <!-- Replace the background image URL when ready -->
 </div>
 
@@ -204,7 +204,7 @@
 <meta property="og:description" content="Letting go isn’t easy when what you believed in begins to change." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://backyardstudio.co.za/read/quiet-note-004.html" />
-<meta property="og:image" content="https://backyardstudio.co.za/assets/quiet-notes/quiet-note-004.jpg" />
+<meta property="og:image" content="https://backyardstudio.co.za/assets/quiet-notes/quiet-note-004.png" />
 <meta name="twitter:card" content="summary_large_image" />
 
 <div class="read-content" align="center">

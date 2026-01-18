@@ -11,6 +11,29 @@ if (exploreBtn && aboutSection) {
   });
 }
 
+// ✨ Fade-in on scroll (shared across pages)
+const fadeElements = document.querySelectorAll(".fade-in");
+
+if (fadeElements.length > 0) {
+  if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    fadeElements.forEach(el => observer.observe(el));
+  } else {
+    fadeElements.forEach(el => el.classList.add("visible"));
+  }
+}
+
 // 🌅 Weekly rotating morning note
 const morningNotes = [
   "Let today arrive slowly. You don’t need to rush what is becoming.",

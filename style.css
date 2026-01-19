@@ -858,6 +858,13 @@ body[data-page="coming"] .opening-list li {
   margin: 6px 0;
 }
 
+/* Coming soon page (home) bullet removal */
+.coming-soon-page .opening-list {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
 /* Soft pause before the note lines */
 body[data-page="coming"] .opening-list li:nth-child(5) {
   margin-top: 16px;

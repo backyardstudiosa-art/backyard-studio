@@ -849,7 +849,7 @@ body[data-page="coming"] .opening-list {
 body[data-page="coming"] .opening-list li {
   font-family: 'Inter', system-ui, sans-serif;
   font-size: 0.95rem;
-  font-weight: 400;
+  font-weight: 350;
   line-height: 1.65;
 
   color: var(--ink-soft);

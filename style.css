@@ -865,6 +865,15 @@ body[data-page="coming"] .opening-list li {
   margin-left: 0;
 }
 
+/* Coming soon page (home) heading sizing */
+.coming-soon-page h1 {
+  font-size: 2.8rem;
+}
+
+.coming-soon-page .sub {
+  font-size: 1.2rem;
+}
+
 /* Soft pause before the note lines */
 body[data-page="coming"] .opening-list li:nth-child(5) {
   margin-top: 16px;

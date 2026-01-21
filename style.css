@@ -191,9 +191,11 @@ section { margin-bottom: 4rem; }
   width: 100%;
   max-width: 100%;
   min-height: 544px;
-  height: 734px;
+  height: min(80vh, 734px);
+  overflow: auto;
   display: block;
   margin: 2.5rem auto 0;
+  -webkit-overflow-scrolling: touch; 
 }
 
 /* Service images */

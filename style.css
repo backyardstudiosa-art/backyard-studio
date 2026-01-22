@@ -185,6 +185,67 @@ section { margin-bottom: 4rem; }
   margin-top: 3rem;
 }
 
+* ===============================
+   PORTFOLIO CAROUSEL
+================================ */
+.portfolio-carousel .section-intro { margin-bottom: 1.5rem; }
+
+.carousel-shell {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 1rem;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding: 0.5rem 0.25rem 1.5rem;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.carousel-track::-webkit-scrollbar {
+  height: 8px;
+}
+
+.carousel-track::-webkit-scrollbar-thumb {
+  background: rgba(138, 128, 117, 0.35);
+  border-radius: 999px;
+}
+
+.carousel-card {
+  flex: 0 0 260px;
+  scroll-snap-align: start;
+}
+
+.carousel-button {
+  font-family: 'Caveat', cursive;
+  font-size: 1.4rem;
+  background: rgba(221,230,227,0.55);
+  border: none;
+  border-radius: 999px;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  color: var(--ink-soft);
+  transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+.carousel-button:hover { opacity: 0.8; transform: translateY(-1px); }
+
+@media (max-width: 768px) {
+  .carousel-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .carousel-button {
+    display: none;
+  }
+
+  .carousel-card { flex-basis: 220px; }
+}
 .service-tagline { font-style: italic; opacity: 0.85; }
 
 .schedule-embed {

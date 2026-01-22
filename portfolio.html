@@ -107,6 +107,23 @@ a place for creativity, reflection, and new beginnings.
   <footer class="return-footer fade-in">
     Return here tomorrow 🌊
   </footer>
+  <script src="script.js"></script>
+  <script>
+    const carouselTrack = document.querySelector(".carousel-track");
+    const prevButton = document.querySelector(".carousel-button.prev");
+    const nextButton = document.querySelector(".carousel-button.next");
 
+    if (carouselTrack && prevButton && nextButton) {
+      const scrollByAmount = () => carouselTrack.clientWidth * 0.8;
+
+      prevButton.addEventListener("click", () => {
+        carouselTrack.scrollBy({ left: -scrollByAmount(), behavior: "smooth" });
+      });
+
+      nextButton.addEventListener("click", () => {
+        carouselTrack.scrollBy({ left: scrollByAmount(), behavior: "smooth" });
+      });
+    }
+  </script>
 </body>
 </html>

@@ -337,6 +337,12 @@ section { margin-bottom: 4rem; }
 /* Unified back button (works for <a> or <button>) */
 .back-wrapper { text-align: center; margin: 1.8rem 0 2.8rem; }
 
+.back-shell {
+  max-width: 820px;
+  margin: 1.5rem auto 0;
+  padding: 0 1.5rem;
+}
+
 .back-button {
   font-family: 'Caveat', cursive;
   font-size: 1.05rem;
@@ -357,9 +363,16 @@ section { margin-bottom: 4rem; }
 
 .back-button:hover { opacity: 0.75; }
 
+.services-intro {
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+}
+
 @media (max-width: 600px) {
   .pillow-button { font-size: 1rem; }
   .content-section { padding: 3rem 1.2rem; }
+  .back-shell { padding: 0 1.2rem; }
+  .services-intro { padding-left: 1.6rem; padding-right: 1.6rem; } 
 }
 
 /* ===============================

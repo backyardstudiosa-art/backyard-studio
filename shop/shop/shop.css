@@ -1,0 +1,255 @@
+:root {
+  --shadow-soft: 0 18px 40px rgba(62, 58, 54, 0.08);
+}
+
+.shop-page {
+  background-color: var(--linen);
+}
+
+.shop-header {
+  padding-bottom: 1.5rem;
+}
+
+.header-inner {
+  width: min(1100px, 92%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 0 auto;
+}
+
+.logo-link {
+  display: inline-flex;
+}
+
+.shop-hero {
+  padding: 2rem 1.5rem 3rem;
+}
+
+.shop-hero-inner {
+  max-width: 880px;
+  margin: 0 auto;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.74);
+  border-radius: 28px;
+  padding: 3.5rem 2.5rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  color: var(--accent-shell);
+  margin-bottom: 0.75rem;
+}
+
+.subtitle {
+  margin-top: 1rem;
+  color: var(--driftwood);
+}
+.section-heading {
+  margin-bottom: 2rem;
+}
+
+.section-note {
+  color: var(--driftwood);
+  margin-top: 0.5rem;
+}
+
+.product-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 0.6fr);
+  gap: 2rem;
+  padding: 2.5rem;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: var(--shadow-soft);
+}
+.feature-list {
+  padding-left: 1.2rem;
+  margin-top: 1rem;
+  color: var(--ink-soft);
+}
+
+.feature-list li {
+  margin-bottom: 0.5rem;
+}
+
+.product-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  border-left: 1px solid rgba(138, 128, 117, 0.2);
+  padding-left: 2rem;
+}
+.price {
+  font-size: 2rem;
+  font-family: 'Playfair Display', serif;
+  color: var(--driftwood);
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.65rem 1.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  letter-spacing: 0.2px;
+  border: 1px solid transparent;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btn.primary {
+  background: var(--ocean);
+  color: white;
+  box-shadow: 0 10px 18px rgba(111, 159, 168, 0.25);
+}
+
+.btn.secondary {
+  background: transparent;
+  color: var(--driftwood);
+  border-color: rgba(138, 128, 117, 0.3);
+}
+
+.btn:hover,
+.btn:focus {
+  transform: translateY(-1px);
+}
+
+.micro-note {
+  font-size: 0.85rem;
+  color: var(--driftwood);
+}
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.detail-card {
+  padding: 1.75rem;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  box-shadow: 0 12px 24px rgba(62, 58, 54, 0.08);
+}
+
+.detail-card ul {
+  padding-left: 1.2rem;
+  margin-top: 0.75rem;
+}
+
+.usage-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.usage-card {
+  padding: 1.5rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 10px 24px rgba(62, 58, 54, 0.06);
+  text-align: center;
+}
+
+.icon-wrap {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  background: rgba(221, 230, 227, 0.55);
+}
+
+.icon-wrap svg {
+  width: 38px;
+  height: 38px;
+  stroke: var(--driftwood);
+  fill: none;
+  stroke-width: 2;
+}
+
+.icon-wrap svg path,
+.icon-wrap svg rect,
+.icon-wrap svg circle {
+  stroke: var(--driftwood);
+}
+
+.faq-accordion {
+  display: grid;
+  gap: 1rem;
+}
+
+.faq-item {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 18px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 8px 18px rgba(62, 58, 54, 0.06);
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: var(--ink-soft);
+  font-family: 'Playfair Display', serif;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+faq-question::after {
+  content: "+";
+  font-size: 1.2rem;
+  color: var(--accent-shell);
+}
+
+.faq-question[aria-expanded="true"]::after {
+  content: "–";
+}
+
+.faq-answer {
+  margin-top: 0.75rem;
+  color: var(--driftwood);
+}
+
+@media (max-width: 900px) {
+  .product-card {
+    grid-template-columns: 1fr;
+  }
+
+  .product-meta {
+    border-left: none;
+    border-top: 1px solid rgba(138, 128, 117, 0.2);
+    padding-left: 0;
+    padding-top: 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .shop-hero-inner {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .header-inner {
+    gap: 1rem;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+  }
+}

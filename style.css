@@ -889,6 +889,7 @@ body[data-page="coming"] .actions {
   flex-wrap: wrap;
   gap: 12px;
   margin-top: 18px;
+  justify-content: center; 
 }
 
 body[data-page="coming"] .btn {

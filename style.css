@@ -890,6 +890,7 @@ body[data-page="coming"] .actions {
   gap: 12px;
   margin-top: 18px;
   justify-content: center; 
+  width: 100%; 
 }
 
 body[data-page="coming"] .btn {

@@ -1111,3 +1111,18 @@ body[data-page="coming"] .fade-stagger li:nth-child(6) { animation-delay: 1.25s;
 }
 
 .soft-placeholder .micro { opacity: 0.75; }
+
+.btn-whatsapp {
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,.2);
+  background: #fff;
+  color: #111;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.btn-whatsapp:hover {
+  background: rgba(0,0,0,.04);
+}

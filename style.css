@@ -1132,3 +1132,11 @@ body[data-page="coming"] .fade-stagger li:nth-child(6) { animation-delay: 1.25s;
 }
 
 .soft-placeholder .micro { opacity: 0.75; }
+
+.intro-text p {
+  margin-bottom: 0.8rem;
+  max-width: 38rem;
+}
+.intro-text p:last-child {
+  opacity: 0.85;
+}

@@ -868,6 +868,10 @@ body[data-page="coming"] h1 {
   line-height: 1.2;
 }
 
+body[data-page="coming"] .spaced-heading {
+  margin-bottom: 18px;
+}
+
 /* Coming page sub + copy */
 body[data-page="coming"] .sub {
   margin: 0 0 22px;
@@ -881,6 +885,10 @@ body[data-page="coming"] .copy {
   line-height: 1.85;
   font-size: 1.05rem;
   opacity: 0.9;
+}
+
+body[data-page="coming"] .spaced-block {
+  margin-top: 18px;
 }
 
 /* Actions */

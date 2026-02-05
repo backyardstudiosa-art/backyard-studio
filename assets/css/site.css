@@ -97,3 +97,9 @@ p strong{
 .centered .sig{
   text-align: center;
 }
+
+.centered p,
+.centered h1,
+.centered h2{
+  max-width: 520px;
+}

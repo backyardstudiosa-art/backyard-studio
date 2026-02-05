@@ -104,6 +104,76 @@ p strong{
   max-width: 520px;
 }
 
+/* ===== Center only header + footer (for /start) ===== */
+.center-header-footer .hero,
+.center-header-footer .footer{
+  text-align: center;
+}
+
+.center-header-footer .hero .cta{
+  justify-content: center;
+}
+
+/* ===== Halo paper block (use on Under Construction page) ===== */
+.paper{
+  position: relative;
+  border-radius: 26px;
+  overflow: hidden;
+
+  /* whiter than the page */
+  background: rgba(255,255,255,.55);
+
+  /* soft halo */
+  box-shadow:
+    0 0 0 1px rgba(138,127,106,.05),
+    0 10px 30px rgba(138,127,106,.08);
+
+  padding: 34px 28px;
+}
+
+/* Soft linen/grain inside the paper block */
+.paper::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  z-index:0;
+
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      rgba(138,127,106,.025) 0px,
+      rgba(138,127,106,.025) 1px,
+      transparent 1px,
+      transparent 10px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(138,127,106,.02) 0px,
+      rgba(138,127,106,.02) 1px,
+      transparent 1px,
+      transparent 11px
+    ),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='1' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='.14'/%3E%3C/svg%3E");
+
+  opacity: .12;
+  mix-blend-mode: multiply;
+}
+
+/* Keep paper content above the texture */
+.paper > *{
+  position: relative;
+  z-index: 1;
+}
+
+/* Mobile tune for paper block */
+@media (max-width: 520px){
+  .paper{
+    padding: 28px 20px;
+    border-radius: 22px;
+  }
+}
+
 /* ===== Center everything (hard override) ===== */
 main.wrap.centered,
 .wrap.centered{

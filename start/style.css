@@ -106,20 +106,28 @@ p strong{
   color: var(--muted);
 }
 
-/* ---------- SUBTLE LINEN TEXTURE FOR EACH SECTION ---------- */
+/* ---------- WHITE HALO SECTIONS ---------- */
 
 .block{
   position: relative;
-  padding: 26px;                 /* adds breathing room inside sections */
-  border-radius: 18px;
+  padding: 30px;
+  margin-top: 90px;
+
+  border-radius: 26px;
   overflow: hidden;
 
-  /* optional: a whisper of separation from background */
-  border: 1px solid rgba(138,127,106,.12);
-  background: rgba(246,246,244,.6);
+  /* whiter than page */
+  background: rgba(255,255,255,.55);
+
+  /* soft halo instead of a border */
+  box-shadow:
+    0 0 0 1px rgba(138,127,106,.05),
+    0 10px 30px rgba(138,127,106,.08);
+
+  border: none;
 }
 
-/* Linen texture layer (sits BEHIND text) */
+/* Ultra-soft linen + grain (barely visible) */
 .block::before{
   content:"";
   position:absolute;
@@ -127,13 +135,34 @@ p strong{
   pointer-events:none;
   z-index:0;
 
-  /* two-layer effect: linen threads + soft grain */
   background-image:
-    /* linen cross threads */
+    /* faint linen threads */
     repeating-linear-gradient(
       0deg,
-      rgba(138,127,106,
-::contentReference[oaicite:0]{index=0}
+      rgba(138,127,106,.025) 0px,
+      rgba(138,127,106,.025) 1px,
+      transparent 1px,
+      transparent 10px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(138,127,106,.02) 0px,
+      rgba(138,127,106,.02) 1px,
+      transparent 1px,
+      transparent 11px
+    ),
+    /* whisper grain */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='1' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='.14'/%3E%3C/svg%3E");
+
+  opacity: .12;                 /* very light */
+  mix-blend-mode: multiply;
+}
+
+/* Keep content above texture */
+.block > *{
+  position: relative;
+  z-index: 1;
+}
 
 /* ---------- LIST ---------- */
 

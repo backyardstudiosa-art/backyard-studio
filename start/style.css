@@ -106,6 +106,35 @@ p strong{
   color: var(--muted);
 }
 
+/* ---------- SUBTLE LINEN TEXTURE FOR EACH SECTION ---------- */
+
+.block{
+  position: relative;
+  padding: 26px;                 /* adds breathing room inside sections */
+  border-radius: 18px;
+  overflow: hidden;
+
+  /* optional: a whisper of separation from background */
+  border: 1px solid rgba(138,127,106,.12);
+  background: rgba(246,246,244,.6);
+}
+
+/* Linen texture layer (sits BEHIND text) */
+.block::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  z-index:0;
+
+  /* two-layer effect: linen threads + soft grain */
+  background-image:
+    /* linen cross threads */
+    repeating-linear-gradient(
+      0deg,
+      rgba(138,127,106,
+::contentReference[oaicite:0]{index=0}
+
 /* ---------- LIST ---------- */
 
 .list{

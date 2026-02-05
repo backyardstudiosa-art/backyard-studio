@@ -103,3 +103,46 @@ p strong{
 .centered h2{
   max-width: 520px;
 }
+
+/* ===== Center everything (hard override) ===== */
+main.wrap.centered,
+.wrap.centered{
+  text-align: center !important;
+}
+
+.wrap.centered .cta{
+  justify-content: center;
+}
+
+.wrap.centered .btn{
+  text-align: center;
+}
+
+/* keep centered text readable (not too wide) */
+.wrap.centered p,
+.wrap.centered h1{
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===== Slow fade-in ===== */
+.fade-in{
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 900ms ease, transform 900ms ease;
+}
+
+.fade-in.is-loaded{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce){
+  .fade-in{
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

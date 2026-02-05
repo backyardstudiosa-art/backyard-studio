@@ -1,0 +1,143 @@
+:root{
+  --bg: #f7f5f1;
+  --ink: #3a3a3a;
+  --muted: #6a6a6a;
+  --card: #ffffff;
+  --border: rgba(58,58,58,.18);
+}
+
+*{ box-sizing:border-box; }
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.wrap{
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 72px 22px 90px;
+}
+
+.hero{
+  padding: 34px 26px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+}
+
+.kicker{
+  margin: 0 0 10px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-size: .82rem;
+}
+
+h1{
+  margin: 0 0 14px;
+  font-weight: 560;
+  font-size: clamp(2rem, 4vw, 2.6rem);
+  line-height: 1.15;
+}
+
+.lede{
+  margin: 0 0 22px;
+  color: var(--muted);
+  font-size: 1.06rem;
+  line-height: 1.7;
+}
+
+.cta{
+  display:flex;
+  flex-wrap:wrap;
+  gap: 12px;
+}
+
+.btn{
+  display:inline-block;
+  padding: 12px 16px;
+  border-radius: 14px;
+  border: 1px solid var(--ink);
+  color: var(--bg);
+  background: var(--ink);
+  text-decoration:none;
+  font-size: .98rem;
+}
+
+.btn.ghost{
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--border);
+}
+
+.block{
+  margin-top: 22px;
+  padding: 26px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+}
+
+h2{
+  margin: 0 0 10px;
+  font-weight: 560;
+  font-size: 1.25rem;
+}
+
+p{
+  margin: 0 0 14px;
+  line-height: 1.75;
+}
+
+.small{
+  color: var(--muted);
+  font-size: .95rem;
+  margin-top: 10px;
+}
+
+.list{
+  list-style: none;
+  padding: 0;
+  margin: 14px 0 18px;
+}
+
+.list li{
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(58,58,58,.08);
+}
+
+.list li:last-child{ border-bottom: none; }
+
+.list strong{
+  display:block;
+  margin-bottom: 4px;
+}
+
+.list span{
+  color: var(--muted);
+}
+
+.footer{
+  margin-top: 42px;
+  text-align: center;
+  color: var(--muted);
+}
+
+.footer .brand{
+  margin: 0;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  font-size: .82rem;
+}
+
+.footer .note{
+  margin: 8px 0 0;
+}
+
+.footer .tiny{
+  margin: 10px 0 0;
+  color: rgba(106,106,106,.9);
+  font-size: .9rem;
+}

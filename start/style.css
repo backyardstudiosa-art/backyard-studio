@@ -1,9 +1,8 @@
 :root{
-  --bg: #f6f6f4;              /* warm off-white */
-  --ink: #2f2f2f;             /* soft charcoal */
-  --muted: #6f6f6f;           /* gentle grey */
-  --card: transparent;        /* no boxed look */
-  --border: rgba(47,47,47,.12);
+  --bg: #f6f6f4;                 /* warm off-white */
+  --ink: #8a7f6a;                /* dark beige */
+  --muted: #a59b87;              /* lighter beige */
+  --border: rgba(138,127,106,.25);
 }
 
 *{ box-sizing:border-box; }
@@ -25,16 +24,14 @@ body{
 
 .hero{
   padding: 0;
-  background: none;
-  border: none;
 }
 
 .kicker{
   margin: 0 0 14px;
-  letter-spacing: .12em;
+  letter-spacing: .14em;
   text-transform: uppercase;
   color: var(--muted);
-  font-size: .78rem;
+  font-size: .75rem;
 }
 
 h1{
@@ -42,10 +39,11 @@ h1{
   font-weight: 400;
   font-size: clamp(2rem, 4vw, 2.4rem);
   line-height: 1.2;
+  color: var(--ink);
 }
 
 .lede{
-  margin: 0 0 36px;
+  margin: 0 0 38px;
   color: var(--muted);
   font-size: 1.05rem;
   line-height: 1.75;
@@ -71,7 +69,7 @@ h1{
 }
 
 .btn:hover{
-  opacity: .8;
+  background: rgba(138,127,106,.06);
 }
 
 .btn.ghost{
@@ -83,15 +81,13 @@ h1{
 
 .block{
   margin-top: 70px;
-  padding: 0;
-  background: none;
-  border: none;
 }
 
 h2{
   margin: 0 0 14px;
   font-weight: 400;
   font-size: 1.2rem;
+  color: var(--ink);
 }
 
 p{
@@ -120,7 +116,7 @@ p strong{
 
 .list li{
   padding: 14px 0;
-  border-bottom: 1px solid rgba(47,47,47,.08);
+  border-bottom: 1px solid var(--border);
 }
 
 .list li:last-child{
@@ -149,9 +145,10 @@ p strong{
 
 .footer .brand{
   margin: 0;
-  letter-spacing: .12em;
+  letter-spacing: .14em;
   text-transform: uppercase;
-  font-size: .75rem;
+  font-size: .72rem;
+  color: var(--ink);
 }
 
 .footer .note{
@@ -162,5 +159,5 @@ p strong{
 .footer .tiny{
   margin: 12px 0 0;
   font-size: .9rem;
-  color: rgba(111,111,111,.85);
+  color: rgba(165,155,135,.85);
 }

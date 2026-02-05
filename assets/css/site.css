@@ -78,3 +78,22 @@ p strong{
   margin-top: 18px;
   color: rgba(165,155,135,.85);
 }
+
+/* ---------- CENTERED LAYOUT ---------- */
+
+.centered{
+  text-align: center;
+}
+
+.centered .cta{
+  justify-content: center;
+}
+
+.centered p{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.centered .sig{
+  text-align: center;
+}

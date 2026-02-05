@@ -8,7 +8,7 @@
 </head>
 
 <body>
-  <main class="wrap centered">
+  <main class="wrap centered fade-in">
     <header class="hero">
       <p class="kicker">Backyard Studio</p>
       <h1>Where our shoulders soften.</h1>
@@ -81,5 +81,10 @@
       <p class="tiny">— Karé</p>
     </footer>
   </main>
+  <script>
+    window.addEventListener("load", () => {
+      document.querySelector(".fade-in")?.classList.add("is-loaded");
+    });
+  </script>
 </body>
 </html>

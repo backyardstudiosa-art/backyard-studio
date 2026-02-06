@@ -31,6 +31,12 @@ body{
   text-align: center;
 }
 
+.center-header-footer .hero{
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .center-header-footer .hero .cta{
   justify-content: center;
 }
@@ -42,6 +48,7 @@ body{
   margin-right: auto;
   max-width: 560px;
 }
+
 
 .kicker{
   margin: 0 0 14px;

@@ -238,6 +238,8 @@ main.wrap.centered,
 /* ===== Under construction page: explicit centering ===== */
 .under-construction-page .paper{
   text-align: center;
+  padding: 56px 50px;
+  background: rgba(255,255,255,.84);
 }
 
 .under-construction-page .top-nav,
@@ -247,10 +249,37 @@ main.wrap.centered,
 
 .under-construction-page .kicker,
 .under-construction-page h1,
+.under-construction-page .top-nav .nav-chip,
+.under-construction-page .btn{
+  color: #82786c;
+}
+
+.under-construction-page p,
+.under-construction-page .sig,
+.under-construction-page .btn.ghost,
+.under-construction-page .top-nav .is-disabled{
+  color: #968b7e;
+}
+
+.under-construction-page .top-nav .nav-chip,
+.under-construction-page .btn,
+.under-construction-page .btn.ghost{
+  border-color: rgba(138,127,106,.2);
+}
+
+.under-construction-page .kicker,
+.under-construction-page h1,
 .under-construction-page p{
   margin-left: auto;
   margin-right: auto;
 }
+
+@media (max-width: 520px){
+  .under-construction-page .paper{
+    padding: 40px 28px;
+  }
+}
+
 /* ===== Slow fade-in ===== */
 .fade-in{
   opacity: 0;

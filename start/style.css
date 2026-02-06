@@ -26,6 +26,23 @@ body{
   padding: 0;
 }
 
+.center-header-footer .hero,
+.center-header-footer .footer{
+  text-align: center;
+}
+
+.center-header-footer .hero .cta{
+  justify-content: center;
+}
+
+.center-header-footer .hero .lede,
+.center-header-footer .hero h1,
+.center-header-footer .hero .kicker{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 560px;
+}
+
 .kicker{
   margin: 0 0 14px;
   letter-spacing: .14em;

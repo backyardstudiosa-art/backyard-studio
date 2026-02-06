@@ -110,15 +110,16 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .btn.primary {
-  background: var(--ocean);
-  color: white;
-  box-shadow: 0 10px 18px rgba(111, 159, 168, 0.25);
+  background: rgba(255,255,255,.9);
+  color: #82786c;
+  border-color: rgba(138,127,106,.22);
+  box-shadow: 0 10px 18px rgba(138,127,106,.14);
 }
 
 .btn.secondary {
   background: transparent;
-  color: var(--driftwood);
-  border-color: rgba(138, 128, 117, 0.3);
+  color: #82786c;
+  border-color: rgba(138,127,106,.25);
 }
 
 .btn:hover,
@@ -252,4 +253,15 @@ faq-question::after {
   .nav-link {
     font-size: 0.9rem;
   }
+}
+
+.faq-answer a {
+  color: #82786c;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.faq-answer a:hover {
+  text-decoration: underline;
+  text-decoration-color: rgba(138,127,106,.35);
 }

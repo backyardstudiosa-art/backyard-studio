@@ -19,6 +19,29 @@
   margin: 0 auto;
 }
 
+.shop-page .soft-nav {
+  margin-top: 0.5rem;
+}
+
+.shop-page .soft-nav a[data-link="shop"] {
+  opacity: 1;
+  background: rgba(221,230,227,0.75);
+  box-shadow: inset 0 1px 2px rgba(255,255,255,0.6);
+}
+
+.shop-hero-inner .shop-intro-copy {
+  color: var(--driftwood);
+}
+
+.shop-hero-inner .shop-intro-copy strong {
+  color: var(--driftwood);
+}
+
+.shop-page ul {
+  list-style: none;
+  padding-left: 0;
+}
+
 .logo-link {
   display: inline-flex;
 }
@@ -68,7 +91,6 @@
   box-shadow: var(--shadow-soft);
 }
 .feature-list {
-  padding-left: 1.2rem;
   margin-top: 1rem;
   color: var(--ink-soft);
 }
@@ -127,6 +149,10 @@
   transform: translateY(-1px);
 }
 
+.btn:visited {
+  color: #82786c;
+}
+
 .micro-note {
   font-size: 0.85rem;
   color: var(--driftwood);
@@ -145,7 +171,6 @@
 }
 
 .detail-card ul {
-  padding-left: 1.2rem;
   margin-top: 0.75rem;
 }
 
@@ -213,7 +238,7 @@
   justify-content: space-between;
   align-items: center;
 }
-faq-question::after {
+.faq-question::after {
   content: "+";
   font-size: 1.2rem;
   color: var(--accent-shell);
@@ -250,7 +275,7 @@ faq-question::after {
     gap: 1rem;
   }
 
-  .nav-link {
+  .soft-nav a {
     font-size: 0.9rem;
   }
 }
@@ -259,6 +284,10 @@ faq-question::after {
   color: #82786c;
   font-weight: 600;
   text-decoration: none;
+}
+
+.faq-answer a:visited {
+  color: #82786c;
 }
 
 .faq-answer a:hover {

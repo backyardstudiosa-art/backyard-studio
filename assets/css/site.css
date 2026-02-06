@@ -247,6 +247,15 @@ main.wrap.centered,
   justify-content: center;
 }
 
+.under-construction-page .uc-logo{
+  width: min(132px, 42vw);
+  height: auto;
+  margin: 0 auto 22px;
+  display: block;
+  opacity: .82;
+  filter: drop-shadow(0 10px 24px rgba(138,127,106,.14));
+}
+
 .under-construction-page .kicker,
 .under-construction-page h1,
 .under-construction-page .top-nav .nav-chip,
@@ -277,6 +286,10 @@ main.wrap.centered,
 @media (max-width: 520px){
   .under-construction-page .paper{
     padding: 40px 28px;
+  }
+  .under-construction-page .uc-logo{
+    width: min(116px, 50vw);
+    margin-bottom: 18px;
   }
 }
 

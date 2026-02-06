@@ -235,6 +235,22 @@ main.wrap.centered,
   margin-right: auto;
 }
 
+/* ===== Under construction page: explicit centering ===== */
+.under-construction-page .paper{
+  text-align: center;
+}
+
+.under-construction-page .top-nav,
+.under-construction-page .cta{
+  justify-content: center;
+}
+
+.under-construction-page .kicker,
+.under-construction-page h1,
+.under-construction-page p{
+  margin-left: auto;
+  margin-right: auto;
+}
 /* ===== Slow fade-in ===== */
 .fade-in{
   opacity: 0;

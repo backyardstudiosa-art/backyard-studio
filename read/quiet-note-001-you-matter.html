@@ -19,30 +19,37 @@
   <meta name="twitter:card" content="summary_large_image" />
 
   <style>
-    body { margin: 0; padding: 0; background: #f6f2ed; }
-
-    .read-shell { max-width: 760px; margin: 0 auto; padding: 48px 22px; }
-
-    .read-card {
-      background: rgba(255,255,255,0.9);
-      border-radius: 22px;
-      padding: 32px 26px;
-      box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+    :root{
+      --read-bg: #f6f6f4;
+      --read-ink: #82786c;
+      --read-muted: #968b7e;
+      --read-border: rgba(138,127,106,.2);
     }
 
-    .read-content p { margin: 0 0 16px; line-height: 1.8; font-size: 1.05rem; }
+    body { margin: 0; padding: 0; background: var(--read-bg); color: var(--read-ink); }
+
+     .read-shell { max-width: 820px; margin: 0 auto; padding: 64px 24px; }
+
+    .read-card {
+      background: rgba(255,255,255,.84);
+      border-radius: 24px;
+      padding: 54px 48px;
+      box-shadow: 0 0 0 1px rgba(138,127,106,.05), 0 10px 30px rgba(138,127,106,.08);
+    }
+
+    .read-content p { margin: 0 0 16px; line-height: 1.8; font-size: 1.05rem; color: var(--read-muted); }
 
     .read-signature {
       margin-top: 26px;
       padding-top: 16px;
-      border-top: 1px solid rgba(0,0,0,0.08);
+      border-top: 1px solid var(--read-border);
       font-size: 0.95rem;
-      opacity: 0.75;
+      color: var(--read-muted);
     }
 
     nav, header, footer { display: none !important; }
 
-    .view-count { margin: 10px 0 22px; font-size: 0.95rem; opacity: 0.65; font-style: italic; }
+    .view-count { margin: 10px 0 22px; font-size: 0.95rem; color: var(--read-muted); font-style: italic; }
 
     .logo-seal { margin-top: 24px; max-width: 120px; opacity: 0.75; transition: opacity 0.4s ease; }
     .logo-seal:hover { opacity: 1; }
@@ -84,7 +91,7 @@
       font-family: 'Inter', system-ui, sans-serif;
       font-size: 0.95rem;
       letter-spacing: 0.02em;
-      color: var(--ink-soft);
+      color: var(--read-muted);
       opacity: 0.9;
       margin: 0 0 10px;
       text-align: center;
@@ -94,14 +101,14 @@
       font-size: clamp(2rem, 4vw, 2.6rem);
       line-height: 1.15;
       margin: 0 0 10px;
-      color: var(--ink);
+      color: var(--read-ink);
       text-align: center;
     }
     .qn-read-sub{
       font-family: 'Inter', system-ui, sans-serif;
       font-size: 1rem;
       line-height: 1.6;
-      color: var(--ink-soft);
+      color: var(--read-muted);
       margin: 0;
       text-align: center;
       font-style: italic;
@@ -116,19 +123,24 @@
       border-radius: 999px;
       font-family: 'Inter', system-ui, sans-serif;
       font-size: 0.95rem;
-      color: var(--ink);
+      color: var(--read-ink);
       text-decoration: none;
-      border: 1px solid rgba(0,0,0,0.15);
+      border: 1px solid var(--read-border);
       background-color: transparent;
       transition: all 0.25s ease;
     }
     .qn-series-button:hover{
-      background-color: var(--sand-light);
-      border-color: rgba(0,0,0,0.25);
+      background-color: rgba(255,255,255,.92);
+      border-color: rgba(138,127,106,.32);
       transform: translateY(-1px);
     }
 
     a { text-decoration: none; }
+
+    @media (max-width: 768px){
+      .read-shell{ padding: 44px 18px; }
+      .read-card{ padding: 40px 28px; }
+    }
   </style>
 </head>
 
@@ -228,22 +240,7 @@
       </div>
 
       <div class="read-signature" align="center">
-        <a class="button ghost"
-          href="https://wa.me/27649607349?text=Hello%20Kar%C3%A9%2C%20I%20found%20this%20note%20and%20would%20love%20to%20receive%20gentle%20updates%20when%20the%20space%20opens.%20Thank%20you%20%F0%9F%A4%8D"
-          target="_blank"
-          rel="noopener">
-          Receive updates on the website launch
-        </a>
-
-        <br>
-
-        <img
-          src="/assets/stlogo1.png"
-          alt="Backyard Studio logo"
-          loading="lazy"
-          class="logo-seal"
-        />
-
+      
         <p>Quiet Notes by Backyard Studio • A gentle place for truth, release, and return.</p>
       </div>
 

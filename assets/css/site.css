@@ -116,8 +116,16 @@ p strong{
   text-align: center;
 }
 
+wrap.centered .top-nav{
+  justify-content: center;
+}
+
 .centered .cta{
   justify-content: center;
+}
+
+.wrap.centered .paper{
+  text-align: center;
 }
 
 .centered p{

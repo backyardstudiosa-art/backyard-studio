@@ -51,10 +51,11 @@ p strong{
   display:flex;
   flex-wrap:wrap;
   gap: 8px;
+  justify-content: center;
   margin: 0 0 24px;
 }
 
-.top-nav a{
+.top-nav .nav-chip{
   display:inline-block;
   padding: 8px 14px;
   border-radius: 999px;
@@ -66,8 +67,15 @@ p strong{
   background: rgba(255,255,255,.45);
 }
 
-.top-nav a:hover{
+.top-nav a.nav-chip:hover{
   background: rgba(138,127,106,.08);
+}
+
+.top-nav .is-disabled{
+  color: var(--muted);
+  border-style: dashed;
+  background: rgba(255,255,255,.3);
+  cursor: not-allowed;
 }
 
 /* Buttons: dark beige outline, gentle hover */

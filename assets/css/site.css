@@ -47,6 +47,29 @@ p strong{
   font-weight: 500;
 }
 
+.top-nav{
+  display:flex;
+  flex-wrap:wrap;
+  gap: 8px;
+  margin: 0 0 24px;
+}
+
+.top-nav a{
+  display:inline-block;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--ink);
+  text-decoration: none;
+  font-size: .88rem;
+  letter-spacing: .02em;
+  background: rgba(255,255,255,.45);
+}
+
+.top-nav a:hover{
+  background: rgba(138,127,106,.08);
+}
+
 /* Buttons: dark beige outline, gentle hover */
 .cta{
   display:flex;
@@ -248,3 +271,7 @@ main.wrap.centered,
     width: 100%;
   }
 }
+
+.top-nav{
+    justify-content: center;
+  }

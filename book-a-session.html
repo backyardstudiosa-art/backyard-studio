@@ -10,14 +10,12 @@
 <body class="under-construction-page">
   <main class="wrap centered fade-in">
     <section class="paper">
-      <img
-        class="uc-logo"
-        src="assets/stlogo1.png"
-        alt="Backyard Studio logo"
-        loading="lazy"
-      />
-        
-<nav class="soft-nav fade-in">
+
+  <header class="site-header halo fade-in">
+    <img src="stlogo.png" alt="Backyard Studio logo" class="site-logo">
+  </header>
+
+  <nav class="soft-nav fade-in">
     <a href="index.html" data-link="home">Home</a>
     <a href="backyard-studio.html" data-link="creative">Creative Studio</a>
     <a href="new-horizons.html" data-link="horizons">New Horizons</a>
@@ -26,12 +24,14 @@
     <a href="book-a-session.html" data-link="book">Book a Session</a>
   </nav>
 
- <!-- 🌿 HERO -->
-   <section class="service-hero backyard fade-in">
+  <section class="service-hero backyard fade-in">
     <h1>Book a Session</h1>
-    <p class="handwritten">If you’d like to discuss a memory album, custom project, or creative direction,
-        you can book a calm, focused conversation below.</p>
-   </section>
+    <p class="handwritten">A calm place to talk through your ideas</p>
+  </section>  
+        
+<section class="content-section soft-background fade-in">
+        <p>If you’d like to discuss a memory album, custom project, or creative direction,
+        you can book a calm, focused conversation below.</p>   
     
       <p>
         Sessions are gentle, practical check-ins where we talk through your ideas,
@@ -42,11 +42,10 @@
         which is deducted from your final project if you proceed.
       </p>
 
-      <div class="cta">
-        <a class="btn" href="https://zcal.co/emb/newhorizons1177?embed=1&embedType=iframe">Book a Session</a>
-        <a class="btn ghost" href="https://wa.me/27649607349" target="_blank" rel="noopener">WhatsApp</a>
+      <div class="hero-actions">
+        <a class="pillow-button" href="https://zcal.co/emb/newhorizons1177?embed=1&embedType=iframe">Book a Session</a>
+        <a class="pillow-button" href="https://wa.me/27649607349" target="_blank" rel="noopener">WhatsApp</a>
       </div>
-
     </section>
   </main>
 
@@ -54,12 +53,6 @@
    <footer class="return-footer fade-in">
      © 2026 Backyard Studio
    </footer>
-    
-  <script>
-    window.addEventListener("load", () => {
-      document.querySelector(".fade-in")?.classList.add("is-loaded");
-    });
-  </script>
-
-</body>
+  <script src="script.js"></script>
+ </body>
 </html>

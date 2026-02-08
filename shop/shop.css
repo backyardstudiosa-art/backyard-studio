@@ -48,6 +48,16 @@
 
 .shop-hero {
   padding: 2rem 1.5rem 3rem;
+  margin: 0 auto;
+  width: min(1100px, 92%);
+  border-radius: 24px;
+
+  background-image:
+    linear-gradient(rgba(250,248,245,0.68), rgba(250,248,245,0.84)),
+    var(--header-image, url("../images/shop.png"));
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .shop-hero-inner {

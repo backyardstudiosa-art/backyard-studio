@@ -154,9 +154,21 @@ section { margin-bottom: 4rem; }
    HEADER / LOGO
 ================================ */
 .site-header {
+  position: relative;
   display: flex;
   justify-content: center;
   padding: 2rem 1rem 1rem;
+   margin: 0 auto;
+  width: min(1100px, 92%);
+  border-radius: 24px;
+  overflow: hidden;
+
+  background-image:
+    linear-gradient(rgba(250,248,245,0.7), rgba(250,248,245,0.85)),
+    var(--header-image, url("images/home.png"));
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .site-header img {
@@ -175,6 +187,30 @@ section { margin-bottom: 4rem; }
 }
 
 .site-header.halo::before { inset: -20px; }
+
+body[data-page="home"] {
+  --header-image: url("images/home.png");
+}
+
+body[data-page="creative"] {
+  --header-image: url("images/creative-studio.png");
+}
+
+body[data-page="horizons"] {
+  --header-image: url("images/new-horizons.png");
+}
+
+body[data-page="journal"] {
+  --header-image: url("images/journal.png");
+}
+
+body[data-page="book"] {
+  --header-image: url("images/booking.png");
+}
+
+.shop-page {
+  --header-image: url("images/shop.png");
+}
 
 /* ===============================
    SECTION ACCENTS

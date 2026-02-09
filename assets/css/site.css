@@ -236,10 +236,18 @@ main.wrap.centered,
 }
 
 /* ===== Under construction page: explicit centering ===== */
+.under-construction-page{
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(28, 32, 36, 0.52), rgba(28, 32, 36, 0.52)),
+    url("../../images/home.png") center/cover no-repeat;
+}
+
 .under-construction-page .paper{
   text-align: center;
   padding: 56px 50px;
-  background: rgba(255,255,255,.84);
+  background: rgba(255,255,255,.78);
+  backdrop-filter: blur(3px);
 }
 
 .under-construction-page .top-nav,

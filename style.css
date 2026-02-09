@@ -537,6 +537,22 @@ body[data-page="book"] {
   background-position: center;
   background-repeat: no-repeat;
 }
+body[data-page="creative"] main,
+body[data-page="horizons"] main,
+body[data-page="journal"] main,
+body[data-page="book"] main {
+  margin: 0 auto 2rem;
+  width: min(1100px, 92%);
+  border-radius: 0 0 24px 24px;
+  overflow: hidden;
+
+  background-image:
+    linear-gradient(rgba(250,248,245,0.68), rgba(250,248,245,0.84)),
+    var(--header-image, url("images/home.png"));
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 /* ===============================
    BLOG

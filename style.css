@@ -55,13 +55,10 @@ p { max-width: 65ch; }
 
 .surface { background: var(--bg, #f6f6f4); }
 
-nav ul,
-nav ol,
-.site-nav,
-.soft-nav {
+nav ul, nav ol {
   list-style: none;
   margin: 0;
-  padding-left: 0;
+  padding: 0;
 }
 
 .content-section ul,
@@ -131,6 +128,48 @@ h1, h2, h3 {
 section { margin-bottom: 4rem; }
 
 .content-section > * + * { margin-top: 1rem; }
+
+/* ===============================
+   INDEX-SHELL LAYOUT (GLOBAL)
+   Makes pages match index.html feel
+================================ */
+
+body.index-shell {
+  /* full-page background */
+  background-image:
+    linear-gradient(rgba(250,248,245,0.70), rgba(250,248,245,0.88)),
+    var(--page-image, url("images/home.png"));
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* keep your current font + color */
+  min-height: 100vh;
+}
+
+/* floating glass card */
+.page-card {
+  width: min(980px, 92%);
+  margin: 42px auto 42px;
+  border-radius: 28px;
+  overflow: hidden;
+
+  background: rgba(246,241,236,0.84);
+  backdrop-filter: blur(10px);
+
+  box-shadow: 0 18px 50px rgba(0,0,0,0.18);
+}
+
+/* inner padding */
+.page-card-inner {
+  padding: clamp(20px, 3vw, 44px);
+}
+
+/* keep footer outside the card */
+body.index-shell .site-footer {
+  color: var(--driftwood);
+  opacity: 0.7;
+}
 
 /* ===============================
    HERO
@@ -278,6 +317,7 @@ body[data-page="book"] {
 .shop-page {
   --header-image: url("images/shop.png");
 }
+
 
 /* ===============================
    SECTION ACCENTS
@@ -1369,3 +1409,10 @@ body[data-page="horizons"] .back-button,
 body[data-page="journal"] .back-button{
   background: rgba(255,255,255,.7);
 }
+
+body[data-page="home"]     { --page-image: url("images/home.png"); }
+body[data-page="creative"] { --page-image: url("images/creative-studio.png"); }
+body[data-page="horizons"] { --page-image: url("images/new-horizons.png"); }
+body[data-page="journal"]  { --page-image: url("images/journal.png"); }
+body[data-page="book"]     { --page-image: url("images/booking.png"); }
+body[data-page="portfolio"]{ --page-image: url("images/portfolio.png"); } /* if you have it */

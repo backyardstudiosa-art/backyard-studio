@@ -575,8 +575,6 @@ body[data-page="book"] main {
   width: min(1100px, 92%);
   border-radius: 0 0 24px 24px;
   overflow: hidden;
-
-  background: var(--bg, #f6f6f4);
 }
 
 /* ===============================

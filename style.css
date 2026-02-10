@@ -61,6 +61,10 @@ nav ul, nav ol {
   padding: 0;
 }
 
+nav li {
+  list-style: none;
+}
+
 .content-section ul,
 .content-section ol,
 main ul,
@@ -302,7 +306,8 @@ body[data-page="creative"] {
   --header-image: url("images/creative-studio.png");
 }
 
-body[data-page="horizons"] {
+body[data-page="horizons"],
+body[data-page="new-horizons"] {
   --header-image: url("images/new-horizons.png");
 }
 
@@ -310,8 +315,23 @@ body[data-page="journal"] {
   --header-image: url("images/journal.png");
 }
 
-body[data-page="book"] {
+body[data-page="journal-creativity-as-prayer"],
+body[data-page="journal-private"] {
+  --header-image: url("images/journal.png");
+}
+
+body[data-page="book"],
+body[data-page="book-a-session"] {
   --header-image: url("images/booking.png");
+}
+
+body[data-page="about"],
+body[data-page="grace"] {
+  --header-image: url("images/home.png");
+}
+
+body[data-page="portfolio"] {
+  --header-image: url("images/home.png");
 }
 
 .shop-page {
@@ -632,6 +652,7 @@ body[data-page="book"] {
 .service-hero,
 .journal-hero {
   position: relative;
+  isolation: isolate; 
   margin: 0;
   width: 100%;
   border-radius: 24px 24px 0 0;
@@ -644,10 +665,30 @@ body[data-page="book"] {
   background-position: center;
   background-repeat: no-repeat;
 }
+.overlay::before,
+.service-hero::before,
+.journal-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(255, 250, 244, 0.24), rgba(247, 236, 223, 0.38));
+  pointer-events: none;
+  z-index: 0;
+}
+
+.overlay > *,
+.service-hero > *,
+.journal-hero > * {
+  position: relative;
+  z-index: 1;
+}
+
 body[data-page="creative"] main,
 body[data-page="horizons"] main,
+body[data-page="new-horizons"] main,
 body[data-page="journal"] main,
-body[data-page="book"] main {
+body[data-page="book"] main,
+body[data-page="book-a-session"] main {   
   margin: 0 auto 2rem;
   width: min(1100px, 92%);
   border-radius: 0 0 24px 24px;
@@ -916,6 +957,7 @@ body[data-page="book"] main {
 body[data-page="home"] .soft-nav a[data-link="home"],
 body[data-page="creative"] .soft-nav a[data-link="creative"],
 body[data-page="horizons"] .soft-nav a[data-link="horizons"],
+body[data-page="new-horizons"] .soft-nav a[data-link="horizons"],
 body[data-page="grace"] .soft-nav a[data-link="grace"],
 body[data-page="journal"] .soft-nav a[data-link="journal"] {
   opacity: 1;
@@ -1317,6 +1359,7 @@ body[data-page="coming"] .fade-stagger li:nth-child(6) { animation-delay: 1.25s;
   margin-bottom: 0.8rem;
   max-width: 38rem;
 }
+
 .intro-text p:last-child {
   opacity: 0.85;
 }
@@ -1327,6 +1370,7 @@ body[data-page="coming"] .fade-stagger li:nth-child(6) { animation-delay: 1.25s;
 body[data-page="portfolio"],
 body[data-page="creative"],
 body[data-page="horizons"],
+body[data-page="new-horizons"],
 body[data-page="journal"]{
   color: #968b7e;
 }
@@ -1340,6 +1384,9 @@ body[data-page="creative"] h3,
 body[data-page="horizons"] h1,
 body[data-page="horizons"] h2,
 body[data-page="horizons"] h3,
+body[data-page="new-horizons"] h1,
+body[data-page="new-horizons"] h2,
+body[data-page="new-horizons"] h3,
 body[data-page="journal"] h1,
 body[data-page="journal"] h2,
 body[data-page="journal"] h3{
@@ -1349,6 +1396,7 @@ body[data-page="journal"] h3{
 body[data-page="portfolio"] .service-card,
 body[data-page="creative"] .service-card,
 body[data-page="horizons"] .service-card,
+body[data-page="new-horizons"] .service-card,
 body[data-page="journal"] .journal-entry,
 body[data-page="journal"] .journal-card,
 body[data-page="journal"] .blog-card{
@@ -1361,6 +1409,7 @@ body[data-page="journal"] .blog-card{
 body[data-page="portfolio"] .meta,
 body[data-page="creative"] .meta,
 body[data-page="horizons"] .meta,
+body[data-page="new-horizons"] .meta,
 body[data-page="journal"] .meta,
 body[data-page="journal"] .journal-meta,
 body[data-page="journal"] .blog-meta,
@@ -1373,10 +1422,12 @@ body[data-page="journal"] .journal-intro{
 body[data-page="portfolio"] .pillow-button,
 body[data-page="creative"] .pillow-button,
 body[data-page="horizons"] .pillow-button,
+body[data-page="new-horizons"] .pillow-button,
 body[data-page="journal"] .pillow-button,
 body[data-page="portfolio"] .back-button,
 body[data-page="creative"] .back-button,
 body[data-page="horizons"] .back-button,
+body[data-page="new-horizons"] .pillow-button,
 body[data-page="journal"] .back-button,
 body[data-page="journal"] .journal-link,
 body[data-page="journal"] .blog-link{
@@ -1396,6 +1447,7 @@ body[data-page="journal"] .pillow-button:visited {
 body[data-page="portfolio"] .pillow-button,
 body[data-page="creative"] .pillow-button,
 body[data-page="horizons"] .pillow-button,
+body[data-page="new-horizons"] .pillow-button,
 body[data-page="journal"] .pillow-button{
   background: rgba(255,255,255,.86);
   box-shadow:
@@ -1410,9 +1462,15 @@ body[data-page="journal"] .back-button{
   background: rgba(255,255,255,.7);
 }
 
-body[data-page="home"]     { --page-image: url("images/home.png"); }
+body[data-page="home"] { --page-image: url("images/home.png"); }
 body[data-page="creative"] { --page-image: url("images/creative-studio.png"); }
-body[data-page="horizons"] { --page-image: url("images/new-horizons.png"); }
-body[data-page="journal"]  { --page-image: url("images/journal.png"); }
-body[data-page="book"]     { --page-image: url("images/booking.png"); }
-body[data-page="portfolio"]{ --page-image: url("images/portfolio.png"); } /* if you have it */
+body[data-page="horizons"],
+body[data-page="new-horizons"] { --page-image: url("images/new-horizons.png"); }
+body[data-page="journal"],
+body[data-page="journal-creativity-as-prayer"],
+body[data-page="journal-private"] { --page-image: url("images/journal.png"); }
+body[data-page="book"],
+body[data-page="book-a-session"] { --page-image: url("images/booking.png"); }
+body[data-page="about"],
+body[data-page="grace"],
+body[data-page="portfolio"] { --page-image: url("images/home.png"); }

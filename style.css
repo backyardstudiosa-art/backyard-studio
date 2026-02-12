@@ -218,6 +218,13 @@ body.index-shell .site-footer {
   opacity: 0.82;
 }
 
+p.handwritten,
+p.hero-helper {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Soft bottom fade */
 .hero::after {
   content: "";

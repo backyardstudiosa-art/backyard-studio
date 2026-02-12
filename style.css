@@ -225,6 +225,13 @@ p.hero-helper {
   margin-right: auto;
 }
 
+p.handwritten.text-left,
+p.hero-helper.text-left {
+  text-align: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+
 /* Soft bottom fade */
 .hero::after {
   content: "";

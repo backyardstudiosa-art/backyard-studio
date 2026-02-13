@@ -324,7 +324,7 @@ body[data-page="about"] .site-header.halo::before {
 }
 
 body[data-page="about"] .site-header .site-logo {
-  max-width: 215px;
+  max-width: 430px;
   opacity: 0.84;
   position: relative;
   z-index: 1;

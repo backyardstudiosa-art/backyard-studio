@@ -313,6 +313,7 @@ p.hero-helper.text-left {
 .site-header.halo::before { inset: -20px; }
 
 
+
 /* About page: rebalance logo size and halo */
 body[data-page="about"] .site-header {
   --halo-gold: rgba(255, 220, 170, 0.2);
@@ -323,7 +324,7 @@ body[data-page="about"] .site-header.halo::before {
 }
 
 body[data-page="about"] .site-header .site-logo {
-  max-width: 195px;
+  max-width: 215px;
   opacity: 0.84;
   position: relative;
   z-index: 1;
@@ -335,7 +336,7 @@ body[data-page="about"] .site-header::after {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: min(190px, 50vw);
+  width: min(205px, 52vw);
   aspect-ratio: 1 / 1;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.16);

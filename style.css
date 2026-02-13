@@ -312,6 +312,30 @@ p.hero-helper.text-left {
 
 .site-header.halo::before { inset: -20px; }
 
+
+/* About page: soften and reduce logo prominence */
+body[data-page="about"] .site-header .site-logo {
+  max-width: 170px;
+  opacity: 0.78;
+  position: relative;
+  z-index: 1;
+}
+
+body[data-page="about"] .site-header::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: min(220px, 58vw);
+  aspect-ratio: 1 / 1;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.28);
+  filter: blur(1.5px);
+  z-index: 2;
+  pointer-events: none;
+}
+
 body[data-page="home"] {
   --header-image: url("images/home.png");
 }

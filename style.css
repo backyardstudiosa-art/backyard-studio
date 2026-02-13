@@ -297,14 +297,14 @@ p.hero-helper.text-left {
 
 .site-header img {
   width: 100%;
-  max-width: 220px
+  max-width: 500px
   height: auto;
   opacity: 0.88;
   filter: drop-shadow(0 8px 18px rgba(180, 150, 110, 0.18));
 }
 
 .site-logo {
-  max-width: 220px
+  max-width: 500px
   height: auto;
   opacity: 0.9;
   filter: drop-shadow(0 8px 20px rgba(180, 150, 110, 0.22));

@@ -336,7 +336,7 @@ body[data-page="about"] .site-header::after {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: min(205px, 52vw);
+  width: min(410px, 85vw);
   aspect-ratio: 1 / 1;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.16);

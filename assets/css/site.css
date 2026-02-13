@@ -256,7 +256,7 @@ main.wrap.centered,
 }
 
 .under-construction-page .uc-logo{
-  width: min(132px, 42vw);
+  width: min(180px, 52vw);
   height: auto;
   margin: 0 auto 22px;
   display: block;
@@ -296,7 +296,7 @@ main.wrap.centered,
     padding: 40px 28px;
   }
   .under-construction-page .uc-logo{
-    width: min(116px, 50vw);
+    width: min(150px, 58vw);
     margin-bottom: 18px;
   }
 }

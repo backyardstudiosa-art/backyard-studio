@@ -310,9 +310,26 @@ p.hero-helper.text-left {
   filter: drop-shadow(0 8px 20px rgba(180, 150, 110, 0.22));
 }
 
+/* Banner logo treatment across related site pages */
+body.index-shell .site-header,
+.shop-page .site-header {
+  padding: 1.4rem 0 0.9rem;
+}
+
+body.index-shell .site-logo,
+.shop-page .site-logo {
+  width: min(1100px, 92vw);
+  max-width: 1100px;
+  height: clamp(140px, 18vw, 220px);
+  opacity: 0.88;
+  border-radius: 26px;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+
 .site-header.halo::before { inset: -20px; }
 
-/* About page: banner logo treatment */
 /* About page: banner logo treatment */
 body[data-page="about"] .site-header {
   --halo-gold: rgba(255, 220, 170, 0.16);
@@ -326,7 +343,7 @@ body[data-page="about"] .site-header.halo::before {
 body[data-page="about"] .site-header .site-logo {
   width: min(1100px, 92vw);
   max-width: 1100px;
-  height: clamp(140px, 38vw, 220px);
+  height: clamp(140px, 18vw, 220px);
   opacity: 0.88;
   border-radius: 26px;
   object-fit: cover;
@@ -341,7 +358,7 @@ body[data-page="about"] .site-header::after {
   top: 50%;
   transform: translate(-50%, -50%);
   width: min(1100px, 92vw);
-  height: clamp(140px, 38vw, 220px);
+  height: clamp(140px, 18vw, 220px);
   border-radius: 26px;
   background: rgba(255, 255, 255, 0.14);
   z-index: 2;

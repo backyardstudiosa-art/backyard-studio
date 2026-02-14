@@ -1,90 +1,58 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" class="no-js">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Backyard Studio | Start Here</title>
-  <link rel="stylesheet" href="style.css" />
+    <title>Start Here | Backyard Studio</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
-<body>
-  <main class="wrap center-header-footer fade-in">
-    <header class="hero">
-      <p class="kicker">Backyard Studio</p>
-      <h1>Where our shoulders soften.</h1>
-      <p class="lede">
-        I make calm digital downloads for memory-keeping, scrapbooking, and gentle reflection,
-        made to use at your own pace.
-      </p>
+<body class="index-shell" data-page="home">
+  <div class="page-card">
+    <div class="page-card-inner">
+      <header class="site-header halo fade-in">
+        <img src="../assets/banner.png" alt="Backyard Studio logo" class="site-logo">
+      </header>
 
-      <div class="cta">
-        <a class="btn" href="#freebie">Download the free reflection page</a>
-        <a class="btn ghost" href="#shop">See the digital downloads</a>
-      </div>
-    </header>
+      <nav class="soft-nav fade-in">
+        <a href="/index.html" data-link="home">Home</a>
+        <a href="/backyard-studio.html" data-link="creative">Creative Studio</a>
+        <a href="/new-horizons.html" data-link="horizons">New Horizons</a>
+        <a href="/shop/" data-link="shop">Digital Shop</a>
+        <a href="/journal.html" data-link="journal">Journal</a>
+        <a href="/book-a-session.html" data-link="book">Book a Session</a>
+      </nav>
 
-    <section class="block textured" id="freebie">
-      <h2>Free download</h2>
-      <p>
-        <strong>A Quiet Place to Land</strong> is a simple 2-page reflection sheet for when life feels full.
-        No pressure. Just space to breathe and write.
-      </p>
+      <main class="page-panel panel-bg">
+        <section class="content-section soft-background fade-in section stack">
+          <h1 style="text-align: center;">Start Here</h1>
+          <p class="handwritten">Where your shoulders soften and your thoughts find space.</p>
+          <p class="measure">If this is your first visit, begin with one simple step. Explore a free reflection page, browse gentle digital resources, or book a session for deeper support.</p>
+          <a class="pillow-button" href="/book-a-session.html">Book a Session</a>
+        </section>
 
-      <!-- Replace # with your Gumroad/Payhip link when ready -->
-      <a class="btn" href="#">Get the free download</a>
-<p></p>
-      <p class="small">
-        Tip: If you want, I can set this up so the download goes straight to someone’s inbox.
-      </p>
-    </section>
+        <section class="content-section fade-in">
+          <div class="service-grid">
+            <article class="service-card paper-grain">
+              <h3>Free Reflection Download</h3>
+              <p>A simple prompt page for moments when life feels full and you need a quiet reset.</p>
+            </article>
+            <article class="service-card paper-grain">
+              <h3>Digital Downloads</h3>
+              <p>Journaling resources, scrapbook elements, and calming visuals for daily use.</p>
+            </article>
+            <article class="service-card paper-grain">
+              <h3>Gentle Support</h3>
+              <p>Talk through your ideas, your story, or your next steps through guided creative sessions.</p>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
 
-    <section class="block textured" id="shop">
-      <h2>Digital downloads</h2>
-      <ul class="list">
-        <li>
-          <strong>Phone wallpaper pack</strong>
-          <span>Soft words for your screen (iPhone + Android sizes).</span>
-        </li>
-        <li>
-          <strong>Mini journals</strong>
-          <span>Short, gentle PDFs with prompts and space to write.</span>
-        </li>
-        <li>
-          <strong>Memory album pages</strong>
-          <span>Scrapbook-style layouts for photos, notes, and stories.</span>
-        </li>
-      </ul>
-
-      <!-- Replace # with your shop link when ready -->
-      <a class="btn ghost" href="#">Go to the shop</a>
-    </section>
-
-    <section class="block textured" id="contact">
-      <h2>Prefer to chat first?</h2>
-      <p>
-        If you’d like to book a session, talk through a memory album, or ask what would suit you,
-        you’re welcome to reach out.
-      </p>
-
-      <div class="cta">
-        <!-- Use the same links you already have on your homepage -->
-        <a class="btn" href="https://zcal.co/">Book a session</a>
-        <a class="btn ghost" href="https://wa.me/">WhatsApp me</a>
-      </div>
-<p></p>
-      <p class="small">I’ll reply as soon as I can.</p>
-    </section>
-
-    <footer class="footer">
-      <p class="brand">Backyard Studio</p>
-      <p class="note">A calm space for memory and reflection.</p>
-      <p class="tiny">— Karé</p>
-    </footer>
-  </main>
-  <script>
-    window.addEventListener("load", () => {
-      document.querySelector(".fade-in")?.classList.add("is-loaded");
-    });
-  </script>
+  <footer class="return-footer fade-in">© 2026 Backyard Studio</footer>
+  <script src="../script.js"></script>
 </body>
 </html>

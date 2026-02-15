@@ -758,7 +758,7 @@ body[data-page="book"] main,
 body[data-page="book-a-session"] main {   
   margin: 0 auto 2rem;
   width: min(1100px, 92%);
-  border-radius: 0 0 24px 24px;
+  border-radius: 24px;
   overflow: hidden;
 }
 
@@ -1494,7 +1494,6 @@ body[data-page="journal"] .pillow-button,
 body[data-page="portfolio"] .back-button,
 body[data-page="creative"] .back-button,
 body[data-page="horizons"] .back-button,
-body[data-page="new-horizons"] .pillow-button,
 body[data-page="journal"] .back-button,
 body[data-page="journal"] .journal-link,
 body[data-page="journal"] .blog-link{
@@ -1505,9 +1504,6 @@ body[data-page="journal"] .blog-link{
 
 body[data-page="journal"] .journal-link:visited,
 body[data-page="journal"] .blog-link:visited,
-body[data-page="portfolio"] .pillow-button:visited,
-body[data-page="creative"] .pillow-button:visited,
-body[data-page="horizons"] .pillow-button:visited,
 body[data-page="journal"] .pillow-button:visited {
   color: #82786c;
 }
@@ -1516,10 +1512,11 @@ body[data-page="creative"] .pillow-button,
 body[data-page="horizons"] .pillow-button,
 body[data-page="new-horizons"] .pillow-button,
 body[data-page="journal"] .pillow-button{
-  background: rgba(255,255,255,.86);
+  background: linear-gradient(180deg, #fff, #f5f0e8);
   box-shadow:
-    inset 0 1px 2px rgba(255,255,255,.85),
-    0 8px 20px rgba(138,127,106,.12);
+    inset 0 2px 3px rgba(255,255,255,0.8),
+    inset 0 -2px 3px rgba(0,0,0,0.05),
+    0 6px 14px rgba(0,0,0,0.08);
 }
 
 body[data-page="portfolio"] .back-button,

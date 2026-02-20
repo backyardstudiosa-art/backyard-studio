@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Journal Sample Pages | Backyard Studio</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    .preview-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .preview-card {
+      margin: 0;
+      background: rgba(255,255,255,0.65);
+      border-radius: 14px;
+      padding: 0.75rem;
+    }
+
+    .preview-card img {
+      width: 100%;
+      display: block;
+      border-radius: 10px;
+    }
+
+    .preview-card figcaption {
+      margin-top: 0.45rem;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body class="index-shell" data-page="shop">
+  <div class="page-card">
+    <div class="page-card-inner">
+      <header class="site-header halo fade-in">
+        <img src="../assets/banner.png" alt="Backyard Studio logo" class="site-logo">
+      </header>
+
+      <nav class="soft-nav fade-in">
+        <a href="/index.html" data-link="home">Home</a>
+        <a href="/backyard-studio.html" data-link="creative">Creative Studio</a>
+        <a href="/new-horizons.html" data-link="horizons">New Horizons</a>
+        <a href="/shop/" data-link="shop">Digital Shop</a>
+        <a href="/journal.html" data-link="journal">Journal</a>
+        <a href="/book-a-session.html" data-link="book">Book a Session</a>
+      </nav>
+
+      <main class="page-panel panel-bg">
+        <section class="content-section soft-background fade-in section">
+          <h1 style="text-align: center;">Guided Journal Sample Pages</h1>
+          <p class="measure">Preview pages from the journal before purchasing.</p>
+          <a class="pillow-button" href="/shop/">Back to Shop</a>
+        </section>
+
+        <section class="content-section fade-in">
+          <div class="preview-grid">
+            <figure class="preview-card">
+              <img src="../assets/journal-page1.png" alt="Journal sample page 1" />
+              <figcaption>Page 1</figcaption>
+            </figure>
+            <figure class="preview-card">
+              <img src="../assets/journal-page2.png" alt="Journal sample page 2" />
+              <figcaption>Page 2</figcaption>
+            </figure>
+            <figure class="preview-card">
+              <img src="../assets/journal-page5.png" alt="Journal sample page 5" />
+              <figcaption>Page 5</figcaption>
+            </figure>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <footer class="return-footer fade-in">© 2026 Backyard Studio</footer>
+  <script src="../script.js"></script>
+</body>
+</html>

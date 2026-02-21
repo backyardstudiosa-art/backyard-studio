@@ -1524,12 +1524,12 @@ body[data-page="journal"] .pillow-button{
     0 6px 14px rgba(0,0,0,0.08);
 }
 
-body[data-page="portfolio"] .back-button,
-body[data-page="creative"] .back-button,
-body[data-page="horizons"] .back-button,
-body[data-page="journal"] .back-button{
-  background: rgba(255,255,255,.7);
-}
+.pillow-button:visited,
+.back-button:visited,
+.journal-link:visited,
+.blog-link:visited {
+  color: var(--brown-deep);
+}   
 
 body[data-page="home"] { --page-image: url("images/home.png"); }
 body[data-page="creative"] { --page-image: url("images/creative-studio.png"); }

@@ -15,8 +15,9 @@
   --sea-mist: #DDE6E3;
   --ocean: #6f9fa8;
 
-  --driftwood: #8A8075;
-  --ink-soft: #3E3A36;
+  --driftwood: #5a4744;
+  --ink-soft: #5a4744;
+  --brown-deep: #5a4744;
 
   --accent-shell: #C9B8A5;
   --halo-gold: rgba(255, 220, 170, 0.35);
@@ -107,7 +108,11 @@ img { border-radius: 16px; }
 ================================ */
 h1, h2, h3 {
   font-family: 'Playfair Display', serif;
-  color: var(--driftwood);
+  color: var(--brown-deep);
+}
+
+p, li, .measure, .hero-helper, .section-intro, .section-tagline, .service-hero p, .site-footer, .return-footer {
+  color: var(--brown-deep);
 }
 
 .handwritten, .coastal-quote, .invitation, #daily-line {

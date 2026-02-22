@@ -52,7 +52,7 @@ p { max-width: 65ch; }
   gap: 14px;
 }
 
-.section { padding-block: clamp(48px, 7vw, 90px); }
+.section { padding-block: clamp(28px, 5vw, 56px); }
 
 .surface { background: var(--bg, #f6f6f4); }
 
@@ -126,7 +126,7 @@ p, li, .measure, .hero-helper, .section-intro, .section-tagline, .service-hero p
 .container, .content-section {
   max-width: 820px;
   margin: 0 auto;
-  padding: 32px 1.5rem;
+  padding: 24px 1.5rem;
 }
 
 .content-section h2 {
@@ -134,7 +134,7 @@ p, li, .measure, .hero-helper, .section-intro, .section-tagline, .service-hero p
   margin-bottom: 16px;
 }
 
-section { margin-bottom: 4rem; }
+section { margin-bottom: 2.25rem; }
 
 .content-section > * + * { margin-top: 1rem; }
 
@@ -472,7 +472,7 @@ body[data-page="portfolio"] {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 2rem;
-  margin-top: 3rem;
+  margin-top: 1.5rem;
 }
 
 * ===============================

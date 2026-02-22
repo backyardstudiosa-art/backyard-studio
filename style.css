@@ -901,7 +901,15 @@ body[data-page="book-a-session"] main {
   font-size: 1.1rem;
   text-decoration: none;
   font-style: italic;
-  color: var(--driftwood);
+  color: var(--brown-deep);
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #fff, #f5f0e8);
+  border: 1px solid rgba(138,127,106,.2);
+  box-shadow:
+    inset 0 2px 3px rgba(255,255,255,0.8),
+    inset 0 -2px 3px rgba(0,0,0,0.05),
+    0 6px 14px rgba(0,0,0,0.08);
 }
 
 /* Single, merged journal-list */

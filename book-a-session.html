@@ -1,64 +1,46 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Book a Session | Backyard Studio</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&display=swap" rel="stylesheet">
-<style>
-    .disabled-link {
-      pointer-events: none;
-      opacity: 0.45 !important;
-      filter: grayscale(0.2);
-      cursor: not-allowed;
-    }
-  </style>
+  <meta name="description" content="Direct booking links for Zcal, WhatsApp, and a private Quiet Notes page." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/site.css" />
 </head>
 
-<body class="index-shell" data-page="book-a-session">
-  <div class="page-card">
-    <div class="page-card-inner">
-  <header class="site-header halo fade-in">
-        <img src="assets/banner.png" alt="Backyard Studio logo" class="site-logo">
+<body>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="/">Backyard Studio</a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/shop/">Shop / Offerings</a></li>
+          <li><a href="/journal/">Journal (New Horizons)</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <nav class="soft-nav fade-in">
-    <a href="index.html" data-link="home">Home</a>
-    <a href="backyard-studio.html" class="disabled-link" aria-disabled="true" tabindex="-1">Creative Studio</a>
-    <a href="new-horizons.html" class="disabled-link" aria-disabled="true" tabindex="-1">New Horizons</a>
-    <a href="shop/" data-link="shop">Digital Shop</a>
-    <a href="journal.html" class="disabled-link" aria-disabled="true" tabindex="-1">Journal</a>
-    <a href="book-a-session.html" data-link="book">Book a Session</a>
-  </nav>
-
-<main class="page-panel panel-bg">
-  <section class="content-section soft-background fade-in section">
-      <h1 align="center">Book a Session</h1>
-    <p class="handwritten">A calm place to talk through your ideas</p>
-    <p class="hero-helper">Gentle support, one-on-one</p>
-  </section>
-        
-  <section class="content-section soft-background fade-in section">
-      <p class="measure">Book a focused conversation to shape your next step with clarity and care.</p>
-      <ul class="service-list measure">
-        <li>Discuss your project ideas and timeline</li>
-        <li>Choose the best service path together</li>
-        <li><strong>R210 consultation fee</strong> (credited toward your project)</li>
-      </ul>
-
-      <div class="hero-actions">
-        <a class="pillow-button" href="https://zcal.co/newhorizons1177">Book a Session</a>
-        <a class="pillow-button" href="https://wa.me/27649607349" target="_blank" rel="noopener">WhatsApp</a>
-      </div>
-    </section>
+    <main>
+    <div class="container">
+      <section class="hero">
+        <p class="eyebrow">Session + Private Links</p>
+        <h1>Choose where you’d like to go.</h1>
+        <p>This page stays off the main navigation. Use it as a simple private hub for booking and short-form reflections.</p>
+        <div class="button-row">
+          <a class="btn primary" href="https://zcal.co/newhorizons1177" target="_blank" rel="noopener">Open Zcal Booking</a>
+          <a class="btn" href="https://wa.me/27649607349" target="_blank" rel="noopener">Open WhatsApp</a>
+          <a class="btn" href="/read/">Open Quiet Notes (Hidden)</a>
+        </div>
+      </section>
+    </div>
   </main>
-</div>
-  </div>
-  <!-- 🌊 FOOTER -->
-   <footer class="return-footer fade-in">
-     © 2026 Backyard Studio
-   </footer>
-  <script src="script.js"></script>
- </body>
+<footer>© 2026 Backyard Studio</footer>
+</body>
 </html>

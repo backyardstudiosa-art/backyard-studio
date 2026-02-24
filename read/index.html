@@ -8,110 +8,14 @@
   <link rel="stylesheet" href="../style.css" />
 
   <!-- SEO + Social preview -->
-  <meta name="description" content="Quiet Notes: small words, deep breath. A gentle place for truth, release, and return." />
+  <meta name="description" content="Quiet Notes: short reflective writings for breath, truth, and return." />
 
   <meta property="og:title" content="Quiet Notes | Backyard Studio" />
-  <meta property="og:description" content="Small words. Deep breath." />
+    <meta property="og:description" content="Small words. Deep breath. A quiet corner for your heart." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://backyardstudio.co.za/read/index.html" />
-  <meta property="og:image" content="https://backyardstudio.co.za/read/quiet-note.png" />
-  <meta name="twitter:card" content="summary_large_image" />
-
-  <style>
-    :root{
-      --read-bg: #f6f6f4;
-      --read-ink: #82786c;
-      --read-muted: #968b7e;
-      --read-border: rgba(138,127,106,.2);
-    }
-
-    body {
-      margin:0;
-      padding:0;
-      background: var(--read-bg);
-      color: var(--read-ink);
-    }
-    
-    .wrap { max-width: 860px; margin: 0 auto; padding: 64px 24px; }
-    
-    .card {
-      background: rgba(255,255,255,.84);
-      border-radius: 24px;
-      padding: 54px 48px;
-      box-shadow:
-        0 0 0 1px rgba(138,127,106,.05),
-        0 10px 30px rgba(138,127,106,.08);
-    }
-
-    nav, header, footer { display:none !important; }
-
-    /* Series banner (optional but matches your new system) */
-    .qn-banner{
-      width: 100%;
-      height: 260px;
-      border-radius: 18px;
-      margin: 0 0 22px;
-      background: linear-gradient(180deg, rgba(245,241,236,0.95), rgba(233,220,203,0.9));
-      position: relative;
-      overflow: hidden;
-    }
-    .qn-banner::after{
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: url("/assets/grain.png");
-      opacity: 0.08;
-      pointer-events: none;
-    }
-    .qn-banner.has-image{
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-    @media (max-width: 768px){
-      .qn-banner{ height: 200px; border-radius: 14px; }
-    }
-
+  
     .qn-series-subtitle{
-      font-family: 'Inter', system-ui, sans-serif;
-      font-size: 0.95rem;
-      letter-spacing: 0.02em;
-      margin: 0 0 10px;
-      color: var(--read-muted);
-    }
 
-    h1 { margin:0 0 8px; font-size: 2rem; color: var(--read-ink); }
-    p { margin:0 0 18px; line-height: 1.75; color: var(--read-muted); }
-
-    .note {
-      display: block;
-      padding: 16px 16px;
-      border-radius: 16px;
-      background: rgba(255,255,255,.74);
-      margin-bottom: 12px;
-      color: var(--read-ink);
-      text-decoration: none;
-      border: 1px solid var(--read-border);
-      transition: all 0.2s ease;
-    }
-   
-    .note,
-    .note:visited,
-    .note:hover,
-    .note:focus-visible{
-      color: var(--read-ink);
-      text-decoration: none;
-    }
-
-    .note strong{
-      color: var(--read-ink);
-      font-weight: 600;
-    }
-
-    .note .meta{
-      color: var(--read-muted);
-      font-weight: 500;
-    }
       
       <!DOCTYPE html>
 <html lang="en">
@@ -213,92 +117,78 @@
       padding: 16px 16px;
       border-radius: 16px;
       background: rgba(255,255,255,.74);
-      margin-bottom: 12px;
-      color: var(--read-ink);
-      text-decoration: none;
-      border: 1px solid var(--read-border);
-      transition: all 0.2s ease;
-    }
-    .note:hover {
-      background: rgba(255,255,255,.92);
-      transform: translateY(-1px);
-    }
-
-    .meta { font-size: 0.95rem; color: var(--read-muted); }
-
-    /* Optional: "latest" label */
-    .pill {
-      display: inline-block;
-      font-size: 0.8rem;
-      padding: 4px 10px;
-      border-radius: 999px;
-      border: 1px solid var(--read-border);
-      color: var(--read-muted);
-      margin-left: 8px;
-      vertical-align: middle;
-    }
-
-       @media (max-width: 768px){
-      .wrap{ padding: 44px 18px; }
-      .card{ padding: 40px 28px; }
-    }   
-  </style>
+<meta property="og:image" content="/read/quiet-note.png" />
+  <meta property="og:url" content="/read/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/site.css" />
 </head>
 
-<body>
-  
-  <main class="wrap">
-    <section class="card">
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="/">Backyard Studio</a>
+      <nav aria-label="Main navigation">
+                <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/shop/">Shop | Offerings</a></li>
+          <li><a href="/journal/">Journal | New Horizons</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-      <!-- Optional series banner image (use your series banner file if you have one) -->
-      <div class="qn-banner has-image" style="background-image: url('/read/quiet-note-banner.png');"></div>
+  <div class="container page-back-wrap"><a class="page-back" href="/">← Back to Home</a></div>
 
-      <p class="qn-series-subtitle">A gentle place for truth, release, and return.</p>
-      <h1>Quiet Notes</h1>
-            <p>Small words. Deep breath. A quiet corner of Backyard Studio.</p>
+  <main>
+    <div class="container">
+      <section class="hero">
+        <p class="eyebrow">Quiet Notes</p>
+        <h1>Small words. Deep breath.</h1>
+        <p>A gentle place for truth, release, and return. These short notes sit beside New Horizons as a softer, bite-sized reading room for difficult days and hopeful beginnings.</p>
+      </section>
 
-      <p>
-        These are short reflections meant to be read slowly. Each note is a soft pause
-        for the heart — a place to breathe, let go, and come back to what matters.
-      </p>
-
-      <p class="meta"><strong>What you will find here:</strong></p>
-      <ul class="service-list">
-        <li>One-minute reads for gentle re-centering</li>
-        <li>Quiet reminders for the days that feel heavy</li>
-        <li>Truth-tender words to return to when you need them</li>
-      </ul>
-
-      <p class="meta">
-        Start with the latest note, or choose the one that meets you where you are.
-      </p>
-
-      <!-- Quiet Note #004 -->
-      <a class="note" href="./quiet-notes-004-go-isnt-easy.html">
-        <strong>Quiet Note #004: Letting Go Isn’t Easy</strong>
-        <span class="pill">Latest</span><br />
-        <span class="meta">When what you believed in begins to change.</span>
-      </a>
-
-      <!-- Quiet Note #003 -->
-      <a class="note" href="./quiet-note-003-quiet-knows.html">
-        <strong>Quiet Note #003: When the Quiet Knows</strong><br />
-        <span class="meta">A gentle nudge. A quiet knowing. Discernment speaks softly.</span>
-      </a>
-
-      <!-- Quiet Note #002 -->
-      <a class="note" href="./quiet-note-002-place-to-return-to.html">
-        <strong>Quiet Note #002: A Place to Return To</strong><br />
-        <span class="meta">Come as you are.</span>
-      </a>
-
-      <!-- Quiet Note #001 -->
-      <a class="note" href="./quiet-note-001-you-matter.html">
-        <strong>Quiet Note #001: You Matter</strong><br />
-        <span class="meta">A gentle reminder for imperfect days.</span>
-      </a>
-
-    </section>
+      <section class="grid" aria-label="Quiet Notes entries">
+        <article class="card">
+          <img src="/read/001-banner.jpg" alt="Quiet Note 001" />
+          <div class="card-body">
+            <h3>You Matter</h3>
+            <p class="meta">Quiet Note 001</p>
+            <p>A reminder for the days you feel unseen or unsure.</p>
+            <a class="btn" href="/read/quiet-note-001-you-matter.html">Read note</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="/read/002-banner.jpg" alt="Quiet Note 002" />
+          <div class="card-body">
+            <h3>A Place to Return To</h3>
+            <p class="meta">Quiet Note 002</p>
+            <p>Come back to center when life feels loud.</p>
+            <a class="btn" href="/read/quiet-note-002-place-to-return-to.html">Read note</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="/read/003-banner.jpg" alt="Quiet Note 003" />
+          <div class="card-body">
+            <h3>Quiet Knows</h3>
+            <p class="meta">Quiet Note 003</p>
+            <p>An invitation to trust stillness over hurry.</p>
+            <a class="btn" href="/read/quiet-note-003-quiet-knows.html">Read note</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="/read/004-banner.jpg" alt="Quiet Note 004" />
+          <div class="card-body">
+            <h3>Go Isn’t Easy</h3>
+            <p class="meta">Quiet Note 004</p>
+            <p>Permission to release with tenderness and time.</p>
+            <a class="btn" href="/read/quiet-notes-004-go-isnt-easy.html">Read note</a>
+          </div>
+        </article>
+      </section>
+    </div>
   </main>
+  <footer>© 2026 Backyard Studio</footer>
 </body>
 </html>

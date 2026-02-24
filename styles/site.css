@@ -15,6 +15,7 @@ body {
   color: var(--ink);
   background: linear-gradient(180deg, #f6f1e9, #fcfaf7 35%, #fcfbf9);
   line-height: 1.7;
+  text-align: left;
 }
 h1, h2, h3, h4 { font-family: "Cormorant Garamond", Georgia, serif; letter-spacing: 0.01em; margin: 0; }
 a { color: inherit; }
@@ -43,6 +44,7 @@ main { padding: 2.2rem 0 4rem; }
 h1 { font-size: clamp(2rem,5vw,3.5rem); line-height: 1.1; }
 h2 { font-size: clamp(1.7rem,4vw,2.6rem); margin-bottom: .6rem; }
 p { margin: 0 0 1rem; color: var(--ink-soft); max-width: 65ch; }
+.section-card p, .entry-content p { max-width: 72ch; }
 .button-row { display:flex; flex-wrap:wrap; gap:.7rem; margin-top:1rem; }
 .btn {
   display:inline-flex; align-items:center; gap:.35rem; text-decoration:none;
@@ -58,6 +60,7 @@ p { margin: 0 0 1rem; color: var(--ink-soft); max-width: 65ch; }
 .card-body h3 { font-size: 1.7rem; margin-bottom:.3rem; }
 .meta { color: var(--ink-soft); font-size: .94rem; margin-bottom:.5rem; }
 .center { text-align:center; margin-inline:auto; }
+.section-card.center p { margin-inline: auto; }
 
 .payfast-form { margin-top: 1rem; display: inline-block; padding: .8rem; border-radius: 14px; background: rgba(255,255,255,.85); border: 1px solid rgba(143,119,103,.24); }
 
@@ -72,7 +75,23 @@ input[type="search"], select { width:100%; font:inherit; padding:.7rem .8rem; bo
 .entry-hero { border-radius:16px; width:100%; max-height:370px; object-fit:cover; margin-bottom:1rem; }
 .entry-content p { font-size:1.07rem; color:#3f3831; }
 .inline-share a{ margin-right:.5rem; }
-footer { text-align:center; color:var(--ink-soft); padding:1rem 0 2rem; }
+footer {
+  text-align: center;
+  color: var(--ink-soft);
+  padding: 1rem 0 2rem;
+}
+footer p {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.product-hero {
+  text-align: left;
+}
+
+.preview-grid {
+  margin-top: 1rem;
+}
 
 .preview-thumb { border:0; background:none; padding:0; border-radius:16px; overflow:hidden; cursor:zoom-in; box-shadow:var(--shadow); }
 .preview-thumb img { transition: transform .3s ease; }

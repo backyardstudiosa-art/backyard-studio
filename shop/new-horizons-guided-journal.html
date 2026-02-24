@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New Horizons Guided Journal | Backyard Studio</title>
+  <meta name="description" content="Purchase the New Horizons Guided Journal and preview select pages before checkout." />
+  <meta property="og:title" content="New Horizons Guided Journal" />
+  <meta property="og:description" content="A thoughtfully designed guided journal to help you reflect, process, and grow." />
+  <meta property="og:type" content="product" />
+  <meta property="og:image" content="/assets/guided-journal.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/site.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="/">Backyard Studio</a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a class="active" href="/shop/">Shop / Offerings</a></li>
+          <li><a href="/journal/">Journal (New Horizons)</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="hero">
+        <p class="eyebrow">New Horizons Guided Journal</p>
+        <h1>Rebuilding After Carrying Too Much</h1>
+        <p>A thoughtfully designed guided journal to help you reflect, process, and grow through intentional writing.</p>
+        <p><strong>Price: R149</strong></p>
+
+        <form name="PayFastPayNowForm" action="https://payment.payfast.io/eng/process" method="post" class="payfast-form">
+          <input required type="hidden" name="cmd" value="_paynow">
+          <input required type="hidden" name="receiver" pattern="[0-9]" value="33788235">
+          <input type="hidden" name="return_url" value="https://backyardstudio.co.za/thank-you.html">
+          <input type="hidden" name="cancel_url" value="https://backyardstudio.co.za/shop.html">
+          <input required type="hidden" name="amount" value="149">
+          <input required type="hidden" name="item_name" maxlength="255" value="New Horizons Guided Journal">
+          <input type="hidden" name="item_description" maxlength="255" value="A thoughtfully designed guided journal to help you reflect, process, and grow through intentional writing.">
+          <table>
+            <tr>
+              <td colspan="2" align="center">
+                <input type="image" src="https://my.payfast.io/images/buttons/BuyNow/Primary-Large-BuyNow.png" alt="Buy Now" title="Buy Now with Payfast">
+              </td>
+            </tr>
+          </table>
+        </form>
+      </section>
+
+      <section>
+        <h2 style="margin-bottom:1rem;">Preview Pages</h2>
+        <div class="grid preview-grid" aria-label="Journal preview pages">
+          <button class="preview-thumb" type="button" data-full="/assets/guided-journal.png" data-title="Journal Cover">
+            <img src="/assets/guided-journal.png" alt="New Horizons guided journal cover" loading="lazy" />
+          </button>
+          <button class="preview-thumb" type="button" data-full="/assets/journal-page1.png" data-title="Before You Begin">
+            <img src="/assets/journal-page1.png" alt="Before you begin page preview" loading="lazy" />
+          </button>
+          <button class="preview-thumb" type="button" data-full="/assets/journal-page2.png" data-title="Event vs Identity">
+            <img src="/assets/journal-page2.png" alt="Event vs identity page preview" loading="lazy" />
+          </button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close preview">×</button>
+    <img id="lightbox-image" src="" alt="Expanded journal preview page" />
+    <p id="lightbox-title" class="lightbox-title"></p>
+  </div>
+
+  <footer>© 2026 Backyard Studio</footer>
+  <script>
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightbox-image');
+    const lightboxTitle = document.getElementById('lightbox-title');
+    const closeBtn = document.getElementById('lightbox-close');
+
+    document.querySelectorAll('.preview-thumb').forEach((thumb) => {
+      thumb.addEventListener('click', () => {
+        lightboxImage.src = thumb.dataset.full;
+        lightboxTitle.textContent = `${thumb.dataset.title} · click image to zoom`;
+        lightboxImage.classList.remove('zoomed');
+        lightbox.hidden = false;
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    lightboxImage.addEventListener('click', () => {
+      lightboxImage.classList.toggle('zoomed');
+    });
+
+    function closeLightbox() {
+      lightbox.hidden = true;
+      lightboxImage.classList.remove('zoomed');
+      document.body.style.overflow = '';
+    }
+
+    closeBtn.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !lightbox.hidden) closeLightbox();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+[
+  {
+    "slug": "the-light-after-rain",
+    "title": "The Light After Rain",
+    "date": "2026-02-23",
+    "tags": ["Healing", "Reflection"],
+    "excerpt": "Some mornings begin in grey, but grace still arrives in quiet layers of light.",
+    "featuredImage": "/assets/new-beginnings.png",
+    "content": [
+      "The rain held us in for most of the week. Droplets gathered on the window like prayers waiting to be spoken.",
+      "When the clouds thinned, every leaf looked rinsed and awake. Healing feels like this too: slow weather, soft patience, then one day we breathe deeper than before.",
+      "Today I am grateful for hope that does not rush. It waits beside us until we are ready to notice it."
+    ]
+  },
+  {
+    "slug": "small-faithful-steps",
+    "title": "Small, Faithful Steps",
+    "date": "2026-02-14",
+    "tags": ["Faith", "Growth"],
+    "excerpt": "Big transformations often begin with one quiet yes repeated over time.",
+    "featuredImage": "/assets/restoration-journey.png",
+    "content": [
+      "I used to wait for certainty before beginning. Now I am learning to move with trust instead.",
+      "One page written. One honest conversation. One gentle boundary. These things are not dramatic, but they make a life sturdy.",
+      "Faith is not always a mountain-top feeling. Sometimes it is choosing the next faithful step when no applause is in the room."
+    ]
+  },
+  {
+    "slug": "listening-before-dawn",
+    "title": "Listening Before Dawn",
+    "date": "2026-01-29",
+    "tags": ["Faith", "Reflection"],
+    "excerpt": "Before the noise arrives, there is a holy stillness that remembers our name.",
+    "featuredImage": "/assets/still-waters.png",
+    "content": [
+      "Before sunrise, I sat with tea while the neighborhood slept.",
+      "In that quiet hour, my thoughts settled like dust in sunlight and I could hear the gentle nudges I miss during busy afternoons.",
+      "I want to carry this posture with me: less striving, more receiving."
+    ]
+  },
+  {
+    "slug": "holding-space-for-healing",
+    "title": "Holding Space for Healing",
+    "date": "2026-01-12",
+    "tags": ["Healing", "Growth"],
+    "excerpt": "Healing is not a straight line. It is a home we build one kind thought at a time.",
+    "featuredImage": "/assets/emotional-clarity.png",
+    "content": [
+      "Some days feel strong and steady. Other days, tender and unsure. Both are welcome here.",
+      "I am practicing language that comforts instead of criticizes. I am learning to meet myself with the same compassion I offer a friend.",
+      "Growth sometimes looks like staying present with what hurts, without letting it define the whole story."
+    ]
+  },
+  {
+    "slug": "gratitude-in-ordinary-things",
+    "title": "Gratitude in Ordinary Things",
+    "date": "2025-12-21",
+    "tags": ["Reflection", "Growth"],
+    "excerpt": "A clean table, warm bread, and a friend’s laugh can become sacred if we slow down enough.",
+    "featuredImage": "/assets/journal-memory-pg.png",
+    "content": [
+      "Nothing spectacular happened today — sunlight on the kitchen floor, a short walk at dusk.",
+      "Still, my heart felt full. Gratitude kept pointing toward what was already here.",
+      "I am keeping a list of ordinary mercies so I do not forget that abundance often wears simple clothes."
+    ]
+  },
+  {
+    "slug": "when-growth-feels-slow",
+    "title": "When Growth Feels Slow",
+    "date": "2025-11-30",
+    "tags": ["Growth", "Healing"],
+    "excerpt": "Roots deepen in hidden places long before blossoms appear.",
+    "featuredImage": "/assets/guided-journal.png",
+    "content": [
+      "I keep wondering why progress feels invisible some days.",
+      "Then I remember seeds do their bravest work underground. Not every season is meant to be seen, but every season matters.",
+      "If growth feels slow right now, be gentle with yourself. Quiet becoming is still becoming."
+    ]
+  }
+]

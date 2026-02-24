@@ -4,69 +4,54 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>New Horizons Journal | Backyard Studio</title>
-  <meta name="description" content="Read New Horizons: evergreen reflections on faith, healing, and growth from Backyard Studio." />
+  <meta name="description" content="New Horizons: recurring reflections for thoughtful living — searchable, evergreen, and gentle." />
   <meta property="og:title" content="New Horizons Journal" />
-  <meta property="og:description" content="A calm reading room of reflective entries on faith, healing, and growth." />
+  <meta property="og:description" content="A quiet archive of spiritual and reflective writing." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="/assets/journal-page5.png" />
-  <meta property="og:url" content="/journal/" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles/site.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav-shell">
-      <a class="brand" href="/">Backyard Studio</a>
-      <nav aria-label="Main navigation">
-        <ul class="nav-links">
-          <li><a href="/">Home</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/shop/">Shop / Offerings</a></li>
-          <li><a class="active" href="/journal/">Journal (New Horizons)</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<header class="site-header">
+  <div class="container nav-shell">
+    <a class="brand" href="/">Backyard Studio</a>
+    <nav aria-label="Main navigation"><ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/shop/">Shop | Offerings</a></li>
+      <li><a class="active" href="/journal/">Journal | New Horizons</a></li></ul>
+    </nav>
+  </div>
+</header>
+
+  <div class="container page-back-wrap">
+    <a class="page-back" href="/">← Back to Home</a></div>
 
   <main>
-    <div class="container">
-      <section class="hero">
-        <p class="eyebrow">Journal</p>
-        <h1>New Horizons</h1>
-        <p>A quiet shelf of reflections for seasons of faith, healing, and slow growth. Search what you need, and return whenever your heart asks for stillness.</p>
-      </section>
+  <div class="container">
+  <section class="section-card center">
+    <p class="eyebrow">Journal</p>
+    <h1>New Horizons</h1>
+    <p>Recurring reflections for thoughtful living.</p>
+  </section>
 
-      <section class="search-panel" aria-label="Search and filter journal entries">
-        <div class="search-row">
-          <label>
-            <span class="eyebrow">Search reflections</span>
-            <input id="journal-search" type="search" placeholder="Search by title or reflection text..." />
-          </label>
-          <label>
-            <span class="eyebrow">Sort</span>
-            <select id="sort-order">
-              <option value="newest">Newest first</option>
-              <option value="oldest">Oldest first</option>
-            </select>
-          </label>
-        </div>
-        <div class="tag-row" role="group" aria-label="Filter by tag">
-          <button class="tag-pill active" data-tag="All" type="button">All</button>
-          <button class="tag-pill" data-tag="Faith" type="button">Faith</button>
-          <button class="tag-pill" data-tag="Healing" type="button">Healing</button>
-          <button class="tag-pill" data-tag="Reflection" type="button">Reflection</button>
-          <button class="tag-pill" data-tag="Growth" type="button">Growth</button>
-        </div>
-      </section>
-
-      <section id="entry-list" class="grid" aria-live="polite" aria-label="Journal entries"></section>
+  <section class="search-panel" aria-label="Search and filter journal entries">
+    <div class="search-row">
+      <input id="search" type="search" placeholder="Search by title, excerpt, or reflection text" aria-label="Search journal entries" />
+      <select id="sort" aria-label="Sort entries"><option value="newest">Newest first</option><option value="oldest">Oldest first</option></select>
     </div>
-  </main>
-  <footer>© 2026 Backyard Studio</footer>
+    <div class="tag-row" id="tags" aria-label="Tag filters"></div>
+  </section>
 
-  <script src="/journal/journal-data.js"></script>
-  <script src="/journal/journal.js"></script>
+  <section id="entries" class="columns" aria-live="polite"></section>
+</div>
+  </main>
+
+  <footer><p><a href="https://wa.me/27649607349" target="_blank" rel="noopener">WhatsApp</a> · <a href="mailto:hello@backyardstudio.co.za">hello@backyardstudio.co.za</a></p><p>© <span id="year"></span> Backyard Studio</p></footer>
+<script src="/scripts.js"></script>
+<script src="/journal/journal.js"></script>
 </body>
 </html>

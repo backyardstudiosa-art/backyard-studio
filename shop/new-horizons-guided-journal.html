@@ -58,7 +58,8 @@
       </section>
 
       <section>
-        <h2 style="margin-bottom:1rem;">Preview Pages</h2>
+        <section class="section-card">
+        <h2>Preview Pages</h2>
         <div class="grid preview-grid" aria-label="Journal preview pages">
           <button class="preview-thumb" type="button" data-full="/assets/guided-journal.png" data-title="Journal Cover">
             <img src="/assets/guided-journal.png" alt="New Horizons guided journal cover" loading="lazy" />
@@ -80,7 +81,13 @@
     <p id="lightbox-title" class="lightbox-title"></p>
   </div>
 
-  <footer>© 2026 Backyard Studio</footer>
+    <footer>
+    <p><a href="https://wa.me/27649607349" target="_blank" rel="noopener">WhatsApp</a> · <a href="mailto:hello@backyardstudio.co.za">hello@backyardstudio.co.za</a></p>
+    <p>© <span id="year"></span> Backyard Studio</p>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
   <script>
     const lightbox = document.getElementById('lightbox');
     const lightboxImage = document.getElementById('lightbox-image');

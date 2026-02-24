@@ -76,9 +76,12 @@
   </main>
 
   <div class="lightbox" id="lightbox" hidden>
-    <button class="lightbox-close" id="lightbox-close" aria-label="Close preview">×</button>
-    <img id="lightbox-image" src="" alt="Expanded journal preview page" />
-    <p id="lightbox-title" class="lightbox-title"></p>
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Close preview">✕</button>
+      <img id="lightbox-image" src="" alt="Expanded journal preview page" />
+      <p id="lightbox-title" class="lightbox-title"></p>
+      <p class="lightbox-hint">Click image to zoom · Press Esc to close</p>
+    </div>
   </div>
 
     <footer>
@@ -88,7 +91,6 @@
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
 
-  <script>
     const lightbox = document.getElementById('lightbox');
     const lightboxImage = document.getElementById('lightbox-image');
     const lightboxTitle = document.getElementById('lightbox-title');

@@ -41,9 +41,9 @@ a { color: inherit; }
   overflow: hidden;
 }
 .brand-banner img {
-  width: 110%;
+  width: 100%;
   display: block;
-  height: clamp(170px, 34vh, 660px);
+  height: clamp(190px, 37vh, 390px);
   object-fit: cover;
   object-position: center 42%;
 }

@@ -96,6 +96,23 @@ p { margin: 0 0 1rem; color: var(--ink-soft); max-width: 65ch; }
 .meta { color: var(--ink-soft); font-size: .94rem; margin-bottom:.5rem; }
 .center { text-align:center; margin-inline:auto; }
 .section-card.center p { margin-inline: auto; }
+.feature-video {
+  width: 100%;
+  border-radius: 14px;
+  display: block;
+  margin-top: .6rem;
+  box-shadow: var(--shadow);
+}
+
+.about-list {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--ink-soft);
+}
+
+.about-list li {
+  margin-bottom: .45rem;
+}
 
 .payfast-form { margin-top: 1rem; display: inline-block; padding: .8rem; border-radius: 14px; background: rgba(255,255,255,.85); border: 1px solid rgba(143,119,103,.24); }
 

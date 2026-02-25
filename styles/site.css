@@ -32,7 +32,7 @@ a { color: inherit; }
 .nav-links a { text-decoration:none; color:var(--ink-soft); padding:.55rem .8rem; border-radius:10px; opacity:.68; transition:opacity .18s ease, background-color .18s ease, color .18s ease; }
 .nav-links a:hover,.nav-links a:focus-visible,.nav-links .active{ background:rgba(143,119,103,.14); color:var(--ink); opacity:1; }
 .nav-actions { display: flex; align-items: center; gap: .5rem; }
-.menu-btn { display: none; }
+.btn.menu-btn { display: none; }
 
 .brand-banner {
   width: min(var(--max), 100%);
@@ -43,9 +43,9 @@ a { color: inherit; }
 .brand-banner img {
   width: 100%;
   display: block;
-  height: clamp(220px, 48vh, 520px);
+  height: clamp(170px, 34vh, 360px);
   object-fit: cover;
-  object-position: center;
+  object-position: center 42%;
 }
 
 .mobile-menu {
@@ -66,6 +66,7 @@ a { color: inherit; }
 .site-header.nav-open #mobile-menu[hidden] {
   display: block;
 }
+
 main { padding: 2.2rem 0 4rem; }
 .section-card {
   background: var(--paper);
@@ -141,9 +142,9 @@ footer p {
 @media (max-width:700px){
   .nav-shell{ min-height: 64px; }
   .nav-shell nav, .nav-shell .nav-actions .btn:not(.menu-btn) { display: none; }
-  .menu-btn { display: inline-flex; }
+  .btn.menu-btn { display: inline-flex; }
   .brand-banner { border-radius: 0; }
-  .brand-banner img { height: clamp(180px, 36vh, 360px); }
+  .brand-banner img { height: clamp(150px, 26vh, 240px); }
   .columns{ grid-template-columns:1fr;}
   .search-row{ grid-template-columns:1fr; }
 }

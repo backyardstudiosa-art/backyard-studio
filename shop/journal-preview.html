@@ -1,180 +1,119 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Journal Sample Pages | Backyard Studio</title>
-  <link rel="stylesheet" href="../style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&display=swap" rel="stylesheet">
-  <style>
-    .preview-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-
-    .preview-card {
-      margin: 0;
-      background: rgba(255,255,255,0.65);
-      border-radius: 14px;
-      padding: 0.75rem;
-    }
-
-    .preview-card img {
-      width: 100%;
-      display: block;
-      border-radius: 10px;
-    }
-
-    .preview-card figcaption {
-      margin-top: 0.45rem;
-      font-size: 0.9rem;
-      text-align: center;
-    }
-
-    .zoom-trigger {
-      border: 0;
-      background: transparent;
-      cursor: zoom-in;
-      padding: 0;
-      width: 100%;
-      border-radius: 10px;
-    }
-
-    .zoom-modal {
-      position: fixed;
-      inset: 0;
-      background: rgba(24, 19, 17, 0.82);
-      display: none;
-      align-items: center;
-      justify-content: center;
-      padding: 1.2rem;
-      z-index: 1000;
-    }
-
-    .zoom-modal.open {
-      display: flex;
-    }
-
-    .zoom-image {
-      max-width: min(100%, 980px);
-      max-height: 88vh;
-      width: auto;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 14px 34px rgba(0, 0, 0, 0.35);
-      background: #fff;
-    }
-
-.zoom-close {
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-      width: 2.2rem;
-      height: 2.2rem;
-      border-radius: 999px;
-      border: none;
-      font-size: 1.3rem;
-      line-height: 1;
-      cursor: pointer;
-      background: #fff;
-      color: #5a4744;
-      font-weight: 700;
-    }
-  </style>
+    <title>Guided Journal Preview | Backyard Studio</title>
+  <meta name="description" content="Preview pages from the New Horizons Guided Journal before purchasing." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/site.css" />
 </head>
-<body class="index-shell" data-page="shop">
-  <div class="page-card">
-    <div class="page-card-inner">
-      <header class="site-header halo fade-in">
-        <img src="../assets/banner.png" alt="Backyard Studio logo" class="site-logo">
-      </header>
-
-      <nav class="soft-nav fade-in">
-        <a href="/index.html" data-link="home">Home</a>
-        <a href="/backyard-studio.html" data-link="creative">Creative Studio</a>
-        <a href="/new-horizons.html" data-link="horizons">New Horizons</a>
-        <a href="/shop/" data-link="shop">Digital Shop</a>
-        <a href="/journal.html" data-link="journal">Journal</a>
-        <a href="/book-a-session.html" data-link="book">Book a Session</a>
+<body>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="/index.html">Backyard Studio</a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a class="active" href="/shop.html">Shop</a></li>
+          <li><a href="/journal.html">Journal</a></li>
+        </ul>
       </nav>
-
+      <div class="nav-actions">
+        <a class="btn" href="/portfolio.html">View Work</a>
+        <button class="btn menu-btn" data-menu-btn aria-expanded="false" aria-controls="mobile-menu">Menu</button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="mobile-menu" hidden>
+      <div class="container">
+        <a href="/index.html">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/shop.html">Shop</a>
+        <a href="/journal.html">Journal</a>
+      </div>
+    </div>
+  </header>
+      
+  <div class="container page-back-wrap">
+    <a class="page-back" href="/shop/new-horizons-guided-journal.html">← Back to product</a>
+  </div>
+  
       <main class="page-panel panel-bg">
-        <section class="content-section soft-background fade-in section">
-          <h1 style="text-align: center;">Guided Journal Sample Pages</h1>
-          <p class="measure">Preview pages from the journal before purchasing.</p>
-          <a class="pillow-button" href="/shop/">Back to Shop</a>
-        </section>
+  <main>
+    <div class="container product-wrap">
+      <section class="section-card center">
+        <p class="eyebrow">Guided Journal Preview</p>
+        <h1>Sample Pages</h1>
+        <p>Preview pages from the journal before purchasing.</p>
+      </section>
 
-        <section class="content-section fade-in">
-          <div class="preview-grid">
-            <figure class="preview-card">
-              <button class="zoom-trigger" type="button" data-zoom-src="../assets/journal-page1.png" data-zoom-alt="Journal sample page 1 enlarged view">
-                <img src="../assets/journal-page1.png" alt="Journal sample page 1" />
-              </button>
-              <figcaption>Page 1</figcaption>
-            </figure>
-            <figure class="preview-card">
-              <button class="zoom-trigger" type="button" data-zoom-src="../assets/journal-page2.png" data-zoom-alt="Journal sample page 2 enlarged view">
-                <img src="../assets/journal-page2.png" alt="Journal sample page 2" />
-              </button>
-              <figcaption>Page 2</figcaption>
-            </figure>
-            <figure class="preview-card">
-              <button class="zoom-trigger" type="button" data-zoom-src="../assets/journal-page5.png" data-zoom-alt="Journal sample page 5 enlarged view">
-                <img src="../assets/journal-page5.png" alt="Journal sample page 5" />
-              </button>
-              <figcaption>Page 5</figcaption>
-            </figure>
-          </div>
-        </section>
-      </main>
+      <section class="section-card">
+        <div class="preview-grid" aria-label="Guided journal sample pages">
+          <button class="preview-thumb" type="button" data-full="/assets/journal-page1.png" data-title="Page 1">
+            <img src="/assets/journal-page1.png" alt="Journal sample page 1" loading="lazy" />
+          </button>
+          <button class="preview-thumb" type="button" data-full="/assets/journal-page2.png" data-title="Page 2">
+            <img src="/assets/journal-page2.png" alt="Journal sample page 2" loading="lazy" />
+          </button>
+          <button class="preview-thumb" type="button" data-full="/assets/journal-page5.png" data-title="Page 5">
+            <img src="/assets/journal-page5.png" alt="Journal sample page 5" loading="lazy" />
+          </button>
+        </div>
+      </section>          
+    </div>
+  </main>
+
+    <div class="lightbox" id="lightbox" hidden>
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Close preview">✕</button>
+      <img id="lightbox-image" src="" alt="Expanded journal preview page" />
+      <p id="lightbox-title" class="lightbox-title"></p>
     </div>
   </div>
 
-  <div class="zoom-modal" id="zoomModal" aria-hidden="true" role="dialog" aria-label="Sample page zoom viewer">
-    <button class="zoom-close" id="zoomClose" type="button" aria-label="Close enlarged preview">×</button>
-    <img class="zoom-image" id="zoomImage" src="" alt="" />
-  </div>
+ <footer class="site-footer">
+    <div class="container footer-center">
+      <div class="footer-links">
+        <a href="https://wa.me/27649607349" target="_blank" rel="noopener">WhatsApp</a>
+        <span class="divider">·</span>
+        <a href="mailto:hello@backyardstudio.co.za">hello@backyardstudio.co.za</a>
+      </div>
+      <p class="footer-copy">© <span id="year"></span> Backyard Studio</p>
+    </div>
+  </footer>
 
-  <footer class="return-footer fade-in">© 2026 Backyard Studio</footer>
-  <script src="../script.js"></script>
-  <script>
-    const zoomModal = document.getElementById('zoomModal');
-    const zoomImage = document.getElementById('zoomImage');
-    const zoomClose = document.getElementById('zoomClose');
-    const zoomTriggers = document.querySelectorAll('.zoom-trigger');
+    <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
 
-    function closeZoom() {
-      zoomModal.classList.remove('open');
-      zoomModal.setAttribute('aria-hidden', 'true');
-      zoomImage.src = '';
-      zoomImage.alt = '';
-    }
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightbox-image');
+    const lightboxTitle = document.getElementById('lightbox-title');
+    const closeBtn = document.getElementById('lightbox-close');
 
-    zoomTriggers.forEach((trigger) => {
-      trigger.addEventListener('click', () => {
-        zoomImage.src = trigger.dataset.zoomSrc;
-        zoomImage.alt = trigger.dataset.zoomAlt;
-        zoomModal.classList.add('open');
-        zoomModal.setAttribute('aria-hidden', 'false');
+    document.querySelectorAll('.preview-thumb').forEach((thumb) => {
+      thumb.addEventListener('click', () => {
+        lightboxImage.src = thumb.dataset.full;
+        lightboxTitle.textContent = thumb.dataset.title;
+        lightbox.hidden = false;
+        document.body.style.overflow = 'hidden';
       });
+    });     
+      
+      function closeLightbox() {
+      lightbox.hidden = true;
+      document.body.style.overflow = '';
+    }    
+      closeBtn.addEventListener('click', closeLightbox);
+      lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) closeLightbox();
     });
-
-    zoomClose.addEventListener('click', closeZoom);
-
-    zoomModal.addEventListener('click', (event) => {
-      if (event.target === zoomModal) {
-        closeZoom();
-      }
-    });
-
-    document.addEventListener('keydown', (event) => {
-      if (event.key === 'Escape' && zoomModal.classList.contains('open')) {
-        closeZoom();
-      }
+      document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !lightbox.hidden) closeLightbox();
     });
   </script>
+  <script src="/script.js"></script>
 </body>
 </html>

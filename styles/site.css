@@ -79,7 +79,7 @@ main { padding: 2.2rem 0 4rem; }
 h1 { font-size: clamp(2rem,5vw,3.5rem); line-height: 1.1; }
 h2 { font-size: clamp(1.7rem,4vw,2.6rem); margin-bottom: .6rem; }
 p { margin: 0 0 1rem; color: var(--ink-soft); max-width: 65ch; }
-.section-card p, .entry-content p { max-width: 72ch; }
+.section-card p, .entry-content p { max-width: min(100%, 92ch); }
 .button-row { display:flex; flex-wrap:wrap; gap:.7rem; margin-top:1rem; }
 .btn {
   display:inline-flex; align-items:center; gap:.35rem; text-decoration:none;
@@ -118,6 +118,16 @@ footer {
 footer p {
   margin-inline: auto;
   text-align: center;
+}
+
+.site-footer {
+  font-size: .92rem;
+  padding: .55rem 0 1.1rem;
+}
+
+.site-footer .footer-links,
+.site-footer .footer-copy {
+  margin-bottom: .35rem;
 }
 
 .product-hero {

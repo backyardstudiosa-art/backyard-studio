@@ -34,18 +34,24 @@ a { color: inherit; }
 .nav-actions { display: flex; align-items: center; gap: .5rem; }
 .btn.menu-btn { display: none; }
 
-.brand-banner {
-  width: min(var(--max), 100%);
-  margin: 0 auto;
-  border-radius: 0 0 24px 24px;
-  overflow: hidden;
-}
-.brand-banner img {
+/* Brand Banner */
+.brand-banner{
   width: 100%;
-  display: block;
-  height: clamp(170px, 34vh, 360px);
-  object-fit: cover;
-  object-position: center 42%;
+  text-align: center;
+  padding: 16px 0 8px;
+  background: rgba(255,252,248,.6);
+  border-bottom: 1px solid var(--line);
+}
+
+.brand-banner img{
+  max-width: 420px;
+  width: 90%;
+  height: auto;
+}
+
+/* Slight spacing refinement */
+.site-header .navbar{
+  padding-top: 14px;
 }
 
 .mobile-menu {

@@ -45,8 +45,8 @@ a { color: inherit; }
 
 .brand-banner img{
   max-width: 420px;
-  width: 90%;
-  height: auto;
+  width: 80%;
+  height: 60%;
 }
 
 /* Slight spacing refinement */

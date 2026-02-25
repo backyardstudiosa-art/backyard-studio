@@ -3,47 +3,48 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Backyard Studio | Where stories are held gently</title>
+  <title>Backyard Studio | Where stories are held gently</title>
   <meta name="description" content="Backyard Studio is a calm creative sanctuary for memory-keeping, guided journaling, and New Horizons reflections." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles/site.css" />
+  </head>
 
 <body>
   <header class="site-header">
+  <div class="container nav-shell">
+      <a class="brand" href="index.html">Backyard Studio</a>
 
-  <!-- Brand Banner -->
-  <div class="brand-banner">
-    <img src="assets/banner.png" alt="Backyard Studio Banner">
-  </div>
-
-  <div class="container">
-    <div class="navbar">
-
-      <a class="brand" href="index.html">
-        <div class="brand-mark" aria-hidden="true"></div>
-        <div>
-          <h1>Backyard Studio</h1>
-          <small>Creative Studio</small>
-        </div>
-      </a>
-
-      <nav class="nav-links" aria-label="Primary">
-        <a href="index.html">Home</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="shop.html">Shop</a>
-        <a href="journal.html">Journal</a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="journal.html">Journal</a></li>
+        </ul>
       </nav>
 
       <div class="nav-actions">
         <a class="btn" href="portfolio.html">View Work</a>
-        <button class="btn menu-btn" data-menu-btn aria-expanded="false">Menu</button>
+        <button class="btn menu-btn" data-menu-btn aria-expanded="false" aria-controls="mobile-menu">Menu</button>
       </div>
+    </div>
 
+      <div id="mobile-menu" class="mobile-menu" hidden>
+      <div class="container">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="shop.html">Shop</a>
+        <a href="journal.html">Journal</a>
+        
     </div>
   </div>
-</header>
+  </header>
+
+  <section class="brand-banner" aria-label="Backyard Studio banner">
+    <img src="assets/banner.png" alt="Backyard Studio Banner">
+  </section>
 
   <main>
     <div class="container">
@@ -87,28 +88,22 @@
         <a class="btn" href="/about.html">Begin Here</a>
       </section>
       </div>
-  </main>
-      
+    </main>
 <footer class="site-footer">
-  <div class="container footer-center">
-
-    <div class="footer-links">
-      <a href="https://wa.me/27649607349" target="_blank" rel="noopener">WhatsApp</a>
-      <span class="divider">·</span>
-      <a href="https://zcal.co/YOUR-ZCAL-LINK" target="_blank" rel="noopener">Book a Session</a>
-    </div>
-
+    <div class="container footer-center">
+      <div class="footer-links">
+        <a href="https://wa.me/27649607349" target="_blank" rel="noopener">WhatsApp</a>
+        <span class="divider">·</span>
+        <a href="https://zcal.co/YOUR-ZCAL-LINK" target="_blank" rel="noopener">Book a Session</a>
+      </div>
     <p class="footer-copy">
-      © <span id="year"></span> Backyard Studio
-    </p>
-
-  </div>
-</footer>
-
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-
-<script src="/scripts.js"></script>
+        © <span id="year"></span> Backyard Studio
+      </p>
+    </div>
+  </footer>  
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+<script src="/script.js"></script>
 </body>
 </html>

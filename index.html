@@ -12,19 +12,38 @@
 
 <body>
   <header class="site-header">
-    <div class="container nav-shell">
-      <a class="brand" href="/">Backyard Studio</a>
-      <nav aria-label="Main navigation">
-        <ul class="nav-links">
-          <li><a class="active" href="/">Home</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/shop/">Shop | Offerings</a></li>
-          <li><a href="/journal/">Journal | New Horizons</a></li>
-        </ul>
+
+  <!-- Brand Banner -->
+  <div class="brand-banner">
+    <img src="assets/banner.png" alt="Backyard Studio Banner">
+  </div>
+
+  <div class="container">
+    <div class="navbar">
+
+      <a class="brand" href="index.html">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <div>
+          <h1>Backyard Studio</h1>
+          <small>Creative Studio</small>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="shop.html">Shop</a>
+        <a href="journal.html">Journal</a>
       </nav>
+
+      <div class="nav-actions">
+        <a class="btn" href="portfolio.html">View Work</a>
+        <button class="btn menu-btn" data-menu-btn aria-expanded="false">Menu</button>
       </div>
-         </div>
-  </header>
+
+    </div>
+  </div>
+</header>
 
   <main>
     <div class="container">
@@ -69,11 +88,27 @@
       </section>
       </div>
   </main>
+      
+<footer class="site-footer">
+  <div class="container footer-center">
 
-      <footer>
-    <p><a href="https://wa.me/27649607349" target="_blank" rel="noopener">WhatsApp</a> · <a href="mailto:hello@backyardstudio.co.za">hello@backyardstudio.co.za</a></p>
-    <p>© <span id="year"></span> Backyard Studio</p>
-  </footer>
-  <script src="/scripts.js"></script>
+    <div class="footer-links">
+      <a href="https://wa.me/27649607349" target="_blank" rel="noopener">WhatsApp</a>
+      <span class="divider">·</span>
+      <a href="https://zcal.co/YOUR-ZCAL-LINK" target="_blank" rel="noopener">Book a Session</a>
+    </div>
+
+    <p class="footer-copy">
+      © <span id="year"></span> Backyard Studio
+    </p>
+
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+<script src="/scripts.js"></script>
 </body>
 </html>

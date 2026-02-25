@@ -17,22 +17,36 @@
 <body>
   <header class="site-header">
     <div class="container nav-shell">
-      <a class="brand" href="/">Backyard Studio</a>
-      <nav aria-label="Main navigation">
+      <a class="brand" href="/index.html">Backyard Studio</a>
+      <nav aria-label="Primary">
         <ul class="nav-links">
-          <li><a href="/">Home</a></li>
+          <li><a href="/index.html">Home</a></li>
           <li><a href="/about.html">About</a></li>
-          <li><a class="active" href="/shop/">Shop | Offerings</a></li>
-          <li><a href="/journal/">Journal | New Horizons</a></li>
+          <li><a class="active" href="/shop.html">Shop</a></li>
+          <li><a href="/journal.html">Journal</a></li>
         </ul>
       </nav>
+      <div class="nav-actions">
+        <a class="btn" href="/portfolio.html">View Work</a>
+        <button class="btn menu-btn" data-menu-btn aria-expanded="false" aria-controls="mobile-menu">Menu</button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="mobile-menu" hidden>
+      <div class="container">
+        <a href="/index.html">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/shop.html">Shop</a>
+        <a href="/journal.html">Journal</a>
+      </div>
     </div>
   </header>
 
-    <div class="container page-back-wrap"><a class="page-back" href="/">← Back to Home</a></div>
-  
+  <div class="container page-back-wrap">
+    <a class="page-back" href="/shop.html">← Back to Shop</a>
+  </div>
+ 
   <main>
-    <div class="container">
+    <div class="container product-wrap">
       <section class="section-card product-hero">
         <p class="eyebrow">New Horizons Guided Journal</p>
         <h1>Rebuilding After Carrying Too Much</h1>
@@ -57,10 +71,9 @@
         </form>
       </section>
 
-      <section>
-        <section class="section-card">
+      <section class="section-card">
         <h2>Preview Pages</h2>
-        <div class="grid preview-grid" aria-label="Journal preview pages">
+        <div class="preview-grid" aria-label="Journal preview pages">
           <button class="preview-thumb" type="button" data-full="/assets/guided-journal.png" data-title="Journal Cover">
             <img src="/assets/guided-journal.png" alt="New Horizons guided journal cover" loading="lazy" />
           </button>
@@ -84,10 +97,17 @@
     </div>
   </div>
 
-    <footer>
-    <p><a href="https://wa.me/27649607349" target="_blank" rel="noopener">WhatsApp</a> · <a href="mailto:hello@backyardstudio.co.za">hello@backyardstudio.co.za</a></p>
-    <p>© <span id="year"></span> Backyard Studio</p>
+    <footer class="site-footer">
+    <div class="container footer-center">
+      <div class="footer-links">
+        <a href="https://wa.me/27649607349" target="_blank" rel="noopener">WhatsApp</a>
+        <span class="divider">·</span>
+        <a href="mailto:hello@backyardstudio.co.za">hello@backyardstudio.co.za</a>
+      </div>
+      <p class="footer-copy">© <span id="year"></span> Backyard Studio</p>
+    </div>
   </footer>
+  
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
 
@@ -125,5 +145,6 @@
       if (e.key === 'Escape' && !lightbox.hidden) closeLightbox();
     });
   </script>
+  <script src="/script.js"></script>
 </body>
 </html>

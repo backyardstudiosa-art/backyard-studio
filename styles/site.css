@@ -31,7 +31,41 @@ a { color: inherit; }
 .nav-links { display:flex; list-style:none; gap:.35rem; margin:0; padding:0; }
 .nav-links a { text-decoration:none; color:var(--ink-soft); padding:.55rem .8rem; border-radius:10px; opacity:.68; transition:opacity .18s ease, background-color .18s ease, color .18s ease; }
 .nav-links a:hover,.nav-links a:focus-visible,.nav-links .active{ background:rgba(143,119,103,.14); color:var(--ink); opacity:1; }
+.nav-actions { display: flex; align-items: center; gap: .5rem; }
+.menu-btn { display: none; }
 
+.brand-banner {
+  width: min(var(--max), 100%);
+  margin: 0 auto;
+  border-radius: 0 0 24px 24px;
+  overflow: hidden;
+}
+.brand-banner img {
+  width: 100%;
+  display: block;
+  height: clamp(220px, 48vh, 520px);
+  object-fit: cover;
+  object-position: center;
+}
+
+.mobile-menu {
+  border-top: 1px solid rgba(143,119,103,.22);
+  background: rgba(250,245,238,0.96);
+}
+.mobile-menu .container {
+  display: grid;
+  gap: .35rem;
+  padding: .8rem 0;
+}
+.mobile-menu a {
+  text-decoration: none;
+  padding: .55rem .2rem;
+  color: var(--ink);
+}
+
+.site-header.nav-open #mobile-menu[hidden] {
+  display: block;
+}
 main { padding: 2.2rem 0 4rem; }
 .section-card {
   background: var(--paper);
@@ -104,7 +138,15 @@ footer p {
 .lightbox-title { color:#f8f2eb; text-align:center; margin-top:.6rem; }
 
 @media (max-width:900px){ .columns { grid-template-columns:repeat(2,minmax(0,1fr)); } }
-@media (max-width:700px){ .nav-shell{ flex-direction:column; padding:.6rem 0; } .nav-links{ flex-wrap:wrap; justify-content:center;} .columns{ grid-template-columns:1fr;} .search-row{ grid-template-columns:1fr; } }
+@media (max-width:700px){
+  .nav-shell{ min-height: 64px; }
+  .nav-shell nav, .nav-shell .nav-actions .btn:not(.menu-btn) { display: none; }
+  .menu-btn { display: inline-flex; }
+  .brand-banner { border-radius: 0; }
+  .brand-banner img { height: clamp(180px, 36vh, 360px); }
+  .columns{ grid-template-columns:1fr;}
+  .search-row{ grid-template-columns:1fr; }
+}
 
 .page-back-wrap { margin: .2rem 0 1rem; }
 .page-back { font-size: .94rem; color: var(--ink-soft); text-decoration: none; opacity: .9; }

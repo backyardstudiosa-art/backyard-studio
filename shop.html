@@ -3,26 +3,80 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Payment Cancelled | Backyard Studio</title>
-  <meta name="description" content="Payment cancelled. Return to the shop when ready." />
+  <title>Shop | Backyard Studio</title>
+  <meta name="description" content="Explore Backyard Studio offerings including guided journals and reflective tools." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles/site.css" />
 </head>
 <body>
+    <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html">Backyard Studio</a>
+
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a class="active" href="shop.html">Shop</a></li>
+          <li><a href="journal.html">Journal</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn" href="portfolio.html">View Work</a>
+        <button class="btn menu-btn" data-menu-btn aria-expanded="false" aria-controls="mobile-menu">Menu</button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="mobile-menu" hidden>
+      <div class="container">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="shop.html">Shop</a>
+        <a href="journal.html">Journal</a>
+      </div>
+    </div>
+  </header>
+
   <main>
     <div class="container">
-      <section class="hero" style="margin-top:2rem; text-align:center;">
-        <p class="eyebrow">Payment cancelled</p>
-        <h1>No worries — your order was not completed.</h1>
-        <p>You can return to the product page anytime and try checkout again when you’re ready.</p>
-        <div class="button-row" style="justify-content:center;">
-          <a class="btn primary" href="/shop/new-horizons-guided-journal.html">Return to product</a>
-          <a class="btn" href="/shop/">Back to shop</a>
+       <section class="section-card">
+        <p class="eyebrow">Offerings</p>
+        <h1>Tools for reflection and restoration.</h1>
+        <p>Thoughtful resources for memory-keeping, journaling, and intentional growth.</p>
+        <div class="button-row">
+          <a class="btn primary" href="/shop/new-horizons-guided-journal.html">Preview + Buy New Horizons Journal</a>
+          <a class="btn" href="/shop/">Browse full shop</a>
+        </div>
+      </section>
+
+      <section class="section-card">
+        <h2>Featured in the shop</h2>
+        <div class="columns">
+          <article class="card"><div class="card-body"><h3>New Horizons Guided Journal</h3><p>Rebuilding after carrying too much — a guided experience for gentle reflection.</p><a class="btn" href="/shop/new-horizons-guided-journal.html">View product</a></div></article>
+          <article class="card"><div class="card-body"><h3>Reflection Cards</h3><p>Print-friendly cards for thoughtful pauses and small reset moments in your day.</p><a class="btn" href="/shop/">See details</a></div></article>
+          <article class="card"><div class="card-body"><h3>Healing Letters</h3><p>Tender templates for writing to yourself with grace, honesty, and compassion.</p><a class="btn" href="/shop/">See details</a></div></article>
         </div>
       </section>
     </div>
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-center">
+      <div class="footer-links">
+        <a href="https://wa.me/27649607349" target="_blank" rel="noopener">WhatsApp</a>
+        <span class="divider">·</span>
+        <a href="mailto:hello@backyardstudio.co.za">hello@backyardstudio.co.za</a>
+      </div>
+      <p class="footer-copy">© <span id="year"></span> Backyard Studio</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="/script.js"></script>
 </body>
 </html>

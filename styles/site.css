@@ -43,7 +43,7 @@ a { color: inherit; }
 .brand-banner img {
   width: 100%;
   display: block;
-  height: clamp(400px, 49vh, 500px);
+  height: clamp(190px, 37vh, 390px);
   object-fit: cover;
   object-position: center 42%;
 }

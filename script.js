@@ -3,11 +3,17 @@
 // Mobile nav toggle
 const header = document.querySelector(".site-header");
 const menuBtn = document.querySelector("[data-menu-btn]");
+const mobileMenu = document.getElementById("mobile-menu");
 if (menuBtn && header) {
   menuBtn.addEventListener("click", () => {
     header.classList.toggle("nav-open");
     const expanded = menuBtn.getAttribute("aria-expanded") === "true";
-    menuBtn.setAttribute("aria-expanded", String(!expanded));
+    const nextExpanded = !expanded;
+    menuBtn.setAttribute("aria-expanded", String(nextExpanded));
+
+    if (mobileMenu) {
+      mobileMenu.hidden = !nextExpanded;
+    }
   });
 }
 

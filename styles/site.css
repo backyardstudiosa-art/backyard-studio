@@ -97,10 +97,11 @@ p { margin: 0 0 1rem; color: var(--ink-soft); max-width: 65ch; }
 .center { text-align:center; margin-inline:auto; }
 .section-card.center p { margin-inline: auto; }
 .feature-video {
-  width: 100%;
+  width: min(100%, 680px);
   border-radius: 14px;
   display: block;
   margin-top: .6rem;
+  margin-inline: auto;
   box-shadow: var(--shadow);
 }
 

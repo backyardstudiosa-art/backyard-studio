@@ -14,6 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles/site.css" />
 </head>
+
 <body>
   <header class="site-header">
     <div class="container nav-shell">
@@ -31,6 +32,7 @@
         <button class="btn menu-btn" data-menu-btn aria-expanded="false" aria-controls="mobile-menu">Menu</button>
       </div>
     </div>
+    
     <div id="mobile-menu" class="mobile-menu" hidden>
       <div class="container">
         <a href="/index.html">Home</a>
@@ -40,10 +42,6 @@
       </div>
     </div>
   </header>
-
-  <div class="container page-back-wrap">
-    <a class="page-back" href="/shop.html">← Back to Shop</a>
-  </div>
  
   <main>
     <div class="container product-wrap">
@@ -75,14 +73,14 @@
       <section class="section-card">
         <h2>Preview Pages</h2>
         <div class="preview-grid" aria-label="Journal preview pages">
-          <button class="preview-thumb" type="button" data-full="/assets/guided-journal.png" data-title="Journal Cover">
-            <img src="/assets/guided-journal.png" alt="New Horizons guided journal cover" loading="lazy" />
-          </button>
           <button class="preview-thumb" type="button" data-full="/assets/journal-page1.png" data-title="Before You Begin">
             <img src="/assets/journal-page1.png" alt="Before you begin page preview" loading="lazy" />
           </button>
           <button class="preview-thumb" type="button" data-full="/assets/journal-page2.png" data-title="Event vs Identity">
             <img src="/assets/journal-page2.png" alt="Event vs identity page preview" loading="lazy" />
+          </button>
+          <button class="preview-thumb" type="button" data-full="/assets/guided-journal5.png" data-title="Inside Page">
+            <img src="/assets/journal-page5.png" alt="Guided journal page preview" loading="lazy" />
           </button>
         </div>
       </section>
@@ -98,12 +96,12 @@
     </div>
   </div>
 
-    <footer class="site-footer">
+  <footer class="site-footer">
     <div class="container footer-center">
       <div class="footer-links">
         <a href="https://wa.me/27649607349" target="_blank" rel="noopener">WhatsApp</a>
         <span class="divider">·</span>
-        <a href="mailto:hello@backyardstudio.co.za">hello@backyardstudio.co.za</a>
+        <a href="https://zcal.co/YOUR-ZCAL-LINK" target="_blank" rel="noopener">Book a Session</a>
       </div>
       <p class="footer-copy">© <span id="year"></span> Backyard Studio</p>
     </div>

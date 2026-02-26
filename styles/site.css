@@ -154,17 +154,20 @@ footer p {
 
 .product-hero-grid {
   display: grid;
-  grid-template-columns: minmax(220px, 320px) minmax(0, 1fr);
+  grid-template-columns: minmax(160px, 220px) minmax(0, 1fr);
   gap: 1.2rem 1.8rem;
   align-items: center;
 }
 
 .product-thumb {
   margin: 0;
+  width: 100%;
+  max-width: 220px;
 }
 
 .product-thumb img {
   width: 100%;
+  max-width: 220px;
   height: auto;
   display: block;
   border-radius: 16px;
@@ -215,6 +218,7 @@ footer p {
   .brand-banner { border-radius: 0; }
   .brand-banner img { height: clamp(150px, 26vh, 240px); }
   .columns{ grid-template-columns:1fr;}
+  .product-hero-grid { grid-template-columns: 1fr; }
   .preview-grid { grid-template-columns: 1fr; }
   .search-row{ grid-template-columns:1fr; }
 }

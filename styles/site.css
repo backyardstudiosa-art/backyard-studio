@@ -152,6 +152,29 @@ footer p {
   text-align: left;
 }
 
+.product-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(220px, 320px) minmax(0, 1fr);
+  gap: 1.2rem 1.8rem;
+  align-items: center;
+}
+
+.product-thumb {
+  margin: 0;
+}
+
+.product-thumb img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+}
+
+.product-details > :first-child {
+  margin-top: 0;
+}
+
 .preview-grid {
   margin-top: 1rem;
   display: grid;

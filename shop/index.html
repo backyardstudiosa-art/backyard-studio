@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles/site.css" />
 </head>
+  
 <body>
 <header class="site-header">
   <div class="container nav-shell">
@@ -23,10 +24,6 @@
     </nav>
   </div>
 </header>
-  
-  <div class="container page-back-wrap">
-    <a class="page-back" href="/">← Back to Home</a>
-  </div>
   
 <main>
   <div class="container">
@@ -64,7 +61,43 @@
   </section>
 </div>
 </main>
-<footer><p><a href="https://wa.me/27649607349" target="_blank" rel="noopener">WhatsApp</a> · <a href="mailto:hello@backyardstudio.co.za">hello@backyardstudio.co.za</a></p><p>© <span id="year"></span> Backyard Studio</p></footer>
-<script src="/scripts.js"></script>
+
+  <footer class="site-footer">
+    <div class="container footer-center">
+      <div class="footer-links">
+        <a href="https://wa.me/27649607349" target="_blank" rel="noopener">WhatsApp</a>
+        <span class="divider">·</span>
+        <a href="https://zcal.co/YOUR-ZCAL-LINK" target="_blank" rel="noopener">Book a Session</a>
+      </div>
+      <p class="footer-copy">© <span id="year"></span> Backyard Studio</p>
+    </div>
+  </footer>
+   <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightbox-image');
+    const lightboxTitle = document.getElementById('lightbox-title');
+    const closeBtn = document.getElementById('lightbox-close');
+
+    document.querySelectorAll('.preview-thumb').forEach((thumb) => {
+      thumb.addEventListener('click', () => {
+        lightboxImage.src = thumb.dataset.full;
+        lightboxTitle.textContent = thumb.dataset.title;
+        lightbox.hidden = false;
+        document.body.style.overflow = 'hidden'; 
+     function closeLightbox() {
+      lightbox.hidden = true;
+      document.body.style.overflow = '';
+    } 
+        closeBtn.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+     document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !lightbox.hidden) closeLightbox();
+    });
+  </script>
+  <script src="/script.js"></script>   
 </body>
 </html>

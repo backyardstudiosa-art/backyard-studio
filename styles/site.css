@@ -155,12 +155,27 @@ footer p {
 .preview-grid {
   margin-top: 1rem;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(170px, 220px));
+  justify-content: center;
   gap: 1rem;
 }
 
-.preview-thumb { border:0; background:none; padding:0; border-radius:16px; overflow:hidden; cursor:zoom-in; box-shadow:var(--shadow); }
-.preview-thumb img { transition: transform .3s ease; }
+.preview-thumb {
+  width: 100%;
+  border: 0;
+  background: none;
+  padding: 0;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: zoom-in;
+  box-shadow: var(--shadow);
+}
+.preview-thumb img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform .3s ease;
+}
 .preview-thumb:hover img { transform:scale(1.05); }
 .lightbox { position:fixed; inset:0; background:rgba(25,18,12,.82); z-index:50; display:grid; place-items:center; padding:2rem; }
 .lightbox[hidden]{ display:none; }

@@ -14,26 +14,39 @@
 <body>
 <header class="site-header">
   <div class="container nav-shell">
-    <a class="brand" href="/">Backyard Studio</a>
-    <nav aria-label="Main navigation">
+      <a class="brand" href="index.html">Backyard Studio</a>
+      <nav aria-label="Primary">
       <ul class="nav-links">
-        <li><a href="/">Home</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a class="active" href="/shop/">Shop | Offerings</a></li>
-        <li><a href="/journal/">Journal / New Horizons</a></li></ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="about.html">About</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="journal.html">Journal</a></li>
+      </ul>
     </nav>
-  </div>
-</header>
-  
-<main>
-  <div class="container">
-  <section class="section-card">
-    <p class="eyebrow">Offerings</p>
-    <h1>Tools for reflection and restoration.</h1>
-    <p></p>
-    <p>Thoughtful resources for memory-keeping, journaling, and intentional growth.</p>
-    <div class="button-row">
-      <a class="btn primary" href="/shop/new-horizons-guided-journal.html">Preview + Buy New Horizons Journal</a>
+
+    <div class="nav-actions">
+      <a class="btn" href="portfolio.html">View Work</a>
+
+    <div id="mobile-menu" class="mobile-menu" hidden>
+      <div class="container">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="shop.html">Shop</a>
+        <a href="journal.html">Journal</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+       <section class="section-card">
+        <p class="eyebrow">Offerings</p>
+        <h1>Tools for reflection and restoration.</h1>
+        <p></p> 
+        <p>Thoughtful resources for memory-keeping, journaling, and intentional growth.</p>
+        <div class="button-row">
+          <a class="btn primary" href="/shop/new-horizons-guided-journal.html">Preview + Buy New Horizons Journal</a>
+      <a class="btn" href="/shop/">Back to shop</a>
     </div>
   </section>
   <section class="columns" aria-label="Offerings grid">
@@ -73,7 +86,7 @@
     </div>
   </footer>
    <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('year').textContent = '2025';
 
     const lightbox = document.getElementById('lightbox');
     const lightboxImage = document.getElementById('lightbox-image');

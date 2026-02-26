@@ -154,6 +154,9 @@ footer p {
 
 .preview-grid {
   margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
 }
 
 .preview-thumb { border:0; background:none; padding:0; border-radius:16px; overflow:hidden; cursor:zoom-in; box-shadow:var(--shadow); }
@@ -174,6 +177,7 @@ footer p {
   .brand-banner { border-radius: 0; }
   .brand-banner img { height: clamp(150px, 26vh, 240px); }
   .columns{ grid-template-columns:1fr;}
+  .preview-grid { grid-template-columns: 1fr; }
   .search-row{ grid-template-columns:1fr; }
 }
 

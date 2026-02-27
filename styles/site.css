@@ -226,3 +226,11 @@ footer p {
 .page-back-wrap { margin: .2rem 0 1rem; }
 .page-back { font-size: .94rem; color: var(--ink-soft); text-decoration: none; opacity: .9; }
 .page-back:hover,.page-back:focus-visible { opacity: 1; text-decoration: underline; }
+
+/* Services / Packages image visibility */
+.services-grid .card img {
+  aspect-ratio: auto;
+  height: clamp(250px, 34vw, 360px);
+  object-fit: cover;
+  object-position: center;
+}

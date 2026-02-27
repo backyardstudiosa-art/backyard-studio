@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shop / Offerings | Backyard Studio</title>
-  <meta name="description" content="Explore offerings including the New Horizons guided journal and reflective resources." />
+  <title>Shop | Backyard Studio</title>
+  <meta name="description" content="Explore Backyard Studio offerings including guided journals and reflective tools." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -12,44 +12,49 @@
 </head>
   
 <body>
-<header class="site-header">
-  <div class="container nav-shell">
-   <a class="brand" href="/index.html">Backyard Studio</a>  
-    <nav aria-label="Primary">
-      <ul class="nav-links">
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a class="active" href="/shop.html">Shop</a></li>
-        <li><a class="disabled-link" aria-disabled="true" tabindex="-1" style="pointer-events:none;opacity:.55;cursor:not-allowed;">Journal</a></li>
-      </ul>
-    </nav>
+      <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html">Backyard Studio</a>
 
-    <div class="nav-actions">
-       <a class="btn disabled-link" aria-disabled="true" tabindex="-1" style="pointer-events:none;opacity:.55;cursor:not-allowed;">View Work</a>
-    <div id="mobile-menu" class="mobile-menu" hidden>
-      <div class="container">
-        <a href="/index.html">Home</a>
-        <a href="/about.html">About</a>
-        <a href="/shop.html">Shop</a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a class="active" href="shop.html">Shop</a></li>
+          <li><a class="active disabled-link" aria-disabled="true" tabindex="-1" style="pointer-events:none;opacity:.55;cursor:not-allowed;">Journal</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn disabled-link" aria-disabled="true" tabindex="-1" style="pointer-events:none;opacity:.55;cursor:not-allowed;">View Work</a>
+        <button class="btn menu-btn" data-menu-btn aria-expanded="false" aria-controls="mobile-menu">Menu</button>
+      </div>
+    </div>
+
+      <div id="mobile-menu" class="mobile-menu" hidden>
+      <div class="container">    
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="shop.html">Shop</a>
         <a class="disabled-link" aria-disabled="true" tabindex="-1" style="pointer-events:none;opacity:.55;cursor:not-allowed;">Journal</a>
       </div>
     </div>
   </header>
-
+  
   <main>
-    <div class="container">
-        <section class="section-card">
+    <div class="container">     
+     <section class="section-card">
         <p class="eyebrow">Services / Offerings</p>
         <h1>Services &amp; Story Packages</h1>
         <p>Every package is inspired by the ocean — steady, layered, timeless.</p>
         <div class="button-row">
         <a class="btn primary" href="/shop/new-horizons-guided-journal.html">Preview + Buy New Horizons Journal</a>
-        <a class="btn" href="https://zcal.co/YOUR-ZCAL-LINK" target="_blank" rel="noopener">Book a Package</a>
-        <a class="btn" href="https://zcal.co/YOUR-ZCAL-LINK" target="_blank" rel="noopener">Schedule a Consultation</a>
-    </div>
-  </section>
-      
-        <section class="columns" aria-label="Services and story packages">
+          <a class="btn" href="https://zcal.co/YOUR-ZCAL-LINK" target="_blank" rel="noopener">Book a Package</a>
+          <a class="btn" href="https://zcal.co/YOUR-ZCAL-LINK" target="_blank" rel="noopener">Schedule a Consultation</a>
+        </div>
+      </section>
+
+      <section class="columns" aria-label="Services and story packages">
         <article class="card">
           <img src="/assets/sea-shell.png" alt="Sea-Shell Starter Package" />
           <div class="card-body">
@@ -115,7 +120,7 @@
         </article>
       </section>
 
-     <section class="section-card">
+      <section class="section-card">
         <h2>Our Approach</h2>
         <p>We don’t use rushed templates.<br />
         We don’t mass-produce emotion.</p>
@@ -129,8 +134,8 @@
         <p>You bring the memory.<br />We shape the art.</p>
       </section>
 </div>
-</main>
-
+</main>    
+          
   <footer class="site-footer">
     <div class="container footer-center">
       <div class="footer-links">

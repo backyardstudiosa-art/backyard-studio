@@ -238,6 +238,7 @@ footer p {
 @media (max-width:900px){ .columns { grid-template-columns:repeat(2,minmax(0,1fr)); } .preview-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
 @media (max-width:700px){
   .nav-shell{ min-height: 64px; }
+  .brand-mark { width: clamp(105px, 34vw, 150px); }
   .nav-shell nav, .nav-shell .nav-actions .btn:not(.menu-btn) { display: none; }
   .btn.menu-btn { display: inline-flex; }
   .brand-banner { border-radius: 0; }
@@ -258,4 +259,17 @@ footer p {
   height: 520px;
   object-fit: cover;
   object-position: center top;
+}
+
+.zcal-card {
+  margin-top: 1rem;
+}
+
+.zcal-inline-widget {
+  margin-top: .8rem;
+  min-height: 620px;
+  border: 1px solid rgba(143,119,103,.22);
+  border-radius: 14px;
+  overflow: hidden;
+  background: #fff;
 }

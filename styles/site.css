@@ -106,6 +106,7 @@ h2 { font-size: clamp(1.7rem,4vw,2.6rem); margin-bottom: .6rem; }
 p { margin: 0 0 1rem; color: var(--ink-soft); max-width: 65ch; }
 .section-card p, .entry-content p { max-width: min(100%, 92ch); }
 .button-row { display:flex; flex-wrap:wrap; gap:.7rem; margin-top:1rem; }
+.offers-note { text-align:center; margin: 1rem auto 0; }
 .btn {
   display:inline-flex; align-items:center; gap:.35rem; text-decoration:none;
   padding:.7rem 1rem; border-radius:999px; border:1px solid rgba(143,119,103,.35);

@@ -276,3 +276,74 @@ footer p {
   overflow: hidden;
   background: #fff;
 }
+
+.portfolio-page {
+  padding-bottom: 1.5rem;
+}
+
+.portfolio-intro .portfolio-subtitle {
+  font-size: 1.1rem;
+  color: #5a5048;
+}
+
+.portfolio-note {
+  margin-bottom: 1.1rem;
+  color: #74695f;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.portfolio-card {
+  background: #fffdf9;
+  border: 1px solid rgba(143,119,103,.16);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(76, 61, 45, 0.08);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.portfolio-card:hover,
+.portfolio-card:focus-within {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(76, 61, 45, 0.14);
+}
+
+.portfolio-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  background: #f4eee5;
+}
+
+.portfolio-card .card-body {
+  padding: 1rem;
+}
+
+.portfolio-card h3 {
+  margin-bottom: .45rem;
+}
+
+.portfolio-tags {
+  margin-bottom: 0;
+  color: #5f554d;
+  font-size: .94rem;
+}
+
+.portfolio-cta {
+  text-align: center;
+}
+
+.portfolio-cta p {
+  margin-inline: auto;
+}
+
+@media (max-width: 860px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+}

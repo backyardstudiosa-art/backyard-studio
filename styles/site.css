@@ -258,7 +258,7 @@ footer p {
 /* Services / Packages image visibility */
 .services-grid .card img {
   aspect-ratio: auto;
-  height: clamp(220px, 64vw, 380px);
+  height: clamp(220px, 74vw, 280px);
   object-fit: contain;
   object-position: center;
   background: #f3ece3;

@@ -261,7 +261,7 @@ footer p {
   height: clamp(220px, 74vw, 280px);
   object-fit: contain;
   object-position: center;
-  background: #f3ece3;
+  background: #a2a3ae;
 }
 
 .zcal-card {

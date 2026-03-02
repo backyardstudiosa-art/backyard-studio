@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="Wildflower Reflection Spread placeholder image">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8f3eb"/>
+      <stop offset="50%" stop-color="#ece3d8"/>
+      <stop offset="100%" stop-color="#ddd4c8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <rect x="95" y="95" width="1010" height="710" rx="28" fill="#fffaf4" stroke="#c9b8a5" stroke-width="4"/>
+  <text x="600" y="430" text-anchor="middle" fill="#6f675f" font-family="Cormorant Garamond, Georgia, serif" font-size="58">Wildflower Reflection Spread</text>
+  <text x="600" y="490" text-anchor="middle" fill="#8f7767" font-family="Inter, Arial, sans-serif" font-size="30">Backyard Studio Portfolio</text>
+</svg>

@@ -258,10 +258,10 @@ footer p {
 /* Services / Packages image visibility */
 .services-grid .card img {
   aspect-ratio: auto;
-  height: clamp(420px, 100vw, 580px);
+  height: clamp(320px, 100vw, 480px);
   object-fit: contain;
   object-position: center;
-  background: #a2a3ae;
+  background: #c2c2c0;
 }
 
 .zcal-card {

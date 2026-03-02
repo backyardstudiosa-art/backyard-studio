@@ -254,12 +254,14 @@ footer p {
 .page-back { font-size: .94rem; color: var(--ink-soft); text-decoration: none; opacity: .9; }
 .page-back:hover,.page-back:focus-visible { opacity: 1; text-decoration: underline; }
 
+
 /* Services / Packages image visibility */
 .services-grid .card img {
   aspect-ratio: auto;
-  height: 520px;
-  object-fit: cover;
-  object-position: center top;
+  height: clamp(220px, 28vw, 320px);
+  object-fit: contain;
+  object-position: center;
+  background: #f3ece3;
 }
 
 .zcal-card {

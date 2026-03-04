@@ -191,6 +191,9 @@ footer p {
   max-width: 220px;
 }
 
+.product-hero-grid .product-thumb img{
+  max-width: 220px;
+}
 .product-thumb img {
   width: 100%;
   max-width: 220px;

@@ -452,3 +452,11 @@ footer p {
   padding:0 1rem;
   font-style:italic;
 }
+
+.coastal-divider{
+  text-align:center;
+  margin:3rem 0;
+  color:#c8b79f;
+  font-size:1.2rem;
+  letter-spacing:6px;
+}

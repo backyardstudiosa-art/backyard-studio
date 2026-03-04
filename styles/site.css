@@ -430,3 +430,25 @@ footer p {
   color: #7c6b57;
   font-weight: 500;
 }
+
+.section-divider{
+  display:flex;
+  align-items:center;
+  text-align:center;
+  margin:3.5rem 0;
+  color:#8a7c68;
+  font-size:0.9rem;
+  letter-spacing:0.04em;
+}
+
+.section-divider::before,
+.section-divider::after{
+  content:"";
+  flex:1;
+  border-bottom:1px solid rgba(180,170,150,0.35);
+}
+
+.section-divider span{
+  padding:0 1rem;
+  font-style:italic;
+}

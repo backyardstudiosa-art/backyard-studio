@@ -463,3 +463,58 @@ footer p {
   font-size:1.2rem;
   letter-spacing:6px;
 }
+
+/* Base card styling */
+.card {
+  position: relative;
+  background: #f7f4ef;
+  border-radius: 18px;
+  padding: 0;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+/* Floating hover effect */
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 35px rgba(0,0,0,0.08);
+}
+
+.product-image {
+  overflow: hidden;
+}
+
+.product-image img {
+  transition: transform 0.45s ease;
+}
+
+.card:hover .product-image img {
+  transform: scale(1.04);
+}
+
+.card-body {
+  padding: 1.4rem 1.6rem 1.6rem;
+}
+
+.card-body h3 {
+  margin-top: 0.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.card-body p {
+  margin-bottom: 0.8rem;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  inset: -10px;
+  border-radius: 24px;
+  background: radial-gradient(
+    circle,
+    rgba(247,236,220,0.35) 0%,
+    rgba(247,236,220,0) 70%
+  );
+  z-index: -1;
+}

@@ -204,6 +204,40 @@ footer p {
   margin-top: 0;
 }
 
+/* Product image halo */
+.product-image {
+  position: relative;
+  display: inline-block;
+}
+
+.product-image::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 75%;
+  height: 75%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 0;
+
+  /* soft halo glow */
+  background: radial-gradient(
+    circle,
+    rgba(255,255,255,0.9) 0%,
+    rgba(255,255,255,0.6) 35%,
+    rgba(255,255,255,0.0) 70%
+  );
+
+  filter: blur(6px);
+}
+
+.product-image img {
+  position: relative;
+  z-index: 1;
+  display: block;
+}
+
 .preview-grid {
   margin-top: 1rem;
   display: grid;

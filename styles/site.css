@@ -222,12 +222,12 @@ footer p {
   z-index: 0;
 
   /* soft halo glow */
-  background: radial-gradient(
-    circle,
-    rgba(255,255,255,0.9) 0%,
-    rgba(255,255,255,0.6) 35%,
-    rgba(255,255,255,0.0) 70%
-  );
+background: radial-gradient(
+  circle,
+  rgba(247,236,220,0.95) 0%,
+  rgba(247,236,220,0.55) 40%,
+  rgba(247,236,220,0.0) 70%
+);
 
   filter: blur(6px);
 }

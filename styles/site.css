@@ -238,6 +238,12 @@ background: radial-gradient(
   display: block;
 }
 
+.product-card:hover .product-image::before {
+  filter: blur(10px);
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
 .preview-grid {
   margin-top: 1rem;
   display: grid;

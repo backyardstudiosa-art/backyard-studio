@@ -1,7 +1,5 @@
 (function () {
-  const COPYRIGHT_TEXT = (year) => `© ${year} Backyard Studio. All artwork, designs, and written reflections are protected by copyright and may not be reproduced, distributed, or downloaded without permission.`;
-
-  function syncFooterNotices() {
+function syncFooterYear() {
     const year = 2025;
 
     document.querySelectorAll('#year').forEach((node) => {
@@ -70,5 +68,5 @@
     event.preventDefault();
   });
 
-  syncFooterNotices();
+  syncFooterYear();
 })();

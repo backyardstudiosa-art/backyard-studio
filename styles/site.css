@@ -166,13 +166,17 @@ footer p {
 }
 
 .site-footer {
-  font-size: .92rem;
-  padding: .55rem 0 1.1rem;
+  font-size: .84rem;
+  padding: .35rem 0 .8rem;
 }
 
 .site-footer .footer-links,
 .site-footer .footer-copy {
-  margin-bottom: .35rem;
+  margin-bottom: .2rem;
+}
+
+.site-footer .footer-links {
+  font-size: .82rem;
 }
 
 

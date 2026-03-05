@@ -2,19 +2,24 @@
   const COPYRIGHT_TEXT = (year) => `© ${year} Backyard Studio. All artwork, designs, and written reflections are protected by copyright and may not be reproduced, distributed, or downloaded without permission.`;
 
   function syncFooterNotices() {
-    const year = new Date().getFullYear();
+    const year = 2025;
 
     document.querySelectorAll('#year').forEach((node) => {
       node.textContent = String(year);
     });
 
     document.querySelectorAll('footer').forEach((footer) => {
-      let notice = footer.querySelector('.footer-copyright-notice');
-      if (!notice) {
-        notice = document.createElement('p');
+      const notices = footer.querySelectorAll('.footer-copyright-notice');
+      const notice = notices[0] || document.createElement('p');
+
+      if (!notices.length) {
         notice.className = 'footer-copyright-notice';
         footer.appendChild(notice);
       }
+
+      notices.forEach((extraNotice, index) => {
+        if (index > 0) extraNotice.remove();
+      });
       notice.textContent = COPYRIGHT_TEXT(year);
     });
   }

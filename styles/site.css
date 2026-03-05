@@ -175,6 +175,74 @@ footer p {
   margin-bottom: .35rem;
 }
 
+
+.footer-copyright-notice {
+  margin: 0.35rem auto 0;
+  max-width: min(100%, 92ch);
+  font-size: 0.86rem;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  text-wrap: balance;
+}
+
+.bstoast {
+  position: fixed;
+  left: 50%;
+  bottom: 1.15rem;
+  transform: translateX(-50%) translateY(14px);
+  background: rgba(40, 34, 28, 0.88);
+  color: #f7f2ea;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 999px;
+  padding: 0.55rem 1rem;
+  font-size: 0.86rem;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.24);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .24s ease, transform .24s ease, visibility .24s ease;
+  z-index: 999;
+  pointer-events: none;
+}
+
+.bstoast.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.watermarked {
+  position: relative;
+  overflow: hidden;
+}
+
+.watermarked::after {
+  content: "Backyard Studio   © Karé   Backyard Studio   © Karé   Backyard Studio";
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  transform: rotate(-24deg) scale(1.1);
+  transform-origin: center;
+  font-size: clamp(0.8rem, 0.72rem + 0.25vw, 1rem);
+  letter-spacing: 0.18em;
+  color: rgba(120, 105, 92, 0.2);
+  line-height: 2.4;
+  white-space: pre-wrap;
+  text-align: center;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.portfolio-media {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 16px 16px 0 0;
+  box-shadow: inset 0 0 0 1px rgba(143,119,103,.08);
+}
+
 .product-hero {
   text-align: left;
 }
@@ -374,12 +442,8 @@ footer p {
   justify-self: center;
 }
 
-.portfolio-card img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  display: block;
-  background: #fffdf9;
+.portfolio-card .portfolio-media {
+  background-color: #fffdf9;
 }
 
 .portfolio-card .card-body {

@@ -18,11 +18,11 @@
   document.title = `${entry.title} | New Horizons Journal`;
 
   root.innerHTML = `
-    <img class="entry-hero" src="${entry.featuredImage}" alt="Featured image for ${entry.title}" />
+    <div class="journal-hero protected-media"><img class="entry-hero" src="${entry.featuredImage}" alt="Featured image for ${entry.title}" /></div>
     <p><a class="btn" href="/journal/">← Back to Journal</a></p>
     <h1>${entry.title}</h1>
     <p class="meta">${niceDate} · ${entry.tags.join(' · ')}</p>
-    <div class="entry-content">${entry.content.map((p) => `<p>${p}</p>`).join('')}</div>
+    <div class="entry-content protected-media">${entry.content.map((p) => `<p>${p}</p>`).join('')}</div>
     <p><button id="share" class="btn" type="button">Share reflection</button></p>
     <p id="share-fallback" class="inline-share" hidden></p>
     <div class="button-row">

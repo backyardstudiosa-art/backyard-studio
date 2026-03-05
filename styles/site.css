@@ -12,6 +12,7 @@
 body {
   margin: 0;
   font-family: "Inter", "Segoe UI", sans-serif;
+  font-size: clamp(1.03rem, 0.99rem + 0.2vw, 1.12rem);
   color: var(--ink);
   background: linear-gradient(180deg, #f6f1e9, #fcfaf7 35%, #fcfbf9);
   line-height: 1.7;

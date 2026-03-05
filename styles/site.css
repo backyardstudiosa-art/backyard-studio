@@ -541,9 +541,9 @@ footer p {
   grid-column: span 6;
 }
 
-/* Featured card spans wider */
+/* Featured card keeps same width as other cards for a balanced row */
 .services-grid .card.featured{
-  grid-column: span 12;
+  grid-column: span 6;
 }
 
 /* Make card layout consistent inside */
@@ -557,10 +557,10 @@ footer p {
   flex: 1;
 }
 
-/* Tablet: 2 cards per row, featured still full width */
+/* Tablet: keep two cards per row */
 @media (max-width: 980px){
   .services-grid .card{ grid-column: span 6; }
-  .services-grid .card.featured{ grid-column: span 12; }
+  .services-grid .card.featured{ grid-column: span 6; }
 }
 
 /* Mobile: single column */

@@ -263,8 +263,10 @@ footer p,
 
 .card img {
   width: 100%;
-  aspect-ratio: 16 / 10;
+  height: 220px;
   object-fit: cover;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
   display: block;
   filter: saturate(0.9) contrast(0.95);
 }

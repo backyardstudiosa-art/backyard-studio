@@ -675,3 +675,29 @@ footer p {
 .journal-categories a:hover{
   background:#e6ded2;
 }
+
+.journal-grid{
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  gap:1.2rem;
+}
+
+.journal-grid .featured{
+  grid-row:span 2;
+}
+
+.journal-grid .card{
+  height:100%;
+}
+
+@media (max-width:900px){
+
+  .journal-grid{
+    grid-template-columns:1fr;
+  }
+
+  .journal-grid .featured{
+    grid-row:auto;
+  }
+
+}

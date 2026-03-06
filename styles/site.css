@@ -1035,3 +1035,52 @@ footer {
     grid-column: span 12;
   }
 }
+
+.entry-wrap{
+  max-width:720px;
+  margin:auto;
+}
+
+.entry-title{
+  font-size:clamp(2.2rem,4vw,3rem);
+  margin-bottom:.6rem;
+}
+
+.entry-meta{
+  font-size:.8rem;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--accent);
+  margin-bottom:.6rem;
+}
+
+.entry-intro{
+  font-size:1.15rem;
+  color:var(--ink-soft);
+  margin-bottom:1.6rem;
+}
+
+.entry-content p{
+  margin-bottom:1.2rem;
+  max-width:65ch;
+}
+
+.entry-content blockquote{
+  font-family:"Cormorant Garamond", Georgia, serif;
+  font-size:1.4rem;
+  line-height:1.4;
+  margin:1.6rem 0;
+  padding-left:1rem;
+  border-left:3px solid #e6ded2;
+  color:#5e564e;
+}
+
+.entry-content::after{
+  content:"";
+  display:block;
+  width:120px;
+  height:1px;
+  background:#e6ded2;
+  margin:2rem auto 0;
+}
+

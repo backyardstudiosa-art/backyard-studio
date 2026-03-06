@@ -639,3 +639,39 @@ footer p {
     grid-column: span 12;
   }
 }
+
+.journal-hero h1{
+  font-size: clamp(2rem,4vw,3rem);
+  margin-bottom:.4rem;
+}
+
+.journal-sub{
+  font-size:1.1rem;
+  color:var(--ink-soft);
+  margin-bottom:.6rem;
+}
+
+.journal-intro{
+  max-width:60ch;
+  margin-bottom:1.4rem;
+}
+
+.journal-categories{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.6rem;
+}
+
+.journal-categories a{
+  font-size:.85rem;
+  text-decoration:none;
+  padding:.35rem .7rem;
+  border-radius:20px;
+  background:#f2ede6;
+  color:#5a554e;
+  transition:.2s;
+}
+
+.journal-categories a:hover{
+  background:#e6ded2;
+}

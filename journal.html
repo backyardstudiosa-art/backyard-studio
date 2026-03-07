@@ -55,12 +55,13 @@
   </p>
 
   <nav class="journal-categories" aria-label="Journal categories">
-    <a href="journal.html?cat=reflections">Reflections</a>
-    <a href="journal.html?cat=faith">Faith</a>
-    <a href="journal.html?cat=life">Life Lessons</a>
-    <a href="journal.html?cat=healing">Healing</a>
-    <a href="journal.html?cat=creativity">Creativity</a>
-    <a href="journal.html?cat=devotional">Devotional Pages</a>
+    <a href="#" data-filter="all" class="active" aria-current="true">All</a>
+    <a href="#" data-filter="reflections">Reflections</a>
+    <a href="#" data-filter="faith">Faith</a>
+    <a href="#" data-filter="life">Life Lessons</a>
+    <a href="#" data-filter="healing">Healing</a>
+    <a href="#" data-filter="creativity">Creativity</a>
+    <a href="#" data-filter="devotional">Devotional Pages</a>
   </nav>
 
 </section>
@@ -68,53 +69,82 @@
       <section class="section-card">
         <h2 class="journal-section-title">Recent From the Journal</h2>
         <div class="journal-grid">
-          <div class="journal-grid">
+          
+            <article class="card" data-category="healing reflections">
+            <img src="assets/still-waters.png" alt="Soft morning light over still water with gentle ripples" />
+            <div class="card-body">
+              <p class="meta">Healing</p>
+              <h3>Learning to Move Gently Again</h3>
+              <p>A reflection on rest, rhythm, and releasing the pressure to rush what God is slowly restoring within.</p>
+              <a class="btn" href="journal-learning-to-move-gently.html">Read Reflection</a>
+            </div>
+          </article>
 
-  <article class="card featured">
-    <div class="card-body">
-      <h3>Learning to Move Gently Again</h3>
-      <p>A reflection on rest, rhythm, and releasing the need to rush what is still unfolding.</p>
-      <a class="btn" href="journal-learning-to-move-gently.html">Read entry</a>
-    </div>
-  </article>
+          <article class="card" data-category="creativity faith">
+            <img src="assets/journal-page2.png" alt="Open journal on a wooden desk with soft window light and writing tools" />
+            <div class="card-body">
+              <p class="meta">Creativity</p>
+              <h3>When Creativity Feels Like Prayer</h3>
+              <p>Exploring the sacred meeting place between making and listening, where ordinary creative moments become quiet conversations with God.</p>
+              <a class="btn" href="journal-creativity-as-prayer.html">Read Reflection</a>
+            </div>
+          </article>
 
-  <article class="card">
-    <div class="card-body">
-      <h3>When Creativity Feels Like Prayer</h3>
-      <p>Exploring the meeting place between making, faith, and listening deeply.</p>
-      <a class="btn" href="journal-creativity-as-prayer.html">Read entry</a>
-    </div>
-  </article>
+          <article class="card" data-category="life reflections">
+            <img src="assets/journal-memory-pg.png" alt="A handwritten journal page beside tea and a soft linen cloth" />
+            <div class="card-body">
+              <p class="meta">Life Lessons</p>
+              <h3>Morning Notes — A Gentle Path</h3>
+              <p>A simple morning rhythm of reflection prompts and quiet noticing that helps life feel rooted, present, and less hurried.</p>
+              <a class="btn" href="journal-gentle-path.html">Read Reflection</a>
+            </div>
+          </article>
 
-  <article class="card">
-    <div class="card-body">
-      <h3>Morning Notes — A Gentle Path</h3>
-      <p>A private rhythm of reflections and journaling prompts for walking more slowly.</p>
-      <a class="btn" href="journal-gentle-path.html">Read entry</a>
-    </div>
-  </article>
+          <article class="card" data-category="faith devotional">
+            <img src="assets/fog-lifting-hills.png" alt="Soft morning fog lifting over distant hills with gentle sunlight" />
+            <div class="card-body">
+              <p class="meta">Faith</p>
+              <h3>When the Fog Begins to Lift</h3>
+              <p>In uncertain seasons, clarity often comes quietly; this reflection invites trust in God's steady guidance when the path ahead feels hidden.</p>
+              <a class="btn" href="fog-begins-to-lift.html">Read Reflection</a>
+            </div>
+          </article>
 
-<!-- Entry -->
-<article class="card">
-  <img src="assets/fog-lifting-hills.png" alt="Soft morning fog lifting over distant hills with gentle sunlight">
+          <article class="card" data-category="faith life devotional">
+            <img src="assets/devotional-pages.png" alt="Open Bible and devotional journal with a lit candle at dawn" />
+            <div class="card-body">
+              <p class="meta">Devotional Pages</p>
+              <h3>Small Faithful Steps</h3>
+              <p>A devotional reminder that meaningful growth is often shaped through small daily acts of obedience, attention, and gratitude.</p>
+              <a class="btn" href="journal/small-faithful-steps/index.html">Read Reflection</a>
+            </div>
+          </article>
 
-  <div class="card-body">
-    <p class="meta">Faith</p>
+          <article class="card" data-category="healing reflections">
+            <img src="assets/restoration-journey.png" alt="Warm light falling across flowers and a quiet room prepared for rest" />
+            <div class="card-body">
+              <p class="meta">Reflections</p>
+              <h3>Holding Space for Healing</h3>
+              <p>A gentle reflection on making room for grief, hope, and restoration without forcing quick answers or tidy timelines.</p>
+              <a class="btn" href="journal/holding-space-for-healing/index.html">Read Reflection</a>
+            </div>
+          </article>
 
-    <h3>When the Fog Begins to Lift</h3>
-
-    <p>
-      There are seasons when life feels clouded and uncertain, when the path ahead disappears into a quiet fog. 
-      Yet slowly I am learning that clarity does not come from striving harder or seeing every step in advance. 
-      Sometimes peace begins when we simply lift our eyes and trust the One who sees beyond what we can.
-    </p>
-
-    <a class="btn" href="fog-begins-to-lift.html">Read Reflection</a>
-  </div>
-</article>
-            
- </div>
-</div>
+        <!-- Entry -->
+        <article class="card" data-category="faith reflections">
+        <img src="assets/fog-lifting-hills.png" alt="Soft morning fog lifting over distant hills wit h gentle sunlight">
+        <div class="card-body">
+           <p class="meta">Faith</p>
+           <h3>When the Fog Begins to Lift</h3>
+           <p>
+           There are seasons when life feels clouded and uncertain, when the path ahead disappears into a quiet fog. 
+           Yet slowly I am learning that clarity does not come from striving harder or seeing every step in advance. 
+           Sometimes peace begins when we simply lift our eyes and trust the One who sees beyond what we can.
+           </p>
+           <a class="btn" href="fog-begins-to-lift.html">Read Reflection</a>
+      </div>
+          </article>
+        </div>
       </section>
     </div>
   </main>
@@ -133,6 +163,35 @@
 
   <script>
     document.getElementById('year').textContent = '2025';
+  </script>
+    <script>
+    const categoryLinks = document.querySelectorAll('.journal-categories a');
+    const cards = document.querySelectorAll('.journal-grid .card');
+
+    categoryLinks.forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const filter = this.dataset.filter;
+
+        categoryLinks.forEach(item => {
+          item.classList.remove('active');
+          item.removeAttribute('aria-current');
+        });
+        this.classList.add('active');
+        this.setAttribute('aria-current', 'true');
+
+        cards.forEach(card => {
+          const categories = (card.dataset.category || '').split(' ');
+
+          if (filter === 'all' || categories.includes(filter)) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
   </script>
   <script src="/script.js"></script>
     <script src="/assets/protect-media.js"></script>

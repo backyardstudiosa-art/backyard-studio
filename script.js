@@ -29,8 +29,9 @@ filterBtns.forEach(btn => {
     btn.classList.add("primary");
 
     tiles.forEach(tile => {
-      const cat = tile.getAttribute("data-category");
-      const show = value === "all" || value === cat;
+      const cat = (tile.getAttribute("data-category") || "").trim();
+      const categories = cat.split(/\s+/).filter(Boolean);
+      const show = value === "all" || categories.includes(value);
       tile.style.display = show ? "" : "none";
     });
   });

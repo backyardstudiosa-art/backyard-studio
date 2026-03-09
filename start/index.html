@@ -1,70 +1,112 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Start a Project | Backyard Studio</title>
-  <link rel="stylesheet" href="../style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&display=swap" rel="stylesheet">
+  <meta name="description" content="Start a project with Backyard Studio for keepsakes, reflection tools, and story-led creative support." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/site.css" />
 </head>
 
-<body class="index-shell" data-page="home">
-  <div class="page-card">
-    <div class="page-card-inner">
-      <header class="site-header halo fade-in">
-        <img src="../assets/banner.png" alt="Backyard Studio logo" class="site-logo">
-      </header>
-
-      <nav class="soft-nav fade-in">
-        <a href="/index.html" data-link="home">Home</a>
-        <a href="/services.html" data-link="services">Services</a>
-        <a href="/portfolio.html" data-link="portfolio">Portfolio</a>
-        <a href="/journal.html" data-link="journal">Journal</a>
-        <a href="/about.html" data-link="about">About</a>
-        <a href="/book-a-session.html" data-link="contact">Contact</a>
-        <a href="/shop/" data-link="shop">Shop</a>             
+<body>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="/index.html"><img class="brand-mark" src="/assets/logobs.png" alt="Backyard Studio logo" /><span class="brand-text">Backyard Studio</span></a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/portfolio.html">Portfolio</a></li>
+          <li><a href="/journal.html">Journal</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/book-a-session.html">Contact</a></li>
+          <li><a href="/shop/">Shop</a></li>
+        </ul>
       </nav>
-
-      <main class="page-panel panel-bg">
-        <section class="content-section soft-background fade-in section stack">
-          <h1 style="text-align: center;">Start a Project</h1>
-          <p class="handwritten">For stories, seasons, and ideas that need thoughtful shape.</p>
-          <p class="measure">Use this page to begin clearly and gently. Share what you need, choose your preferred way to connect, and Backyard Studio will help shape the right keepsake, reflection tool, or story-led creative direction for your season.</p>
-          <div style="display:flex;flex-wrap:wrap;gap:.6rem;justify-content:center;">
-            <a class="pillow-button" href="https://zcal.co/newhorizons1177" target="_blank" rel="noopener">Book a Consult</a>
-            <a class="pillow-button" href="https://wa.me/27649607349" target="_blank" rel="noopener">Send a WhatsApp</a>
-          </div>
-        </section>
-
-        <section class="content-section fade-in">
-          <div class="service-grid">
-            <article class="service-card paper-grain">
-              <h3>Keepsake Project</h3>
-              <p>Custom story-led keepsakes for milestones, family memory, remembrance, and meaningful gifting.</p>
-            </article>
-            <article class="service-card paper-grain">
-              <h3>Reflection Tool Project</h3>
-              <p>Guided journals, printable reflection pages, and gentle resources for healing and renewal seasons.</p>
-            </article>
-            <article class="service-card paper-grain">
-              <h3>Brand Support Project</h3>
-              <p>Story-led visual support for personal brands and small businesses that need clarity and cohesion.</p>
-            </article>
-          </div>
-        </section>
-
-        <section class="content-section soft-background fade-in section stack">
-          <p class="measure">Need examples before you enquire? You can review selected portfolio work or explore services in more detail first.</p>
-          <div style="display:flex;flex-wrap:wrap;gap:.6rem;justify-content:center;">
-            <a class="pillow-button" href="/portfolio.html">View Portfolio</a>
-            <a class="pillow-button" href="/services.html">Explore Services</a>
-          </div>
-        </section>        
-      </main>
+      <div class="nav-actions">
+        <a class="btn primary" href="/book-a-session.html">Contact</a>
+        <button class="btn menu-btn" data-menu-btn aria-expanded="false" aria-controls="mobile-menu">Menu</button>
+      </div>
     </div>
-  </div>
 
-  <footer class="return-footer fade-in">© 2025 Backyard Studio</footer>  
-  <script src="../script.js"></script>
+    <div id="mobile-menu" class="mobile-menu" hidden>
+      <div class="container">
+        <a href="/index.html">Home</a>
+        <a href="/services.html">Services</a>
+        <a href="/portfolio.html">Portfolio</a>
+        <a href="/journal.html">Journal</a>
+        <a href="/about.html">About</a>
+        <a href="/book-a-session.html">Contact</a>
+        <a href="/shop/">Shop</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="section-card center">
+        <p class="eyebrow">Start a Project</p>
+        <h1>Start something meaningful with Backyard Studio</h1>
+        <p>Share your season, your story, or the support you need. Backyard Studio creates keepsakes, reflection tools, and story-led creative work shaped with calm intention and care.</p>
+        <div class="button-row" style="justify-content:center;">
+          <a class="btn primary" href="https://zcal.co/newhorizons1177" target="_blank" rel="noopener">Book a Consult</a>
+          <a class="btn" href="https://wa.me/27649607349" target="_blank" rel="noopener">Send a WhatsApp</a>
+        </div>
+      </section>
+
+      <section class="section-card">
+        <h2>Choose your project path</h2>
+        <div class="columns">
+          <article class="card">
+            <div class="card-body">
+              <h3>Keepsake Project</h3>
+              <p>For memory books, milestone keepsakes, legacy stories, and meaningful gifts that deserve a thoughtful home.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <h3>Reflection Tool Project</h3>
+              <p>For guided journals, printable reflection pages, and gentle tools that support healing and personal renewal.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <h3>Brand Support Project</h3>
+              <p>For personal brands and small businesses needing story-led visual clarity, cohesion, and meaningful direction.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-card center">
+        <h2>Need examples before you enquire?</h2>
+        <p>Explore the portfolio for proof of work, or review services for a clearer overview of what can be created for your season.</p>
+        <div class="button-row" style="justify-content:center;">
+          <a class="btn" href="/portfolio.html">View Portfolio</a>
+          <a class="btn" href="/services.html">Explore Services</a>
+        </div>
+      </section>
+    </div>
+  </main>
+  
+ <footer class="site-footer">
+    <div class="container footer-center">
+      <div class="footer-links">
+        <a href="https://wa.me/27649607349" target="_blank" rel="noopener">WhatsApp</a>
+        <span class="divider">·</span>
+        <a href="https://zcal.co/newhorizons1177" target="_blank" rel="noopener">Book a Session</a>
+      </div>
+      <p class="footer-copy">© <span id="year"></span> Backyard Studio</p>
+      <p class="footer-copyright-notice">All artwork, designs, and written reflections are protected by copyright and may not be reproduced, distributed, or downloaded without permission.</p>
+    </div>
+ </footer>
+  <script>
+    document.getElementById('year').textContent = '2025';
+  </script>
+  <script src="/script.js"></script>
+  <script src="/assets/protect-media.js"></script>  
 </body>
 </html>

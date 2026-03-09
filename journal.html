@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Journal | Backyard Studio</title>
-    <meta name="description" content="Backyard Studio journal reflections and New Horizons entries for thoughtful living." />
+  <meta name="description" content="Reflections and devotional writing from Backyard Studio for faith, healing, creativity, and life transitions." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -17,23 +17,30 @@
       <nav aria-label="Primary">
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a class="active" href="journal.html">Journal</a></li>
           <li><a href="about.html">About</a></li>
+          <li><a href="book-a-session.html">Contact</a></li>
           <li><a href="shop.html">Shop</a></li>
-          <li><a class="active disabled-link" aria-disabled="true" tabindex="-1" style="pointer-events:none;opacity:.55;cursor:not-allowed;">Journal</a></li>
         </ul>
       </nav>
 
       <div class="nav-actions">
-        <a class="btn disabled-link" aria-disabled="true" tabindex="-1" style="pointer-events:none;opacity:.55;cursor:not-allowed;">View Work</a>
+        <a class="btn" href="services.html">Explore Services</a>
+        <button class="btn menu-btn" data-menu-btn aria-expanded="false" aria-controls="mobile-menu">Menu</button>
       </div>
     </div>
 
     <div id="mobile-menu" class="mobile-menu" hidden>
       <div class="container">
         <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="journal.html">Journal</a>
         <a href="about.html">About</a>
+        <a href="book-a-session.html">Contact</a>
         <a href="shop.html">Shop</a>
-        <a class="disabled-link" aria-disabled="true" tabindex="-1" style="pointer-events:none;opacity:.55;cursor:not-allowed;">Journal</a>
       </div>
     </div>
   </header>
@@ -41,41 +48,32 @@
   <main>
     <div class="container">
       <section class="section-card journal-hero">
+        <p class="eyebrow">Journal</p>
+        <h1>From the Journal</h1>
+        <p class="journal-sub">Reflections, devotional writing, and gentle guidance for faith, healing, creativity, and meaningful life transitions.</p>
+        <p class="journal-intro">The journal is the reflection pillar of Backyard Studio, offering thoughtful writing for people navigating change, seeking grounding, or making room for healing, faith, and personal renewal.</p>
 
-  <p class="eyebrow">Journal</p>
-
-  <h1>From the Journal</h1>
-
-  <p class="journal-sub">
-    A quiet place for reflections, gentle truths, and soulful storytelling.
-  </p>
-
-  <p class="journal-intro">
-    Thoughtful writings on faith, life, healing, creativity, and the beauty of becoming.
-  </p>
-
-  <nav class="journal-categories" aria-label="Journal categories">
-    <a href="#" data-filter="all" class="active" aria-current="true">All</a>
-    <a href="#" data-filter="reflections">Reflections</a>
-    <a href="#" data-filter="faith">Faith</a>
-    <a href="#" data-filter="life">Life Lessons</a>
-    <a href="#" data-filter="healing">Healing</a>
-    <a href="#" data-filter="creativity">Creativity</a>
-    <a href="#" data-filter="devotional">Devotional Pages</a>
-  </nav>
-
-</section>
+        <nav class="journal-categories" aria-label="Journal categories">
+          <a href="#" data-filter="all" class="active" aria-current="true">All</a>
+          <a href="#" data-filter="reflections">Reflections</a>
+          <a href="#" data-filter="faith">Faith</a>
+          <a href="#" data-filter="life">Life Lessons</a>
+          <a href="#" data-filter="healing">Healing</a>
+          <a href="#" data-filter="creativity">Creativity</a>
+          <a href="#" data-filter="devotional">Devotional Pages</a>
+        </nav>
+      </section>
 
       <section class="section-card">
         <h2 class="journal-section-title">Recent From the Journal</h2>
         <div class="journal-grid">
           
-            <article class="card" data-category="healing reflections">
+          <article class="card" data-category="healing reflections">
             <img src="assets/still-waters.png" alt="Soft morning light over still water with gentle ripples" />
             <div class="card-body">
               <p class="meta">Healing</p>
               <h3>Learning to Move Gently Again</h3>
-              <p>A reflection on rest, rhythm, and releasing the pressure to rush what God is slowly restoring within.</p>
+              <p>A reflection on rest, rhythm, and releasing pressure while healing is slowly restored with care.</p>
               <a class="btn" href="journal-learning-to-move-gently.html">Read Reflection</a>
             </div>
           </article>
@@ -105,7 +103,7 @@
             <div class="card-body">
               <p class="meta">Faith</p>
               <h3>When the Fog Begins to Lift</h3>
-              <p>In uncertain seasons, clarity often comes quietly; this reflection invites trust in God's steady guidance when the path ahead feels hidden.</p>
+              <p>For uncertain seasons where clarity feels distant, this reflection invites trust in God's steady guidance one step at a time.</p>
               <a class="btn" href="fog-begins-to-lift.html">Read Reflection</a>
             </div>
           </article>
@@ -129,42 +127,36 @@
               <a class="btn" href="journal/holding-space-for-healing/index.html">Read Reflection</a>
             </div>
           </article>
-
-        <!-- Entry -->
-        <article class="card" data-category="faith reflections">
-        <img src="assets/fog-lifting-hills.png" alt="Soft morning fog lifting over distant hills wit h gentle sunlight">
-        <div class="card-body">
-           <p class="meta">Faith</p>
-           <h3>When the Fog Begins to Lift</h3>
-           <p>
-           There are seasons when life feels clouded and uncertain, when the path ahead disappears into a quiet fog. 
-           Yet slowly I am learning that clarity does not come from striving harder or seeing every step in advance. 
-           Sometimes peace begins when we simply lift our eyes and trust the One who sees beyond what we can.
-           </p>
-           <a class="btn" href="fog-begins-to-lift.html">Read Reflection</a>
-      </div>
-          </article>
+       </div>
+      </section>
+      
+     <section class="section-card center">
+        <h2>Looking for deeper support in this season?</h2>
+        <p>Explore keepsakes, reflection tools, and story-led creative support designed to hold meaningful stories with clarity and care.</p>
+        <div class="button-row" style="justify-content:center;">
+          <a class="btn primary" href="services.html">Explore Services</a>
+          <a class="btn" href="portfolio.html">View Portfolio</a>
         </div>
       </section>
     </div>
   </main>
   
 <footer class="site-footer">
-    <div class="container footer-center">
-      <div class="footer-links">
-        <a href="https://wa.me/27649607349" target="_blank" rel="noopener">WhatsApp</a>
-        <span class="divider">·</span>
-        <a href="https://zcal.co/newhorizons1177" target="_blank" rel="noopener">Book a Session</a>
-      </div>
-      <p class="footer-copy">© <span id="year"></span> Backyard Studio</p>
-      <p class="footer-copyright-notice">All artwork, designs, and written reflections are protected by copyright and may not be reproduced, distributed, or downloaded without permission.</p>
-  </div>  
+  <div class="container footer-center">
+    <div class="footer-links">
+      <a href="https://wa.me/27649607349" target="_blank" rel="noopener">WhatsApp</a>
+      <span class="divider">·</span>
+      <a href="https://zcal.co/newhorizons1177" target="_blank" rel="noopener">Book a Session</a>
+    </div>
+    <p class="footer-copy">© <span id="year"></span> Backyard Studio</p>
+    <p class="footer-copyright-notice">All artwork, designs, and written reflections are protected by copyright and may not be reproduced, distributed, or downloaded without permission.</p>
+  </div>
 </footer>
 
   <script>
     document.getElementById('year').textContent = '2025';
   </script>
-    <script>
+  <script>
     const categoryLinks = document.querySelectorAll('.journal-categories a');
     const cards = document.querySelectorAll('.journal-grid .card');
 
@@ -194,6 +186,6 @@
     });
   </script>
   <script src="/script.js"></script>
-    <script src="/assets/protect-media.js"></script>
+  <script src="/assets/protect-media.js"></script>
 </body>
 </html>

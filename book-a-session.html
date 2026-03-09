@@ -3,47 +3,115 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Book a Session | Backyard Studio</title>
-    <meta name="description" content="Direct booking links for Zcal, WhatsApp, and a private Quiet Notes page." />
+  <title>Contact & Start a Project | Backyard Studio</title>
+  <meta name="description" content="Contact Backyard Studio or start a project for keepsakes, reflection tools, and story-led creative support." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles/site.css" />
 </head>
 
 <body>
   <header class="site-header">
     <div class="container nav-shell">
-      <a class="brand" href="/">Backyard Studio</a>
-      <nav aria-label="Main navigation">
+      <a class="brand" href="index.html"><img class="brand-mark" src="assets/logobs.png" alt="Backyard Studio logo" /><span class="brand-text">Backyard Studio</span></a>
+      <nav aria-label="Primary">
         <ul class="nav-links">
-          <li><a href="/">Home</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/shop/">Shop | Offerings</a></li>
-          <li><a href="/journal/">Journal | New Horizons</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="journal.html">Journal</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a class="active" href="book-a-session.html">Contact</a></li>
+          <li><a href="shop.html">Shop</a></li>
         </ul>
       </nav>
+      <div class="nav-actions">
+        <a class="btn primary" href="start/index.html">Start a Project</a>
+        <button class="btn menu-btn" data-menu-btn aria-expanded="false" aria-controls="mobile-menu">Menu</button>
+      </div>
+
+    <div id="mobile-menu" class="mobile-menu" hidden>
+      <div class="container">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="journal.html">Journal</a>
+        <a href="about.html">About</a>
+        <a href="book-a-session.html">Contact</a>
+        <a href="shop.html">Shop</a>
+      </div>
     </div>
   </header>
 
-  <div class="container page-back-wrap">
-  <a class="page-back" href="/">← Back to Home</a>
-</div>  
-
   <main>
     <div class="container">
-      <section class="hero">
-        <p class="eyebrow">Session and Private Links</p>
-        <h1>Choose where you’d like to go.</h1>
-        <p>This page stays off the main navigation. Use it as a simple private hub for booking and short-form reflections.</p>
+      <section class="section-card">
+        <p class="eyebrow">Contact</p>
+        <h1>Let’s shape something meaningful for your season.</h1>
+        <p>Whether you need a keepsake, a reflection tool, or gentle brand support, Backyard Studio is here to help you move forward with clarity and care.</p>
         <div class="button-row">
-          <a class="btn primary" href="https://zcal.co/newhorizons1177" target="_blank" rel="noopener">Open Zcal Booking</a>
-          <a class="btn" href="https://wa.me/27649607349" target="_blank" rel="noopener">Open WhatsApp</a>
-          <a class="btn" href="/read/">Read Quiet Notes</a>
+          <a class="btn primary" href="start/index.html">Start a Project</a>
+          <a class="btn" href="https://zcal.co/newhorizons1177" target="_blank" rel="noopener">Book a Consult</a>
+        </div>
+      </section>
+
+      <section class="section-card">
+        <h2>Ways to connect</h2>
+        <div class="columns">
+          <article class="card">
+            <div class="card-body">
+              <h3>Book a consult</h3>
+              <p>Choose a time to discuss your story, your season, and what kind of support you need.</p>
+              <a class="btn" href="https://zcal.co/newhorizons1177" target="_blank" rel="noopener">Open Booking Calendar</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-body">
+              <h3>Start directly on WhatsApp</h3>
+              <p>Share a quick message about what you’re looking for and Backyard Studio will guide your next step.</p>
+              <a class="btn" href="https://wa.me/27649607349" target="_blank" rel="noopener">Message on WhatsApp</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-body">
+              <h3>Read a quiet note first</h3>
+              <p>If you need grounding before reaching out, you can pause with a short reflection from Quiet Notes.</p>
+              <a class="btn" href="/read/">Read Quiet Notes</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-card center">
+        <h2>Not sure where to begin?</h2>
+        <p>Explore services for a clear overview, then start a project when you feel ready.</p>
+        <div class="button-row" style="justify-content:center;">
+          <a class="btn" href="services.html">Explore Services</a>
+          <a class="btn" href="portfolio.html">View Portfolio</a>
         </div>
       </section>
     </div>
   </main>
-<footer>© 2026 Backyard Studio</footer>
+  
+  <footer class="site-footer">
+    <div class="container footer-center">
+      <div class="footer-links">
+        <a href="https://wa.me/27649607349" target="_blank" rel="noopener">WhatsApp</a>
+        <span class="divider">·</span>
+        <a href="https://zcal.co/newhorizons1177" target="_blank" rel="noopener">Book a Session</a>
+      </div>
+      <p class="footer-copy">© <span id="year"></span> Backyard Studio</p>
+      <p class="footer-copyright-notice">All artwork, designs, and written reflections are protected by copyright and may not be reproduced, distributed, or downloaded without permission.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = '2025';
+  </script>
+  <script src="/script.js"></script>
+  <script src="/assets/protect-media.js"></script>
 </body>
 </html>

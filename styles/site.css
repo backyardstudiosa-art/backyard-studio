@@ -566,6 +566,10 @@ footer {
   align-items: center;
 }
 
+.product-hero-grid.align-top {
+  align-items: start;
+}
+
 .product-thumb {
   margin: 0;
   width: 100%;

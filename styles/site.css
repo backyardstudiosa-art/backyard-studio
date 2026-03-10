@@ -75,7 +75,7 @@ a { color: inherit; }
   font-size: 1.6rem;
   font-family: "Cormorant Garamond", serif;
   display: inline-flex;
-  align-items: bottom;
+  align-items: center;
   gap: 0.6rem;
 }
 
@@ -142,9 +142,9 @@ a { color: inherit; }
 .brand-banner img {
   width: 100%;
   display: block;
-  height: clamp(190px, 37vh, 390px);
+  height: clamp(190px, 57vh, 390px);
   object-fit: cover;
-  object-position: center 42%;
+  object-position: bottom 42%;
 }
 
 .mobile-menu {

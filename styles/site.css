@@ -144,7 +144,7 @@ a { color: inherit; }
   display: block;
   height: clamp(190px, 57vh, 390px);
   object-fit: cover;
-  object-position: bottom 42%;
+  object-position: center 60%;
 }
 
 .mobile-menu {

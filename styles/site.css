@@ -75,7 +75,7 @@ a { color: inherit; }
   font-size: 1.6rem;
   font-family: "Cormorant Garamond", serif;
   display: inline-flex;
-  align-items: center;
+  align-items: bottom;
   gap: 0.6rem;
 }
 

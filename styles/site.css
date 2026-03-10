@@ -142,7 +142,7 @@ a { color: inherit; }
 .brand-banner img {
   width: 100%;
   display: block;
-  height: clamp(190px, 77vh, 390px);
+  height: clamp(290px, 87vh, 490px);
   object-fit: cover;
   object-position: center 42%;
 }

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anchored in Grace: Coastal Faith Collection | Backyard Studio</title>
+  <meta name="description" content="Anchored in Grace: Coastal Faith Collection by Backyard Studio." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/site.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-shell">
+    <a class="brand" href="index.html"><img class="brand-mark" src="assets/logobs.png" alt="Backyard Studio logo" /><span class="brand-text">Backyard Studio</span></a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a class="active" href="portfolio.html">Portfolio</a></li>
+        <li><a href="journal.html">Journal</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="book-a-session.html">Contact</a></li>
+        <li><a href="shop.html">Shop</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn primary" href="book-a-session.html">Start a Project</a>
+      <button class="btn menu-btn" data-menu-btn aria-expanded="false" aria-controls="mobile-menu">Menu</button>
+    </div>
+  </div>
+
+  <div id="mobile-menu" class="mobile-menu" hidden>
+    <div class="container">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="journal.html">Journal</a>
+      <a href="about.html">About</a>
+      <a href="book-a-session.html">Contact</a>
+      <a href="shop.html">Shop</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container portfolio-page">
+    <section class="section-card portfolio-intro">
+      <p class="eyebrow">Project</p>
+      <h1>Anchored in Grace: Coastal Faith Collection</h1>
+      <p>A soft coastal faith collection designed with layered paper textures, gentle ocean tones, and devotional storytelling in mind.</p>
+      <p><a class="portfolio-project-link" href="portfolio.html">Back to Portfolio</a></p>
+    </section>
+
+    <section class="section-card">
+      <div class="portfolio-grid" aria-label="Anchored in Grace full collection">
+        <article class="portfolio-card">
+          <div class="portfolio-media watermarked" style="background-image: url('assets/anchored-in-grace.png');" role="img" aria-label="Collection Cover Presentation"></div>
+          <div class="card-body">
+            <p class="meta">Collection Cover Presentation</p>
+            <p>A hero visual introducing the collection’s soft coastal faith aesthetic.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-card">
+          <div class="portfolio-media watermarked" style="background-image: url('assets/anchored-in-grace-page2.png');" role="img" aria-label="Canva-Ready Elements and Textures"></div>
+          <div class="card-body">
+            <p class="meta">Canva-Ready Elements &amp; Textures</p>
+            <p>A preview of textures, palettes, and embellishment assets.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-card">
+          <div class="portfolio-media watermarked" style="background-image: url('assets/anchored-in-grace-page3.png');" role="img" aria-label="Faith Memory Layout"></div>
+          <div class="card-body">
+            <p class="meta">Faith Memory Layout</p>
+            <p>A memory-keeping collage shaped by faith and family storytelling.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-card">
+          <div class="portfolio-media watermarked" style="background-image: url('assets/anchored-in-grace-page4.png');" role="img" aria-label="Faith Grace and Hope Detail"></div>
+          <div class="card-body">
+            <p class="meta">Faith, Grace &amp; Hope Detail</p>
+            <p>A layered devotional composition centred on faith, grace, and hope.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-center">
+    <div class="footer-links">
+      <a href="https://wa.me/27649607349" target="_blank" rel="noopener">WhatsApp</a>
+      <span class="divider">·</span>
+      <a href="https://zcal.co/newhorizons1177" target="_blank" rel="noopener">Book a Session</a>
+    </div>
+    <p class="footer-copy">© <span id="year"></span> Backyard Studio</p>
+    <p class="footer-copyright-notice">All artwork, designs, and written reflections are protected by copyright and may not be reproduced, distributed, or downloaded without permission.</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = '2025';
+</script>
+<script src="/script.js"></script>
+<script src="/assets/protect-media.js"></script>
+</body>
+</html>

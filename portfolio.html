@@ -32,7 +32,7 @@
       <button class="btn menu-btn" data-menu-btn aria-expanded="false" aria-controls="mobile-menu">Menu</button>
     </div>
   </div>
-   
+  
   <div id="mobile-menu" class="mobile-menu" hidden>
     <div class="container">
       <a href="index.html">Home</a>
@@ -45,96 +45,180 @@
     </div>
   </div>
 </header>
-  
+
 <main>
   <div class="container portfolio-page">
     <section class="section-card portfolio-intro">
       <p class="eyebrow">Portfolio</p>
       <h1>Portfolio</h1>
-      <p>Selected work across keepsakes, reflection tools, and story-led brand support. Each project is presented as a focused collection to keep the experience calm, clear, and easy to browse.</p>
+      <p>A curated body of collections and individual works shaped by soft visual storytelling, thoughtful layout, and faith-led creative direction.</p>
     </section>
     
-    <section class="section-card">
-            <h2>Featured Collection</h2>
-      <p class="portfolio-note">A gentle stationery series presented as one complete project.</p>
 
-      <!-- === NEW: Portfolio project card (Tender Keepsakes) === -->
-      <article class="portfolio-project-card" aria-labelledby="tender-keepsakes-title" id="tender-keepsakes-project">
-        <div class="portfolio-project-media">
-          <div class="portfolio-media watermarked project-cover" style="background-image: url('assets/card-collection2.jpg');" role="img" aria-label="Tender Keepsakes Card Collection cover image"></div>
-        </div>
+    <!-- === Featured Collections section begins === -->
+    <section class="section-card portfolio-section portfolio-featured" aria-labelledby="featured-collections-title">
+      <div class="section-heading">
+        <p class="section-kicker">Portfolio</p>
+        <h2 id="featured-collections-title">Featured Collections</h2>
+        <p class="section-intro">A curated selection of story-led creative collections shaped by gentle design, thoughtful detail, and calm visual storytelling.</p>
+      </div>
 
-        <div class="portfolio-project-content">
-          <p class="portfolio-project-kicker">Stationery · Greeting Cards · Illustration · Product Styling · Paper Goods</p>
-          <h3 id="tender-keepsakes-title">Tender Keepsakes Card Collection</h3>
-          <p class="portfolio-project-description">A soft stationery series featuring illustrated greeting cards, floral motifs, textured paper finishes, and gift-ready styling. Created to feel warm, thoughtful, and quietly timeless, the collection explores sentimental gifting through gentle colour, simple linework, and intimate visual storytelling.</p>
-
-          <div class="portfolio-project-previews" aria-label="Tender Keepsakes preview gallery">
-            <button class="portfolio-thumb is-active" type="button" data-full="assets/card-collection4.jpg" data-caption="Sentimental Greeting Card" aria-pressed="true">
-              <img src="assets/card-collection4.jpg" alt="Sentimental greeting card concept with warm nostalgic sentiment">
-            </button>
-            <button class="portfolio-thumb" type="button" data-full="assets/card-collection3.jpg" data-caption="Card Set Styling" aria-pressed="false">
-              <img src="assets/card-collection3.jpg" alt="Styled paper goods arrangement showcasing delicate card palette">
-            </button>
-            <button class="portfolio-thumb" type="button" data-full="assets/card-collection1.jpg" data-caption="Stationery &amp; Gift Presentation" aria-pressed="false">
-              <img src="assets/card-collection1.jpg" alt="Stationery and gift presentation with soft pastel tones">
-            </button>
-            <button class="portfolio-thumb" type="button" data-full="assets/card-collection2.jpg" data-caption="Floral Card Detail" aria-pressed="false">
-              <img src="assets/card-collection2.jpg" alt="Floral card detail showing botanical illustration and textured finish">
-            </button>
+      <div class="portfolio-featured-grid">
+        <article class="portfolio-project-card has-previews" id="tender-keepsakes-project">
+          <div class="portfolio-project-media">
+            <div class="portfolio-media watermarked project-cover" style="background-image: url('assets/card-collection2.jpg');" role="img" aria-label="Tender Keepsakes Card Collection preview"></div>
           </div>
+          <div class="portfolio-project-content">
+            <p class="portfolio-project-category">Stationery / Greeting Cards / Illustration</p>
+            <h3>Tender Keepsakes Card Collection</h3>
+            <p class="portfolio-project-description">A soft illustrated stationery collection with floral motifs, textured paper finishes, and gift-ready styling designed to feel warm, thoughtful, and quietly timeless.</p>
 
-          <div class="portfolio-project-footer">
-            <p class="portfolio-project-caption">Sentimental Greeting Card</p>
-            <a class="portfolio-project-link" href="#tender-keepsakes-details">View Project</a>
-          </div>
+            <div class="portfolio-project-previews" aria-label="Tender Keepsakes preview thumbnails">
+              <button class="portfolio-thumb is-active" type="button" data-full="assets/card-collection2.jpg" aria-pressed="true">
+                <img src="assets/card-collection2.jpg" alt="Tender Keepsakes card collection preview 1">
+              </button>
+              <button class="portfolio-thumb" type="button" data-full="assets/card-collection1.jpg" aria-pressed="false">
+                <img src="assets/card-collection1.jpg" alt="Tender Keepsakes card collection preview 2">
+              </button>
+              <button class="portfolio-thumb" type="button" data-full="assets/card-collection3.jpg" aria-pressed="false">
+                <img src="assets/card-collection3.jpg" alt="Tender Keepsakes card collection preview 3">
+              </button>
+              <button class="portfolio-thumb" type="button" data-full="assets/card-collection4.jpg" aria-pressed="false">
+                <img src="assets/card-collection4.jpg" alt="Tender Keepsakes card collection preview 4">
+              </button>
+            </div>
+            
+           <a class="portfolio-project-link" href="tender-keepsakes-card-collection.html">View Project</a>
         </div>
       </article>
     </section>
 
-    <section class="section-card">
-    <!-- === NEW: lightweight dedicated project section === -->
-    <section class="section-card portfolio-project-details" id="tender-keepsakes-details" aria-labelledby="tender-keepsakes-details-title">
-      <h2 id="tender-keepsakes-details-title">Tender Keepsakes Card Collection</h2>
-      <p class="portfolio-note">A soft illustrated stationery collection designed around floral detail, heartfelt sentiment, and warm, giftable styling.</p>
-      <div class="portfolio-grid" aria-label="Tender Keepsakes full project images">
-        <article class="portfolio-card">
-          <div class="portfolio-media watermarked" style="background-image: url('assets/card-collection3.jpg');" role="img" aria-label="Sentimental Greeting Card image"></div>          
-          <div class="card-body">
-            <p class="meta">Sentimental Greeting Card</p>
-            <p>A greeting card concept pairing a soft character 
-              illustration with warm, nostalgic sentiment.</p>
+        <article class="portfolio-project-card">
+          <div class="portfolio-project-media">
+            <div class="portfolio-media watermarked" style="background-image: url('assets/anchored-in-grace-coastal-faith-collection.png');" role="img" aria-label="Anchored in Grace: Coastal Faith Collection preview"></div>
+          </div>
+          <div class="portfolio-project-content">
+            <p class="portfolio-project-category">Faith Collection / Digital Product Design</p>
+            <h3>Anchored in Grace: Coastal Faith Collection</h3>
+            <p class="portfolio-project-description">A soft coastal devotional collection blending faith-led journaling, paper textures, and Canva-ready creative assets.</p>
+            <a class="portfolio-project-link" href="#">View Project</a>
           </div>
         </article>
 
-        <article class="portfolio-card">
-          <div class="portfolio-media watermarked" style="background-image: url('assets/card-collection4.jpg');" role="img" aria-label="Card Set Styling image"></div>
-          <div class="card-body">
-            <p class="meta">Card Set Styling</p>
-            <p>A styled paper goods arrangement showcasing the 
-              collection’s delicate palette and everyday giftable feel.</p>
-          </div
+        <article class="portfolio-project-card">
+          <div class="portfolio-project-media">
+            <div class="portfolio-media watermarked" style="background-image: url('assets/brand-memory-moodboard.png');" role="img" aria-label="Brand Memory Moodboard preview"></div>
+          </div>
+          <div class="portfolio-project-content">
+            <p class="portfolio-project-category">Brand Direction / Visual Identity</p>
+            <h3>Brand Memory Moodboard</h3>
+            <p class="portfolio-project-description">A tactile brand moodboard exploring soft textures, muted coastal tones, and soulful editorial styling.</p>
+            <a class="portfolio-project-link" href="#">View Project</a>
+           </div
         </article>
       
-        <article class="portfolio-card">      
-        <div class="portfolio-media watermarked" style="background-image: url('assets/card-collection1.jpg');" role="img" aria-label="Stationery and Gift Presentation image"></div>
-        <div class="card-body">
-            <p class="meta">Stationery &amp; Gift Presentation</p>
-            <p>A soft product composition combining floral cards, tags, 
-              and wrapped gift elements in a cohesive pastel story.</p>
+
+        <article class="portfolio-project-card">
+          <div class="portfolio-project-media">
+            <div class="portfolio-media watermarked" style="background-image: url('assets/coastal-memory-layout.png');" role="img" aria-label="Coastal Memory Layout preview"></div>
+          </div>
+          <div class="portfolio-project-content">
+            <p class="portfolio-project-category">Scrapbook Design / Memory Keeping</p>
+            <h3>Coastal Memory Layout</h3>
+            <p class="portfolio-project-description">A layered keepsake spread shaped by soft ocean tones, textured paper, and meaningful visual storytelling.</p>
+            <a class="portfolio-project-link" href="#">View Project</a>
           </div>
         </article>
 
-        <article class="portfolio-card">
-          <div class="portfolio-media watermarked" style="background-image: url('assets/card-collection2.jpg');" role="img" aria-label="Floral Card Detail image"></div>
-          <div class="card-body">
-             <p class="meta">Floral Card Detail</p>
-            <p>A close-up card design focused on elegant botanical illustration and textured paper finish.</p>
+        <article class="portfolio-project-card">
+          <div class="portfolio-project-media">
+            <div class="portfolio-media watermarked" style="background-image: url('assets/wildflower-reflection-spread.png');" role="img" aria-label="Wildflower Reflection Spread preview"></div>
+          </div>
+          <div class="portfolio-project-content">
+            <p class="portfolio-project-category">Journaling Design / Reflection Pages</p>
+            <h3>Wildflower Reflection Spread</h3>
+            <p class="portfolio-project-description">A gentle reflection spread with pressed-flower styling, warm neutrals, and quiet space for thoughtful writing.</p>
+            <a class="portfolio-project-link" href="#">View Project</a>
+          </div>
+        </article>
+
+        <article class="portfolio-project-card">
+          <div class="portfolio-project-media">
+            <div class="portfolio-media watermarked" style="background-image: url('assets/gentle-growth-journal-kit.png');" role="img" aria-label="Gentle Growth Journal Kit preview"></div>
+          </div>
+          <div class="portfolio-project-content">
+            <p class="portfolio-project-category">Guided Journal Design</p>
+            <h3>Gentle Growth Journal Kit</h3>
+            <p class="portfolio-project-description">A calm, structured journaling kit designed around growth, reflection, and soft emotional check-ins.</p>
+            <a class="portfolio-project-link" href="#">View Project</a>
+          </div>
+        </article>
+
+        <article class="portfolio-project-card">
+          <div class="portfolio-project-media">
+            <div class="portfolio-media watermarked" style="background-image: url('assets/quiet-morning-collage.png');" role="img" aria-label="Quiet Morning Collage preview"></div>
+          </div>
+          <div class="portfolio-project-content">
+            <p class="portfolio-project-category">Editorial Collage / Slow Living Visuals</p>
+            <h3>Quiet Morning Collage</h3>
+            <p class="portfolio-project-description">A soft collage composition inspired by morning rituals, stillness, and the beauty of gentle beginnings.</p>
+            <a class="portfolio-project-link" href="#">View Project</a>
           </div>
         </article>
       </div>
     </section>
 
+    <!-- === Selected Works section begins === -->
+    <section class="section-card portfolio-section portfolio-selected" aria-labelledby="selected-works-title">
+      <div class="section-heading">
+        <p class="section-kicker">More Work</p>
+        <h2 id="selected-works-title">Selected Works</h2>
+        <p class="section-intro">A quieter gallery of supporting pieces, product visuals, and story-led layouts.</p>
+      </div>
+
+      <div class="selected-works-grid">
+        <article class="selected-work-card">
+          <img src="assets/seaside-storyboard.png" alt="Seaside Storyboard layout">
+          <div class="selected-work-copy"><h3>Seaside Storyboard</h3><p>Storytelling Layout</p></div>
+        </article>
+        <article class="selected-work-card">
+          <img src="assets/morning-mercies-wallpaper.png" alt="Morning Mercies Wallpaper design">
+          <div class="selected-work-copy"><h3>Morning Mercies Wallpaper</h3><p>Mobile Visual / Faith Design</p></div>
+        </article>
+        <article class="selected-work-card">
+          <img src="assets/mercies-morning-by-morning.png" alt="Mercies, Morning by Morning devotional pages">
+          <div class="selected-work-copy"><h3>Mercies, Morning by Morning</h3><p>Devotional Page Design</p></div>
+        </article>
+        <article class="selected-work-card">
+          <img src="assets/new-every-morning-cards.png" alt="New Every Morning Cards">
+          <div class="selected-work-copy"><h3>New Every Morning Cards</h3><p>Faith Stationery / Card Design</p></div>
+        </article>
+        <article class="selected-work-card">
+          <img src="assets/floral-gratitude-journal-spread.png" alt="Floral Gratitude Journal Spread">
+          <div class="selected-work-copy"><h3>Floral Gratitude Journal Spread</h3><p>Journaling Page Design</p></div>
+        </article>
+        <article class="selected-work-card">
+          <img src="assets/soulspace-journal.png" alt="Soulspace Journal styled mockup">
+          <div class="selected-work-copy"><h3>Soulspace Journal</h3><p>Product Styling / Journal Mockup</p></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- === Archive section begins === -->
+    <section class="section-card portfolio-section portfolio-archive" aria-labelledby="archive-title">
+      <div class="section-heading">
+        <p class="section-kicker">Archive</p>
+        <h2 id="archive-title">Experimental Work</h2>
+      </div>
+
+      <div class="selected-works-grid portfolio-archive-grid">
+        <article class="selected-work-card">
+          <img src="assets/jesus-is-lord-graffiti-sketch.jpg" alt="Jesus is Lord graffiti sketch illustration">
+          <div class="selected-work-copy"><h3>Jesus is Lord</h3><p>Illustration Study</p></div>
+        </article>
+      </div>
+    </section>
+  
     <section class="section-card portfolio-cta">
       <h2>Need something meaningful created for your season?</h2>
       <p>Whether you need a keepsake, a guided reflection tool, or story-led design support, Backyard Studio can help shape it with care.</p>
@@ -161,26 +245,21 @@
 <script>
   document.getElementById('year').textContent = '2025';
 
-  // === NEW: Portfolio thumbnail-to-cover swap (scoped to project cards) ===
-  document.querySelectorAll('.portfolio-project-card').forEach((card) => {
+  document.querySelectorAll('.portfolio-project-card.has-previews').forEach((card) => {
     const cover = card.querySelector('.project-cover');
-    const caption = card.querySelector('.portfolio-project-caption');
     const thumbs = card.querySelectorAll('.portfolio-thumb');
 
-    if (!cover || !caption || !thumbs.length) return;
+    if (!cover || !thumbs.length) return;
 
     thumbs.forEach((thumb) => {
       thumb.addEventListener('click', () => {
         const full = thumb.dataset.full;
-        const text = thumb.dataset.caption || '';
-
+        
         if (full) {
           cover.style.backgroundImage = `url("${full}")`;
         }
 
-        caption.textContent = text;
-
-        thumbs.forEach((item) => {
+          thumbs.forEach((item) => {
           item.classList.remove('is-active');
           item.setAttribute('aria-pressed', 'false');
         });
@@ -189,7 +268,7 @@
         thumb.setAttribute('aria-pressed', 'true');
       });
     });
-  });  
+  });
 </script>
 <script src="/script.js"></script>
 <script src="/assets/protect-media.js"></script>

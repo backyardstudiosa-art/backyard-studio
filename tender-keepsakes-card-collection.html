@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tender Keepsakes Card Collection | Backyard Studio</title>
+  <meta name="description" content="Tender Keepsakes Card Collection by Backyard Studio." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/site.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-shell">
+    <a class="brand" href="index.html"><img class="brand-mark" src="assets/logobs.png" alt="Backyard Studio logo" /><span class="brand-text">Backyard Studio</span></a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a class="active" href="portfolio.html">Portfolio</a></li>
+        <li><a href="journal.html">Journal</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="book-a-session.html">Contact</a></li>
+        <li><a href="shop.html">Shop</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn primary" href="book-a-session.html">Start a Project</a>
+      <button class="btn menu-btn" data-menu-btn aria-expanded="false" aria-controls="mobile-menu">Menu</button>
+    </div>
+  </div>
+
+  <div id="mobile-menu" class="mobile-menu" hidden>
+    <div class="container">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="journal.html">Journal</a>
+      <a href="about.html">About</a>
+      <a href="book-a-session.html">Contact</a>
+      <a href="shop.html">Shop</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container portfolio-page">
+    <section class="section-card portfolio-intro">
+      <p class="eyebrow">Project</p>
+      <h1>Tender Keepsakes Card Collection</h1>
+      <p>A soft illustrated stationery collection designed around floral detail, heartfelt sentiment, and warm, giftable styling.</p>
+      <p><a class="portfolio-project-link" href="portfolio.html">Back to Portfolio</a></p>
+    </section>
+
+    <section class="section-card">
+      <div class="portfolio-grid" aria-label="Tender Keepsakes full collection">
+        <article class="portfolio-card">
+          <div class="portfolio-media watermarked" style="background-image: url('assets/card-collection4.jpg');" role="img" aria-label="Sentimental Greeting Card"></div>
+          <div class="card-body">
+            <p class="meta">Sentimental Greeting Card</p>
+            <p>A greeting card concept pairing a soft character illustration with warm, nostalgic sentiment.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-card">
+          <div class="portfolio-media watermarked" style="background-image: url('assets/card-collection3.jpg');" role="img" aria-label="Card Set Styling"></div>
+          <div class="card-body">
+            <p class="meta">Card Set Styling</p>
+            <p>A styled paper goods arrangement showcasing the collection’s delicate palette and everyday giftable feel.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-card">
+          <div class="portfolio-media watermarked" style="background-image: url('assets/card-collection1.jpg');" role="img" aria-label="Stationery and Gift Presentation"></div>
+          <div class="card-body">
+            <p class="meta">Stationery &amp; Gift Presentation</p>
+            <p>A soft product composition combining floral cards, tags, and wrapped gift elements in a cohesive pastel story.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-card">
+          <div class="portfolio-media watermarked" style="background-image: url('assets/card-collection2.jpg');" role="img" aria-label="Floral Card Detail"></div>
+          <div class="card-body">
+            <p class="meta">Floral Card Detail</p>
+            <p>A close-up card design focused on elegant botanical illustration and textured paper finish.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-center">
+    <div class="footer-links">
+      <a href="https://wa.me/27649607349" target="_blank" rel="noopener">WhatsApp</a>
+      <span class="divider">·</span>
+      <a href="https://zcal.co/newhorizons1177" target="_blank" rel="noopener">Book a Session</a>
+    </div>
+    <p class="footer-copy">© <span id="year"></span> Backyard Studio</p>
+    <p class="footer-copyright-notice">All artwork, designs, and written reflections are protected by copyright and may not be reproduced, distributed, or downloaded without permission.</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = '2025';
+</script>
+<script src="/script.js"></script>
+<script src="/assets/protect-media.js"></script>
+</body>
+</html>

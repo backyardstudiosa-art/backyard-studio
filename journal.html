@@ -64,70 +64,76 @@
         </nav>
       </section>
 
-      <section class="section-card">
-        <h2 class="journal-section-title">Recent From the Journal</h2>
+      <!-- Featured Reflection section begins -->
+      <section class="section-card journal-featured" aria-labelledby="featured-reflection-title">
+        <div class="journal-heading-block">
+          <p class="eyebrow">Featured Reflection</p>
+          <h2 id="featured-reflection-title" class="journal-section-title">A quieter place to begin</h2>
+        </div>
+
+        <article class="journal-featured-card journal-entry" data-category="faith devotional">
+          <img src="assets/fog-lifting-hills.png" alt="Soft morning fog lifting over distant hills with gentle sunlight" />
+          <div class="journal-featured-copy">
+            <p class="meta">Faith</p>
+            <h3>When the Fog Begins to Lift</h3>
+            <p>For uncertain seasons where clarity feels distant, this reflection invites trust in God's steady guidance one step at a time.</p>
+            <a class="btn" href="fog-begins-to-lift.html">Read Reflection</a>
+          </div>
+        </article>
+      </section>
+
+      <!-- Recent Entries section begins -->
+      <section class="section-card journal-recent" aria-labelledby="recent-entries-title">
+        <div class="journal-heading-block">
+          <p class="eyebrow">Recent Entries</p>
+          <h2 id="recent-entries-title" class="journal-section-title">Recent From the Journal</h2>
+     
         <div class="journal-grid">
           
-          <article class="card" data-category="healing reflections">
+        <article class="journal-card journal-entry" data-category="healing reflections">
             <img src="assets/still-waters.png" alt="Soft morning light over still water with gentle ripples" />
-            <div class="card-body">
+            <div class="journal-card-copy">
               <p class="meta">Healing</p>
               <h3>Learning to Move Gently Again</h3>
-              <p>A reflection on rest, rhythm, and releasing pressure while healing is slowly restored with care.</p>
+              <p class="journal-card-excerpt">A reflection on rest, rhythm, and releasing pressure while healing is slowly restored with care.</p>
               <a class="btn" href="journal-learning-to-move-gently.html">Read Reflection</a>
             </div>
           </article>
 
           <article class="card" data-category="creativity faith">
             <img src="assets/journal-page2.png" alt="Open journal on a wooden desk with soft window light and writing tools" />
-            <div class="card-body">
+            <div class="journal-card-copy">
               <p class="meta">Creativity</p>
               <h3>When Creativity Feels Like Prayer</h3>
-              <p>Exploring the sacred meeting place between making and listening, where ordinary creative moments become quiet conversations with God.</p>
+              <p class="journal-card-excerpt">Exploring the sacred meeting place between making and listening, where ordinary creative moments become quiet conversations with God.</p>
               <a class="btn" href="journal-creativity-as-prayer.html">Read Reflection</a>
             </div>
           </article>
 
-          <article class="card" data-category="life reflections">
+          <article class="journal-card journal-entry" data-category="life reflections">
             <img src="assets/journal-memory-pg.png" alt="A handwritten journal page beside tea and a soft linen cloth" />
-            <div class="card-body">
+            <div class="journal-card-copy">
               <p class="meta">Life Lessons</p>
               <h3>Morning Notes — A Gentle Path</h3>
-              <p>A simple morning rhythm of reflection prompts and quiet noticing that helps life feel rooted, present, and less hurried.</p>
+              <p class="journal-card-excerpt">A simple morning rhythm of reflection prompts and quiet noticing that helps life feel rooted, present, and less hurried.</p>
               <a class="btn" href="journal-gentle-path.html">Read Reflection</a>
             </div>
           </article>
 
-          <article class="card" data-category="faith devotional">
-            <img src="assets/fog-lifting-hills.png" alt="Soft morning fog lifting over distant hills with gentle sunlight" />
-            <div class="card-body">
-              <p class="meta">Faith</p>
-              <h3>When the Fog Begins to Lift</h3>
-              <p>For uncertain seasons where clarity feels distant, this reflection invites trust in God's steady guidance one step at a time.</p>
-              <a class="btn" href="fog-begins-to-lift.html">Read Reflection</a>
-            </div>
-          </article>
-
-          <article class="card" data-category="faith life devotional">
+          <article class="journal-card journal-entry" data-category="faith life devotional">
             <img src="assets/devotional-pages.png" alt="Open Bible and devotional journal with a lit candle at dawn" />
-            <div class="card-body">
+            <div class="journal-card-copy">
               <p class="meta">Devotional Pages</p>
               <h3>Small Faithful Steps</h3>
-              <p>A devotional reminder that meaningful growth is often shaped through small daily acts of obedience, attention, and gratitude.</p>
+              <p class="journal-card-excerpt">A devotional reminder that meaningful growth is often shaped through small daily acts of obedience, attention, and gratitude.</p>
               <a class="btn" href="journal/small-faithful-steps/index.html">Read Reflection</a>
             </div>
           </article>
-
-          <article class="card" data-category="healing reflections">
-            <img src="assets/restoration-journey.png" alt="Warm light falling across flowers and a quiet room prepared for rest" />
-            <div class="card-body">
-              <p class="meta">Reflections</p>
-              <h3>Holding Space for Healing</h3>
-              <p>A gentle reflection on making room for grief, hope, and restoration without forcing quick answers or tidy timelines.</p>
-              <a class="btn" href="journal/holding-space-for-healing/index.html">Read Reflection</a>
-            </div>
-          </article>
-       </div>
+        </div>
+          
+        <div class="journal-more">
+          <a class="btn" href="journal/index.html">View More Reflections</a>
+        </div>
       </section>
       
      <section class="section-card center">
@@ -158,7 +164,7 @@
   </script>
   <script>
     const categoryLinks = document.querySelectorAll('.journal-categories a');
-    const cards = document.querySelectorAll('.journal-grid .card');
+    const cards = document.querySelectorAll('.journal-entry');
 
     categoryLinks.forEach(link => {
       link.addEventListener('click', function (e) {

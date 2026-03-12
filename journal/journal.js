@@ -18,7 +18,16 @@
 
     const searchInput = document.querySelector("#journal-search");
     const sortSelect = document.querySelector("#sort-order");
-    const tagButtons = Array.from(document.querySelectorAll(".tag-pill"));
+    const tagsWrap = document.querySelector("#tags");
+    if (!searchInput || !sortSelect || !tagsWrap) return;
+
+    const allTags = Array.from(new Set(entries.flatMap((entry) => entry.tags))).sort();
+    const tagNames = ["All", ...allTags];
+    tagsWrap.innerHTML = tagNames
+      .map((tag, index) => `<button type="button" class="tag${index === 0 ? " active" : ""}" data-tag="${tag}">${tag}</button>`)
+      .join("");
+
+    const tagButtons = Array.from(tagsWrap.querySelectorAll(".tag"));
     let activeTag = "All";
 
     function draw() {
@@ -26,7 +35,7 @@
       const sortValue = sortSelect.value;
 
       let filtered = entries.filter((entry) => {
-        const haystack = `${entry.title} ${entry.reflection.join(" ")}`.toLowerCase();
+        const haystack = `${entry.title} ${entry.excerpt} ${entry.reflection.join(" ")}`.toLowerCase();
         const tagMatch = activeTag === "All" || entry.tags.includes(activeTag);
         const searchMatch = !q || haystack.includes(q);
         return tagMatch && searchMatch;
@@ -69,6 +78,7 @@
 
     draw();
   }
+
 
   function renderDetail() {
     const article = document.querySelector("#journal-article");

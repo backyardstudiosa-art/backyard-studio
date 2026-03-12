@@ -15,44 +15,85 @@
   <link rel="stylesheet" href="/styles/site.css" />
 </head>
 <body>
-<header class="site-header">
-  <div class="container nav-shell">
-    <a class="brand" href="/">Backyard Studio</a>
-    <nav aria-label="Main navigation"><ul class="nav-links">
-      <li><a href="/">Home</a></li>
-      <li><a href="/about.html">About</a></li>
-      <li><a href="/shop/">Shop | Offerings</a></li>
-      <li><a class="active" href="/journal/">Journal | New Horizons</a></li></ul>
-    </nav>
-  </div>
-</header>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="/index.html"><img class="brand-mark" src="/assets/logobs.png" alt="Backyard Studio logo" /><span class="brand-text">Backyard Studio</span></a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/portfolio.html">Portfolio</a></li>
+          <li><a class="active" href="/journal/">Journal</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/book-a-session.html">Contact</a></li>
+          <li><a href="/shop.html">Shop</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn" href="/services.html">Explore Services</a>
+        <button class="btn menu-btn" data-menu-btn aria-expanded="false" aria-controls="mobile-menu">Menu</button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="mobile-menu" hidden>
+      <div class="container">
+        <a href="/index.html">Home</a>
+        <a href="/services.html">Services</a>
+        <a href="/portfolio.html">Portfolio</a>
+        <a href="/journal/">Journal</a>
+        <a href="/about.html">About</a>
+        <a href="/book-a-session.html">Contact</a>
+        <a href="/shop.html">Shop</a>
+      </div>
+    </div>
+  </header>
 
   <div class="container page-back-wrap">
-    <a class="page-back" href="/">← Back to Home</a></div>
+    <a class="page-back" href="/journal.html">← Back to Journal</a>
+  </div>
 
   <main>
-  <div class="container">
-  <section class="section-card">
-    <p class="eyebrow">Journal</p>
-    <h1>New Horizons</h1>
-    <p></p>
-    <p>Recurring reflections for thoughtful living.</p>
-  </section>
+    <div class="container">
+      <section class="section-card journal-hero">
+        <p class="eyebrow">Journal Archive</p>
+        <h1>New Horizons</h1>
+        <p class="journal-intro">A quiet archive of recurring reflections for thoughtful living, spiritual renewal, and gentle growth.</p>
+      </section>
 
-  <section class="search-panel" aria-label="Search and filter journal entries">
-    <div class="search-row">
-      <input id="search" type="search" placeholder="Search by title, excerpt, or reflection text" aria-label="Search journal entries" />
-      <select id="sort" aria-label="Sort entries"><option value="newest">Newest first</option><option value="oldest">Oldest first</option></select>
+      <section class="search-panel" aria-label="Search and filter journal entries">
+        <div class="search-row">
+          <input id="journal-search" type="search" placeholder="Search by title, excerpt, or reflection text" aria-label="Search journal entries" />
+          <select id="sort-order" aria-label="Sort entries">
+            <option value="newest">Newest first</option>
+            <option value="oldest">Oldest first</option>
+          </select>
+        </div>
+        <div class="tag-row" id="tags" aria-label="Tag filters"></div>
+      </section>
+
+      <section id="entry-list" class="columns" aria-live="polite"></section>
     </div>
-    <div class="tag-row" id="tags" aria-label="Tag filters"></div>
-  </section>
-
-  <section id="entries" class="columns" aria-live="polite"></section>
-</div>
   </main>
 
-  <footer><p><a href="https://wa.me/27649607349" target="_blank" rel="noopener">WhatsApp</a> · <a href="mailto:hello@backyardstudio.co.za">hello@backyardstudio.co.za</a></p><p>© <span id="year"></span> Backyard Studio</p></footer>
-<script src="/scripts.js"></script>
-<script src="/journal/journal.js"></script>
+  <footer class="site-footer">
+    <div class="container footer-center">
+      <div class="footer-links">
+        <a href="https://wa.me/27649607349" target="_blank" rel="noopener">WhatsApp</a>
+        <span class="divider">·</span>
+        <a href="https://zcal.co/newhorizons1177" target="_blank" rel="noopener">Book a Session</a>
+      </div>
+      <p class="footer-copy">© <span id="year"></span> Backyard Studio</p>
+      <p class="footer-copyright-notice">All artwork, designs, and written reflections are protected by copyright and may not be reproduced, distributed, or downloaded without permission.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = '2025';
+  </script>
+  <script src="/script.js"></script>
+  <script src="/journal/journal-data.js"></script>
+  <script src="/journal/journal.js"></script>
+  <script src="/assets/protect-media.js"></script>
 </body>
 </html>

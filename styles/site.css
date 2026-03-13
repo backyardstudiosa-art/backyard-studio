@@ -186,6 +186,53 @@ main {
   max-width: min(100%, 92ch);
 }
 
+.home-hero,
+.services-hero,
+.portfolio-hero,
+.journal-hero,
+.about-hero,
+.contact-hero,
+.shop-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background-color: #fffefb;
+  background-size: cover;
+  background-position: center;
+}
+
+.home-hero::before,
+.services-hero::before,
+.portfolio-hero::before,
+.journal-hero::before,
+.about-hero::before,
+.contact-hero::before,
+.shop-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 253, 249, 0.86);
+  z-index: -1;
+}
+
+.home-hero > *,
+.services-hero > *,
+.portfolio-hero > *,
+.journal-hero > *,
+.about-hero > *,
+.contact-hero > *,
+.shop-hero > * {
+  position: relative;
+}
+
+.home-hero { background-image: url("/assets/home~2.png"); }
+.services-hero { background-image: url("/assets/creative-studio~2.png"); }
+.portfolio-hero { background-image: url("/assets/new-horizons~2.png"); }
+.journal-hero { background-image: url("/assets/journal~2.png"); }
+.about-hero { background-image: url("/assets/creative-studio~2.png"); }
+.contact-hero { background-image: url("/assets/booking~2.png"); }
+.shop-hero { background-image: url("/assets/shop~2.png"); }
+
 .eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.12em;

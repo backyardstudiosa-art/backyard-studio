@@ -26,8 +26,8 @@
     <p><button id="share" class="btn" type="button">Share reflection</button></p>
     <p id="share-fallback" class="inline-share" hidden></p>
     <div class="button-row">
-      ${prev ? `<a class="btn" href="/journal/${prev.slug}.html">← ${prev.title}</a>` : ''}
-      ${next ? `<a class="btn" href="/journal/${next.slug}.html">${next.title} →</a>` : ''}
+      ${prev ? `<a class="btn" href="/journal/${prev.slug}/">← ${prev.title}</a>` : ''}
+      ${next ? `<a class="btn" href="/journal/${next.slug}/">${next.title} →</a>` : ''}
     </div>
   `;
 

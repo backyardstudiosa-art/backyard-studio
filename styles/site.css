@@ -1025,15 +1025,23 @@ footer {
   white-space: nowrap;
 }
 
-
 .keepsake-package-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
   margin-top: 1.2rem;
+}
+
+.keepsake-package-grid .card {
+  display: flex;
+  height: 100%;
 }
 
 .keepsake-package-card .card-body {
   display: flex;
   flex-direction: column;
   gap: 0.45rem;
+  width: 100%;
 }
 
 .keepsake-package-card ul {

@@ -1486,7 +1486,8 @@ footer {
     min-height: 220px;
   }
 
-  .portfolio-project-content h3,
+  .portfolio-project-overview h3,
+  .portfolio-project-detail-title,
   .selected-work-copy h3 {
     font-size: 1rem;
   }

@@ -729,19 +729,7 @@ footer {
 }
 
 .portfolio-project-detail {
-  margin: 0 0 1rem;
-  padding: 0.95rem 1rem;
-  border-radius: 18px;
-  background: rgba(143, 119, 103, 0.08);
-  border: 1px solid rgba(143, 119, 103, 0.14);
-}
-
-.portfolio-project-detail-label {
-  margin: 0 0 0.35rem;
-  font-size: 0.78rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--ink-soft);
+  margin: 0 0 0.75rem;
 }
 
 .portfolio-project-detail-title {

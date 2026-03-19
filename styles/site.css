@@ -672,15 +672,26 @@ footer {
 
 /* === NEW: Grouped project card system === */
 .portfolio-project-card {
-  display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  display: flex;
+  flex-direction: column;
   gap: 1.15rem;
-  align-items: start;
+  align-items: stretch;
   border-radius: 24px;
   padding: clamp(1rem, 1.8vw, 1.15rem);
   border: 1px solid rgba(143, 119, 103, 0.14);
   background: var(--paper);
   box-shadow: var(--shadow);
+}
+
+.portfolio-project-overview {
+  max-width: 60rem;
+}
+
+.portfolio-project-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: 1.15rem;
+  align-items: start;
 }
 
 .portfolio-project-media,
@@ -701,7 +712,7 @@ footer {
   color: var(--ink-soft);
 }
 
-.portfolio-project-content h3 {
+.portfolio-project-overview h3 {
   margin: 0 0 0.58rem;
   line-height: 1.16;
 }

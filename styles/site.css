@@ -1025,6 +1025,47 @@ footer {
   white-space: nowrap;
 }
 
+
+.keepsake-package-grid {
+  margin-top: 1.2rem;
+}
+
+.keepsake-package-card .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.keepsake-package-card ul {
+  margin: 0.2rem 0 0.6rem;
+  padding-left: 1.15rem;
+  color: var(--ink-soft);
+}
+
+.keepsake-package-card ul li {
+  margin-bottom: 0.35rem;
+}
+
+.keepsake-package-card .btn {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+.featured-package {
+  border-color: rgba(186, 150, 115, 0.5);
+  box-shadow: 0 14px 30px rgba(139, 103, 73, 0.12);
+  background: linear-gradient(180deg, rgba(255, 250, 243, 0.95) 0%, rgba(255, 255, 255, 1) 70%);
+}
+
+.featured-package .badge {
+  display: inline-flex;
+  width: fit-content;
+  margin: 0 0 0.35rem;
+  background: #f3e3cf;
+  border-color: rgba(180, 140, 103, 0.55);
+  color: #6d5138;
+}
+  
 /* Dividers */
 .section-divider {
   display: flex;

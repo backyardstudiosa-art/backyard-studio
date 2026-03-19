@@ -1462,8 +1462,8 @@ footer {
     grid-template-columns: 1fr;
   }
 
-   .portfolio-project-detail {
-    padding: 0.85rem 0.9rem;
+  .portfolio-project-body {
+    grid-template-columns: 1fr;
   }
   
   .portfolio-project-card {

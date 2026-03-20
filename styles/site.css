@@ -684,13 +684,13 @@ footer {
 }
 
 .portfolio-project-overview {
-  max-width: 60rem;
+  max-width: none;
 }
 
 .portfolio-project-body {
   display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
-  gap: 1.15rem;
+  grid-template-columns: minmax(280px, 400px) minmax(0, 1fr);
+  gap: clamp(1rem, 2vw, 1.8rem);
   align-items: start;
 }
 
@@ -699,17 +699,14 @@ footer {
   min-width: 0;
 }
 
-.portfolio-project-card .portfolio-media {
-  border-radius: 18px;
-  min-height: 260px;  
+.portfolio-project-media {
+  max-width: 400px;  
 }
 
-.portfolio-project-category {
-  margin: 0 0 0.55rem;
-  font-size: 0.82rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--ink-soft);
+.portfolio-project-card .portfolio-media {
+  border-radius: 18px;
+  min-height: 0;
+  aspect-ratio: 1 / 1;
 }
 
 .portfolio-project-overview h3 {
@@ -718,39 +715,50 @@ footer {
 }
 
 .portfolio-project-description {
-  margin: 0 0 1rem;
-  max-width: 54ch;
+  margin: 0;
+  max-width: 68ch;
+}
+
+.portfolio-project-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-top: 0.2rem;
 }
 
 .portfolio-project-instruction {
-  margin: 0 0 1rem;
   color: #6d6157;
   font-size: 0.95rem;
 }
 
 .portfolio-project-detail {
-  margin: 0 0 0.75rem;
+  margin: 0 0 0.65rem;
 }
 
 .portfolio-project-detail-title {
-  margin: 0 0 0.35rem;
-  font-size: clamp(1.15rem, 2vw, 1.35rem);
+  margin: 0 0 0.4rem;
+  font-size: clamp(1.2rem, 2vw, 1.45rem);
+  line-height: 1.18;
 }
 
 .portfolio-project-detail-copy {
   margin: 0;
+  max-width: 42ch;
   color: #5f554d;
 }
 
 .portfolio-project-previews {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 0.55rem;
-  margin: 0 0 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 0;
 }
 
 .portfolio-thumb {
   appearance: none;
+  flex: 0 0 clamp(72px, 7vw, 96px);
+  width: clamp(72px, 7vw, 96px);
   margin: 0;
   padding: 0;
   border: 0;
@@ -1379,8 +1387,8 @@ footer {
     padding: 0.9rem 0.95rem 0.95rem;
   }
 
-    .services-grid .card,
-  .services-grid .card.featured {
+   .services-grid .card,
+   .services-grid .card.featured {
     grid-column: span 6;
   }
 }
@@ -1452,7 +1460,7 @@ footer {
   }
 
   .portfolio-project-previews {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.65rem;
   }
 
 }
@@ -1464,6 +1472,11 @@ footer {
 
   .portfolio-project-body {
     grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .portfolio-project-media {
+    max-width: min(360px, 100%);
   }
   
   .portfolio-project-card {
@@ -1471,7 +1484,7 @@ footer {
   }
 
   .portfolio-project-card .portfolio-media {
-    min-height: 220px;
+    aspect-ratio: 1 / 1;
   }
 
   .portfolio-project-overview h3,

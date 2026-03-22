@@ -377,6 +377,11 @@ footer p,
   border: 1px solid rgba(143, 119, 103, 0.24);
 }
 
+.payfast-message {
+  margin-top: 1rem;
+  color: var(--ink-soft);
+}
+
 .search-panel {
   background: var(--paper);
   border: 1px solid rgba(143, 119, 103, 0.2);

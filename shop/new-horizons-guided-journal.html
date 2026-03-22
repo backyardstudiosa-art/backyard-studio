@@ -66,9 +66,9 @@
             <p><strong>Rebuilding After Carrying Too Much</strong> is a guided digital journal for women navigating healing and rebuilding seasons. Through structured reflection prompts, it helps you separate what was yours to carry from what wasn’t and move forward with clarity, care, and dignity.</p>
             <p><strong>Price: R149</strong></p>
             
-            <form name="PayFastPayNowForm" action="https://payment.payfast.io/eng/process" method="post" class="payfast-form">
+            <form name="PayFastPayNowForm" action="https://payment.payfast.io/eng/process" method="post" class="payfast-form" data-payfast-form hidden>
               <input required type="hidden" name="cmd" value="_paynow">
-              <input required type="hidden" name="receiver" pattern="[0-9]" value="33788235">
+              <input required type="hidden" name="receiver" pattern="[0-9]" value="">
               <input type="hidden" name="return_url" value="https://backyardstudio.co.za/thank-you.html">
               <input type="hidden" name="cancel_url" value="https://backyardstudio.co.za/shop.html">
               <input required type="hidden" name="amount" value="149">
@@ -82,6 +82,7 @@
                 </tr>
               </table>
             </form>
+            <p class="payfast-message" data-payfast-message>Secure checkout is temporarily unavailable. Please contact Backyard Studio to purchase this journal.</p>            
             <div class="button-row">
               <a class="btn" href="/book-a-session.html">Need support choosing the right tool?</a>
             </div>            
@@ -127,7 +128,9 @@
       <p class="footer-copyright-notice">All artwork, designs, and written reflections are protected by copyright and may not be reproduced, distributed, or downloaded without permission.</p>
     </div>
   </footer>
-  
+
+  <script src="/assets/payfast-config.js"></script>
+  <script src="/assets/payfast-config.local.js"></script>  
   <script>
     document.getElementById('year').textContent = '2025';
     
@@ -164,6 +167,16 @@
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && !lightbox.hidden) closeLightbox();
     });
+ 
+    const payfastForm = document.querySelector('[data-payfast-form]');
+    const payfastMessage = document.querySelector('[data-payfast-message]');
+    const payfastConfig = window.PAYFAST_CONFIG?.newHorizonsGuidedJournal;
+
+    if (payfastForm && payfastConfig?.receiver) {
+      payfastForm.elements.receiver.value = payfastConfig.receiver;
+      payfastForm.hidden = false;
+      payfastMessage.hidden = true;
+    }   
   </script>
   <script src="/script.js"></script>
   <script src="/assets/protect-media.js"></script>

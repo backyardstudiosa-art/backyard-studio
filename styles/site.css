@@ -405,6 +405,50 @@ select {
   border: 1px solid rgba(143, 119, 103, 0.35);
 }
 
+.consultation-form {
+  margin-top: 1rem;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.consultation-form label {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.consultation-form input,
+.consultation-form select,
+.consultation-form textarea {
+  width: 100%;
+  font: inherit;
+  padding: 0.72rem 0.84rem;
+  border-radius: 10px;
+  border: 1px solid rgba(143, 119, 103, 0.35);
+  background: #fff;
+}
+
+.consultation-form textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+.consultation-form .btn {
+  justify-self: start;
+  margin-top: 0.2rem;
+}
+
+.consultation-fee {
+  margin-top: 1rem;
+  color: var(--ink-soft);
+}
+
+.consultation-note {
+  margin-top: 0.5rem;
+  font-size: 0.93rem;
+  text-align: center;
+  color: var(--ink-soft);
+}
+
 .tag-row {
   display: flex;
   gap: 0.4rem;

@@ -95,6 +95,47 @@
         </div>
       </section>
     </div>
+
+    <div class="container">
+      <section class="section-card">
+        <h1>Begin Your Memory Book</h1>
+        <p>If you are ready to preserve your milestone with intention, complete the form below.</p>
+
+        <form class="consultation-form" action="mailto:info@backyardstudio.co.za" method="post" enctype="text/plain">
+          <label for="full-name">Full Name</label>
+          <input id="full-name" name="Full Name" type="text" placeholder="Your full name" required />
+
+          <label for="email-address">Email Address</label>
+          <input id="email-address" name="Email Address" type="email" placeholder="your@email.com" required />
+
+          <label for="milestone">Select a milestone</label>
+          <select id="milestone" name="Type of Milestone" required>
+            <option value="">Select a milestone</option>
+            <option>Wedding</option>
+            <option>Engagement</option>
+            <option>Baby Milestones</option>
+            <option>Anniversary</option>
+            <option>Tribute / Memorial</option>
+            <option>Legacy Birthday (40th, 50th+)</option>
+            <option>Personalised Scrapbook</option>
+            <option>Guided Journal</option>
+            <option>Other / Not Sure</option>
+          </select>
+
+          <label for="timeline">Estimated Timeline</label>
+          <input id="timeline" name="Estimated Timeline" type="text" placeholder="e.g., Within 2 weeks, No rush" />
+
+          <label for="project-description">Brief Description of Your Project</label>
+          <textarea id="project-description" name="Project Description" rows="5" placeholder="Tell us about the milestone or story you'd like to preserve..." required></textarea>
+
+          <button class="btn primary" type="submit">Request Consultation</button>
+        </form>
+
+        <p class="consultation-fee"><em>* Consultation Fee: R300 — Credited toward your final project invoice.</em></p>
+        <p class="consultation-note">After submission, you will receive information on booking your consultation.</p>
+      </section>
+    </div>    
+    
   </main>
   
   <footer class="site-footer">

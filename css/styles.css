@@ -1,0 +1,128 @@
+:root {
+  --bs-primary: #5A7887;
+  --bs-bg: #F5F7F8;
+  --bs-text: #2F3E46;
+  --bs-accent: rgba(90, 120, 135, 0.1);
+  --bs-white: #ffffff;
+}
+
+body {
+  background: var(--bs-bg);
+  color: var(--bs-text);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+main .container {
+  display: grid;
+  gap: 2rem;
+}
+
+section {
+  padding: 100px 20px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.brand-mark {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+}
+
+.brand-text {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+
+.home-hero h1,
+.section-card h2 {
+  letter-spacing: 0.01em;
+  line-height: 1.2;
+}
+
+.section-card p {
+  line-height: 1.75;
+}
+
+.section-card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.78));
+  border: 1px solid rgba(90, 120, 135, 0.14);
+  box-shadow: 0 20px 42px rgba(47, 62, 70, 0.06);
+}
+
+.btn,
+.btn-primary,
+.btn.primary {
+  background: rgba(90, 120, 135, 0.12);
+  color: var(--bs-text);
+  border: 1px solid rgba(90, 120, 135, 0.3);
+  border-radius: 8px;
+  padding: 12px 24px;
+  backdrop-filter: blur(6px);
+  transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn.primary,
+.btn-primary {
+  background: rgba(90, 120, 135, 0.85);
+  color: var(--bs-white);
+}
+
+.btn:hover,
+.btn:focus-visible {
+  transform: translateY(-1px);
+  background: rgba(90, 120, 135, 0.2);
+  border-color: rgba(90, 120, 135, 0.45);
+}
+
+.btn.primary:hover,
+.btn.primary:focus-visible,
+.btn-primary:hover,
+.btn-primary:focus-visible {
+  background: rgba(90, 120, 135, 0.95);
+}
+
+.columns {
+  gap: 1.25rem;
+}
+
+.card {
+  border: 1px solid rgba(90, 120, 135, 0.2);
+  background: rgba(255, 255, 255, 0.86);
+}
+
+.icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(90, 120, 135, 0.1);
+  color: var(--bs-primary);
+  margin-bottom: 0.8rem;
+}
+
+@media (max-width: 800px) {
+  section {
+    padding: 72px 16px;
+  }
+
+  .brand-mark {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.button-row.centered {
+  justify-content: center;
+}

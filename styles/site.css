@@ -1762,3 +1762,11 @@ footer {
     max-width: 31ch;
   }
 }
+
+.hero-home img.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 0;
+}

@@ -1619,3 +1619,96 @@ footer {
 .button-row.centered {
   justify-content: center;
 }
+
+
+.hero-home {
+  position: relative;
+  isolation: isolate;
+}
+
+.hero-home::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(25, 32, 36, 0.2) 0%, rgba(25, 32, 36, 0.52) 100%);
+  z-index: 1;
+}
+
+
+
+.hero-home-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: clamp(1.1rem, 4vw, 2.6rem);
+}
+
+.hero-home-content {
+  max-width: min(760px, 95%);
+  color: #f5f7f8;
+  text-shadow: 0 3px 14px rgba(0, 0, 0, 0.32);
+}
+
+.hero-home-content h1 {
+  margin-bottom: 0.55rem;
+  max-width: 13ch;
+  font-size: clamp(2rem, 6.1vw, 4.5rem);
+  line-height: 0.95;
+}
+
+.hero-home-content p {
+  color: rgba(245, 247, 248, 0.95);
+  max-width: 34ch;
+  font-size: clamp(1rem, 1.3vw, 1.2rem);
+}
+
+.hero-home-content .eyebrow {
+  color: rgba(245, 247, 248, 0.94);
+  margin-bottom: 0.8rem;
+}
+
+.hero-home-content .button-row {
+  margin-top: 1.25rem;
+}
+
+.hero-rollin {
+  opacity: 0;
+  transform: translateX(-32px);
+  animation: heroRollIn 0.82s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.hero-rollin-1 { animation-delay: 120ms; }
+.hero-rollin-2 { animation-delay: 220ms; }
+.hero-rollin-3 { animation-delay: 340ms; }
+.hero-rollin-4 { animation-delay: 460ms; }
+
+@keyframes heroRollIn {
+  from {
+    opacity: 0;
+    transform: translateX(-32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 700px) {
+  .hero-home-overlay {
+    align-items: flex-end;
+    padding: 1rem;
+  }
+
+  .hero-home-content h1 {
+    font-size: clamp(1.85rem, 9.5vw, 2.8rem);
+    max-width: 12ch;
+  }
+
+  .hero-home-content p {
+    font-size: 1rem;
+    max-width: 31ch;
+  }
+}

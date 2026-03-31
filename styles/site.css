@@ -1601,3 +1601,21 @@ footer {
   background:#e6ded2;
   margin:2rem auto 0;
 }
+
+
+/* Homepage motion + utility styles (merged from css/styles.css) */
+.icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(90, 120, 135, 0.1);
+  color: #5A7887;
+  margin-bottom: 0.8rem;
+}
+
+.button-row.centered {
+  justify-content: center;
+}

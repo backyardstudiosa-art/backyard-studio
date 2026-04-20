@@ -3,22 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Journal Entry | Backyard Studio</title>
-  <meta name="description" content="A New Horizons reflection from Backyard Studio." />
-  <meta property="og:title" content="New Horizons Journal Entry" />
-  <meta property="og:description" content="A reflective, evergreen journal note." />
+  <title>Small, Faithful Steps | Journal | Backyard Studio</title>
+  <meta name="description" content="Big transformations often begin with one quiet yes repeated over time." />
+  <meta property="og:title" content="Small, Faithful Steps" />
+  <meta property="og:description" content="Big transformations often begin with one quiet yes repeated over time." />
   <meta property="og:type" content="article" />
-  <meta property="og:image" content="/assets/journal-page2.png" />
+  <meta property="og:image" content="/assets/restoration-journey.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles/site.css" />
 </head>
 
-<body data-slug="small-faithful-steps">
+<body>
   <header class="site-header">
     <div class="container nav-shell">
-      <a class="brand" href="/index.html"><img class="brand-mark" src="/assets/logobs.png" alt="Backyard Studio logo" /><span class="brand-text">Backyard Studio</span></a>
+      <a class="brand" href="index.html" aria-label="Backyard Studio home">
+      <span class="brand-monogram" aria-hidden="true">
+      <span class="brand-b">B</span><span class="brand-s">s</span></span>
+      <span class="brand-text">Backyard Studio</span></a>
       <nav aria-label="Primary">
         <ul class="nav-links">
           <li><a href="/index.html">Home</a></li>
@@ -31,12 +34,12 @@
         </ul>
       </nav>
 
-    <div class="nav-actions">
-       <a class="btn" href="/services.html">Explore Services</a>
-       <button class="btn menu-btn" data-menu-btn aria-expanded="false" aria-controls="mobile-menu">Menu</button>
+      <div class="nav-actions">
+        <a class="btn" href="/portfolio.html">View Work</a>
+        <button class="btn menu-btn" data-menu-btn aria-expanded="false" aria-controls="mobile-menu">Menu</button>
       </div>
     </div>
-
+    
     <div id="mobile-menu" class="mobile-menu" hidden>
       <div class="container">
         <a href="/index.html">Home</a>
@@ -49,13 +52,28 @@
       </div>
     </div>
   </header>
-    
-  <div class="container page-back-wrap">
-    <a class="page-back" href="/journal/">← Back to Journal</a>
-    
+
   <main>
     <div class="container">
-      <article id="journal-entry" class="section-card entry-layout"></article>
+      <section class="section-card entry-wrap">
+        <p class="eyebrow">Journal</p>
+        <h1 class="entry-title">Small, Faithful Steps</h1>
+        <p class="entry-intro">Big transformations often begin with one quiet yes repeated over time.</p>
+
+        <div class="page-back-wrap">
+          <a class="page-back" href="/journal/">← Back to Journal</a>
+        </div>
+
+        <article class="journal-entry entry-content">
+          <div class="journal-hero protected-media">
+            <img class="entry-hero" src="/assets/restoration-journey.png" alt="Featured image for Small, Faithful Steps" />
+          </div>
+          <p class="meta">February 14, 2026 · Faith · Growth</p>
+          <p>I used to wait for certainty before beginning. Now I am learning to move with trust instead.</p>
+          <p>One page written. One honest conversation. One gentle boundary. These things are not dramatic, but they make a life sturdy.</p>
+          <p>Faith is not always a mountain-top feeling. Sometimes it is choosing the next faithful step when no applause is in the room.</p>
+        </article>
+      </section>
     </div>
   </main>
 
@@ -71,11 +89,8 @@
     </div>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = '2025';
-  </script>
+  <script>document.getElementById('year').textContent = '2025';</script>
   <script src="/script.js"></script>
-  <script src="/journal/entry.js"></script>
   <script src="/assets/protect-media.js"></script>
 </body>
 </html>

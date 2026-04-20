@@ -1,67 +1,92 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Morning Notes — Gentle Path</title>
-
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Morning Notes | Journal | Backyard Studio</title>
+  <meta name="description" content="A quiet private journal note from Backyard Studio." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/site.css" />
+  <script>
+    const entered = prompt('This space is held gently. Please enter the password:');
+    if (entered !== 'gentlepath') {
+      window.location.href = 'journal.html';
+    }
+  </script>
 </head>
+<body>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html" aria-label="Backyard Studio home">
+      <span class="brand-monogram" aria-hidden="true">
+      <span class="brand-b">B</span><span class="brand-s">s</span></span>
+      <span class="brand-text">Backyard Studio</span></a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a class="active" href="journal.html">Journal</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="book-a-session.html">Contact</a></li>
+          <li><a href="shop.html">Shop</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn" href="portfolio.html">View Work</a>
+        <button class="btn menu-btn" data-menu-btn aria-expanded="false" aria-controls="mobile-menu">Menu</button>
+      </div>
+    </div>
 
-<script>
-  const password = "gentlepath";
-
-  const entered = prompt("This space is held gently. Please enter the password:");
-
-  if (entered !== password) {
-    document.body.innerHTML = `
-      <main class="container content-section">
-        <h2 class="handwritten">This path is not open yet</h2>
-        <p>Please return when you have been invited.</p>
-      </main>
-    `;
-  }
-</script>
-  
-<body class="index-shell" data-page="journal-private">
-  <div class="page-card">
-    <div class="page-card-inner">
-
-<header class="site-header halo fade-in">
-        <img src="assets/banner.png" alt="Backyard Studio logo" class="site-logo">
+    <div id="mobile-menu" class="mobile-menu" hidden>
+      <div class="container">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="journal.html">Journal</a>
+        <a href="about.html">About</a>
+        <a href="book-a-session.html">Contact</a>
+        <a href="shop.html">Shop</a>
+      </div>
+    </div>
   </header>
-      
-<main class="page-panel panel-bg">
-    <section class="content-section soft-background fade-in section">
-      <h1 class="handwritten">Morning Notes</h1>
-    <p class="journal-meta">A quiet place to return to</p>
-      <a href="journal.html" class="back-button handwritten">
-  ← Back to Journal
-</a>
-     <article class="journal-entry">     
-    <p class="journal-meta" style="text-align: left;">Early Autumn · 2026</p>
-    <h2>Mercies, Morning by Morning</h2>
-    <p>
-      There are mornings when the body remembers before the mind does.
-      This is a place to arrive slowly, without explanation.
-    </p>
 
-    <blockquote class="scripture-callout">
-      “Great is Your faithfulness.”
-      <span>Lamentations 3:23</span>
-    </blockquote>
+  <main>
+    <div class="container">
+      <section class="section-card entry-wrap">
+        <p class="eyebrow">Journal</p>
+        <h1 class="entry-title">Morning Notes</h1>
+        <p class="entry-intro">A quiet place to return to.</p>
 
-    <p class="handwritten">
-      Today’s invitation is not to do more,
-      but to notice what has already been held.
-    </p>
-     </article>    
-    </section>    
-</main>   
-</div>
-  </div>
-<footer class="return-footer fade-in">© 2026 Backyard Studio</footer>
+        <div class="page-back-wrap">
+          <a class="page-back" href="journal.html">← Back to Journal</a>
+        </div>
+
+        <article class="journal-entry entry-content">
+          <p>There are mornings when the body remembers before the mind does. This is a place to arrive slowly, without explanation.</p>
+          <blockquote>“Great is Your faithfulness.”<br><em>Lamentations 3:23</em></blockquote>
+          <p>Today’s invitation is not to do more, but to notice what has already been held.</p>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-center">
+      <div class="footer-links">
+        <a href="https://wa.me/27649607349" target="_blank" rel="noopener">WhatsApp</a>
+        <span class="divider">·</span>
+        <a href="https://zcal.co/newhorizons1177" target="_blank" rel="noopener">Book a Session</a>
+      </div>
+      <p class="footer-copy">© <span id="year"></span> Backyard Studio</p>
+      <p class="footer-copyright-notice">All artwork, designs, and written reflections are protected by copyright and may not be reproduced, distributed, or downloaded without permission.</p>
+    </div>
   </footer>
 
+  <script>document.getElementById('year').textContent = '2025';</script>
+  <script src="script.js"></script>
+  <script src="assets/protect-media.js"></script>
 </body>
 </html>

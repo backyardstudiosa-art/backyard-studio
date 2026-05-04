@@ -2313,3 +2313,67 @@ button.btn:active {
   background: linear-gradient(145deg, #7b8a96 0%, #687783 100%);
   color: #eef3f7;
 }
+
+
+/* --- 2026-05 visual alignment updates --- */
+:root {
+  --linen-white: #fdfcf8;
+}
+
+body {
+  background:
+    repeating-linear-gradient(0deg, rgba(164, 154, 140, 0.03) 0 1px, transparent 1px 12px),
+    repeating-linear-gradient(90deg, rgba(164, 154, 140, 0.025) 0 1px, transparent 1px 13px),
+    linear-gradient(180deg, #fbfaf7 0%, var(--linen-white) 45%, #faf9f6 100%);
+}
+
+.site-header,
+.mobile-menu {
+  background: rgba(251, 250, 247, 0.94);
+}
+
+.brand-mark {
+  display: block;
+  width: 64px;
+  height: auto;
+  filter: drop-shadow(0 2px 8px rgba(22, 31, 42, 0.18));
+}
+
+.brand-monogram,
+.brand-b,
+.brand-s {
+  display: none !important;
+}
+
+.section-card,
+main .section-card:nth-of-type(even),
+.card,
+.portfolio-card,
+.selected-work-card,
+.portfolio-project-card,
+.journal-card,
+.journal-featured-card {
+  background: rgba(255, 255, 255, 0.82);
+}
+
+/* Center button text and keep labels from hugging the left on small widths */
+.btn,
+button.btn {
+  text-align: center;
+  justify-content: center;
+}
+
+/* Journal pills + cards to match site language */
+.journal-categories a {
+  background: rgba(90, 120, 135, 0.12);
+  border: 1px solid rgba(90, 120, 135, 0.28);
+  color: #5a7887;
+  border-radius: 999px;
+}
+
+.journal-categories a.active,
+.journal-categories a[aria-current="true"] {
+  background: linear-gradient(145deg, #6d8290 0%, #5a7280 45%, #4d6370 100%);
+  color: #f7fbff;
+  border-color: rgba(66, 88, 102, 0.72);
+}

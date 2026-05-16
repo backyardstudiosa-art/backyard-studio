@@ -162,27 +162,57 @@
       justify-content: center;
       min-height: 3rem;
       padding: 0.8rem 1.25rem;
-      border: 1px solid var(--line);
+      border: 1px solid rgba(159, 128, 111, 0.28);
       border-radius: 999px;
-      color: var(--text);
+      background: linear-gradient(145deg, #fff7ed 0%, #dfcdbc 100%);
+      box-shadow:
+        inset 5px 5px 10px rgba(115, 91, 78, 0.16),
+        inset -6px -6px 12px rgba(255, 255, 255, 0.74),
+        0 12px 26px rgba(74, 63, 58, 0.11);
+      color: var(--accent-strong);
       font-weight: 700;
       text-decoration: none;
-      transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.48);
+      transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease, color 180ms ease;
     }
 
     .btn:hover,
     .btn:focus-visible {
       transform: translateY(-2px);
-      box-shadow: 0 12px 28px rgba(74, 63, 58, 0.12);
+      background: linear-gradient(145deg, #fffaf4 0%, #d8c2af 100%);
+      box-shadow:
+        inset 4px 4px 9px rgba(115, 91, 78, 0.13),
+        inset -7px -7px 13px rgba(255, 255, 255, 0.82),
+        0 16px 34px rgba(74, 63, 58, 0.16);
+    }
+    
+    .btn:focus-visible {
+      outline: 3px solid rgba(159, 128, 111, 0.26);
+      outline-offset: 3px;
     }
 
     .btn.primary {
-      border-color: transparent;
-      background: var(--accent);
+      border-color: rgba(159, 128, 111, 0.42);
+      background: linear-gradient(145deg, #b99d8a 0%, var(--accent-strong) 100%);
+      box-shadow:
+        inset 5px 5px 10px rgba(82, 62, 52, 0.2),
+        inset -6px -6px 12px rgba(255, 232, 214, 0.24),
+        0 14px 28px rgba(74, 63, 58, 0.15);
+      color: #fff8ef;
+      text-shadow: 0 1px 0 rgba(74, 63, 58, 0.24);
     }
 
+    .btn.primary:hover,
+    .btn.primary:focus-visible {
+      background: linear-gradient(145deg, #c5aa98 0%, #927160 100%);
+      box-shadow:
+        inset 4px 4px 9px rgba(82, 62, 52, 0.18),
+        inset -7px -7px 13px rgba(255, 232, 214, 0.28),
+        0 18px 36px rgba(74, 63, 58, 0.18);
+    }
+    
     .btn.secondary {
-      background: rgba(255, 255, 255, 0.5);
+      background: linear-gradient(145deg, rgba(255, 250, 244, 0.94) 0%, rgba(226, 210, 194, 0.92) 100%);
     }
 
     .details-list {

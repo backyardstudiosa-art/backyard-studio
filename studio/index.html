@@ -13,8 +13,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/site.css" />
-  <script src="assets/js/main.js" defer></script>
+  <link rel="stylesheet" href="assets/css/site.css?v=20260531" />
+  <script src="assets/js/main.js?v=20260531" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -60,14 +60,14 @@
           </div>
         </div>
         <div class="hero-composition reveal" aria-label="Atmospheric editorial composition">
-          <div class="image-card image-card-large">
-            <div class="soft-image dawn"></div>
-            <span>Morning light / intentional rhythm</span>
-          </div>
-          <div class="image-card image-card-small">
-            <div class="soft-image sage"></div>
-            <span>Sea glass palette</span>
-          </div>
+          <figure class="image-card image-card-large">
+            <img class="soft-image" src="assets/images/hero/coastal-studio-hero.webp" alt="A calm coastal creative studio scene in soft morning light" loading="eager" />
+            <figcaption>Morning light / intentional rhythm</figcaption>
+          </figure>
+          <figure class="image-card image-card-small">
+            <img class="soft-image" src="assets/images/portfolio/moodboard.webp" alt="A muted sea glass inspired brand moodboard" loading="lazy" />
+            <figcaption>Sea glass palette</figcaption>
+          </figure>
           <div class="floating-note">
             <small>Quiet luxury</small>
             <p>Story-first visuals for brands with depth.</p>
@@ -123,8 +123,9 @@
           <p>A cinematic, high-touch creative partnership for founders and brands ready for a deeply cohesive presence: brand atmosphere, launch storytelling, content direction, and premium visuals shaped as one intentional world.</p>
           <a class="btn btn-light" href="#contact">Begin the Experience</a>
         </div>
-        <div class="pearl-card" aria-hidden="true">
-          <span class="pearl-glow"></span>
+        <div class="pearl-card">
+          <img src="assets/images/packages/black-pearl-editorial.webp" alt="Dark editorial brand composition for the Black Pearl Experience" loading="lazy" />
+          <span class="pearl-glow" aria-hidden="true"></span>
           <p>Brand world</p>
           <strong>Strategy • Story • Visuals • Launch</strong>
         </div>
@@ -168,18 +169,22 @@
           <h2 id="portfolio-title">Editorial spaces for brand memory, launches, and visual stories.</h2>
         </div>
         <div class="portfolio-grid" data-content="portfolio">
-          <article class="portfolio-tile tall reveal"><span>Social branding</span><h3>Coastal identity suite</h3></article>
-          <article class="portfolio-tile reveal"><span>Content design</span><h3>Soft launch carousel</h3></article>
-          <article class="portfolio-tile wide reveal"><span>Launch visuals</span><h3>Morning light campaign</h3></article>
-          <article class="portfolio-tile reveal"><span>Moodboards</span><h3>Sea glass direction</h3></article>
-          <article class="portfolio-tile tall reveal"><span>Storytelling</span><h3>Founder narrative series</h3></article>
+          <article class="portfolio-tile tall reveal"><img src="assets/images/portfolio/social-campaign.webp" alt="Social campaign design preview" loading="lazy" /><span>Social branding</span><h3>Coastal identity suite</h3></article>
+          <article class="portfolio-tile reveal"><img src="assets/images/portfolio/website-design.webp" alt="Website design preview" loading="lazy" /><span>Website design</span><h3>Soft digital presence</h3></article>
+          <article class="portfolio-tile wide reveal"><img src="assets/images/portfolio/launch-visuals.webp" alt="Launch visuals campaign preview" loading="lazy" /><span>Launch visuals</span><h3>Morning light campaign</h3></article>
+          <article class="portfolio-tile reveal"><img src="assets/images/portfolio/moodboard.webp" alt="Brand moodboard preview" loading="lazy" /><span>Moodboards</span><h3>Sea glass direction</h3></article>
+          <article class="portfolio-tile tall reveal"><img src="assets/images/portfolio/brand-identity.webp" alt="Brand identity preview" loading="lazy" /><span>Brand identity</span><h3>Founder narrative system</h3></article>
+          <article class="portfolio-tile wide reveal"><img src="assets/images/portfolio/editorial-design.webp" alt="Editorial design preview" loading="lazy" /><span>Editorial design</span><h3>Storytelling project suite</h3></article>
         </div>
       </div>
     </section>
 
     <section class="section about" id="about" aria-labelledby="about-title">
       <div class="container about-grid reveal">
-        <div class="portrait-card" aria-hidden="true"><span></span></div>
+        <figure class="portrait-card">
+          <img src="assets/images/about/creative-process-desk.webp" alt="Backyard Studio creative process desk with paper and design materials" loading="lazy" />
+          <figcaption>Creative process / thoughtful details</figcaption>
+        </figure>
         <div>
           <p class="eyebrow">About</p>
           <h2 id="about-title">A creative practice rooted in tenderness, clarity, and beautiful restraint.</h2>

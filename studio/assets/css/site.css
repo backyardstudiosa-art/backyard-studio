@@ -107,17 +107,6 @@ body::before {
   filter: blur(6px) saturate(.85);
   opacity: .2;
 }
-.texture-field-hand {
-  right: -5rem;
-  bottom: 10%;
-  width: min(38vw, 27rem);
-  height: min(46vw, 34rem);
-  border-radius: 42% 0 0 42%;
-  background-image: url("../images/textures/right-hand.webp");
-  background-position: center left;
-  filter: blur(2px) saturate(.7);
-  opacity: .13;
-}
 main,
 .site-footer {
   position: relative;
@@ -276,7 +265,6 @@ p { margin: 0; color: rgba(43, 43, 43, .68); }
 @media (max-width: 760px) {
   :root { --section: 4.5rem; }
   .texture-field-sea-glass { top: 5rem; right: -10rem; width: 24rem; height: 24rem; }
-  .texture-field-hand { right: -9rem; bottom: 18%; width: 22rem; height: 28rem; opacity: .09; }
   .nav-toggle { display: block; position: relative; z-index: 31; }
   .nav-panel { position: fixed; inset: 0; z-index: 30; display: grid; place-content: center; gap: .85rem; transform: translateY(-100%); background: rgba(247,244,239,.96); opacity: 0; pointer-events: none; transition: transform .35s ease, opacity .35s ease; }
   .nav-panel a { font-family: var(--serif); font-size: 2.4rem; line-height: 1; text-align: center; }

@@ -1,0 +1,359 @@
+:root{
+  --bg: #f6f6f4;                 /* warm off-white */
+  --ink: #8a7f6a;                /* dark beige */
+  --muted: #a59b87;              /* lighter beige */
+  --border: rgba(138,127,106,.25);
+}
+
+*{ box-sizing:border-box; }
+
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.wrap{
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 80px 22px 100px;
+}
+
+.kicker{
+  margin: 0 0 14px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-size: .75rem;
+}
+
+h1{
+  margin: 0 0 18px;
+  font-weight: 400;
+  font-size: clamp(2rem, 4vw, 2.4rem);
+  line-height: 1.2;
+  color: var(--ink);
+}
+
+p{
+  margin: 0 0 16px;
+  line-height: 1.75;
+  color: var(--muted);
+}
+
+p strong{
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.top-nav{
+  display:flex;
+  flex-wrap:wrap;
+  gap: 8px;
+  justify-content: center;
+  margin: 0 0 24px;
+}
+
+.top-nav .nav-chip{
+  display:inline-block;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--ink);
+  text-decoration: none;
+  font-size: .88rem;
+  letter-spacing: .02em;
+  background: rgba(255,255,255,.45);
+}
+
+.top-nav a.nav-chip:hover{
+  background: rgba(138,127,106,.08);
+}
+
+.top-nav .is-disabled{
+  color: var(--muted);
+  border-style: dashed;
+  background: rgba(255,255,255,.3);
+  cursor: not-allowed;
+}
+
+/* Buttons: dark beige outline, gentle hover */
+.cta{
+  display:flex;
+  flex-wrap:wrap;
+  gap: 14px;
+  margin: 26px 0 10px;
+}
+
+.btn{
+  display:inline-block;
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 1px solid var(--ink);
+  color: var(--ink);
+  background: transparent;
+  text-decoration:none;
+  font-size: .95rem;
+}
+
+.btn:hover{ background: rgba(138,127,106,.06); }
+
+.btn.ghost{
+  border-color: var(--border);
+  color: var(--muted);
+}
+
+/* Optional: tiny signature line */
+.sig{
+  margin-top: 18px;
+  color: rgba(165,155,135,.85);
+}
+
+/* ---------- CENTERED LAYOUT ---------- */
+
+.centered{
+  text-align: center;
+}
+
+wrap.centered .top-nav{
+  justify-content: center;
+}
+
+.centered .cta{
+  justify-content: center;
+}
+
+.wrap.centered .paper{
+  text-align: center;
+}
+
+.centered p{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.centered .sig{
+  text-align: center;
+}
+
+.centered p,
+.centered h1,
+.centered h2{
+  max-width: 520px;
+}
+
+/* ===== Center only header + footer (for /start) ===== */
+.center-header-footer .hero,
+.center-header-footer .footer{
+  text-align: center;
+}
+
+.center-header-footer .hero .cta{
+  justify-content: center;
+}
+
+/* ===== Halo paper block (use on Under Construction page) ===== */
+.paper{
+  position: relative;
+  border-radius: 26px;
+  overflow: hidden;
+
+  /* whiter than the page */
+  background: rgba(255,255,255,.55);
+
+  /* soft halo */
+  box-shadow:
+    0 0 0 1px rgba(138,127,106,.05),
+    0 10px 30px rgba(138,127,106,.08);
+
+  padding: 34px 28px;
+}
+
+/* Soft linen/grain inside the paper block */
+.paper::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  z-index:0;
+
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      rgba(138,127,106,.025) 0px,
+      rgba(138,127,106,.025) 1px,
+      transparent 1px,
+      transparent 10px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(138,127,106,.02) 0px,
+      rgba(138,127,106,.02) 1px,
+      transparent 1px,
+      transparent 11px
+    ),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='1' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='.14'/%3E%3C/svg%3E");
+
+  opacity: .12;
+  mix-blend-mode: multiply;
+}
+
+/* Keep paper content above the texture */
+.paper > *{
+  position: relative;
+  z-index: 1;
+}
+
+/* Mobile tune for paper block */
+@media (max-width: 520px){
+  .paper{
+    padding: 28px 20px;
+    border-radius: 22px;
+  }
+}
+
+/* ===== Center everything (hard override) ===== */
+main.wrap.centered,
+.wrap.centered{
+  text-align: center !important;
+}
+
+.wrap.centered .cta{
+  justify-content: center;
+}
+
+.wrap.centered .btn{
+  text-align: center;
+}
+
+/* keep centered text readable (not too wide) */
+.wrap.centered p,
+.wrap.centered h1{
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===== Under construction page: explicit centering ===== */
+.under-construction-page{
+  min-height: 100vh;
+  background:
+    linear-gradient(rgba(28, 32, 36, 0.52), rgba(28, 32, 36, 0.52)),
+    url("../../images/home.png") center/cover no-repeat;
+}
+
+.under-construction-page .paper{
+  text-align: center;
+  padding: 56px 50px;
+  background: rgba(255,255,255,.78);
+  backdrop-filter: blur(3px);
+}
+
+.under-construction-page .top-nav,
+.under-construction-page .cta{
+  justify-content: center;
+}
+
+.under-construction-page .uc-logo{
+  width: min(180px, 52vw);
+  height: auto;
+  margin: 0 auto 22px;
+  display: block;
+  opacity: .82;
+  filter: drop-shadow(0 10px 24px rgba(138,127,106,.14));
+}
+
+.under-construction-page .kicker,
+.under-construction-page h1,
+.under-construction-page .top-nav .nav-chip,
+.under-construction-page .btn{
+  color: #82786c;
+}
+
+.under-construction-page p,
+.under-construction-page .sig,
+.under-construction-page .btn.ghost,
+.under-construction-page .top-nav .is-disabled{
+  color: #968b7e;
+}
+
+.under-construction-page .top-nav .nav-chip,
+.under-construction-page .btn,
+.under-construction-page .btn.ghost{
+  border-color: rgba(138,127,106,.2);
+}
+
+.under-construction-page .kicker,
+.under-construction-page h1,
+.under-construction-page p{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 520px){
+  .under-construction-page .paper{
+    padding: 40px 28px;
+  }
+  .under-construction-page .uc-logo{
+    width: min(150px, 58vw);
+    margin-bottom: 18px;
+  }
+}
+
+/* ===== Slow fade-in ===== */
+.fade-in{
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 900ms ease, transform 900ms ease;
+}
+
+.fade-in.is-loaded{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce){
+  .fade-in{
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* ===== Mobile spacing ===== */
+@media (max-width: 520px){
+  .wrap{
+    padding: 56px 18px 80px;  /* less top padding, comfy sides */
+  }
+
+  h1{
+    font-size: 2.05rem;       /* calmer scale on phones */
+    line-height: 1.18;
+    margin-bottom: 14px;
+  }
+
+  p{
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+
+  .cta{
+    gap: 10px;
+    margin-top: 22px;
+  }
+
+  .btn{
+    width: 100%;             /* big, easy tap targets */
+    padding: 12px 16px;
+  }
+
+  .btn.ghost{
+    width: 100%;
+  }
+}
+
+.top-nav{
+    justify-content: center;
+  }

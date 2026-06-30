@@ -3,365 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Backyard Studio | Coming Soon</title>
-  <meta name="description" content="Backyard Studio is currently being refreshed. A softer, story-led creative home is coming soon." />
-  <meta name="robots" content="noindex, nofollow" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Backyard Studio | Creative Sanctuary</title>
+  <meta name="description" content="Backyard Studio is a calm creative sanctuary creating thoughtful brand assets, editorial design, and digital experiences." />
+  <meta http-equiv="refresh" content="0; url=/studio/" />
+  <link rel="canonical" href="https://backyardstudio.co.za/studio/" />
   <style>
-    :root {
-      --bg: #f6f0e8;
-      --surface: rgba(255, 252, 248, 0.84);
-      --surface-strong: #fffaf4;
-      --text: #4a3f3a;
-      --muted: #7d6f67;
-      --accent: #c9b8a5;
-      --accent-strong: #9f806f;
-      --line: rgba(74, 63, 58, 0.14);
-      --shadow: 0 24px 80px rgba(74, 63, 58, 0.14);
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      min-height: 100%;
-    }
 
     body {
-      min-height: 100vh;
-      margin: 0;
-      color: var(--text);
-      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background:
-        radial-gradient(circle at 18% 18%, rgba(201, 184, 165, 0.34), transparent 32rem),
-        radial-gradient(circle at 88% 8%, rgba(159, 128, 111, 0.20), transparent 30rem),
-        linear-gradient(135deg, #fbf6ef 0%, var(--bg) 50%, #efe4d8 100%);
-      line-height: 1.7;
-    }
-
-    body::before,
-    body::after {
-      position: fixed;
-      z-index: 0;
-      width: 18rem;
-      height: 18rem;
-      border: 1px solid rgba(159, 128, 111, 0.16);
-      border-radius: 999px;
-      content: "";
-      pointer-events: none;
-    }
-
-    body::before {
-      top: -7rem;
-      left: -6rem;
-    }
-
-    body::after {
-      right: -8rem;
-      bottom: -7rem;
-    }
-
-    .page-shell {
-      position: relative;
-      z-index: 1;
       display: grid;
       min-height: 100vh;
-      place-items: center;
-      padding: clamp(1.25rem, 3vw, 3rem);
-    }
-
-    .construction-card {
-      overflow: hidden;
-      width: min(100%, 70rem);
-      border: 1px solid var(--line);
-      border-radius: 2rem;
-      background: var(--surface);
-      box-shadow: var(--shadow);
-      backdrop-filter: blur(18px);
-    }
-
-    .card-grid {
-      display: grid;
-      grid-template-columns: minmax(0, 1.05fr) minmax(18rem, 0.95fr);
-    }
-
-    .content-panel {
-      padding: clamp(2rem, 6vw, 5rem);
-    }
-
-    .brand-lockup {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.85rem;
-      margin-bottom: clamp(2rem, 4vw, 3.25rem);
-      text-decoration: none;
-    }
-    
-    .brand-mark {
-      display: grid;
-      width: 3.25rem;
-      height: 3.25rem;
-      place-items: center;
-      border: 1px solid rgba(74, 63, 58, 0.18);
-      border-radius: 50%;
-      background: #fff8ef;
-      color: var(--accent-strong);
-      font-family: "Cormorant Garamond", Georgia, serif;
-      font-size: 1.5rem;
-      font-weight: 700;
-      letter-spacing: -0.04em;
-      box-shadow: 0 10px 30px rgba(74, 63, 58, 0.08);
-    }
-
-    .brand-name {
-      font-family: "Cormorant Garamond", Georgia, serif;
-      font-size: clamp(1.35rem, 3vw, 1.85rem);
-      font-weight: 700;
-      line-height: 1;
-    }
-
-    .eyebrow {
-      margin: 0 0 1rem;
-      color: var(--accent-strong);
-      font-size: 0.78rem;
-      font-weight: 700;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-    }
-
-    h1 {
-      max-width: 12ch;
       margin: 0;
-      font-family: "Cormorant Garamond", Georgia, serif;
-      font-size: clamp(3.15rem, 9vw, 6.6rem);
+      place-items: center;
+      color: #2b2b2b;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f7f4ef;
+    }
+
+    main {
+      width: min(100% - 2rem, 34rem);
+      text-align: center;
+    }
+
+    a {
+      color: inherit;
       font-weight: 700;
-      letter-spacing: -0.055em;
-      line-height: 0.9;
-    }
-
-    .lede {
-      max-width: 37rem;
-      margin: 1.4rem 0 0;
-      color: var(--muted);
-      font-size: clamp(1rem, 2vw, 1.18rem);
-    }
-
-    .button-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.85rem;
-      margin-top: 2rem;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 3rem;
-      padding: 0.8rem 1.25rem;
-      border: 1px solid rgba(159, 128, 111, 0.28);
-      border-radius: 999px;
-      background: linear-gradient(145deg, #fff7ed 0%, #dfcdbc 100%);
-      box-shadow:
-        inset 5px 5px 10px rgba(115, 91, 78, 0.16),
-        inset -6px -6px 12px rgba(255, 255, 255, 0.74),
-        0 12px 26px rgba(74, 63, 58, 0.11);
-      color: var(--accent-strong);
-      font-weight: 700;
-      text-decoration: none;
-      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.48);
-      transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease, color 180ms ease;
-    }
-
-    .btn:hover,
-    .btn:focus-visible {
-      transform: translateY(-2px);
-      background: linear-gradient(145deg, #fffaf4 0%, #d8c2af 100%);
-      box-shadow:
-        inset 4px 4px 9px rgba(115, 91, 78, 0.13),
-        inset -7px -7px 13px rgba(255, 255, 255, 0.82),
-        0 16px 34px rgba(74, 63, 58, 0.16);
-    }
-    
-    .btn:focus-visible {
-      outline: 3px solid rgba(159, 128, 111, 0.26);
-      outline-offset: 3px;
-    }
-
-    .btn.primary {
-      border-color: rgba(159, 128, 111, 0.42);
-      background: linear-gradient(145deg, #b99d8a 0%, var(--accent-strong) 100%);
-      box-shadow:
-        inset 5px 5px 10px rgba(82, 62, 52, 0.2),
-        inset -6px -6px 12px rgba(255, 232, 214, 0.24),
-        0 14px 28px rgba(74, 63, 58, 0.15);
-      color: #fff8ef;
-      text-shadow: 0 1px 0 rgba(74, 63, 58, 0.24);
-    }
-
-    .btn.primary:hover,
-    .btn.primary:focus-visible {
-      background: linear-gradient(145deg, #c5aa98 0%, #927160 100%);
-      box-shadow:
-        inset 4px 4px 9px rgba(82, 62, 52, 0.18),
-        inset -7px -7px 13px rgba(255, 232, 214, 0.28),
-        0 18px 36px rgba(74, 63, 58, 0.18);
-    }
-    
-    .btn.secondary {
-      background: linear-gradient(145deg, rgba(255, 250, 244, 0.94) 0%, rgba(226, 210, 194, 0.92) 100%);
-    }
-
-    .details-list {
-      display: grid;
-      gap: 0.85rem;
-      max-width: 37rem;
-      margin: 2.2rem 0 0;
-      padding: 0;
-      list-style: none;
-    }
-
-    .details-list li {
-      display: flex;
-      gap: 0.75rem;
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    .details-list span {
-      color: var(--accent-strong);
-      font-weight: 700;
-    }
-
-    .visual-panel {
-      position: relative;
-      display: grid;
-      min-height: 100%;
-      place-items: end center;
-      padding: clamp(2rem, 5vw, 3.5rem);
-      background:
-        linear-gradient(rgba(74, 63, 58, 0.08), rgba(74, 63, 58, 0.24)),
-        url("assets/under-construction-panel.png") center/cover;
-    }
-
-    .visual-panel::before {
-      position: absolute;
-      inset: 1.2rem;
-      border: 1px solid rgba(255, 252, 248, 0.42);
-      border-radius: 1.5rem;
-      content: "";
-    }
-
-    .status-note {
-      position: relative;
-      width: min(100%, 22rem);
-      border: 1px solid rgba(255, 252, 248, 0.52);
-      border-radius: 1.35rem;
-      background: rgba(255, 250, 244, 0.86);
-      padding: 1.4rem;
-      box-shadow: 0 18px 50px rgba(74, 63, 58, 0.18);
-      backdrop-filter: blur(12px);
-    }
-
-    .status-note p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    .status-note strong {
-      display: block;
-      margin-bottom: 0.25rem;
-      color: var(--text);
-      font-family: "Cormorant Garamond", Georgia, serif;
-      font-size: 1.45rem;
-      line-height: 1.1;
-    }
-
-    footer {
-      margin-top: clamp(2rem, 4vw, 3rem);
-      color: var(--muted);
-      font-size: 0.85rem;
-    }
-
-    @media (max-width: 780px) {
-      .card-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .visual-panel {
-        min-height: 22rem;
-        place-items: end stretch;
-      }
-
-      h1 {
-        max-width: 10ch;
-      }
-    }
-
-    @media (max-width: 520px) {
-      .page-shell {
-        padding: 0;
-      }
-
-      .construction-card {
-        min-height: 100vh;
-        border-width: 0;
-        border-radius: 0;
-      }
-
-      .content-panel {
-        padding: 2rem 1.25rem;
-      }
-
-      .button-row {
-        flex-direction: column;
-      }
-
-      .btn {
-        width: 100%;
-      }
     }
   </style>
-</head>      
+</head>
 <body>
   <main class="page-shell" aria-label="Backyard Studio under construction">
-    <section class="construction-card">
-      <div class="card-grid">
-        <div class="content-panel">
-          <a class="brand-lockup" href="https://backyardstudio.co.za" aria-label="Backyard Studio home">
-            <span class="brand-mark" aria-hidden="true">Bs</span>
-            <span class="brand-name">Backyard Studio</span>
-          </a>
-
-          <p class="eyebrow">A thoughtful refresh is underway</p>
-          <h1>Coming soon.</h1>
-          <p class="lede">Backyard Studio is being gently rebuilt into a calmer creative home for story-led keepsakes, reflection tools, and meaningful design support.</p>
-
-          <div class="button-row" aria-label="Contact Backyard Studio">
-            <a class="btn primary" href="mailto:info@backyardstudio.co.za">Emal Backyard Studio</a>
-            <a class="btn secondary" href="https://wa.me/27649607349" target="_blank" rel="noopener noreferrer">Message on WhatsApp</a>
-          </div>
-
-          <ul class="details-list" aria-label="What to expect">
-            <li><span>✦</span><span>Existing client conversations and bookings are still welcome while the site is refreshed.</span></li>
-            <li><span>✦</span><span>New keepsake, journal, and creative support pages will be available soon.</span></li>
-          </ul>
-
-          <footer>© <span id="year"></span> Backyard Studio · backyardstudio.co.za</footer>
-        </div>
-
-        <aside class="visual-panel" aria-label="Soft Backyard Studio creative preview">
-          <div class="status-note">
-            <strong>We’ll be back shortly.</strong>
-            <p>Thank you for your patience while a new season of Backyard Studio is prepared with care.</p>
-          </div>
-        </aside>
-       </div>
-    </section>
-  </main>      
+  <main>
+    <p>Taking you to Backyard Studio.</p>
+    <p><a href="/studio/">Open the Studio</a></p>
+  </main>
 </body>
 </html>

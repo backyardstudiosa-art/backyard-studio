@@ -29,82 +29,110 @@
     </nav>
   </header>
 
-  <main id="main">
-    <section class="hero" id="home">
-      <div class="hero-copy">
-        <p class="eyebrow">Interior Styling &amp; Space Reset</p>
-        <h1>Calm, cohesive rooms that feel beautifully lived in.</h1>
-        <p class="lede">Backyard Studio helps overwhelmed or disconnected spaces feel more intentional through visual editing, furniture arrangement, lighting, textiles and thoughtful styling.</p>
-        <a class="button" href="https://wa.me/00000000000" aria-label="Contact Backyard Studio on WhatsApp">WhatsApp to enquire</a>
+  <main id="main">    
+  <section class="hero" id="home" aria-labelledby="hero-title">
+      <img class="hero-media" src="assets/images/interior-hero.svg" alt="Layered neutral lounge with linen seating, oak, stone and natural light" />
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-inner reveal">
+        <p class="eyebrow">Backyard Studio</p>
+        <h1 id="hero-title">Interior Styling &amp; Space Reset</h1>
+        <p>Helping overwhelmed rooms feel calm, cohesive, and beautifully lived in through visual editing, lighting, textiles, and thoughtful styling.</p>
+        <div class="hero-actions">
+          <a class="button" href="https://wa.me/00000000000" aria-label="Contact Backyard Studio on WhatsApp">WhatsApp to enquire</a>
+          <a class="text-link" href="#services">View services</a>
+        </div>
       </div>
-      <figure class="hero-image">
-        <img src="assets/images/interior-hero.svg" alt="Warm contemporary living room with natural light, linen seating, wood and stone details" />
-      </figure>
+    </section>
+    
+    <section class="section editorial-intro">
+      <div class="intro-copy reveal">
+        <p class="eyebrow">What we do</p>
+        <h2>A quieter edit for the rooms that carry everyday life.</h2>
+      </div>
+      <p class="intro-text reveal">Backyard Studio is a boutique interior styling studio for homeowners who want a calmer home without moving into renovation. We refine layout, light, textile layers and surface details so each room feels intentional, warm and easy to live in.</p>
     </section>
 
-    <section class="section intro" aria-labelledby="what-we-do-title">
-      <p class="eyebrow">What we do</p>
-      <h2 id="what-we-do-title">A considered reset for the rooms you live in every day.</h2>
-      <p>We work with what is already present where possible, then refine the feeling of the room through placement, proportion, texture, light and the quiet details that make a home feel restorative.</p>
+    <section class="section split" aria-labelledby="atmosphere-title">
+      <figure class="image-card image-card-tall reveal">
+        <img src="assets/images/texture-vignette.svg" alt="Close-up of linen, oak and stone textures in warm light" />
+      </figure>
+      <div class="split-copy reveal">
+        <p class="eyebrow">Atmosphere first</p>
+        <h2 id="atmosphere-title">Texture, proportion and light before anything new.</h2>
+        <p>Often the room does not need more. It needs a clearer point of view, softer lighting, stronger furniture placement and fewer competing details.</p>
+      </div>
     </section>
     
     <section class="section services" id="services" aria-labelledby="services-title">
-      <div class="section-heading">
+      <div class="section-heading reveal">
         <p class="eyebrow">Services</p>
         <h2 id="services-title">Focused styling support.</h2>
       </div>
 
-      <div class="card-grid">
-        <article class="card"><h3>Space Reset Consultation</h3><p>A calm review of one room with practical styling direction for layout, lighting, visual clutter and atmosphere.</p></article>
-        <article class="card"><h3>Living Room Styling</h3><p>Furniture placement, textile layering, surface styling and finishing touches for a more cohesive living space.</p></article>
-        <article class="card"><h3>Bedroom Styling</h3><p>A restorative bedroom edit focused on comfort, softness, bedside details, linen, lighting and visual balance.</p></article>
-        <article class="card"><h3>Style with What You Have</h3><p>A thoughtful restyle using existing pieces, helping your room feel refreshed without needing a full renovation.</p></article>
+      <div class="service-grid">
+        <article class="service-card reveal"><span>01</span><h3>Space Reset Consultation</h3><p>A focused room review with practical guidance for layout, lighting, visual clutter and atmosphere.</p></article>
+        <article class="service-card reveal"><span>02</span><h3>Living Room Styling</h3><p>Furniture placement, textile layering and finishing touches for a cohesive living space.</p></article>
+        <article class="service-card reveal"><span>03</span><h3>Bedroom Styling</h3><p>A restorative bedroom edit for softness, bedside details, linen, lighting and balance.</p></article>
+        <article class="service-card reveal"><span>04</span><h3>Style with What You Have</h3><p>A thoughtful restyle using existing pieces to refresh the room without a full renovation.</p></article>
       </div>
     </section>
-   
+
+   <section class="image-break reveal" aria-label="Interior styling detail">
+      <img src="assets/images/full-width-interior.svg" alt="Warm contemporary South African interior with olive grey, oak and linen details" />
+      <blockquote>“A home can feel refined without feeling untouchable.”</blockquote>
+    </section>
+
     <section class="section approach" id="approach" aria-labelledby="approach-title">
-      <p class="eyebrow">Our approach</p>
-      <h2 id="approach-title">Observe → Edit → Style → Restore</h2>
-      <div class="steps">
-        <p><strong>Observe</strong> the room, routines and pieces that matter.</p>
-        <p><strong>Edit</strong> visual noise so the space can breathe.</p>
-        <p><strong>Style</strong> with texture, balance, warmth and intention.</p>
-        <p><strong>Restore</strong> a calmer atmosphere for everyday living.</p>
+      <div class="approach-heading reveal">
+        <p class="eyebrow">Our approach</p>
+        <h2 id="approach-title">Observe → Edit → Style → Restore</h2>
+      </div>
+      <div class="approach-track reveal" aria-label="Backyard Studio styling process">
+        <article><span>Observe</span><p>Notice the room, routines and pieces that already matter.</p></article>
+        <article><span>Edit</span><p>Reduce visual noise so the space has room to breathe.</p></article>
+        <article><span>Style</span><p>Layer light, textiles, furniture and meaningful details.</p></article>
+        <article><span>Restore</span><p>Bring back a calmer feeling for everyday living.</p></article>
       </div>
     </section>
 
-    <section class="section" id="before-after" aria-labelledby="gallery-title">
-      <div class="section-heading">
+    <section class="section comparison" id="gallery" aria-labelledby="gallery-title">
+      <div class="comparison-copy reveal">
         <p class="eyebrow">Before &amp; after</p>
-        <h2 id="gallery-title">Placeholder gallery.</h2>
+        <h2 id="gallery-title">A visible shift in calm.</h2>
+        <p>Placeholder comparisons show the intended rhythm: less clutter, better balance, warmer light and a more settled feeling.</p>
       </div>
-
-      <div class="gallery" aria-label="Before and after placeholder image gallery">
-        <figure><img src="assets/images/gallery-one.svg" alt="Before styling placeholder for a visually busy room" /><figcaption>Before / living room</figcaption></figure>
-        <figure><img src="assets/images/gallery-two.svg" alt="After styling placeholder for a calm and cohesive room" /><figcaption>After / living room</figcaption></figure>
-        <figure><img src="assets/images/gallery-three.svg" alt="Bedroom styling placeholder with warm neutral textiles" /><figcaption>Bedroom styling</figcaption></figure>
+      <div class="comparison-grid reveal">
+        <figure><img src="assets/images/gallery-one.svg" alt="Before styling placeholder showing a visually busy lounge" /><figcaption>Before</figcaption></figure>
+        <figure><img src="assets/images/gallery-two.svg" alt="After styling placeholder showing a calm cohesive lounge" /><figcaption>After</figcaption></figure>
       </div>
     </section>
 
-    <section class="section about" id="about" aria-labelledby="about-title">    
-      <div>
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <figure class="portrait-card reveal">
+        <img src="assets/images/portrait-texture.svg" alt="Editorial portrait placeholder beside warm interior textures" />
+      </figure>
+      <div class="about-copy reveal">
         <p class="eyebrow">About</p>
-        <h2 id="about-title">Thoughtful styling for atmosphere, comfort and clarity.</h2>
+        <h2 id="about-title">Thoughtful styling with a human pace.</h2>
+        <p>Backyard Studio was created for homeowners who want their spaces to feel more considered, but still personal. The work is quiet and practical: looking carefully, editing gently and styling with warmth so your home feels like somewhere you can exhale.</p>
       </div>
-      <p>Backyard Studio is a boutique interior styling studio with a warm, personal approach. We help homeowners refine the rooms they already have, creating calm and cohesive spaces through visual editing, furniture arrangement, lighting, textiles and beautifully simple finishing details.</p>
-    </section>
-
-    <section class="contact" id="contact" aria-labelledby="contact-title">
-      <p class="eyebrow">Contact</p>
-      <h2 id="contact-title">Let’s reset your space.</h2>
-      <address>
-        <a href="https://wa.me/00000000000">WhatsApp: +27 00 000 0000</a>
-        <a href="mailto:hello@backyardstudio.co.za">Email: hello@backyardstudio.co.za</a>
-        <a href="https://instagram.com/backyardstudio">Instagram: @backyardstudio</a>
-      </address>
-      <p class="closing">Thoughtful styling for calm, lived-in homes.</p>
     </section>
   </main>      
-
+  
+  <footer class="footer" id="contact" arilabelledby="contact-title">
+    <div class="footer-brand">
+      <img src="assets/brand/logo-wordmark.svg" alt="Backyard Studio" />
+      <p>Interior styling and space resets for calm, cohesive, lived-in homes.</p>
+    </div>
+    <div class="footer-contact">
+      <p class="eyebrow">Let’s reset your space</p>
+      <h2 id="contact-title">Thoughtful styling for calm, lived-in homes.</h2>
+      <address>
+        <a href="https://wa.me/00000000000">WhatsApp: +27 00 000 0000</a>
+        <a href="mailto:info@backyardstudio.co.za">Email: hello@backyardstudio.co.za</a>
+        <a href="https://instagram.com/backyardstudio">Instagram: @backyardstudio</a>
+      </address>
+    </div>
+  </footer>
 </body>
 </html>

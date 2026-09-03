@@ -1,0 +1,1127 @@
+/* =========================================================
+BACKYARD STUDIO
+Coming Soon / Studio Introduction
+Version: 2026
+========================================================= */
+
+/* =========================================================
+01. DESIGN TOKENS
+========================================================= */
+
+:root {
+--bs-paper: #fffdf9;
+--bs-linen: #f6f1e9;
+--bs-shell: #eee4d7;
+
+--bs-ink: #332e2a;
+--bs-ink-soft: #6f675f;
+--bs-ink-muted: #8a8178;
+
+--bs-coastal: #607f90;
+--bs-coastal-dark: #4f6f81;
+--bs-coastal-soft: rgba(96, 127, 144, 0.12);
+
+--bs-gold: #b89b5e;
+--bs-gold-soft: rgba(184, 155, 94, 0.18);
+
+--bs-border: rgba(143, 119, 103, 0.22);
+--bs-border-soft: rgba(143, 119, 103, 0.14);
+
+--bs-white-glass: rgba(255, 253, 249, 0.78);
+
+--bs-shadow:
+0 30px 90px rgba(76, 61, 45, 0.14);
+
+--bs-shadow-soft:
+0 14px 40px rgba(76, 61, 45, 0.09);
+
+--bs-radius: 1.5rem;
+--bs-radius-large: 2.5rem;
+
+--bs-max: 1180px;
+}
+
+/* =========================================================
+02. RESET
+========================================================= */
+
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+margin: 0;
+min-width: 320px;
+
+font-family:
+"Inter",
+"Segoe UI",
+Arial,
+sans-serif;
+
+font-size:
+clamp(1rem, 0.96rem + 0.2vw, 1.1rem);
+
+line-height: 1.7;
+color: var(--bs-ink);
+
+background:
+radial-gradient(
+circle at 12% 8%,
+rgba(184, 155, 94, 0.14),
+transparent 28rem
+),
+radial-gradient(
+circle at 88% 18%,
+rgba(96, 127, 144, 0.13),
+transparent 30rem
+),
+linear-gradient(
+135deg,
+var(--bs-linen) 0%,
+var(--bs-paper) 54%,
+var(--bs-shell) 100%
+);
+
+text-rendering: optimizeLegibility;
+-webkit-font-smoothing: antialiased;
+}
+
+img {
+display: block;
+max-width: 100%;
+}
+
+button,
+input,
+textarea {
+font: inherit;
+}
+
+a {
+color: inherit;
+}
+
+p {
+margin: 0 0 1.15rem;
+color: var(--bs-ink-soft);
+}
+
+h1,
+h2,
+h3 {
+margin: 0;
+font-family:
+"Cormorant Garamond",
+Georgia,
+serif;
+
+font-weight: 600;
+letter-spacing: 0.01em;
+color: var(--bs-ink);
+}
+
+h1 {
+font-size:
+clamp(3.25rem, 8vw, 7rem);
+
+line-height: 0.9;
+}
+
+h2 {
+font-size:
+clamp(2.2rem, 5vw, 4rem);
+
+line-height: 0.98;
+}
+
+h3 {
+font-size:
+clamp(1.65rem, 3vw, 2.15rem);
+
+line-height: 1.05;
+}
+
+/* =========================================================
+03. ACCESSIBILITY
+========================================================= */
+
+:focus-visible {
+outline: 3px solid rgba(96, 127, 144, 0.42);
+outline-offset: 4px;
+}
+
+::selection {
+background: rgba(96, 127, 144, 0.18);
+color: var(--bs-ink);
+}
+
+/* =========================================================
+04. PAGE SHELL
+========================================================= */
+
+.coming-soon-page {
+min-height: 100vh;
+}
+
+.coming-soon-shell {
+width: min(
+var(--bs-max),
+calc(100% - 2rem)
+);
+
+margin-inline: auto;
+padding:
+clamp(1rem, 4vw, 3rem)
+0
+clamp(2rem, 5vw, 4rem);
+}
+
+/* =========================================================
+05. HERO
+========================================================= */
+
+.coming-soon-card {
+display: grid;
+
+grid-template-columns:
+minmax(0, 1fr)
+minmax(320px, 0.82fr);
+
+gap:
+clamp(2rem, 5vw, 5rem);
+
+align-items: center;
+
+width: 100%;
+
+padding:
+clamp(1.2rem, 3vw, 2rem);
+
+border: 1px solid var(--bs-border);
+
+border-radius:
+clamp(1.5rem, 4vw, 3rem);
+
+background:
+var(--bs-white-glass);
+
+box-shadow: var(--bs-shadow);
+
+backdrop-filter: blur(18px);
+-webkit-backdrop-filter: blur(18px);
+}
+
+.coming-soon-content {
+padding:
+clamp(1rem, 3vw, 3rem);
+}
+
+.coming-soon-kicker,
+.contact-kicker {
+width: fit-content;
+
+margin-bottom: 1.1rem;
+
+color: var(--bs-coastal);
+
+font-size: 0.72rem;
+font-weight: 700;
+
+letter-spacing: 0.18em;
+line-height: 1.2;
+
+text-transform: uppercase;
+}
+
+.coming-soon-kicker {
+display: inline-flex;
+
+padding:
+0.45rem 0.8rem;
+
+border:
+1px solid
+rgba(96, 127, 144, 0.28);
+
+border-radius: 999px;
+
+background:
+rgba(255, 255, 255, 0.38);
+}
+
+.coming-soon-logo {
+width:
+min(180px, 42vw);
+
+margin-bottom: 1.35rem;
+
+border-radius: 1.15rem;
+
+box-shadow:
+0 16px 42px
+rgba(76, 61, 45, 0.12);
+}
+
+.coming-soon-subtitle {
+margin-bottom: 0.7rem;
+
+color: var(--bs-ink-muted);
+
+font-size: 0.78rem;
+font-weight: 700;
+
+letter-spacing: 0.13em;
+text-transform: uppercase;
+}
+
+.coming-soon-content h1 {
+max-width: 10ch;
+margin-bottom: 1.25rem;
+}
+
+.coming-soon-lede {
+max-width: 38rem;
+
+margin-bottom: 1.35rem;
+
+color: var(--bs-ink);
+
+font-size:
+clamp(1.15rem, 2vw, 1.45rem);
+
+font-weight: 600;
+line-height: 1.45;
+}
+
+.coming-soon-content > p:not(
+.coming-soon-kicker
+):not(
+.coming-soon-subtitle
+):not(
+.coming-soon-lede
+) {
+max-width: 62ch;
+}
+
+/* =========================================================
+06. BELIEF / QUOTE
+========================================================= */
+
+.coming-soon-belief {
+max-width: 55ch;
+
+margin:
+1.8rem 0
+0;
+
+padding:
+1.1rem 0
+1.1rem 1.25rem;
+
+border-left:
+2px solid var(--bs-gold);
+
+color: var(--bs-ink);
+
+font-family:
+"Cormorant Garamond",
+Georgia,
+serif;
+
+font-size:
+clamp(1.35rem, 2.4vw, 1.8rem);
+
+font-weight: 500;
+line-height: 1.3;
+}
+
+/* =========================================================
+07. HERO IMAGE
+========================================================= */
+
+.coming-soon-image-wrap {
+position: relative;
+
+margin: 0;
+
+overflow: hidden;
+
+border-radius:
+clamp(1.2rem, 3vw, 2.2rem);
+
+background: var(--bs-shell);
+
+box-shadow: var(--bs-shadow-soft);
+}
+
+.coming-soon-image {
+width: 100%;
+
+min-height: 540px;
+
+object-fit: cover;
+object-position: center;
+
+filter:
+saturate(0.88)
+contrast(0.97);
+
+transition:
+transform 0.8s ease,
+filter 0.8s ease;
+}
+
+.coming-soon-image-wrap:hover .coming-soon-image {
+transform: scale(1.015);
+
+filter:
+saturate(0.94)
+contrast(0.98);
+}
+
+.coming-soon-image-caption {
+position: absolute;
+
+right: 1rem;
+bottom: 1rem;
+left: 1rem;
+
+padding:
+0.75rem 0.9rem;
+
+border:
+1px solid
+rgba(255, 255, 255, 0.3);
+
+border-radius: 0.8rem;
+
+background:
+rgba(40, 34, 29, 0.42);
+
+color: #fffdf9;
+
+font-size: 0.75rem;
+letter-spacing: 0.08em;
+line-height: 1.4;
+
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+}
+
+/* =========================================================
+08. FOUR PILLARS
+========================================================= */
+
+.studio-pillars,
+.studio-philosophy,
+.contact-section {
+margin-top:
+clamp(2rem, 6vw, 5rem);
+
+padding:
+clamp(1.5rem, 5vw, 4rem);
+
+border:
+1px solid var(--bs-border);
+
+border-radius:
+clamp(1.5rem, 4vw, 2.5rem);
+
+background:
+rgba(255, 253, 249, 0.68);
+
+box-shadow:
+var(--bs-shadow-soft);
+}
+
+.studio-pillars-heading {
+max-width: 720px;
+margin-bottom: 2.5rem;
+}
+
+.studio-pillars-heading p:last-child {
+margin-top: 1rem;
+max-width: 60ch;
+}
+
+.studio-pillars-grid {
+display: grid;
+
+grid-template-columns:
+repeat(4, minmax(0, 1fr));
+
+gap: 1px;
+
+overflow: hidden;
+
+border:
+1px solid var(--bs-border-soft);
+
+border-radius: 1.25rem;
+
+background:
+var(--bs-border-soft);
+}
+
+.studio-pillar {
+min-height: 250px;
+
+padding:
+clamp(1.2rem, 3vw, 2rem);
+
+background:
+rgba(255, 255, 255, 0.68);
+}
+
+.studio-pillar-number {
+display: block;
+
+margin-bottom: 2rem;
+
+color: var(--bs-gold);
+
+font-size: 0.75rem;
+font-weight: 700;
+
+letter-spacing: 0.14em;
+}
+
+.studio-pillar h3 {
+margin-bottom: 0.8rem;
+}
+
+.studio-pillar p {
+margin-bottom: 0;
+font-size: 0.96rem;
+}
+
+/* =========================================================
+09. PHILOSOPHY
+========================================================= */
+
+.studio-philosophy {
+text-align: center;
+}
+
+.studio-philosophy .contact-kicker {
+margin-inline: auto;
+}
+
+.studio-philosophy h2 {
+max-width: 15ch;
+margin-inline: auto;
+}
+
+.studio-philosophy > p:not(.contact-kicker) {
+max-width: 65ch;
+margin:
+1.25rem auto
+0;
+}
+
+.studio-principles {
+display: flex;
+
+justify-content: center;
+flex-wrap: wrap;
+
+gap: 0.6rem;
+
+margin-top: 2rem;
+}
+
+.studio-principles span {
+padding:
+0.55rem 0.8rem;
+
+border:
+1px solid var(--bs-border);
+
+border-radius: 999px;
+
+background:
+rgba(255, 255, 255, 0.65);
+
+color: var(--bs-ink-soft);
+
+font-size: 0.78rem;
+font-weight: 600;
+}
+
+/* =========================================================
+10. CONTACT
+========================================================= */
+
+.contact-section {
+scroll-margin-top: 2rem;
+}
+
+.contact-inner {
+display: grid;
+
+grid-template-columns:
+minmax(0, 0.75fr)
+minmax(0, 1fr);
+
+column-gap:
+clamp(2rem, 6vw, 5rem);
+
+align-items: start;
+}
+
+.contact-copy {
+position: sticky;
+top: 2rem;
+}
+
+.contact-copy h2 {
+max-width: 10ch;
+}
+
+.contact-copy p {
+max-width: 48ch;
+}
+
+.contact-form {
+display: grid;
+gap: 1.05rem;
+}
+
+.form-group {
+display: grid;
+gap: 0.45rem;
+}
+
+.form-group label {
+color: var(--bs-ink);
+
+font-size: 0.82rem;
+font-weight: 700;
+
+letter-spacing: 0.03em;
+}
+
+.form-group input,
+.form-group textarea {
+width: 100%;
+
+border:
+1px solid
+rgba(143, 119, 103, 0.3);
+
+border-radius: 0.85rem;
+
+background:
+rgba(255, 255, 255, 0.72);
+
+color: var(--bs-ink);
+
+padding:
+0.85rem 0.95rem;
+
+outline: none;
+
+transition:
+border-color 0.2s ease,
+box-shadow 0.2s ease,
+background-color 0.2s ease;
+}
+
+.form-group input {
+min-height: 50px;
+}
+
+.form-group textarea {
+min-height: 150px;
+resize: vertical;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+color: #9a9188;
+}
+
+.form-group input:hover,
+.form-group textarea:hover {
+background:
+rgba(255, 255, 255, 0.9);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+border-color:
+rgba(96, 127, 144, 0.72);
+
+background:
+#fff;
+
+box-shadow:
+0 0 0 4px
+rgba(96, 127, 144, 0.1);
+}
+
+/* =========================================================
+11. SUBMIT BUTTON
+========================================================= */
+
+.contact-submit,
+.whatsapp-button {
+display: inline-flex;
+
+align-items: center;
+justify-content: center;
+
+min-height: 50px;
+
+border-radius: 999px;
+
+font-weight: 700;
+
+text-decoration: none;
+
+cursor: pointer;
+
+transition:
+transform 0.2s ease,
+background-color 0.2s ease,
+border-color 0.2s ease,
+box-shadow 0.2s ease;
+}
+
+.contact-submit {
+width: 100%;
+
+border:
+1px solid var(--bs-coastal-dark);
+
+background:
+var(--bs-coastal-dark);
+
+color: #fff;
+
+padding:
+0.8rem 1.25rem;
+}
+
+.contact-submit:hover,
+.contact-submit:focus-visible {
+transform: translateY(-2px);
+
+background:
+var(--bs-coastal);
+
+border-color:
+var(--bs-coastal);
+
+box-shadow:
+0 10px 24px
+rgba(79, 111, 129, 0.18);
+}
+
+/* =========================================================
+12. FORM MESSAGES
+========================================================= */
+
+.form-message {
+grid-column: 2;
+
+display: flex;
+
+flex-direction: column;
+
+gap: 0.25rem;
+
+margin-bottom: 1rem;
+
+padding: 1rem 1.1rem;
+
+border-radius: 0.9rem;
+
+font-size: 0.9rem;
+}
+
+.success-message {
+border:
+1px solid
+rgba(96, 127, 144, 0.28);
+
+background:
+rgba(96, 127, 144, 0.08);
+
+color: var(--bs-coastal-dark);
+}
+
+.error-message {
+border:
+1px solid
+rgba(143, 119, 103, 0.28);
+
+background:
+rgba(143, 119, 103, 0.08);
+
+color: var(--bs-ink);
+}
+
+.form-message strong {
+color: inherit;
+}
+
+.form-message span {
+color: var(--bs-ink-soft);
+}
+
+/* =========================================================
+13. CONTACT DIVIDER
+========================================================= */
+
+.contact-divider {
+grid-column: 2;
+
+display: flex;
+
+align-items: center;
+
+gap: 1rem;
+
+margin:
+1.15rem 0;
+}
+
+.contact-divider::before,
+.contact-divider::after {
+content: "";
+
+flex: 1;
+
+height: 1px;
+
+background:
+var(--bs-border);
+}
+
+.contact-divider span {
+color: var(--bs-ink-muted);
+
+font-size: 0.78rem;
+
+letter-spacing: 0.12em;
+
+text-transform: uppercase;
+}
+
+/* =========================================================
+14. WHATSAPP
+========================================================= */
+
+.whatsapp-button {
+grid-column: 2;
+
+width: 100%;
+
+border:
+1px solid
+rgba(96, 127, 144, 0.3);
+
+background:
+var(--bs-coastal-soft);
+
+color:
+var(--bs-coastal-dark);
+
+padding:
+0.8rem 1.25rem;
+}
+
+.whatsapp-button:hover,
+.whatsapp-button:focus-visible {
+transform: translateY(-2px);
+
+background:
+rgba(96, 127, 144, 0.18);
+
+border-color:
+rgba(96, 127, 144, 0.48);
+
+box-shadow:
+0 10px 24px
+rgba(79, 111, 129, 0.12);
+}
+
+.whatsapp-icon {
+margin-right: 0.55rem;
+}
+
+/* =========================================================
+15. SPAM TRAP
+========================================================= */
+
+.website-field {
+position: absolute !important;
+
+width: 1px !important;
+height: 1px !important;
+
+padding: 0 !important;
+margin: -1px !important;
+
+overflow: hidden !important;
+
+clip: rect(0, 0, 0, 0) !important;
+
+white-space: nowrap !important;
+
+border: 0 !important;
+}
+
+/* =========================================================
+16. FOOTER
+========================================================= */
+
+.coming-soon-footer {
+display: flex;
+
+flex-direction: column;
+
+align-items: center;
+
+gap: 0.7rem;
+
+padding:
+3rem 1rem 1rem;
+
+text-align: center;
+}
+
+.coming-soon-footer-logo {
+width: 64px;
+
+opacity: 0.7;
+
+filter:
+drop-shadow(
+0 2px 8px
+rgba(22, 31, 42, 0.12)
+);
+}
+
+.coming-soon-footer p {
+margin: 0;
+
+color: var(--bs-ink-soft);
+
+font-family:
+"Cormorant Garamond",
+Georgia,
+serif;
+
+font-size: 1.3rem;
+}
+
+.coming-soon-footer small {
+color: var(--bs-ink-muted);
+
+font-size: 0.72rem;
+
+letter-spacing: 0.05em;
+}
+
+/* =========================================================
+17. REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+html {
+scroll-behavior: auto;
+}
+
+*,
+*::before,
+*::after {
+transition-duration: 0.01ms !important;
+animation-duration: 0.01ms !important;
+animation-iteration-count: 1 !important;
+}
+
+}
+
+/* =========================================================
+18. TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+.coming-soon-card {
+grid-template-columns: 1fr;
+}
+
+.coming-soon-image-wrap {
+order: -1;
+}
+
+.coming-soon-image {
+min-height:
+clamp(280px, 55vw, 480px);
+}
+
+.studio-pillars-grid {
+grid-template-columns:
+repeat(2, minmax(0, 1fr));
+}
+
+.contact-inner {
+grid-template-columns: 1fr;
+}
+
+.contact-copy {
+position: static;
+}
+
+.contact-copy h2 {
+max-width: 14ch;
+}
+
+.form-message,
+.contact-divider,
+.whatsapp-button {
+grid-column: 1;
+}
+
+}
+
+/* =========================================================
+19. MOBILE
+========================================================= */
+
+@media (max-width: 640px) {
+
+.coming-soon-shell {
+width:
+min(100% - 1rem, var(--bs-max));
+
+```
+padding-top: 0.5rem;
+```
+
+}
+
+.coming-soon-card {
+gap: 0;
+
+```
+padding: 0.65rem;
+
+border-radius: 1.35rem;
+```
+
+}
+
+.coming-soon-content {
+padding:
+1.35rem 0.8rem 1.5rem;
+}
+
+.coming-soon-kicker {
+font-size: 0.66rem;
+}
+
+.coming-soon-logo {
+width: min(155px, 52vw);
+}
+
+.coming-soon-content h1 {
+max-width: 11ch;
+
+```
+font-size:
+  clamp(3rem, 15vw, 4.7rem);
+```
+
+}
+
+.coming-soon-lede {
+font-size: 1.08rem;
+}
+
+.coming-soon-image-wrap {
+border-radius: 1rem;
+}
+
+.coming-soon-image {
+min-height: 320px;
+}
+
+.coming-soon-image-caption {
+font-size: 0.66rem;
+}
+
+.studio-pillars,
+.studio-philosophy,
+.contact-section {
+margin-top: 1rem;
+
+```
+padding:
+  1.35rem 1rem;
+
+border-radius: 1.35rem;
+```
+
+}
+
+.studio-pillars-grid {
+grid-template-columns: 1fr;
+}
+
+.studio-pillar {
+min-height: auto;
+}
+
+.studio-pillar-number {
+margin-bottom: 1rem;
+}
+
+.studio-principles {
+justify-content: flex-start;
+}
+
+.studio-principles span {
+font-size: 0.72rem;
+}
+
+.contact-copy h2 {
+font-size: 2.7rem;
+}
+
+.coming-soon-footer {
+padding-top: 2rem;
+}
+
+}
+
+/* =========================================================
+20. VERY SMALL SCREENS
+========================================================= */
+
+@media (max-width: 380px) {
+
+.coming-soon-content h1 {
+font-size: 2.75rem;
+}
+
+.coming-soon-content {
+padding-inline: 0.55rem;
+}
+
+.coming-soon-image {
+min-height: 280px;
+}
+
+}

@@ -22,10 +22,22 @@ if (!empty($_POST["website"])) {
 |--------------------------------------------------------------------------
 */
 
-$name = trim($_POST["name"] ?? "");
-$email = trim($_POST["email"] ?? "");
-$phone = trim($_POST["phone"] ?? "");
-$message = trim($_POST["message"] ?? "");
+/*
+ * Form fields must be strings. Passing an array (for example, name[]=...) to
+ * trim() raises a TypeError on PHP 8 and turns a bad submission into an HTTP
+ * 500 response.
+ */
+function postString(string $field): string
+{
+    $value = $_POST[$field] ?? "";
+
+    return is_string($value) ? trim($value) : "";
+}
+
+$name = postString("name");
+$email = postString("email");
+$phone = postString("phone");
+$message = postString("message");
 
 /*
 |--------------------------------------------------------------------------
@@ -98,12 +110,18 @@ $headersString = implode("\r\n", $headers);
 |--------------------------------------------------------------------------
 */
 
-$sent = mail(
-    $to,
-    $subject,
-    $emailBody,
-    $headersString
-);
+$sent = false;
+
+if (function_exists("mail")) {
+    $sent = mail(
+        $to,
+        $subject,
+        $emailBody,
+        $headersString
+    );
+} else {
+    error_log("Contact form email delivery is unavailable: PHP mail() is not enabled.");
+}
 
 if ($sent) {
     header("Location: /?sent=1#contact");

@@ -124,8 +124,7 @@ if (function_exists("mail")) {
 }
 
 if ($sent) {
-    header("Location: /?sent=1#contact");
-    exit;
+   showSuccessPage();
 }
 
 header("Location: /?error=1#contact");

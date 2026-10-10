@@ -5,7 +5,7 @@ Editorial story page for Backyard Stories.
 ## Current state
 
 - The story page and stylesheet are in this branch.
-- Artwork is still represented by labelled placeholders. Do not treat the page as launch-ready until the approved illustrations have been inserted and reviewed.
+- The first three artwork placeholders have been replaced with semantic image markup and descriptive alt text. The corresponding optimized WebP files are prepared in the artwork handoff ZIP, but still need to be uploaded into this page's `images/` directory before the branch preview can display them. Do not treat the page as launch-ready until all ten illustrations are inserted and reviewed.
 - Keep the page on `stories-house-that-remembered` while artwork and responsive QA are in progress. Do not merge or publish without approval.
 
 ## Artwork placement plan
@@ -14,9 +14,9 @@ The illustration set is planned as three review sheets: 3 images, then 3 images,
 
 | # | Story moment | Intended placement |
 |---:|---|---|
-| 1 | Hart family home / opening | `.cover-art` — establish the house, garden, gate and old tree |
-| 2 | Home of little things | `.house-art` — lived-in home and everyday kitchen details |
-| 3 | People who made it home | `.family-art` — candid family introduction |
+| 1 | Hart family home / opening | `.cover-art` — `images/the-house-that-remembered-home.webp` (prepared; upload pending) |
+| 2 | Home of little things | `.house-art` — `images/the-house-that-remembered-little-things.webp` (prepared; upload pending) |
+| 3 | People who made it home | `.family-art` — `images/the-house-that-remembered-family.webp` (prepared; upload pending) |
 | 4 | Sunday baking | `.baking-art` — Mara and family in the kitchen |
 | 5 | The rituals | `.spread-art` — video night or a familiar family gathering |
 | 6 | The old tree / years | `.collage-art` or the tree-focused story section, depending on final composition |
@@ -38,6 +38,7 @@ The current page has fewer artwork slots than the planned ten illustrations. Onc
 
 ## Review checklist before launch
 
+- [ ] Upload the three prepared WebP files into `studio/stories/the-house-that-remembered/images/` so the current image references resolve.
 - [ ] All ten approved images have been split into individual files and mapped to the correct story moments.
 - [ ] Character and setting continuity reviewed across all images.
 - [ ] Desktop layout checked at wide and laptop widths.

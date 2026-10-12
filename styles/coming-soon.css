@@ -1185,3 +1185,160 @@ min-height: 280px;
 .skip-link:focus {
   transform: translateY(0);
 }
+
+
+/* =========================================================
+   BACKYARD REFLECTIONS
+========================================================= */
+.backyard-reflections {
+  --reflection-cream: #f8f5ee;
+  --reflection-paper: #fffdf9;
+  --reflection-lavender: #76617f;
+  --reflection-ink: #332e2a;
+  --reflection-muted: #6f675f;
+  --reflection-gold: #b89b5e;
+  --reflection-border: rgba(118, 97, 127, 0.22);
+  padding: clamp(3.5rem, 7vw, 6rem) clamp(1rem, 3vw, 2rem);
+  border: 1px solid var(--reflection-border);
+  border-radius: clamp(1.5rem, 4vw, 2.5rem);
+  background: var(--reflection-cream);
+  color: var(--reflection-ink);
+}
+.reflections-inner { width: 100%; max-width: 1060px; margin: 0 auto; }
+.reflections-heading { max-width: 700px; margin: 0 auto 2.75rem; text-align: center; }
+.reflections-eyebrow {
+  margin: 0 0 0.9rem; color: var(--reflection-lavender); font-size: 0.72rem;
+  font-weight: 700; letter-spacing: 0.18em; line-height: 1.5; text-transform: uppercase;
+}
+.reflections-heading h2 { max-width: none; margin: 0 0 1rem; color: var(--reflection-lavender); }
+.reflections-intro { max-width: 590px; margin: 0 auto; color: var(--reflection-muted); line-height: 1.85; }
+.reflection-card {
+  display: grid; grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  align-items: center; gap: clamp(1.75rem, 5vw, 4rem); padding: clamp(1rem, 3.5vw, 2.75rem);
+  border: 1px solid var(--reflection-border); border-radius: 1.25rem;
+  background: var(--reflection-paper); box-shadow: 0 16px 45px rgba(55, 43, 58, 0.06);
+}
+.reflection-artwork { min-width: 0; text-align: center; }
+.reflection-artwork img { display: block; width: 100%; max-width: 440px; height: auto; margin: 0 auto; border-radius: 0.25rem; }
+.reflection-content { min-width: 0; }
+.reflection-category {
+  margin: 0 0 0.9rem; color: var(--reflection-gold); font-size: 0.7rem;
+  font-weight: 700; letter-spacing: 0.15em; line-height: 1.6; text-transform: uppercase;
+}
+.reflection-content h3 { margin: 0 0 1.15rem; color: var(--reflection-ink); font-size: clamp(1.8rem, 3vw, 2.65rem); line-height: 1.15; }
+.reflection-content > p:not(.reflection-category) { margin: 0 0 1rem; color: var(--reflection-muted); line-height: 1.85; }
+.reflection-content blockquote {
+  margin: 1.6rem 0; padding: 0.35rem 0 0.35rem 1.15rem; border-left: 2px solid var(--reflection-gold);
+  color: var(--reflection-lavender); font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(1.2rem, 2vw, 1.45rem); font-style: italic; line-height: 1.65;
+}
+.reflection-read-link {
+  display: inline-flex; align-items: center; gap: 0.65rem; margin-top: 0.2rem; padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--reflection-gold); color: var(--reflection-lavender);
+  font-weight: 700; text-decoration: none; transition: color 0.2s ease, gap 0.2s ease;
+}
+.reflection-read-link:hover { gap: 0.9rem; color: var(--reflection-ink); }
+.reflection-share { display: flex; flex-wrap: wrap; gap: 0.7rem 1.2rem; margin-top: 1.5rem; padding-top: 1.15rem; border-top: 1px solid var(--reflection-border); }
+.reflection-share a { color: var(--reflection-muted); font-size: 0.85rem; text-decoration: underline; text-decoration-color: var(--reflection-border); text-underline-offset: 4px; }
+.reflection-share a:hover { color: var(--reflection-lavender); }
+.reflections-signoff { margin: 2rem 0 0; color: var(--reflection-muted); font-family: "Cormorant Garamond", Georgia, serif; font-size: 1.05rem; font-style: italic; text-align: center; }
+@media (max-width: 720px) {
+  .backyard-reflections { padding: 3rem 1rem; }
+  .reflections-heading { margin-bottom: 2rem; }
+  .reflection-card { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; padding: 1rem; }
+  .reflection-artwork img { max-width: 390px; }
+  .reflection-content { padding: 0 0.2rem 0.4rem; }
+  .reflection-content h3 { font-size: 2rem; }
+  .reflection-share { flex-direction: column; align-items: flex-start; }
+}
+@media (prefers-reduced-motion: reduce) { .reflection-read-link { transition: none; } }
+
+
+/* =========================================================
+   BACKYARD REFLECTIONS — FULL POEM PAGE
+========================================================= */
+.reflection-page-shell {
+  width: min(900px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: clamp(1.25rem, 5vw, 3.5rem) 0 3rem;
+}
+.reflection-page-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: clamp(1.5rem, 4vw, 3rem);
+}
+.reflection-back-link,
+.reflection-home-link {
+  color: var(--bs-coastal-dark);
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-underline-offset: 4px;
+}
+.reflection-back-link:hover,
+.reflection-home-link:hover { text-decoration: underline; }
+.reflection-page-card {
+  padding: clamp(1.1rem, 4vw, 3rem);
+  border: 1px solid var(--bs-border);
+  border-radius: clamp(1.25rem, 3vw, 2rem);
+  background: rgba(255, 253, 249, 0.88);
+  box-shadow: var(--bs-shadow-soft);
+}
+.reflection-page-heading { max-width: 680px; margin: 0 auto 2rem; text-align: center; }
+.reflection-page-heading .reflections-eyebrow { margin-bottom: 0.8rem; }
+.reflection-page-heading h1 {
+  max-width: none;
+  margin: 0 0 1rem;
+  font-size: clamp(2.8rem, 7vw, 5.25rem);
+  line-height: 0.98;
+}
+.reflection-page-intro {
+  max-width: 52ch;
+  margin: 0 auto;
+  color: var(--bs-ink-soft);
+}
+.reflection-full-artwork {
+  margin: 0 auto;
+  text-align: center;
+}
+.reflection-full-artwork img {
+  width: 100%;
+  max-width: 680px;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid var(--bs-border-soft);
+  background: #fff;
+}
+.reflection-artwork-caption {
+  margin: 1rem auto 0;
+  color: var(--bs-ink-muted);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+.reflection-page-footer {
+  margin-top: 2rem;
+  text-align: center;
+}
+.reflection-page-footer p { margin-bottom: 1rem; }
+.reflection-page-share {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem 1.5rem;
+  margin-top: 1.5rem;
+}
+.reflection-page-share a {
+  color: var(--bs-coastal-dark);
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-underline-offset: 4px;
+}
+@media (max-width: 520px) {
+  .reflection-page-shell { width: min(100% - 1rem, 900px); }
+  .reflection-page-top { align-items: flex-start; flex-direction: column; }
+  .reflection-page-card { padding: 1rem; }
+  .reflection-page-heading h1 { font-size: 2.8rem; }
+}

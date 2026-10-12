@@ -1758,3 +1758,86 @@ h3 {
       1 !important;
   }
 }
+
+
+/* =========================================================
+   21. IMAGE FIT CORRECTIONS
+   Preserve image proportions across the website
+   ========================================================= */
+
+/* Hero and featured-story image containers */
+
+.stories-hero-image,
+.featured-story-image {
+  min-height: 0;
+  height: auto;
+  overflow: hidden;
+  align-self: center;
+}
+
+/* Display the complete illustration without cropping */
+
+.stories-hero-image > img,
+.featured-story-image > img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  min-height: 0;
+  max-height: none;
+
+  padding: 0;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Keep the hero artwork centred within its space */
+
+.stories-hero-image > img {
+  margin-inline: auto;
+}
+
+/* Keep transparent illustrations on the existing
+   warm, neutral background */
+
+.stories-hero-image,
+.featured-story-image {
+  background-color: var(--bs-shell);
+}
+
+/* Ensure images retain their proportions on tablets */
+
+@media (max-width: 900px) {
+  .stories-hero-image,
+  .featured-story-image {
+    min-height: 0;
+    height: auto;
+  }
+
+  .stories-hero-image > img,
+  .featured-story-image > img {
+    height: auto;
+    min-height: 0;
+    object-fit: contain;
+  }
+}
+
+/* Ensure images retain their proportions on mobile */
+
+@media (max-width: 640px) {
+  .stories-hero-image,
+  .featured-story-image {
+    min-height: 0;
+    height: auto;
+  }
+
+  .stories-hero-image > img,
+  .featured-story-image > img {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    padding: 0;
+    object-fit: contain;
+  }
+}

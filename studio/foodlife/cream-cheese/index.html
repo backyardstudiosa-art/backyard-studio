@@ -1,0 +1,436 @@
+
+<!doctype html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f0e8">
+  <meta name="description" content="Make soft, creamy homemade cream cheese with milk, lemon juice and salt. A simple Foodlife with Karé kitchen recipe.">
+  <title>Homemade Cream Cheese | Foodlife with Karé</title>
+  <link rel="stylesheet" href="../../style.css">
+  <style>
+    .recipe-page .hero { grid-template-columns:1fr .92fr; }
+    .recipe-page .recipe-details {
+      display:flex; flex-wrap:wrap; gap:8px; margin:18px 0 0;
+    }
+    .recipe-page .recipe-details span {
+      padding:6px 10px; border:1px solid var(--line);
+      border-radius:99px; color:var(--olive-dark); font-size:.76rem;
+    }
+    .recipe-page .equipment-list {
+      margin:10px 0 0; padding-left:20px;
+      color:var(--muted); font-size:.87rem;
+    }
+    .recipe-page .equipment-list li { padding:3px 0; }
+    .recipe-page .step-check {
+      display:flex; gap:10px; align-items:flex-start;
+    }
+    .recipe-page .step-check input {
+      width:17px; height:17px; margin-top:5px;
+      flex-shrink:0; accent-color:var(--olive-dark);
+    }
+    .recipe-page .step:has(.step-check input:checked) h3 {
+      color:var(--olive);
+    }
+    .recipe-page .step:has(.step-check input:checked) .step-number {
+      background:var(--olive-dark); color:white;
+    }
+    .recipe-page .storage-note {
+      margin-top:15px; padding:15px;
+      border-left:3px solid var(--gold);
+      background:#f8f4e9; font-size:.85rem;
+    }
+    .recipe-page .yield-note {
+      color:var(--muted); font-size:.78rem; margin-top:8px;
+    }
+    @media(max-width:760px) {
+      .recipe-page .hero { grid-template-columns:1fr; }
+    }
+  </style>
+</head>
+
+<body class="recipe-page">
+<a class="skip-link" href="#main">Skip to recipe</a>
+
+<main class="page" id="main">
+
+  <header class="topline">
+    <a class="wordmark brand" href="../../index.html"
+       aria-label="Foodlife with Karé homepage">
+      <strong>FOODLIFE</strong>
+      <span>with Karé</span>
+    </a>
+    <span class="edition">From my kitchen to yours</span>
+  </header>
+
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">The homemade kitchen</p>
+
+      <h1>Simple creamy <em>cream cheese.</em></h1>
+
+      <p class="intro">
+        Soft, fresh homemade cream cheese made with a few simple
+        ingredients. A little kitchen magic using milk, lemon and salt.
+      </p>
+
+      <div class="meta">
+        <span>Prep: 5 min</span>
+        <span>Cook: 5 min</span>
+        <span>Vegetarian</span>
+        <span>Easy</span>
+      </div>
+
+      <div class="recipe-details">
+        <span>Yield: about 1 cup*</span>
+        <span>Chill: as needed</span>
+        <span>Keep refrigerated</span>
+      </div>
+
+      <p class="yield-note">
+        *Yield varies with the milk used and how thoroughly the curds
+        are drained.
+      </p>
+    </div>
+
+    <div class="food-photo">
+      <img
+        src="https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?auto=format&fit=crop&w=1100&q=85"
+        alt="Cheese served on a rustic board, ready for a homemade kitchen"
+        onerror="this.style.display='none'; this.parentElement.classList.add('image-fallback')"
+      >
+      <div class="photo-note">
+        Simple ingredients. A fresh homemade favourite.
+      </div>
+    </div>
+  </section>
+
+  <section class="content-grid" aria-label="Recipe and instructions">
+
+    <section class="panel" aria-labelledby="ingredients-title">
+      <div class="panel-head">
+        <div>
+          <p class="eyebrow">Before you begin</p>
+          <h2 id="ingredients-title">Your ingredients</h2>
+          <p class="small-label">Tick each item as you gather it.</p>
+        </div>
+        <button class="reset" id="reset-ingredients" type="button">
+          Reset
+        </button>
+      </div>
+
+      <div class="progress-wrap">
+        <div class="progress-copy">
+          <span id="progress-label">Your kitchen checklist</span>
+          <span id="progress-count">0 of 4</span>
+        </div>
+        <div
+          class="progress-track"
+          role="progressbar"
+          aria-label="Ingredients collected"
+          aria-valuemin="0"
+          aria-valuemax="4"
+          aria-valuenow="0"
+          id="progress-track"
+        >
+          <div class="progress-bar" id="progress-bar"></div>
+        </div>
+      </div>
+
+      <ul class="ingredient-list">
+        <li>
+          <label class="ingredient">
+            <input type="checkbox" class="ingredient-check">
+            <span class="ingredient-name">Full-fat milk</span>
+            <span class="amount">8 cups</span>
+          </label>
+        </li>
+        <li>
+          <label class="ingredient">
+            <input type="checkbox" class="ingredient-check">
+            <span class="ingredient-name">Fresh lemon juice</span>
+            <span class="amount">5 tbsp</span>
+          </label>
+        </li>
+        <li>
+          <label class="ingredient">
+            <input type="checkbox" class="ingredient-check">
+            <span class="ingredient-name">Salt</span>
+            <span class="amount">½ tsp</span>
+          </label>
+        </li>
+        <li>
+          <label class="ingredient">
+            <input type="checkbox" class="ingredient-check">
+            <span class="ingredient-name">Optional herbs or seasoning</span>
+            <span class="amount">To taste</span>
+          </label>
+        </li>
+      </ul>
+
+      <div class="tip">
+        <strong>Karé's kitchen note</strong><br>
+        Fresh lemon juice is a good place to start. If the milk does
+        not separate clearly, a little additional lemon juice may help.
+        Add it gradually.
+      </div>
+
+      <div style="margin-top:25px">
+        <h2>Equipment</h2>
+        <ul class="equipment-list">
+          <li>Saucepan</li>
+          <li>Sieve and a bowl</li>
+          <li>Clean cheesecloth or muslin</li>
+          <li>Blender or food processor</li>
+          <li>Clean container with a lid</li>
+        </ul>
+      </div>
+
+      <div class="tip">
+        <strong>Optional flavour ideas</strong><br>
+        Try a pinch of garlic powder, dried herbs or chilli.
+        Blend these in with the salt to suit your taste.
+      </div>
+    </section>
+
+    <section class="panel" aria-labelledby="method-title">
+      <div class="panel-head">
+        <div>
+          <p class="eyebrow">Take it step by step</p>
+          <h2 id="method-title">Let's make it</h2>
+          <p class="small-label">Tick each step as you finish.</p>
+        </div>
+        <button class="reset" id="reset-steps" type="button">
+          Reset steps
+        </button>
+      </div>
+
+      <div class="steps">
+        <article class="step">
+          <div class="step-number">1</div>
+          <div>
+            <label class="step-check">
+              <input type="checkbox" class="step-check-input">
+              <span>
+                <h3>Heat the milk</h3>
+                <p>
+                  Pour the milk into a saucepan and heat over
+                  medium-high heat until it comes to a boil,
+                  watching carefully to prevent it boiling over.
+                </p>
+              </span>
+            </label>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step-number">2</div>
+          <div>
+            <label class="step-check">
+              <input type="checkbox" class="step-check-input">
+              <span>
+                <h3>Add the lemon</h3>
+                <p>
+                  As soon as the milk boils, add the lemon juice
+                  and switch off the heat. Stir gently.
+                </p>
+              </span>
+            </label>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step-number">3</div>
+          <div>
+            <label class="step-check">
+              <input type="checkbox" class="step-check-input">
+              <span>
+                <h3>Let the curds form</h3>
+                <p>
+                  Leave the mixture for a few minutes. You should
+                  see soft white curds separating from a yellowish
+                  liquid called whey. If separation is incomplete,
+                  add a little more lemon juice and wait briefly.
+                </p>
+              </span>
+            </label>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step-number">4</div>
+          <div>
+            <label class="step-check">
+              <input type="checkbox" class="step-check-input">
+              <span>
+                <h3>Strain the curds</h3>
+                <p>
+                  Place the cheesecloth inside a sieve over a bowl.
+                  Carefully pour in the mixture, allowing the whey
+                  to drain away. Alternatively, lift the curds out
+                  with a slotted spoon.
+                </p>
+              </span>
+            </label>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step-number">5</div>
+          <div>
+            <label class="step-check">
+              <input type="checkbox" class="step-check-input">
+              <span>
+                <h3>Rinse and drain</h3>
+                <p>
+                  Rinse the curds briefly with cold drinking water
+                  to remove excess lemon flavour. Gather the cloth
+                  and gently squeeze out the remaining liquid.
+                </p>
+              </span>
+            </label>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step-number">6</div>
+          <div>
+            <label class="step-check">
+              <input type="checkbox" class="step-check-input">
+              <span>
+                <h3>Blend until creamy</h3>
+                <p>
+                  Transfer the drained curds to a blender or food
+                  processor. Add the salt and blend for 1–2 minutes,
+                  stopping to scrape down the sides if needed,
+                  until smooth and fluffy.
+                </p>
+              </span>
+            </label>
+          </div>
+        </article>
+
+        <article class="step">
+          <div class="step-number">7</div>
+          <div>
+            <label class="step-check">
+              <input type="checkbox" class="step-check-input">
+              <span>
+                <h3>Chill and enjoy</h3>
+                <p>
+                  Transfer to a clean, covered container and
+                  refrigerate until chilled. Enjoy as a spread,
+                  a dip or a creamy addition to your favourite dishes.
+                </p>
+              </span>
+            </label>
+          </div>
+        </article>
+      </div>
+
+      <div class="storage-note">
+        <strong>Storage and food safety</strong><br>
+        Keep the cream cheese refrigerated at 4°C or colder in a
+        clean, airtight container. Use within 1 week as a conservative
+        guideline, and discard it sooner if you notice mould, an
+        unusual smell or other signs of spoilage. Do not leave it
+        sitting at room temperature for extended periods.
+      </div>
+
+      <p class="yield-note">
+        Allow extra time for draining and chilling. The 10-minute
+        preparation and cooking estimate does not include these steps.
+      </p>
+    </section>
+  </section>
+
+  <section class="finish">
+    <div>
+      <h2>A little homemade goodness.</h2>
+      <p>
+        Save this recipe for the next time you feel like making
+        something simple from scratch.
+      </p>
+    </div>
+    <button class="share" id="share-recipe" type="button">
+      Share this recipe ↗
+    </button>
+  </section>
+
+  <footer class="footer">
+    <a href="../../index.html">
+      <strong>Foodlife with Karé</strong>
+    </a>
+    <span>Simple food · Thoughtful living</span>
+    <a href="../../index.html">← Back to Foodlife</a>
+  </footer>
+
+</main>
+
+<script>
+  // Ingredient checklist and progress
+  const ingredientChecks = [
+    ...document.querySelectorAll(".ingredient-check")
+  ];
+  const progressBar = document.getElementById("progress-bar");
+  const progressCount = document.getElementById("progress-count");
+  const progressTrack = document.getElementById("progress-track");
+  const progressLabel = document.getElementById("progress-label");
+
+  function updateProgress() {
+    const checked = ingredientChecks.filter(item => item.checked).length;
+    const total = ingredientChecks.length;
+    const percentage = total ? (checked / total) * 100 : 0;
+
+    progressBar.style.width = percentage + "%";
+    progressCount.textContent = `${checked} of ${total}`;
+    progressTrack.setAttribute("aria-valuenow", checked);
+
+    progressLabel.textContent =
+      checked === total ? "Everything is ready!" : "Your kitchen checklist";
+  }
+
+  ingredientChecks.forEach(item =>
+    item.addEventListener("change", updateProgress)
+  );
+
+  document.getElementById("reset-ingredients").addEventListener("click", () => {
+    ingredientChecks.forEach(item => item.checked = false);
+    updateProgress();
+  });
+
+  // Cooking-step checklist
+  const stepChecks = [...document.querySelectorAll(".step-check-input")];
+
+  document.getElementById("reset-steps").addEventListener("click", () => {
+    stepChecks.forEach(item => item.checked = false);
+  });
+
+  // Share button
+  document.getElementById("share-recipe").addEventListener("click", async () => {
+    const shareData = {
+      title: "Simple Creamy Homemade Cream Cheese",
+      text: "A simple homemade cream cheese recipe from Foodlife with Karé.",
+      url: window.location.href
+    };
+
+    try {
+      if (navigator.share) {
+        await navigator.share(shareData);
+      } else if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(
+          `${shareData.title}\n${shareData.text}\n${shareData.url}`
+        );
+        alert("Recipe link copied. You can now share it!");
+      } else {
+        window.prompt("Copy this recipe link:", window.location.href);
+      }
+    } catch (error) {
+      if (error.name !== "AbortError") {
+        window.prompt("Copy this recipe link:", window.location.href);
+      }
+    }
+  });
+</script>
+</body>
+</html>

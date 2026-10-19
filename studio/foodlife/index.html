@@ -1,88 +1,145 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-ZA">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f4f0e8">
-  <meta name="description" content="Foodlife with Karé shares simple recipes, practical nutrition and gentle everyday wellness inspiration.">
-  <title>FOODLIFE with Karé | Nourish Simply</title>
+  <meta name="theme-color" content="#f5f0e6">
+  <meta name="description" content="FOODLIFE with Karé explores everyday nutrition, practical recipes, therapeutic health education and gentle wellbeing habits.">
+  <title>FOODLIFE with Karé | Good food. Better wellbeing.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="foodlife-home">
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="header-inner">
-    <a class="wordmark" href="index.html" aria-label="FOODLIFE with Karé home"><strong>FOODLIFE</strong><span>with Karé</span></a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span aria-hidden="true">☰</span> Menu</button>
+    <a class="wordmark" href="index.html" aria-label="FOODLIFE with Karé home"><strong>FOODLIFE</strong><span>WITH KARÉ</span><i aria-hidden="true">♡</i></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span aria-hidden="true">☰</span><span class="menu-label">Menu</span></button>
     <nav id="main-nav" class="primary-nav" aria-label="Main navigation">
-      <a href="index.html" aria-current="page">Home</a><a href="#recipes">Recipes</a><a href="#nutrition">Nutrition</a><a href="#therapeutics">Therapeutics &amp; Health</a><a href="#wellbeing">Wellbeing</a><a href="#about">About</a>
+      <a href="index.html" aria-current="page">Home</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle" type="button" aria-expanded="false" aria-controls="recipe-menu">Recipes <span aria-hidden="true">⌄</span></button>
+        <div class="dropdown-panel" id="recipe-menu">
+          <p class="dropdown-kicker">Find something good</p>
+          <a href="recipes/index.html#breakfast">Breakfast</a>
+          <a href="recipes/index.html#quick-dinners">Quick dinners</a>
+          <a href="recipes/index.html#lunches">Lunches &amp; salads</a>
+          <a href="recipes/index.html#soups">Soups</a>
+          <a href="recipes/index.html#snacks">Snacks</a>
+          <a href="recipes/index.html#desserts">Desserts</a>
+          <a href="recipes/index.html#drinks">Drinks</a>
+          <a class="all-recipes" href="recipes/index.html">Browse all recipes <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <a href="#nutrition">Nutrition</a><a href="#therapeutics">Therapeutics &amp; health</a><a href="#wellbeing">Wellbeing</a><a href="#about">About</a>
     </nav>
   </div>
 </header>
 <main id="main">
   <section class="hero section-wrap">
     <div class="hero-copy">
-      <p class="eyebrow">Nourishing body, mind &amp; everyday life</p>
+      <p class="eyebrow">Nutrition · Therapeutics · Health</p>
       <h1>Good food.<br><em>Better wellbeing.</em></h1>
-      <p class="lead">Exploring the relationship between food, nourishment and everyday wellbeing through thoughtful education, practical recipes and healthier lifestyle habits.</p>
-      <div class="actions"><a class="button primary" href="#recipes">Explore recipes <span aria-hidden="true">↗</span></a><a class="text-link" href="#about">A little about Karé →</a></div>
-      <p class="handwritten">Simple ingredients. Thoughtful choices. Room to grow.</p>
+      <p class="lead">Evidence-informed nutrition, practical recipes and simple lifestyle guidance for a healthier, more balanced you.</p>
+      <div class="actions"><a class="button primary" href="#recipes">Explore recipes <span aria-hidden="true">→</span></a><a class="text-link" href="#about">A little about Karé <span aria-hidden="true">↗</span></a></div>
     </div>
     <div class="hero-photo">
-      <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1200&q=85" alt="A colourful meal made with fresh vegetables and wholesome ingredients" onerror="this.style.display='none';this.parentElement.classList.add('image-fallback')">
-      <span class="photo-caption">Everyday nourishment, made approachable.</span><span class="round-stamp" aria-hidden="true">Nourish<br>simply</span>
+      <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=1400&q=88" alt="Fresh pasta with greens and herbs in a ceramic bowl" fetchpriority="high" onerror="this.style.display='none';this.parentElement.classList.add('image-fallback')">
+      <span class="photo-caption">Everyday nourishment, made approachable.</span>
     </div>
     <div class="hero-rule"><span>Food · Learning · Everyday life</span><span>Made with care in South Africa</span></div>
   </section>
 
-  <section class="intro-section section-wrap">
-    <p class="eyebrow">A new chapter</p>
-    <div class="two-col"><h2>Wellness isn't about getting everything <em>perfect.</em></h2><div><p>FOODLIFE with Karé is an independent wellness brand exploring nutrition, therapeutic approaches and everyday health through accessible education, practical resources and the simple pleasure of food.</p><p>Some days call for a balanced meal. Some call for something comforting. And some are simply opportunities to learn a little more about how we nourish ourselves.</p><p class="handwritten">Let's learn, nourish and grow together. 🌱</p></div></div>
+  <section class="intro-section section-wrap" id="welcome">
+    <div class="intro-art" aria-hidden="true"><span>❧</span><small>nourish<br>with care</small></div>
+    <div class="intro-copy"><p class="eyebrow">Welcome to</p><h2>FOODLIFE <em>with KARÉ</em></h2><p class="intro-subtitle">Nutrition · Therapeutics · Health</p><p>FOODLIFE with Karé is a wellness-focused space exploring the relationship between food, nourishment and everyday wellbeing through evidence-informed education, practical recipes and thoughtful lifestyle guidance.</p><a class="text-link" href="#about">A note from Karé <span aria-hidden="true">→</span></a></div>
+    <div class="intro-photo"><img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=85" alt="A fresh, colourful bowl of vegetables and wholesome ingredients" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('image-fallback')"></div>
   </section>
 
-  <section id="recipes" class="recipes-section section-wrap tinted">
-    <div class="section-heading"><div><p class="eyebrow">From the kitchen</p><h2>Simple food, <em>made with care.</em></h2></div><p>Approachable recipes for real life — with everyday ingredients and room to make them your own.</p></div>
-    <article class="recipe-feature">
-      <a class="recipe-photo" href="recipes/lemon-spinach-pasta.html" aria-label="View Quick Lemon-and-Spinach Pasta recipe"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=1200&q=85" alt="A bowl of pasta with herbs and parmesan" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('image-fallback')"><span>Recipe No. 01</span></a>
-      <div class="recipe-copy"><p class="eyebrow">Quick dinner · 20 minutes</p><h3><a href="recipes/lemon-spinach-pasta.html">Quick Lemon-and-Spinach Pasta</a></h3><p>Bright lemon, tender spinach and parmesan come together in a silky, fresh-tasting sauce — comforting, simple and ready in about 20 minutes.</p><ul class="recipe-meta"><li>◷ About 20 min</li><li>✳ Easy</li><li>♧ Stovetop</li></ul><a class="button outline" href="recipes/lemon-spinach-pasta.html">Make this recipe ↗</a></div>
-    </article><p class="section-note">More recipes and kitchen notes will find their home here over time.</p>
+  <section class="pillars section-wrap" aria-label="What you'll find at FOODLIFE">
+    <a class="pillar" href="#recipes"><span class="pillar-icon" aria-hidden="true">♧</span><span class="pillar-title">Healthy recipes</span><span>Simple, nourishing<br>and delicious.</span></a>
+    <a class="pillar" href="#nutrition"><span class="pillar-icon" aria-hidden="true">❧</span><span class="pillar-title">Nutrition guidance</span><span>Real food. Lasting<br>energy.</span></a>
+    <a class="pillar" href="#wellbeing"><span class="pillar-icon" aria-hidden="true">✳</span><span class="pillar-title">Wellbeing resources</span><span>Support for mind,<br>body and balance.</span></a>
+    <a class="pillar" href="#therapeutics"><span class="pillar-icon" aria-hidden="true">♢</span><span class="pillar-title">Therapeutic approaches</span><span>Gentle, informed<br>support.</span></a>
   </section>
 
-  <section class="topics-section section-wrap">
-    <div class="section-heading"><div><p class="eyebrow">Explore FOODLIFE</p><h2>Small steps. <em>Useful knowledge.</em></h2></div><p>A thoughtful collection of ideas to help make everyday nourishment feel a little easier.</p></div>
+  <section id="recipes" class="recipe-feature">
+    <a class="recipe-feature-photo" href="recipes/lemon-spinach-pasta.html" aria-label="View Quick Lemon-and-Spinach Pasta recipe"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=1400&q=88" alt="A bowl of pasta with greens and grated cheese" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('image-fallback')"></a>
+    <div class="recipe-feature-copy"><p class="eyebrow">Recipe of the week</p><h2>Quick Lemon-and-Spinach Pasta</h2><p>Fresh, comforting and full of flavour. A bright, easy dinner ready in around 20 minutes, with no cream required.</p><ul class="recipe-meta"><li><span aria-hidden="true">◷</span> 20 min</li><li><span aria-hidden="true">♧</span> Easy</li><li><span aria-hidden="true">✳</span> Fresh &amp; simple</li></ul><a class="button primary" href="recipes/lemon-spinach-pasta.html">View recipe <span aria-hidden="true">→</span></a></div>
+  </section>
+
+  <section class="journal-section section-wrap">
+    <div class="journal-heading"><p class="eyebrow">Latest from the journal</p><h2>Explore. Learn. <em>Feel better.</em></h2></div>
+    <div class="journal-grid">
+      <article class="journal-card"><a class="journal-image" href="#nutrition"><img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=800&q=85" alt="Fresh vegetables and ingredients on a table" loading="lazy"></a><div class="journal-copy"><p class="card-kicker">Nutrition</p><h3>The power of seasonal eating</h3><a href="#nutrition">Read more <span aria-hidden="true">→</span></a></div></article>
+      <article class="journal-card"><a class="journal-image" href="#wellbeing"><img src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?auto=format&fit=crop&w=800&q=85" alt="A peaceful cup of tea in soft natural light" loading="lazy"></a><div class="journal-copy"><p class="card-kicker">Wellbeing</p><h3>Simple habits for better sleep</h3><a href="#wellbeing">Read more <span aria-hidden="true">→</span></a></div></article>
+      <article class="journal-card"><a class="journal-image" href="#therapeutics"><img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=800&q=85" alt="Fresh herbs and natural ingredients" loading="lazy"></a><div class="journal-copy"><p class="card-kicker">Therapeutics</p><h3>Herbs for everyday balance</h3><a href="#therapeutics">Read more <span aria-hidden="true">→</span></a></div></article>
+    </div>
+  </section>
+
+  <section class="topics-section section-wrap tinted">
+    <div class="section-heading"><div><p class="eyebrow">Explore FOODLIFE</p><h2>Small steps. <em>Useful knowledge.</em></h2></div><p>Thoughtful ideas to help make everyday nourishment feel a little easier.</p></div>
     <div class="topic-grid">
-      <article class="topic-card" id="nutrition"><span class="topic-label">01 / NUTRITION</span><div class="topic-art art-food" aria-hidden="true">✳</div><h3>Nutrition, without the noise.</h3><p>Explore balanced meals, macronutrients, food choices and the everyday foundations of nourishment.</p><span class="coming">Articles are growing here</span></article>
-      <article class="topic-card" id="therapeutics"><span class="topic-label">02 / THERAPEUTICS &amp; HEALTH</span><div class="topic-art art-health" aria-hidden="true">◌</div><h3>Learning about health.</h3><p>Accessible, evidence-informed educational content about food, health and therapeutic approaches.</p><span class="coming">More to explore soon</span></article>
+      <article class="topic-card" id="nutrition"><span class="topic-label">01 / NUTRITION</span><div class="topic-art art-food" aria-hidden="true">❧</div><h3>Nutrition, without the noise.</h3><p>Explore balanced meals, macronutrients, food choices and the everyday foundations of nourishment.</p><span class="coming">Learning notes are growing here</span></article>
+      <article class="topic-card" id="therapeutics"><span class="topic-label">02 / THERAPEUTICS &amp; HEALTH</span><div class="topic-art art-health" aria-hidden="true">✳</div><h3>Learning about health.</h3><p>Accessible, evidence-informed educational content about food, health and therapeutic approaches.</p><span class="coming">More to explore soon</span></article>
       <article class="topic-card" id="wellbeing"><span class="topic-label">03 / EVERYDAY WELLBEING</span><div class="topic-art art-wellbeing" aria-hidden="true">☼</div><h3>Gentle habits for real life.</h3><p>Ideas around sleep, stress, mindful routines and small habits that support a more balanced day.</p><span class="coming">A space to grow</span></article>
     </div>
   </section>
 
-  <section id="about" class="about-section section-wrap tinted">
-    <div class="about-photo"><img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1000&q=85" alt="Green leaves and trees in soft natural light" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('image-fallback')"><span>Learning · Growing · Sharing</span></div>
-    <div class="about-copy"><p class="eyebrow">A note from Karé</p><h2>A little curiosity can change the way we <em>care for ourselves.</em></h2><p>Welcome, I'm Karé. FOODLIFE is a place to share my ongoing learning, practical food ideas and thoughtful conversations about everyday wellbeing.</p><p>I hold a Diploma in Nutrition, Therapeutics and Health, and I'm currently studying Wellness, Nutrition &amp; Health Coaching. As I learn, I hope to make useful information feel approachable — without perfection, pressure or fear around food.</p><p class="about-note">This space will keep growing, one recipe and one small discovery at a time.</p><a class="text-link" href="#footer">Keep in touch →</a></div>
+  <section id="about" class="about-section section-wrap">
+    <div class="about-photo"><img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1000&q=85" alt="Sunlight filtering through green leaves and trees" loading="lazy" onerror="this.style.display='none';this.parentElement.classList.add('image-fallback')"><span>Learning · Growing · Sharing</span></div>
+    <div class="about-copy"><p class="eyebrow">A note from Karé</p><h2>A little curiosity can change the way we <em>care for ourselves.</em></h2><p>Welcome, I'm Karé. FOODLIFE is a place to share my ongoing learning, practical food ideas and thoughtful conversations about everyday wellbeing.</p><p>I hold a Diploma in Nutrition, Therapeutics and Health, and I'm currently studying Wellness, Nutrition &amp; Health Coaching. As I learn, I hope to make useful information feel approachable, without perfection, pressure or fear around food.</p><p class="about-note">This space will keep growing, one recipe and one small discovery at a time.</p><a class="text-link" href="#footer">Keep in touch <span aria-hidden="true">→</span></a></div>
   </section>
-  <section class="closing"><span aria-hidden="true">❧</span><p>There is no one perfect way to nourish a life.</p><h2>Let's make space for <em>better everyday choices.</em></h2></section>
+  <section class="closing"><span aria-hidden="true">♡</span><p>There is no one perfect way to nourish a life.</p><h2>Let's make space for <em>better everyday choices.</em></h2></section>
 </main>
 <footer id="footer" class="site-footer">
-  <div class="footer-grid"><a class="wordmark footer-brand" href="index.html"><strong>FOODLIFE</strong><span>with Karé</span></a><p>Simple recipes, practical nutrition<br>and gentle wellness inspiration.</p><nav aria-label="Footer navigation"><a href="index.html">Home</a><a href="#recipes">Recipes</a><a href="#nutrition">Nutrition</a><a href="#therapeutics">Therapeutics &amp; Health</a><a href="#wellbeing">Wellbeing</a><a href="#about">About Karé</a></nav></div>
+  <div class="footer-grid"><a class="wordmark footer-brand" href="index.html"><strong>FOODLIFE</strong><span>WITH KARÉ</span><i aria-hidden="true">♡</i></a><p>Simple recipes, practical nutrition<br>and gentle wellness inspiration.</p><nav aria-label="Footer navigation"><a href="index.html">Home</a><a href="recipes/index.html">Recipes</a><a href="#nutrition">Nutrition</a><a href="#therapeutics">Therapeutics &amp; health</a><a href="#wellbeing">Wellbeing</a><a href="#about">About Karé</a></nav></div>
   <div class="disclaimer"><strong>A gentle reminder</strong><p>FOODLIFE with Karé provides general educational information only. Content is not a substitute for personalised medical advice, diagnosis or treatment. Consult a suitably qualified healthcare professional about individual health concerns, and do not delay or disregard professional advice because of something you read here.</p></div>
   <div class="footer-bottom"><span>© <span id="year">2026</span> FOODLIFE with Karé</span><span>An independent wellness brand developed within Backyard Studio.</span></div>
 </footer>
 <script>
 (() => {
- const toggle = document.querySelector(".menu-toggle");
- const nav = document.querySelector(".primary-nav");
- if (toggle && nav) {
-   toggle.addEventListener("click", () => {
-     const open = toggle.getAttribute("aria-expanded") === "true";
-     toggle.setAttribute("aria-expanded", String(!open));
-     nav.classList.toggle("is-open", !open);
-   });
-   nav.querySelectorAll("a").forEach(a => a.addEventListener("click", () => {
-     toggle.setAttribute("aria-expanded", "false"); nav.classList.remove("is-open");
-   }));
- }
- document.getElementById("year").textContent = new Date().getFullYear();
+  const menuButton = document.querySelector(".menu-toggle");
+  const nav = document.querySelector(".primary-nav");
+  const recipeButton = document.querySelector(".nav-dropdown-toggle");
+  const dropdown = document.querySelector(".nav-dropdown");
+  if (menuButton && nav) {
+    menuButton.addEventListener("click", () => {
+      const open = menuButton.getAttribute("aria-expanded") === "true";
+      menuButton.setAttribute("aria-expanded", String(!open));
+      nav.classList.toggle("is-open", !open);
+    });
+    nav.querySelectorAll("a").forEach(link => link.addEventListener("click", () => {
+      menuButton.setAttribute("aria-expanded", "false");
+      nav.classList.remove("is-open");
+      if (recipeButton) recipeButton.setAttribute("aria-expanded", "false");
+      if (dropdown) dropdown.classList.remove("is-open");
+    }));
+  }
+  if (recipeButton && dropdown) {
+    recipeButton.addEventListener("click", () => {
+      const open = recipeButton.getAttribute("aria-expanded") === "true";
+      recipeButton.setAttribute("aria-expanded", String(!open));
+      dropdown.classList.toggle("is-open", !open);
+    });
+    document.addEventListener("click", event => {
+      if (!dropdown.contains(event.target)) {
+        recipeButton.setAttribute("aria-expanded", "false");
+        dropdown.classList.remove("is-open");
+      }
+    });
+    document.addEventListener("keydown", event => {
+      if (event.key === "Escape") {
+        recipeButton.setAttribute("aria-expanded", "false");
+        dropdown.classList.remove("is-open");
+        recipeButton.focus();
+      }
+    });
+  }
+  const year = document.getElementById("year");
+  if (year) year.textContent = new Date().getFullYear();
 })();
 </script>
 </body>

@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f0e6">
+  <title>Recipe Collection | FOODLIFE with Karé</title>
+  <meta name="description" content="Explore everyday recipes, from simple breakfasts and quick dinners to comforting desserts and refreshing drinks.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="recipe-index">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="../index.html" aria-label="FOODLIFE with Karé home">
+        <strong>FOODLIFE</strong>
+        <span>WITH KARÉ</span>
+        <i aria-hidden="true">♡</i>
+      </a>
+
+      <button class="menu-toggle" type="button"
+        aria-expanded="false" aria-controls="main-nav">
+        <span aria-hidden="true">☰</span>
+        <span class="menu-label">Menu</span>
+      </button>
+
+      <nav id="main-nav" class="primary-nav" aria-label="Main navigation">
+        <a href="../index.html">Home</a>
+        <div class="nav-dropdown">
+          <button class="dropdown-toggle" type="button"
+            aria-expanded="false" aria-controls="recipe-menu">
+            Recipes <span aria-hidden="true">⌄</span>
+          </button>
+          <div class="dropdown-menu" id="recipe-menu">
+            <a href="index.html">All recipes</a>
+            <a href="#breakfast">Breakfast</a>
+            <a href="#quick-dinners">Quick dinners</a>
+            <a href="#lunches">Lunches</a>
+            <a href="#soups-salads">Soups &amp; salads</a>
+            <a href="#snacks">Snacks &amp; light bites</a>
+            <a href="#desserts">Desserts</a>
+            <a href="#drinks">Drinks</a>
+          </div>
+        </div>
+        <a href="../index.html#nutrition">Nutrition</a>
+        <a href="../index.html#wellbeing">Wellbeing</a>
+        <a href="../index.html#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="listing-hero">
+      <p class="eyebrow">From the FOODLIFE kitchen</p>
+      <h1>A little inspiration for <em>everyday eating.</em></h1>
+      <p>
+        Simple ingredients, approachable ideas and recipes to make your
+        own. Find something for a busy morning, a weeknight dinner or a
+        slower afternoon in the kitchen.
+      </p>
+    </section>
+
+    <nav class="category-nav" aria-label="Recipe categories">
+      <a href="#breakfast">Breakfast</a>
+      <a href="#quick-dinners">Quick dinners</a>
+      <a href="#lunches">Lunches</a>
+      <a href="#soups-salads">Soups &amp; salads</a>
+      <a href="#snacks">Snacks</a>
+      <a href="#desserts">Desserts</a>
+      <a href="#drinks">Drinks</a>
+    </nav>
+
+    <section class="category-section" id="breakfast">
+      <div class="category-heading">
+        <div>
+          <p class="eyebrow">A gentle start</p>
+          <h2>Breakfast</h2>
+        </div>
+        <p>Simple ideas for the start of your day.</p>
+      </div>
+      <div class="empty-note">
+        Breakfast recipes are on their way. Think oats, eggs, fruit and
+        easy options for busy mornings.
+      </div>
+    </section>
+
+    <section class="category-section" id="quick-dinners">
+      <div class="category-heading">
+        <div>
+          <p class="eyebrow">On the table soon</p>
+          <h2>Quick dinners</h2>
+        </div>
+        <p>Everyday meals without an evening-long kitchen session.</p>
+      </div>
+
+      <div class="recipe-grid">
+        <article class="listing-card">
+          <a class="listing-image" href="lemon-spinach-pasta.html"
+            aria-label="Open Lemon-and-Spinach Pasta recipe">
+            <img src="../assets/lemon-spinach-pasta.webp"
+              alt="Lemon, spinach and parmesan pasta"
+              loading="lazy"
+              onerror="this.style.display='none';this.parentElement.classList.add('image-fallback')">
+          </a>
+          <div class="listing-copy">
+            <p class="eyebrow">20 minutes · Easy</p>
+            <h3><a href="lemon-spinach-pasta.html">Quick Lemon-and-Spinach Pasta</a></h3>
+            <p>Lemon, tender spinach and parmesan in a fresh, silky sauce.</p>
+            <a class="listing-link" href="lemon-spinach-pasta.html">View recipe ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="category-section" id="lunches">
+      <div class="category-heading">
+        <div>
+          <p class="eyebrow">Midday nourishment</p>
+          <h2>Lunches</h2>
+        </div>
+        <p>Easy meals for home, work or a packed lunch.</p>
+      </div>
+      <div class="empty-note">
+        Lunch recipes will appear here as the collection grows.
+      </div>
+    </section>
+
+    <section class="category-section" id="soups-salads">
+      <div class="category-heading">
+        <div>
+          <p class="eyebrow">Fresh and comforting</p>
+          <h2>Soups &amp; salads</h2>
+        </div>
+        <p>Seasonal ingredients, warming bowls and fresh combinations.</p>
+      </div>
+      <div class="empty-note">
+        This section is ready for seasonal soups, simple salads and
+        nourishing bowl recipes.
+      </div>
+    </section>
+
+    <section class="category-section" id="snacks">
+      <div class="category-heading">
+        <div>
+          <p class="eyebrow">Little bites</p>
+          <h2>Snacks &amp; light bites</h2>
+        </div>
+        <p>Small ideas for when you need something between meals.</p>
+      </div>
+      <div class="empty-note">
+        Easy snack ideas and light bites will find their home here.
+      </div>
+    </section>
+
+    <section class="category-section" id="desserts">
+      <div class="category-heading">
+        <div>
+          <p class="eyebrow">A little sweetness</p>
+          <h2>Desserts</h2>
+        </div>
+        <p>Comforting treats and simple homemade favourites.</p>
+      </div>
+      <div class="empty-note">
+        Desserts are coming soon, from fruit-forward treats to the
+        occasional something-sweet.
+      </div>
+    </section>
+
+    <section class="category-section" id="drinks">
+      <div class="category-heading">
+        <div>
+          <p class="eyebrow">Pour something lovely</p>
+          <h2>Drinks</h2>
+        </div>
+        <p>Refreshing drinks and warming cups for slower moments.</p>
+      </div>
+      <div class="empty-note">
+        Look here for future smoothie ideas, refreshing drinks and
+        comforting warm beverages.
+      </div>
+    </section>
+
+    <div class="listing-footer">
+      <a href="../index.html">← Back to the FOODLIFE homepage</a>
+    </div>
+  </main>
+
+  <script>
+    (() => {
+      const toggle = document.querySelector(".menu-toggle");
+      const nav = document.querySelector(".primary-nav");
+      const dropdown = document.querySelector(".nav-dropdown");
+      const dropdownToggle = document.querySelector(".dropdown-toggle");
+
+      toggle?.addEventListener("click", () => {
+        const open = toggle.getAttribute("aria-expanded") === "true";
+        toggle.setAttribute("aria-expanded", String(!open));
+        nav.classList.toggle("is-open", !open);
+      });
+
+      dropdownToggle?.addEventListener("click", () => {
+        const open = dropdownToggle.getAttribute("aria-expanded") === "true";
+        dropdownToggle.setAttribute("aria-expanded", String(!open));
+        dropdown.classList.toggle("is-open", !open);
+      });
+
+      document.addEventListener("click", event => {
+        if (dropdown && !dropdown.contains(event.target)) {
+          dropdown.classList.remove("is-open");
+          dropdownToggle?.setAttribute("aria-expanded", "false");
+        }
+      });
+
+      nav?.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", () => {
+          toggle?.setAttribute("aria-expanded", "false");
+          nav.classList.remove("is-open");
+          dropdown?.classList.remove("is-open");
+          dropdownToggle?.setAttribute("aria-expanded", "false");
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

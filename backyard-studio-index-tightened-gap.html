@@ -1,0 +1,214 @@
+
+text/html index.html ( HTML document, UTF-8 Unicode text )
+<!DOCTYPE html> <html lang="en-ZA"> <head> <meta charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <title> Backyard Studio | Strategy, Storytelling, Design & Creative Direction </title> <meta name="description" content="Backyard Studio helps people and businesses turn meaningful ideas, stories, and messages into words, visuals, and creative projects they can share, use, or treasure." /> <!-- Temporary while the full website is being prepared --> <meta name="robots" content="noindex, nofollow" /> <meta property="og:title" content="Backyard Studio | Thoughtful Creative Work" /> <meta property="og:description" content="An independent creative studio shaping meaningful ideas through strategy, storytelling, design, and creative direction." /> <meta property="og:type" content="website" /> <meta name="theme-color" content="#F7F2EA" /> <link rel="preconnect" href="https://fonts.googleapis.com" /> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" /> <link rel="stylesheet" href="../styles/coming-soon.css" /> 
+<style>
+/* Backyard Studio navigation: full-width row above the hero content */
+/* Keep the hero logo visually closer to the navigation row. */
+.coming-soon-topline {
+  margin-bottom: .65rem !important;
+}
+.coming-soon-content {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+.coming-soon-content .coming-soon-logo {
+  margin-top: 0 !important;
+}
+.coming-soon-card {
+  position: relative;
+}
+.coming-soon-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem 2rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 2rem;
+  position: relative;
+}
+.coming-soon-topline .coming-soon-kicker {
+  flex: 0 1 auto;
+  margin: 0;
+  white-space: nowrap;
+}
+.studio-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  gap: clamp(.65rem, 1.25vw, 1.2rem);
+  margin-left: auto;
+}
+.studio-navigation a {
+  color: #4e5148;
+  font-family: "Inter", sans-serif;
+  font-size: .75rem;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color .18s ease;
+}
+.studio-navigation a:hover,
+.studio-navigation a:focus-visible { color: #8a7355; }
+.studio-navigation .studio-nav-home-link {
+  color: #3e4038;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: .01em;
+}
+.studio-navigation .studio-nav-booking {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  padding: .48rem .72rem;
+  border: 1px solid #76664f;
+  border-radius: 2px;
+  color: #76664f;
+  letter-spacing: .025em;
+}
+.studio-navigation .studio-nav-booking:hover,
+.studio-navigation .studio-nav-booking:focus-visible {
+  background: #76664f;
+  color: #fffdf8;
+}
+.studio-menu-toggle { display: none; }
+.studio-pillar-plain { margin-top: .65rem; }
+.studio-pillar-examples { font-size: .9em; opacity: .86; }
+@media (max-width: 1100px) {
+  .coming-soon-topline { gap: .8rem 1rem; }
+  .studio-navigation { gap: .6rem; }
+  .studio-navigation a { font-size: .68rem; }
+  .studio-navigation .studio-nav-home-link { font-size: 1.05rem; }
+}
+@media (max-width: 760px) {
+  .coming-soon-topline { align-items: center; flex-wrap: wrap; gap: .75rem; }
+  .coming-soon-topline .coming-soon-kicker {
+    max-width: 68%;
+    white-space: normal;
+    font-size: .72rem;
+  }
+  .studio-menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .45rem;
+    margin-left: auto;
+    padding: .5rem .65rem;
+    border: 1px solid rgba(112, 98, 78, .32);
+    background: transparent;
+    color: #4e5148;
+    font: 500 .76rem "Inter", sans-serif;
+    cursor: pointer;
+  }
+  .studio-navigation {
+    display: none;
+    flex: 0 0 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    width: 100%;
+    margin-left: 0;
+    padding-top: .35rem;
+  }
+  .studio-navigation.is-open { display: flex; }
+  .studio-navigation a {
+    box-sizing: border-box;
+    width: 100%;
+    padding: .7rem .1rem;
+    border-top: 1px solid rgba(112, 98, 78, .12);
+    font-size: .78rem;
+  }
+  .studio-navigation .studio-nav-home-link { font-size: 1.15rem; }
+  .studio-navigation .studio-nav-booking {
+    align-self: flex-start;
+    width: auto;
+    margin-top: .45rem;
+    padding: .55rem .8rem;
+    border: 1px solid #76664f;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .studio-navigation a { transition: none; }
+}
+</style>
+
+</head> <body class="coming-soon-page"> <main class="coming-soon-shell" id="top">
+<!-- ========================= INTRO / HERO ========================== --> <section class="coming-soon-card" aria-labelledby="coming-soon-title" >
+<div class="coming-soon-topline">
+  <p class="coming-soon-kicker">A new chapter is taking shape</p>
+  <button class="studio-menu-toggle" type="button" aria-expanded="false" aria-controls="studio-navigation" aria-label="Open navigation">
+    <span class="menu-toggle-label">Menu</span>
+    <span class="menu-toggle-icon" aria-hidden="true">☰</span>
+  </button>
+  <nav class="studio-navigation" id="studio-navigation" aria-label="Main navigation">
+    <a class="studio-nav-home-link" href="https://backyardstudio.co.za/">Backyard Studio</a>
+    <a href="#top">Home</a>
+    <a href="#what-we-do">What We Do</a>
+    <a href="#backyard-reflections">Reflections</a>
+    <a href="#contact">Contact</a>
+    <a class="studio-nav-booking" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3E9Sq6NhPZm3dWsIClzqGpO8CFthp-Y5MLyZ2j2AAPdS2JIOpndmCmFQPoOen2lfyRkX0ioCrO?gv=true" target="_blank" rel="noopener noreferrer">Booking <span aria-hidden="true">↗</span></a>
+  </nav>
+</div>
+<div class="coming-soon-content">
+  <img class="coming-soon-logo" src="assets/logobs.png?v=2" alt="Backyard Studio" /> <p class="coming-soon-subtitle"> Independent Creative Studio </p> <h2 id="coming-soon-title"> Meaningful ideas, thoughtfully brought to life. </h2> <p></p> <p class="coming-soon-lede"> Strategy • Storytelling • Design • Creative Direction </p> <p> Backyard Studio partners with founders, brands, creators, and organisations to shape meaningful ideas through strategy, storytelling, design, and creative direction. </p> <p> From personalised storybooks and keepsakes to brand storytelling and visual design, we bring thoughtful ideas to life with care, clarity, and respect for every story entrusted to us. </p> <blockquote class="coming-soon-belief"> We believe every story deserves to be met with respect, shaped with care, and shared with clarity. </blockquote> <!-- Studio Focus --> <div class="coming-soon-lists" aria-label="Backyard Studio focus areas" ><p></p> <article> <p class="coming-soon-list-label"> What we do </p> <h2> Thoughtful creative partnership </h2> <p></p> <p> We help you work out what you want to say, shape the story, create the visuals, and bring the pieces together into a thoughtful finished project. </p>
+ <p> This can mean a family storybook, clearer business messaging, promotional materials, or a creative project shaped around your idea. </p> </article> <article> <p class="coming-soon-list-label"> How we work </p> <h2> With respect, clarity & care </h2> <p> We value close collaboration, honest communication, thoughtful decisions, and work designed to endure. </p> </article> </div> </div> <figure class="coming-soon-image-wrap"> <img class="coming-soon-image" src="assets/backyard-studio-hero.webp?v=2" alt="A calm creative workspace with a laptop, flowers, and warm natural light." /> <figcaption class="coming-soon-image-caption"> Create thoughtfully. Serve generously. Grow intentionally. </figcaption> </figure> </section> <!-- ========================= FOUR PILLARS ========================== --> <section class="studio-pillars" id="what-we-do" aria-labelledby="studio-pillars-title" > <div class="studio-pillars-heading"> <p class="contact-kicker"> What we do </p> <h2 id="studio-pillars-title"> Four disciplines. One thoughtful practice. </h2> <p> Our work brings together the thinking, words, visuals, and direction needed to turn meaningful ideas into coherent creative experiences. </p> </div> <div class="studio-pillars-grid"> <article class="studio-pillar"> <span class="studio-pillar-number"> 01 </span> <h3> Strategy </h3> <p> Clarifying positioning, messaging, priorities, and creative direction before design begins. </p>
+<p class="studio-pillar-plain">We help you work out what you want to say, what makes your idea distinctive, and what to do next.</p>
+<p class="studio-pillar-examples"><strong>Examples:</strong> business messaging, project planning, and creative concepts.</p> </article> <article class="studio-pillar"> <span class="studio-pillar-number"> 02 </span> <h3> Storytelling </h3> <p> Shaping brand stories, editorial writing, and meaningful communication people can connect with. </p>
+<p class="studio-pillar-plain">We turn memories, experiences, and ideas into stories and words people can connect with.</p>
+<p class="studio-pillar-examples"><strong>Examples:</strong> personalised storybooks, family histories, brand stories, and website writing.</p> </article> <article class="studio-pillar"> <span class="studio-pillar-number"> 03 </span> <h3> Design </h3> <p> Creating thoughtful visual and editorial experiences that communicate with clarity and distinction. </p>
+<p class="studio-pillar-plain">We shape the look and layout of your message so it is clear, engaging, and ready to share.</p>
+<p class="studio-pillar-examples"><strong>Examples:</strong> illustrated books, promotional graphics, brochures, and digital publications.</p> </article> <article class="studio-pillar"> <span class="studio-pillar-number"> 04 </span> <h3> Creative Direction </h3> <p> Bringing strategy, story, and design together into one cohesive creative outcome. </p>
+<p class="studio-pillar-plain">We bring the planning, words, and visuals together so every part feels connected.</p>
+<p class="studio-pillar-examples"><strong>Examples:</strong> a complete storybook, a coordinated campaign, or a brand launch.</p> </article> </div> </section> <!-- ========================= PHILOSOPHY ========================== --> <section class="studio-philosophy" aria-labelledby="studio-philosophy-title" > <p class="contact-kicker"> Our philosophy </p> <h2 id="studio-philosophy-title"> Thoughtful before hurried. Meaningful before loud. </h2> <p> In a world filled with constant noise and fast content, Backyard Studio chooses a more intentional approach. Every creative decision should have purpose, every story should be treated with respect, and every piece of work should have reason to exist. </p> <div class="studio-principles"> <span>Strategy before design</span> <span>Story before promotion</span> <span>Quality before quantity</span> <span>Relationships before transactions</span> <span>Timeless before trendy</span> </div> </section> <!-- ========================= BACKYARD REFLECTIONS ========================== --> <section class="backyard-reflections" id="backyard-reflections" aria-labelledby="reflections-title"> <div class="reflections-inner"> <header class="reflections-heading"> <p class="reflections-eyebrow">A little space to pause</p> <h2 id="reflections-title">Backyard Reflections</h2> <p class="reflections-intro"> Thoughts, words and little reminders to help us see everyday life from a different perspective. </p> </header> <article class="reflection-card"> <div class="reflection-artwork"> <img src="assets/lets-stop-blaming-monday.png" alt="Let's Stop Blaming Monday, an original poem by Backyard Studio." loading="lazy" width="720" height="900" /> </div> <div class="reflection-content"> <p class="reflection-category">Poetry &amp; everyday life</p> <h3>Let’s Stop Blaming Monday</h3> <p>A thoughtful pause on Mondays, fresh starts, and the way we choose to meet the week ahead.</p> <p>The poem is presented in its original artwork on the reading page, so the words and layout stay together as intended.</p> <a class="reflection-read-link" href="reflections/lets-stop-blaming-monday.html"> Read the poem <span aria-hidden="true">&rarr;</span> </a> <div class="reflection-share" aria-label="Share this poem"> <a href="https://wa.me/?text=Let%27s%20Stop%20Blaming%20Monday%20%7C%20Backyard%20Studio%20https%3A%2F%2Fbackyardstudio.co.za%2Fstudio%2Freflections%2Flets-stop-blaming-monday.html" target="_blank" rel="noopener noreferrer">Share on WhatsApp</a> <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fbackyardstudio.co.za%2Fstudio%2Freflections%2Flets-stop-blaming-monday.html" target="_blank" rel="noopener noreferrer">Share on Facebook</a> </div> </div> </article> <p class="reflections-signoff">Made with thoughtfulness at Backyard Studio.</p> </div> </section> <!-- ========================= CONTACT ========================== --> <section class="contact-section" id="contact" aria-labelledby="contact-title" > <div class="contact-inner"> <div class="contact-copy"> <p class="contact-kicker"> Get in touch </p> <h2 id="contact-title"> Let’s start a conversation. </h2> <p> Have a family story, a business message, promotional materials, or another creative idea you would like to bring to life? </p> <p> Tell us a little about what you have in mind and we can explore how Backyard Studio might support you. </p> </div> <!-- Success message --> <div class="form-message success-message" id="form-success" role="status" aria-live="polite" hidden > <strong>Thank you for reaching out.</strong> <span> Your message has been sent successfully. We’ll be in touch with you soon. </span> </div> <!-- Error message --> <div class="form-message error-message" id="form-error" role="alert" aria-live="assertive" hidden > <strong>Something went wrong.</strong> <span> Your message couldn't be sent. Please try again or contact us directly on WhatsApp. </span> </div> <!-- Contact form --> <form class="contact-form" action="send-contact.php" method="POST" > <div class="form-group"> <label for="name"> Name </label> <input type="text" id="name" name="name" autocomplete="name" placeholder="Your name" required /> </div> <div class="form-group"> <label for="email"> Email </label> <input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com" required /> </div> <div class="form-group"> <label for="phone"> Phone / WhatsApp </label> <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="Your contact number" /> </div> <div class="form-group"> <label for="message"> What would you like to create? </label> <textarea id="message" name="message" rows="6" placeholder="Tell us a little about your idea, project, or creative needs..." required ></textarea> </div> <!-- Honeypot spam field --> <div class="website-field" aria-hidden="true" > <label for="website"> Website </label> <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" /> </div> <button type="submit" class="contact-submit" > Send Enquiry </button> </form> <div class="contact-divider" aria-hidden="true" > <span> or </span> </div> <a class="whatsapp-button" href="https://wa.me/27649607349?text=Hello%20Backyard%20Studio%2C%20I%27d%20like%20to%20start%20a%20conversation%20about%20a%20creative%20project." target="_blank" rel="noopener noreferrer" > <span class="whatsapp-icon" aria-hidden="true" > ✦ </span> Chat on WhatsApp </a> </div> </section> <!-- ========================= CLOSING ========================== --> <footer class="coming-soon-footer"> <img class="coming-soon-footer-logo" src="assets/logobs.png?v=2" alt="" aria-hidden="true" /> <p> Create thoughtfully. Serve generously. Grow intentionally. </p> <small> © 2026 Backyard Studio. All rights reserved. </small> </footer> </main> <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.querySelector(".studio-menu-toggle");
+  const navigation = document.querySelector("#studio-navigation");
+  if (!toggle || !navigation) return;
+
+  const closeMenu = () => {
+    navigation.classList.remove("is-open");
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.setAttribute("aria-label", "Open navigation");
+    const label = toggle.querySelector(".menu-toggle-label");
+    const icon = toggle.querySelector(".menu-toggle-icon");
+    if (label) label.textContent = "Menu";
+    if (icon) icon.textContent = "☰";
+  };
+
+  toggle.addEventListener("click", () => {
+    const isOpen = toggle.getAttribute("aria-expanded") === "true";
+    if (isOpen) {
+      closeMenu();
+    } else {
+      navigation.classList.add("is-open");
+      toggle.setAttribute("aria-expanded", "true");
+      toggle.setAttribute("aria-label", "Close navigation");
+      const label = toggle.querySelector(".menu-toggle-label");
+      const icon = toggle.querySelector(".menu-toggle-icon");
+      if (label) label.textContent = "Close";
+      if (icon) icon.textContent = "×";
+    }
+  });
+
+  navigation.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      if (link.target !== "_blank") closeMenu();
+    });
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeMenu();
+      toggle.focus();
+    }
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 760) closeMenu();
+  });
+});
+</script>
+
+<!-- ========================= CONTACT STATUS SCRIPT ========================== --> <script> document.addEventListener("DOMContentLoaded", () => { const params = new URLSearchParams(window.location.search); const successMessage = document.getElementById("form-success"); const errorMessage = document.getElementById("form-error"); if (successMessage) { successMessage.hidden = params.get("sent") !== "1"; } if (errorMessage) { errorMessage.hidden = params.get("error") !== "1"; } if (params.get("sent") === "1" && successMessage) { setTimeout(() => { successMessage.scrollIntoView({ behavior: "smooth", block: "center" }); }, 150); } if (params.get("error") === "1" && errorMessage) { setTimeout(() => { errorMessage.scrollIntoView({ behavior: "smooth", block: "center" }); }, 150); } }); </script> </body> </html>
